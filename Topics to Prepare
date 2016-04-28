@@ -1,3 +1,16 @@
+Big O
+
+Arrays / Strings / StringBuffer / StringBuilder
+Vectors / ArrayLists
+LinkedLists
+Hashset / Hashmap / Hashtable / Dictionary
+Stacks / Queues / Priority queues
+Tree (Binary Tree, Binary Search Tree, kd Tree, 2-3 Tree, AVL)
+Tries
+Heap / MinHeap / MaxHeap
+Graph
+Bloom Filter
+
 Sorting:
   Merge sort/Poly phase merge sort
   Quick sort
@@ -16,17 +29,6 @@ Divide and conquer
 Dynamic programming / memoization 
 Recursion
 rsync algorithm
-
-Arrays / Strings / StringBuffer / StringBuilder
-Vectors / ArrayLists
-LinkedLists
-Hashset / Hashmap / Hashtable / Dictionary
-Stacks / Queues / Priority queues
-Tree (Binary Tree, Binary Search Tree, kd Tree, 2-3 Tree, AVL)
-Tries
-Heap / MinHeap / MaxHeap
-Graph
-Bloom Filter
 
 Scalability , memory limits, distributed computing and Design
 Networking (IPC, TCP/IP)
