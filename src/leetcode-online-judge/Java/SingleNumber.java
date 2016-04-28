@@ -9,13 +9,13 @@ public class SingleNumber {
     Note:
     Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
      */
-    public static int singleNumber(int[] A) {
-        int sum = 0;
-        for(int i : A) {
-            sum ^= i;
-        }
+    public int singleNumber(int[] A) {
+        int num = 0;
 
-        return sum;
+        for (int i = 0; i < A.length; i++) {
+            num ^= A[i];
+        }
+        return num;
     }
 
     private static void test() {

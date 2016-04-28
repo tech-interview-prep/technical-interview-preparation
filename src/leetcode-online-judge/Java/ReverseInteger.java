@@ -22,12 +22,15 @@ public class ReverseInteger {
     Throw an exception? Good, but what if throwing an exception is not an option? You would then have to re-design the
     function (ie, add an extra parameter).
     */
-    public static int reverse(int x) {
-        int ret = 0;
-        for (; x != 0 ; x /= 10) {
-            ret = ret * 10 + x % 10;
+    public int reverse(int x){
+        int newValue = 0;
+
+        while (x!=0) {
+            int mod = x % 10;
+            newValue = newValue*10 + mod;
+            x /=10;
         }
-        return ret;
+        return newValue;
     }
 
     private static void test() {

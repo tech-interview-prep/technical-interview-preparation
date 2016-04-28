@@ -32,13 +32,16 @@ public class SymmetricTree {
         return isSymmetric(root.left, root.right);
     }
 
-    private static boolean isSymmetric(TreeNode root1, TreeNode root2) {
-        if (root1 == null || root2 == null) {
-            return root1 == null && root2 == null;
+    private static boolean isSymmetric(TreeNode leftNode, TreeNode rightNode) {
+        if (leftNode == null || rightNode == null) {
+            return leftNode == null && rightNode == null;
         }
 
-        return root1.val == root2.val && isSymmetric(root1.left, root2.right) && isSymmetric(root1.right, root2.left);
+        return leftNode.val == rightNode.val
+                && isSymmetric(leftNode.left, rightNode.right)
+                && isSymmetric(leftNode.right, rightNode.left);
     }
+
     /*
          1
         / \

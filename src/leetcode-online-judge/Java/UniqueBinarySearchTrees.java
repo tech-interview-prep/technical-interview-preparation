@@ -8,7 +8,7 @@ public class UniqueBinarySearchTrees {
 
     For example,
     Given n = 3, there are a total of 5 unique BST's.
-    
+
     1         3     3      2      1
     \       /     /      / \      \
      3     2     1      1   3      2
@@ -38,7 +38,6 @@ public class UniqueBinarySearchTrees {
         return num[n];
     }
 
-
     private static void test() {
         Utils.printTestln(numTrees(3), 5);
         Utils.printTestln(numTrees2(3), 5);
@@ -47,5 +46,5 @@ public class UniqueBinarySearchTrees {
     public static void main(String[] args) {
         test();
     }
-    
+
 }
