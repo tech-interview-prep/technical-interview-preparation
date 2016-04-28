@@ -45,8 +45,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Bit Manipulation
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/single-number.cpp) [Java](./Java/) [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
-137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [C++](./C++/single-number-ii.cpp) [Java](./Java/) [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
+136 | [Single Number](https://leetcode.com/problems/single-number/) | [C++](./C++/single-number.cpp) [Java](./Java/SingleNumber.java) [Python](./Python/single-number.py) | _O(n)_       | _O(1)_          | Medium         ||
+137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [C++](./C++/single-number-ii.cpp) [Java](./Java/SingleNumberII.java) [Python](./Python/single-number-ii.py) | _O(n)_ | _O(1)_          | Medium         ||
 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/)  | [C++](./C++/reverse-bits.cpp) [Java](./Java/) [Python](./Python/reverse-bits.py) | _O(1)_        | _O(1)_          | Easy           ||
 191  |[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [C++](./C++/number-of-1-bits.cpp) [Java](./Java/) [Python](./Python/number-of-1-bits.py) | _O(1)_ | _O(1)_          | Easy           ||
 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) | [C++](./C++/bitwise-and-of-numbers-range.cpp) [Java](./Java/) [Python](./Python/bitwise-and-of-numbers-range.py) | _O(1)_ | _O(1)_ | Medium ||
@@ -72,7 +72,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./C++/remove-duplicates-from-sorted-array-ii.cpp)  [Java](./Java/) [Python](./Python/remove-duplicates-from-sorted-array-ii.py) | _O(n)_       | _O(1)_         | Medium         || Two Pointers
 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/)| [C++](./C++/pascals-triangle.cpp) [Java](./Java/) [Python](./Python/pascals-triangle.py) | _O(n^2)_ | _O(1)_        | Easy           ||
 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)| [C++](./C++/pascals-triangle-ii.cpp) [Java](./Java/) [Python](./Python/pascals-triangle-ii.py) | _O(n^2)_ | _O(1)_  | Easy           ||
-121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./C++/best-time-to-buy-and-sell-stock.cpp) [Java](./Java/) [Python](./Python/best-time-to-buy-and-sell-stock.py) | _O(n)_ | _O(1)_ | Medium ||
+121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./C++/best-time-to-buy-and-sell-stock.cpp) [Java](./Java/BestTimeToBuyAndSellStock.java) [Python](./Python/best-time-to-buy-and-sell-stock.py) | _O(n)_ | _O(1)_ | Medium ||
 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)| [C++](./C++/longest-consecutive-sequence.cpp)  [Java](./Java/) [Python](./Python/longest-consecutive-sequence.py) | _O(n)_ | _O(n)_ | Hard         || Tricky
 157 | [Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/) | [C++](./C++/read-n-characters-given-read4.cpp)  [Java](./Java/) [Python](./Python/read-n-characters-given-read4.py) | _O(n)_ | _O(1)_ | Easy           |📖|
 158 | [Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/) | [C++](./C++/read-n-characters-given-read4-ii-call-multiple-times.cpp)  [Java](./Java/) [Python](./Python/read-n-characters-given-read4-ii-call-multiple-times.py) | _O(n)_ | _O(1)_ | Hard |📖|
@@ -106,12 +106,12 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 38| [Count and Say](https://leetcode.com/problems/count-and-say/) | [C++](./C++/count-and-say.cpp) [Java](./Java/) [Python](./Python/count-and-say.py)| _O(n * 2^n)_  | _O(2^n)_        | Easy           ||
 43| [Multiply Strings](https://leetcode.com/problems/multiply-strings/) | [C++](./C++/multiply-strings.cpp) [Java](./Java/) [Python](./Python/multiply-strings.py) | _O(m * n)_ | _O(m + n)_  | Medium         ||
 58| [Length of Last Word](https://leetcode.com/problems/length-of-last-word/) | [C++](./C++/length-of-last-word.cpp) [Java](./Java/) [Python](./Python/length-of-last-word.py) | _O(n)_   | _O(1)_  | Easy           ||
-67| [Add Binary](https://leetcode.com/problems/add-binary/)    | [C++](./C++/add-binary.cpp) [Java](./Java/) [Python](./Python/add-binary.py) | _O(n)_          | _O(1)_          | Easy           ||
+67| [Add Binary](https://leetcode.com/problems/add-binary/)    | [C++](./C++/add-binary.cpp) [Java](./Java/AddBinary.java) [Python](./Python/add-binary.py) | _O(n)_          | _O(1)_          | Easy           ||
 68| [Text Justification](https://leetcode.com/problems/text-justification/) | [C++](./C++/text-justification.cpp) [Java](./Java/) [Python](./Python/text-justification.py) | _O(n)_ | _O(1)_      | Hard           ||
 125| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | [C++](./C++/valid-palindrome.cpp) [Java](./Java/) [Python](./Python/valid-palindrome.py) | _O(n)_  | _O(1)_         | Easy           ||
 151| [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | [C++](./C++/reverse-words-in-a-string.cpp)  [Java](./Java/) [Python](./Python/reverse-words-in-a-string.py) | _O(n)_ | _O(1)_ | Medium         ||
 161| [One Edit Distance](https://leetcode.com/problems/one-edit-distance/) | [C++](./C++/one-edit-distance.cpp) [Java](./Java/) [Python](./Python/one-edit-distance.py) | _O(m + n)_ | _O(1)_    | Medium         |📖|
-165| [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [C++](./C++/compare-version-numbers.cpp) [Java](./Java/) [Python](./Python/compare-version-numbers.py) | _O(n)_ | _O(1)_ | Easy     ||
+165| [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [C++](./C++/compare-version-numbers.cpp) [Java](./Java/CompareVersionNumbers.java) [Python](./Python/compare-version-numbers.py) | _O(n)_ | _O(1)_ | Easy     ||
 186| [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) |[C++](./C++/reverse-words-in-a-string-ii.cpp)  [Java](./Java/) [Python](./Python/reverse-words-in-a-string-ii.py) | _O(n)_ | _O(1)_ | Medium         | 📖 |
 214| [Shortest Palindrome](https://leetcode.com/problems/shortest-palindrome/) | [C++](./C++/shortest-palindrome.cpp) [Java](./Java/) [Python](./Python/shortest-palindrome.py) | _O(n)_ | _O(n)_ |  Hard || `KMP Algorithm` `Manacher's Algorithm`
 271| [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | [C++](./C++/encode-and-decode-strings.cpp) [Java](./Java/) [Python](./Python/encode-and-decode-strings.py) | _O(n)_ | _O(1)_ | Medium         | 📖 |
@@ -121,7 +121,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Linked List
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-2| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/add-two-numbers.cpp) [Java](./Java/) [Python](./Python/add-two-numbers.py) | _O(n)_   | _O(1)_          | Medium         ||
+2| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [C++](./C++/add-two-numbers.cpp) [Java](./Java/AddTwoNumbers.java) [Python](./Python/add-two-numbers.py) | _O(n)_   | _O(1)_          | Medium         ||
 24| [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./C++/swap-nodes-in-pairs.cpp) [Java](./Java/) [Python](./Python/swap-nodes-in-pairs.py)   | _O(n)_          | _O(1)_          | Medium         ||
 25| [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./C++/reverse-nodes-in-k-group.cpp) [Java](./Java/) [Python](./Python/reverse-nodes-in-k-group.py) | _O(n)_       | _O(1)_         | Hard         ||
 61| [Rotate List](https://leetcode.com/problems/rotate-list/)| [C++](./C++/rotate-list.cpp) [Java](./Java/) [Python](./Python/rotate-list.py)   | _O(n)_          | _O(1)_          | Medium         ||
@@ -171,10 +171,10 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Tree
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)  | [Java](./Java/) [Python](./Python/binary-tree-inorder-traversal.py) | _O(n)_| _O(1)_| Medium           || `Morris Traversal` |
+94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)  | [Java](./Java/BinaryTreeInorderTraversal.java) [Python](./Python/binary-tree-inorder-traversal.py) | _O(n)_| _O(1)_| Medium           || `Morris Traversal` |
 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | [Java](./Java/) [Python](./Python/recover-binary-search-tree.py) | _O(n)_| _O(1)_| Hard  || `Morris Traversal`
-144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./Java/) [Python](./Python/binary-tree-preorder-traversal.py) | _O(n)_| _O(1)_| Medium || `Morris Traversal`
-145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./Java/) [Python](./Python/binary-tree-postorder-traversal.py) | _O(n)_| _O(1)_| Hard  || `Morris Traversal`
+144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Java](./Java/BinaryTreePreorderTraversal.java) [Python](./Python/binary-tree-preorder-traversal.py) | _O(n)_| _O(1)_| Medium || `Morris Traversal`
+145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Java](./Java/BinaryTreePostorderTraversal.java) [Python](./Python/binary-tree-postorder-traversal.py) | _O(n)_| _O(1)_| Hard  || `Morris Traversal`
 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Java](./Java/) [Python](./Python/implement-trie-prefix-tree.py) | _O(n)_ | _O(1)_ | Medium || Trie
 211 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [C++](./C++/add-and-search-word-data-structure-design.cpp) [Java](./Java/) [Python](./Python/add-and-search-word-data-structure-design.py) | _O(min(n, h))_ | _O(min(n, h))_ | Medium || Trie, DFS
 226| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [C++](./C++/invert-binary-tree.cpp) [Java](./Java/) [Python](./Python/invert-binary-tree.py) | _O(n)_ | _O(h)_, _O(w)_ | Easy ||
@@ -289,13 +289,13 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 106| [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Java](./Java/) [Python](./Python/construct-binary-tree-from-inorder-and-postorder-traversal.py) | _O(n)_        | _O(n)_          | Medium         ||
 108| [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Java](./Java/) [Python](./Python/convert-sorted-array-to-binary-search-tree.py) | _O(n)_        | _O(logn)_          | Medium         ||
 109| [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Java](./Java/) [Python](./Python/convert-sorted-list-to-binary-search-tree.py) | _O(n)_        | _O(logn)_          | Medium         ||
-110| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Java](./Java/) [Python](./Python/balanced-binary-tree.py) | _O(n)_| _O(h)_   | Easy           ||
+110| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Java](./Java/BalancedBinaryTree.java) [Python](./Python/balanced-binary-tree.py) | _O(n)_| _O(h)_   | Easy           ||
 111| [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)|[Java](./Java/) [Python](./Python/minimum-depth-of-binary-tree.py)| _O(n)_ | _O(h)_ | Easy ||
 114| [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|[Java](./Java/) [Python](./Python/flatten-binary-tree-to-linked-list.py)| _O(n)_        | _O(h)_          | Medium         ||
 116| [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)|[Java](./Java/) [Python](./Python/populating-next-right-pointers-in-each-node.py)| _O(n)_ | _O(1)_ | Medium ||
-124| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)| [Java](./Java/) [Python](./Python/binary-tree-maximum-path-sum.py) | _O(n)_| _O(h)_| Hard  ||
+124| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)| [Java](./Java/BinaryTreeMaximumPathSum.java) [Python](./Python/binary-tree-maximum-path-sum.py) | _O(n)_| _O(h)_| Hard  ||
 129| [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [Java](./Java/) [Python](./Python/sum-root-to-leaf-numbers.py) | _O(n)_ | _O(h)_ | Medium ||
-156| [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) | [Java](./Java/) [Python](./Python/binary-tree-upside-down.py) | _O(n)_ | _O(1)_ | Medium    |📖|
+156| [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/) | [Java](./Java/BinaryTreeUpsideDown.java) [Python](./Python/binary-tree-upside-down.py) | _O(n)_ | _O(1)_ | Medium    |📖|
 241| [Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) | [C++](./C++/different-ways-to-add-parentheses.cpp) [Java](./Java/) [Python](./Python/different-ways-to-add-parentheses.py) | _O(n * 4^n / n^(3/2))_ | _O(n * 4^n / n^(3/2))_ | Medium    ||
 298 | [Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/) | [C++](./C++/binary-tree-longest-consecutive-sequence.cpp) [Java](./Java/) [Python](./Python/binary-tree-longest-consecutive-sequence.py) | _O(n)_ | _O(h)_ | Medium    |📖|
 327| [Count of Range Sum](https://leetcode.com/problems/count-of-range-sum/) | [C++](./C++/count-of-range-sum.cpp) [Java](./Java/) [Python](./Python/count-of-range-sum.py) | _O(nlogn)_        | _O(n)_          | Hard         ||
@@ -334,13 +334,13 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Breadth-First Search
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-102| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [Java](./Java/) [Python](./Python/binary-tree-level-order-traversal.py)| _O(n)_| _O(n)_| Easy  ||
-107| [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [Java](./Java/) [Python](./Python/binary-tree-level-order-traversal-ii.py) | _O(n)_| _O(n)_| Easy  ||
-103| [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)| [Java](./Java/) [Python](./Python/binary-tree-zigzag-level-order-traversal.py) | _O(n)_| _O(n)_| Medium  ||
+102| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [Java](./Java/BinaryTreeLevelOrderTraversal.java) [Python](./Python/binary-tree-level-order-traversal.py)| _O(n)_| _O(n)_| Easy  ||
+107| [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)| [Java](./Java/BinaryTreeLevelOrderTraversalII.java) [Python](./Python/binary-tree-level-order-traversal-ii.py) | _O(n)_| _O(n)_| Easy  ||
+103| [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)| [Java](./Java/BinaryTreeZigzagLevelOrderTraversal.java) [Python](./Python/binary-tree-zigzag-level-order-traversal.py) | _O(n)_| _O(n)_| Medium  ||
 117| [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)|[Java](./Java/) [Python](./Python/populating-next-right-pointers-in-each-node-ii.py)| _O(n)_ | _O(1)_ | Hard ||
 127| [Word Ladder](https://leetcode.com/problems/word-ladder/)|[Java](./Java/) [Python](./Python/word-ladder.py) | _O(n * d)_      | _O(d)_          | Medium         ||
 130| [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)|[C++](./C++/surrounded-regions.cpp) [Java](./Java/) [Python](./Python/surrounded-regions.py)| _O(m * n)_ | _O(m + n)_ | Medium         ||
-133| [Clone Graph](https://leetcode.com/problems/clone-graph/)| [Java](./Java/) [Python](./Python/clone-graph.py)   | _O(n)_          | _O(n)_          | Medium         ||
+133| [Clone Graph](https://leetcode.com/problems/clone-graph/)| [Java](./Java/CloneGraph.java) [Python](./Python/clone-graph.py)   | _O(n)_          | _O(n)_          | Medium         ||
 207| [Course Schedule](https://leetcode.com/problems/course-schedule/)| [Java](./Java/) [Python](./Python/course-schedule.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         || Topological Sort |
 210| [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)| [Java](./Java/) [Python](./Python/course-schedule-ii.py)   | _O(\|V\| + \|E\|)_          | _O(\|E\|)_          | Medium         || Topological Sort |
 261| [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)| [C++](./C++/graph-valid-tree.cpp) [Java](./Java/) [Python](./Python/graph-valid-tree.py)   | _O(\|V\| + \|E\|)_          | _O(\|V\| + \|E\|)_          | Medium         | 📖 |
@@ -371,13 +371,13 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 17| [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [Java](./Java/) [Python](./Python/letter-combinations-of-a-phone-number.py) | _O(n * 4^n)_ | _O(n)_ | Medium ||
 22| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [Java](./Java/) [Python](./Python/generate-parentheses.py)| _O(4^n / n^(3/2))_ | _O(n)_   | Medium         ||
 37| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | [Java](./Java/) [Python](./Python/sudoku-solver.py) | _O((9!)^9)_  | _O(1)_          | Hard           ||
-39| [Combination Sum](https://leetcode.com/problems/combination-sum/)| [Java](./Java/) [Python](./Python/combination-sum.py) | _O(k * n^k)_    | _O(k)_          | Medium         ||
-40| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)| [Java](./Java/) [Python](./Python/combination-sum-ii.py)| _O(k * C(n, k))_| _O(k)_         | Medium         ||
+39| [Combination Sum](https://leetcode.com/problems/combination-sum/)| [Java](./Java/CombinationSum.java) [Python](./Python/combination-sum.py) | _O(k * n^k)_    | _O(k)_          | Medium         ||
+40| [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)| [Java](./Java/CombinationSumII.java) [Python](./Python/combination-sum-ii.py)| _O(k * C(n, k))_| _O(k)_         | Medium         ||
 46| [Permutations](https://leetcode.com/problems/permutations/)| [Java](./Java/) [Python](./Python/permutations.py) | _O(n * n!)_         | _O(n)_          | Medium         ||
 47| [Permutations II](https://leetcode.com/problems/permutations-ii/)| [Java](./Java/) [Python](./Python/permutations-ii.py) | _O(n * n!)_   | _O(n)_          | Hard           ||
 51| [N-Queens](https://leetcode.com/problems/n-queens/)      | [Java](./Java/) [Python](./Python/n-queens.py)   | _O(n!)_         | _O(n)_          | Hard           ||
 52| [N-Queens-II](https://leetcode.com/problems/n-queens-ii/)   | [Java](./Java/) [Python](./Python/n-queens-ii.py) | _O(n!)_        | _O(n)_          | Hard           ||
-77| [Combinations](https://leetcode.com/problems/combinations/)  | [Java](./Java/) [Python](./Python/combinations.py) | _O(n!)_       | _O(n)_          | Medium         ||
+77| [Combinations](https://leetcode.com/problems/combinations/)  | [Java](./Java/Combinations.java) [Python](./Python/combinations.py) | _O(n!)_       | _O(n)_          | Medium         ||
 79| [Word Search](https://leetcode.com/problems/word-search/) | [Java](./Java/) [Python](./Python/word-search.py) | _O(m * n * l)_ | _O(l)_  | Medium         ||
 93| [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) | [Java](./Java/) [Python](./Python/restore-ip-addresses.py) | _O(1)_ | _O(1)_ | Medium         ||
 78| [Subsets](https://leetcode.com/problems/subsets/)       | [Java](./Java/) [Python](./Python/subsets.py)    | _O(n * 2^n)_    | _O(1)_          | Medium         ||
@@ -401,7 +401,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 62| [Unique Paths](https://leetcode.com/problems/unique-paths/)    | [Java](./Java/) [Python](./Python/unique-paths.py)| _O(m * n)_      | _O(m + n)_   | Medium         ||
 63| [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Java](./Java/) [Python](./Python/unique-paths-ii.py) |  _O(m * n)_ | _O(m + n)_   | Medium         ||
 64| [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [Java](./Java/) [Python](./Python/minimum-path-sum.py)| _O(m * n)_ | _O(m + n)_     | Medium         ||
-70| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Java](./Java/) [Python](./Python/climbing-stairs.py) | _O(n)_    | _O(1)_          | Easy           ||
+70| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [Java](./Java/ClimbingStairs.java) [Python](./Python/climbing-stairs.py) | _O(n)_    | _O(1)_          | Easy           ||
 72| [Edit Distance](https://leetcode.com/problems/edit-distance/)|[Java](./Java/) [Python](./Python/edit-distance.py)| _O(m * n)_      | _O(m + n)_      | Hard           ||
 85| [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)| [C++](./C++/maximal-rectangle.cpp)  [Java](./Java/) [Python](./Python/maximal-rectangle.py)| _O(m * n)_ | _O(n)_         | Hard           ||
 87| [Scramble String](https://leetcode.com/problems/scramble-string/) | [Java](./Java/) [Python](./Python/scramble-string.py) | _O(n^4)_ | _O(n^3)_        | Hard           ||
@@ -410,7 +410,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 97| [Interleaving String](https://leetcode.com/problems/interleaving-string/)|[Java](./Java/) [Python](./Python/interleaving-string.py)| _O(m * n)_ | _O(m + n)_ | Hard         ||
 115| [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)|[Java](./Java/) [Python](./Python/distinct-subsequences.py)| _O(n^2)_ | _O(n)_ | Hard           ||
 120| [Triangle](https://leetcode.com/problems/triangle/)       | [Java](./Java/) [Python](./Python/triangle.py)   | _O(m * n)_      | _O(n)_         | Medium         ||
-123| [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [Java](./Java/) [Python](./Python/best-time-to-buy-and-sell-stock-iii.py) | _O(n)_ | _O(1)_ | Hard ||
+123| [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [Java](./Java/BestTimeToBuyAndSellStockIII.java) [Python](./Python/best-time-to-buy-and-sell-stock-iii.py) | _O(n)_ | _O(1)_ | Hard ||
 132| [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) | [Java](./Java/) [Python](./Python/palindrome-partitioning-ii.py) | _O(n^2)_ | _O(n^2)_ | Hard ||
 139| [Word Break](https://leetcode.com/problems/word-break/)     | [Java](./Java/) [Python](./Python/word-break.py) |  _O(n^2)_         | _O(n)_       | Medium         ||
 152| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|[Java](./Java/) [Python](./Python/maximum-product-subarray.py)| _O(n)_ | _O(1)_ | Medium     ||
@@ -438,9 +438,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 45| [Jump Game II](https://leetcode.com/problems/jump-game-ii/)  | [Java](./Java/) [Python](./Python/jump-game-ii.py) | _O(n)_        | _O(1)_          | Hard           ||
 55| [Jump Game](https://leetcode.com/problems/jump-game/)     | [Java](./Java/) [Python](./Python/jump-game.py)  | _O(n)_          | _O(1)_          | Medium         ||
 84| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Java](./Java/) [Python](./Python/largest-rectangle-in-histogram.py) | _O(n)_ | _O(n)_ | Hard || Tricky
-122| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Java](./Java/) [Python](./Python/best-time-to-buy-and-sell-stock-ii.py) | _O(n)_ | _O(1)_ | Medium ||
+122| [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [Java](./Java/BestTimeToBuyAndSellStockII.java) [Python](./Python/best-time-to-buy-and-sell-stock-ii.py) | _O(n)_ | _O(1)_ | Medium ||
 134| [Gas Station](https://leetcode.com/problems/gas-station/)| [Java](./Java/) [Python](./Python/gas-station.py)   | _O(n)_          | _O(1)_          | Medium         ||
-135| [Candy](https://leetcode.com/problems/candy/)| [Java](./Java/) [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
+135| [Candy](https://leetcode.com/problems/candy/)| [Java](./Java/Candy.java) [Python](./Python/candy.py) | _O(n)_ | _O(n)_ | Hard ||
 316| [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/) | [C++](./C++/remove-duplicate-letters.cpp) [Java](./Java/) [Python](./Python/remove-duplicate-letters.py) | _O(n)_| _O(k)_| Medium || Stack |
 321| [Create Maximum Number](https://leetcode.com/problems/create-maximum-number/)| [C++](./C++/create-maximum-number.cpp) [Java](./Java/) [Python](./Python/create-maximum-number.py) | _O(k * (m + n + k))_ ~ _O(k * (m + n + k^2))_| _O(m + n + k^2)_ | Hard | variant of [Delete Digits](http://www.lintcode.com/en/problem/delete-digits/) | Greedy, DP
 330| [Patching Array](https://leetcode.com/problems/patching-array/) | [C++](./C++/patching-array.cpp) [Java](./Java/) [Python](./Python/patching-array.py) | _O(s + logn)_ | _O(1)_       | Medium           ||

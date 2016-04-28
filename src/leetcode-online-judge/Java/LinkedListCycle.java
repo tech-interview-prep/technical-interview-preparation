@@ -7,18 +7,27 @@ public class LinkedListCycle {
     Follow up:
     Can you solve it without using extra space?
     */
-    public static boolean hasCycle(ListNode head) {
-        ListNode one = head, two = head;
+    public boolean hasCycle(ListNode head) {
 
-        while (two != null && two.next != null) {
-            one = one.next;
-            two = two.next.next;
+        ListNode slowNode = head;
+        ListNode fastNode = head;
 
-            if (one == two) {
-                return true;
+        if (head !=null && head.next != null) {
+            fastNode = head.next;
+        } else {
+            return false;
+        }
+
+        while (slowNode !=null && fastNode!=null){
+            if (slowNode.val == fastNode.val ) return true;
+
+            slowNode = slowNode.next;
+            fastNode = fastNode.next;
+            if (fastNode!=null){
+                fastNode = fastNode.next;
             }
         }
-        
+
         return false;
     }
 }
