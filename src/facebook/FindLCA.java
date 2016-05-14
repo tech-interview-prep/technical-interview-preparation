@@ -1,8 +1,5 @@
 package facebook;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /*
 	Find LCA in Binary Tree
 */	
