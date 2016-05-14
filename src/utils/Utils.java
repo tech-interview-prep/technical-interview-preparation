@@ -81,22 +81,22 @@ public class Utils {
         printArrayRangeln(charSeq, 0, end);
     }
 
-    public static void printListln(List data) {
+    public static void printListln(List<?> data) {
         for (Object o : data) {
             System.out.print(o.toString() + "\t");
         }
         System.out.println();
     }
 
-    public static void printListln(List data, String dilimit) {
+    public static void printListln(List<?> data, String dilimit) {
         for (Object o : data) {
             System.out.print(o.toString() + dilimit);
         }
         System.out.println();
     }
 
-    public static void printListListln(List<? extends List> data) {
-        for (List l : data) {
+    public static void printListListln(List<? extends List<?>> data) {
+        for (List<?> l : data) {
             printListln(l);
         }
         System.out.println();

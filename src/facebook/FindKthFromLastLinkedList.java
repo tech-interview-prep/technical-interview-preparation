@@ -1,7 +1,5 @@
 package facebook;
 
-import java.util.HashSet;
-
 /*
     A LinkedList class with a private static inner node class
     based on:
