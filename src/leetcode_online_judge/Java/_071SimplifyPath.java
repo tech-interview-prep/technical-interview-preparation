@@ -4,6 +4,11 @@ import utils.Utils;
 
 import java.util.Stack;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _071SimplifyPath {
     /*
     Given an absolute path for a file (Unix-style), simplify it.

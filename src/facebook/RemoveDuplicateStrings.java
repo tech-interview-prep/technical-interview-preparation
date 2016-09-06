@@ -17,10 +17,10 @@ import java.util.List;
 
     @[ @"dog", @"cat", @"fish" ]
     Tell the complexity of the solution.
-	
+
 	Link: http://www.careercup.com/question?id=5086256895623168
 
-*/	
+*/
 public class RemoveDuplicateStrings {
 	public List<String> removeDuplicates(List<String> input) {
 	  if(input == null || input.size() == 0) {

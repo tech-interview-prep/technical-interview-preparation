@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _011ContainerWithMostWater {
     /*
     Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical
@@ -45,7 +50,7 @@ public class _011ContainerWithMostWater {
 
         return maxArea;
     }
-    
+
     public int maxArea3(int[] height) { //best
         int maxRes = Integer.MIN_VALUE;
           int maxHeight;

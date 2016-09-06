@@ -1,15 +1,20 @@
 package leetcode_online_judge.Java;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _169MajorityElement {
-    /*
-    Majority Element
-    Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
+  /*
+  Majority Element
+  Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.
 
-    You may assume that the array is non-empty and the majority element always exist in the array.
+  You may assume that the array is non-empty and the majority element always exist in the array.
 
-    Link: http://www.geeksforgeeks.org/majority-element/
-     */
-    public int majorityElement(int[] num) {
+  Link: http://www.geeksforgeeks.org/majority-element/
+   */
+  public int majorityElement(int[] num) {
 		int now = num[0];
 		int count = 1;
 		for (int i = 1; i < num.length; i++)
@@ -24,9 +29,9 @@ public class _169MajorityElement {
 		return now;
 	}
 
-    public static void main(String[] args) {
-        _169MajorityElement m = new _169MajorityElement();
-        int[] a = {1, 2, 3, 3, 3, 3, 10, 2, 2, 2, 2, 2, 2};
-        System.out.println(m.majorityElement(a));
-    }
+  public static void main(String[] args) {
+    _169MajorityElement m = new _169MajorityElement();
+    int[] a = {1, 2, 3, 3, 3, 3, 10, 2, 2, 2, 2, 2, 2};
+    System.out.println(m.majorityElement(a));
+  }
 }

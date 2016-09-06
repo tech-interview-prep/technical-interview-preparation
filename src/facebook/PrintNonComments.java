@@ -1,9 +1,9 @@
 package facebook;
 
-/* 	
+/*
 	Print non comments
 
-*/	
+*/
 public class PrintNonComments {
     public static void printNonComments(){
 

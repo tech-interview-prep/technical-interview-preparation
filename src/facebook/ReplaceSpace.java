@@ -1,11 +1,11 @@
 package facebook;
 
-/* 	
+/*
 	Write a method to replace all spaces in a string with ‘%20’
-	
+
 	Link: https://gist.github.com/zac-xin/2413516
 
-*/	
+*/
 public class ReplaceSpace {
     public static String replaceSpace(String input){
         char s[] = input.toCharArray();

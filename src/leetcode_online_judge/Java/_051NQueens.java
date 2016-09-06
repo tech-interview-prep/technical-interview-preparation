@@ -4,6 +4,11 @@ import utils.Utils;
 
 import java.util.*;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _051NQueens {
     /*
     The n-queens puzzle is the problem of placing n queens on an n?n chessboard such that no two queens attack each other.

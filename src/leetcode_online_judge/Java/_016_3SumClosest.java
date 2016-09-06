@@ -4,6 +4,11 @@ import utils.Utils;
 
 import java.util.Arrays;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _016_3SumClosest {
     /*
     Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.

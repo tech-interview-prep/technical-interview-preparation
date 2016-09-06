@@ -1,12 +1,12 @@
 package facebook;
 
-/* 	
+/*
 	Design an algorithm and write code to remove the duplicate characters in a string
 	without using any additional buffer.
-	
+
 	Link: https://gist.github.com/zac-xin/2413013
 
-*/	
+*/
 public class RemoveDuplicateCharacters {
     public static void removeDup(char[] data){
         int len = data.length;

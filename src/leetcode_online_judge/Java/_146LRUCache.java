@@ -5,6 +5,11 @@ import utils.Utils;
 import java.util.Map;
 import java.util.HashMap;
 
+/**
+ * https://leetcode.com/problems/lru-cache/
+ * @author bkoteshwarreddy
+ */
+
 public class _146LRUCache {
     /*
     Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following

@@ -4,6 +4,11 @@ import utils.Utils;
 
 import java.util.*;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _030SubstringWithConcatenationOfAllWords {
     /*
     You are given a string, S, and a list of words, L, that are all of the same length. Find all starting indices of

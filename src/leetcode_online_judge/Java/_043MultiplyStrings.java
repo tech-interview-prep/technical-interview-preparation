@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _043MultiplyStrings {
     /*
     Given two numbers represented as strings, return multiplication of the numbers as a string.

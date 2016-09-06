@@ -1,14 +1,14 @@
 package facebook;
 
-/* 	
+/*
 	Morris InOrder Traverse Algorithm
 
 	Using Morris Traversal, we can traverse the tree without using stack and recursion.
-	
+
 	Link: http://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
 	      https://gist.github.com/bittib/5746501
 
-*/	
+*/
 public class MorrisInOrderTraverse {
     public int climbStairs(int n) {
         if( n == 0 || n == 1 || n == 2)

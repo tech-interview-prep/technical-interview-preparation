@@ -1,12 +1,12 @@
 package facebook;
 
-/* 	
+/*
 	Write an algorithm to find the ‘next’ node (e.g., in-order successor) of
     a given node.
-	
+
 	Link: https://gist.github.com/zac-xin/2636153
 
-*/	
+*/
 public class InorderSuccessor {
     public static TreeNodeWithParent inorderSucc(TreeNodeWithParent n) {
         if (n == null) return null;

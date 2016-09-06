@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.ListNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _083RemoveDuplicatesFromSortedList {
     /*
     Given a sorted linked list, delete all duplicates such that each element appear only once.
@@ -17,7 +22,7 @@ public class _083RemoveDuplicatesFromSortedList {
 
         ListNode nextNode = head.next, node = head;
         while (nextNode != null) {
-            if (node.val == nextNode.val) {
+            if (node.data == nextNode.data) {
                 nextNode = nextNode.next;
             } else {
                 node.next = nextNode;

@@ -1,6 +1,6 @@
 package facebook;
 
-/* 	
+/*
 	WAP to modify the array such that arr[I] = arr[arr[I]].
     Do this in place i.e. with out using additional memory.
 
@@ -24,10 +24,10 @@ package facebook;
     In the code you see the author has used % below; this is done just to make sure arr[i] and arr[arr[i]]
     is less than size as explained earlier.
     arr[i] += (arr[arr[i]]%size)*size;
-	
+
 	Link: http://www.careercup.com/question?id=4909367207919616
 
-*/	
+*/
 public class ArrayOfArrayOfValue {
     void relocate(int[] arr,int size) {
         for(int i=0;i<size;i++) {

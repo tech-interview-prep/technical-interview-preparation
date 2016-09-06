@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _065ValidNumber {
     /*
     Validate if a given string is numeric.

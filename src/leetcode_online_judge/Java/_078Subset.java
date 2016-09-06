@@ -5,6 +5,11 @@ import utils.Utils;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * https://leetcode.com/problems/subsets/
+ * @author bkoteshwarreddy
+ */
+
 public class _078Subset {
     /*
     Given a set of distinct integers, S, return all possible subsets.

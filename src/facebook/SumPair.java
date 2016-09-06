@@ -17,10 +17,10 @@ import java.util.HashMap;
     3. Find the sum of the left and right value in the array
     4. Look up iteratively the sum within the subarray , if sum is found print it
         4.a if sum is greater value then increment left side ( i ) or else reduce the (j) value
-	
+
 	Link: http://www.careercup.com/question?id=5652354158297088
 
-*/	
+*/
 public class SumPair {
     public static void indexSumPair(int arr[]) {
         //Return the array if Size less than 4

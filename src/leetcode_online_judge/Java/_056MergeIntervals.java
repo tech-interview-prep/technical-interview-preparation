@@ -8,6 +8,11 @@ import utils.Interval;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _056MergeIntervals {
     /*
     Given a collection of intervals, merge all overlapping intervals.

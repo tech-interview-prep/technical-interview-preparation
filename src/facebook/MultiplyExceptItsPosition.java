@@ -1,6 +1,6 @@
 package facebook;
 
-/* 	
+/*
 	input [2,3,1,4]
     output [12,8,24,6]
 
@@ -9,10 +9,10 @@ package facebook;
     Restrictions:
     1. no use of division
     2. complexity in O(n)
-	
+
 	Link: http://www.careercup.com/question?id=5179916190482432
 
-*/	
+*/
 public class MultiplyExceptItsPosition {
     int [] product (int [] input) {
         int [] front = new int[input.length];

@@ -7,6 +7,11 @@ import java.util.ArrayList;
 import java.util.Queue;
 import java.util.LinkedList;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _102BinaryTreeLevelOrderTraversal {
     /*
     Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
@@ -39,7 +44,7 @@ public class _102BinaryTreeLevelOrderTraversal {
         while (!queue.isEmpty()) {
             TreeNode node = queue.remove();
             if (node != null) {
-                level.add(node.val);
+                level.add(node.data);
                 if (node.left != null) {
                     queue.add(node.left);
                 }

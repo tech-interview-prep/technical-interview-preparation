@@ -3,6 +3,11 @@ package leetcode_online_judge.Java;
 import utils.TreeNode;
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _124BinaryTreeMaximumPathSum {
     /*
     Given a binary tree, find the maximum path sum.
@@ -32,8 +37,8 @@ public class _124BinaryTreeMaximumPathSum {
 
         int[] ret = new int[2];
 
-        ret[0] = Math.max(Math.max(leftMax[0], rightMax[0]), Math.max(leftMax[1], 0) + Math.max(rightMax[1], 0) + node.val);
-        ret[1] = Math.max(Math.max(leftMax[1], rightMax[1]), 0) + node.val;
+        ret[0] = Math.max(Math.max(leftMax[0], rightMax[0]), Math.max(leftMax[1], 0) + Math.max(rightMax[1], 0) + node.data);
+        ret[1] = Math.max(Math.max(leftMax[1], rightMax[1]), 0) + node.data;
 
         return ret;
     }

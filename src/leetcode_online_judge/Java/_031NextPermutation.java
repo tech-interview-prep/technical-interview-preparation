@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _031NextPermutation {
     /*
     Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.

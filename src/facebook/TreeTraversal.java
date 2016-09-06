@@ -22,7 +22,7 @@ public class TreeTraversal {
 			preOrderRecursion(root.right);
 		}
 	}
- 
+
 	// Pre-Order interation
 	public void preOrderIteration(BinaryTreeNode root) {
         Stack<BinaryTreeNode> stack = new Stack<BinaryTreeNode>();
@@ -70,7 +70,7 @@ public class TreeTraversal {
             node = node.left;
         }
     }
- 
+
 	// In-Order recursion
 	public void inOrderRecursion(BinaryTreeNode root) {
 		if (root != null) {
@@ -79,7 +79,7 @@ public class TreeTraversal {
 			inOrderRecursion(root.right);
 		}
 	}
- 
+
 	// In-Order Iteration
 	public void inOrderIteration(BinaryTreeNode root) {
         Stack<BinaryTreeNode> stack = new Stack<BinaryTreeNode>();
@@ -95,7 +95,7 @@ public class TreeTraversal {
 				current = current.right;
 			}
 		}
- 
+
 	}
 
     public void inorder(BinaryTreeNode root) {
@@ -114,7 +114,7 @@ public class TreeTraversal {
             }
         }
     }
- 
+
 	// Post-Order Recursion
 	public void postOrderRecursion(BinaryTreeNode root) {
 		if (root != null) {
@@ -122,9 +122,9 @@ public class TreeTraversal {
 			postOrderRecursion(root.right);
 			System.out.print(root.data + "  ");
 		}
- 
+
 	}
- 
+
 	// Post-Order Iteration
 	public void postOrderIteration(BinaryTreeNode root) {
         Stack<BinaryTreeNode> stack = new Stack<BinaryTreeNode>();
@@ -177,13 +177,13 @@ public class TreeTraversal {
         }
     }
 }
- 
+
 class BinaryTreeNode {
 	int data;
 	boolean isFinished;
 	BinaryTreeNode left = null;
 	BinaryTreeNode right = null;
- 
+
 	public BinaryTreeNode(int data) {
 		this.data = data;
 	}

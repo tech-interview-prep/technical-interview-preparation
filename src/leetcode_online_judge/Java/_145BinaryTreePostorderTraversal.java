@@ -6,6 +6,11 @@ import utils.Utils;
 import java.util.ArrayList;
 import java.util.Stack;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _145BinaryTreePostorderTraversal {
     /*
     Given a binary tree, return the postorder traversal of its nodes' values.
@@ -29,7 +34,7 @@ public class _145BinaryTreePostorderTraversal {
         while (!s.isEmpty() || node != null) {
             if (node != null) {
                 if (node.left == null && node.right == null) {
-                    ret.add(node.val);
+                    ret.add(node.data);
                     if (s.isEmpty()) {
                         return ret;
                     }
@@ -44,7 +49,7 @@ public class _145BinaryTreePostorderTraversal {
                     }
                     node = node.left;
                 } else {
-                    ret.add(node.val);
+                    ret.add(node.data);
                     if (s.isEmpty()) {
                         return ret;
                     }
@@ -71,7 +76,7 @@ public class _145BinaryTreePostorderTraversal {
         while (!s.isEmpty()) {
             TreeNode node = s.peek();
             if (node.left == null && node.right == null || preNode != null && (node.left == preNode || node.right == preNode)) {
-                ret.add(node.val);
+                ret.add(node.data);
                 preNode = node;
                 node = s.pop();
             } else {
@@ -96,7 +101,7 @@ public class _145BinaryTreePostorderTraversal {
             if (node == null) {
                 node = s.pop();
             } else if (node.left == null && node.right == null || preNode != null && (node.left == preNode || node.right == preNode)) {
-                ret.add(node.val);
+                ret.add(node.data);
                 if (s.isEmpty()){
                     return ret;
                 }

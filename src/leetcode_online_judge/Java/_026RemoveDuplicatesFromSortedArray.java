@@ -1,5 +1,10 @@
 package leetcode_online_judge.Java;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _026RemoveDuplicatesFromSortedArray {
     /*Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
 

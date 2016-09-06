@@ -15,14 +15,14 @@ public class CommonSubString {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		 String X = "OldSite: GeeksforGeeks.org";
 		 String Y = "NewSite:GeeksQuiz.com";
-		 
-		  
-		 
+
+
+
 		   System.out.println( "Length of Longest Common Substring is " + LCSubStr(X, Y, 6));
-		    
+
 
 	}
 

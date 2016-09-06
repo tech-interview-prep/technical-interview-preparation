@@ -6,6 +6,11 @@ import utils.TreeNode;
 
 import java.util.ArrayList;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _099RecoverBinarySearchTree {
     /*
     Two elements of a binary search tree (BST) are swapped by mistake.
@@ -22,9 +27,9 @@ public class _099RecoverBinarySearchTree {
         inOrder(root, swapNode, preNode);
 
         if (!swapNode.isEmpty()) {
-            int tmp = swapNode.get(0).val;
-            swapNode.get(0).val = swapNode.get(1).val;
-            swapNode.get(1).val = tmp;
+            int tmp = swapNode.get(0).data;
+            swapNode.get(0).data = swapNode.get(1).data;
+            swapNode.get(1).data = tmp;
         }
     }
 
@@ -36,7 +41,7 @@ public class _099RecoverBinarySearchTree {
         inOrder(node.left, swapNode, preNode);
 
         TreeNode pre = preNode.get(0);
-        if (pre != null && pre.val > node.val) {
+        if (pre != null && pre.data > node.data) {
             if (swapNode.isEmpty()) {
                 swapNode.add(pre);
                 swapNode.add(node);

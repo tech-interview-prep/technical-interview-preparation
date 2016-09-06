@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _027RemoveElement {
     /*
     Given an array and a value, remove all instances of that value in place and return the new length.

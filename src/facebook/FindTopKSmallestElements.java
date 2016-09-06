@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 /*
 	Select Top K smallest Elements
-	
+
 	Link: https://gist.github.com/bittib/5652140
 	      http://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
 
-*/	
+*/
 public class FindTopKSmallestElements {
     public static int[] firstKSmallestElements(int[] A, int k){
         int n = A.length;

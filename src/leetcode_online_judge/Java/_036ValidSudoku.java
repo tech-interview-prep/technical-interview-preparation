@@ -5,17 +5,19 @@ import utils.Utils;
 import java.util.Set;
 import java.util.HashSet;
 
+/**
+ * https://leetcode.com/problems/valid-sudoku/
+ * @author bkoteshwarreddy
+ */
+
 public class _036ValidSudoku {
-    /*
-    Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
-
-    The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
-
-    // see 250px-Sudoku-by-L2G-20050714.svg.png
-
-
-    A partially filled sudoku which is valid.
-    */
+  /**
+   * Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
+   *
+   * The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
+   *
+   * A partially filled sudoku which is valid.
+   */
     public static boolean isValidSudoku(char[][] board) {
         Set<Character> rowSet = new HashSet<Character>();
         Set<Character> colSet = new HashSet<Character>();

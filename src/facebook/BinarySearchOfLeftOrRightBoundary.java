@@ -1,6 +1,6 @@
 package facebook;
 
-/* 	
+/*
 	Sorted array, given a key, find its left most index or right most index in array.
 	If it isn't in array, return -1.
 
@@ -8,7 +8,7 @@ package facebook;
 
 	Link: https://gist.github.com/bittib/5651966
 
-*/	
+*/
 public class BinarySearchOfLeftOrRightBoundary {
     public static int findLeftMostElement(int[] A, int key){
         if (A.length == 0) return -1;

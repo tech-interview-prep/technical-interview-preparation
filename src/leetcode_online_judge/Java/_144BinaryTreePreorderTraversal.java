@@ -5,6 +5,11 @@ import utils.Utils;
 import java.util.ArrayList;
 import java.util.Stack;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _144BinaryTreePreorderTraversal {
     /*
     Given a binary tree, return the preorder traversal of its nodes' values.
@@ -29,7 +34,7 @@ public class _144BinaryTreePreorderTraversal {
             if (node == null) {
                 node = s.pop();
             } else {
-                ret.add(node.val);
+                ret.add(node.data);
                 if (node.right != null) {
                     s.add(node.right);
                 }

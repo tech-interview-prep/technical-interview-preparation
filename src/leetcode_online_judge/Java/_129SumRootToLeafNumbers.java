@@ -3,6 +3,11 @@ package leetcode_online_judge.Java;
 import utils.TreeNode;
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _129SumRootToLeafNumbers {
     /*
     Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number.
@@ -30,7 +35,7 @@ public class _129SumRootToLeafNumbers {
             return 0;
         }
 
-        pathSum = pathSum * 10 + node.val;
+        pathSum = pathSum * 10 + node.data;
         if (node.left == null && node.right == null) {
             return pathSum;
         }
