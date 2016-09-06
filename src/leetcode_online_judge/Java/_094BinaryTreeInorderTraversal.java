@@ -6,6 +6,11 @@ import utils.Utils;
 import java.util.ArrayList;
 import java.util.Stack;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _094BinaryTreeInorderTraversal {
     /*
     Given a binary tree, return the inorder traversal of its nodes' values.
@@ -32,7 +37,7 @@ public class _094BinaryTreeInorderTraversal {
                 node = node.left;
             } else {
                 node = stack.pop();
-                ret.add(node.val);
+                ret.add(node.data);
                 node = node.right;
             }
         }
@@ -52,7 +57,7 @@ public class _094BinaryTreeInorderTraversal {
         }
 
         inorderTraversal(root.left, ret);
-        ret.add(root.val);
+        ret.add(root.data);
         inorderTraversal(root.right, ret);
     }
 

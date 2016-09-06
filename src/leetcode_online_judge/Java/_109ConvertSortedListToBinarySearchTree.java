@@ -3,6 +3,11 @@ package leetcode_online_judge.Java;
 import utils.ListNode;
 import utils.TreeNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _109ConvertSortedListToBinarySearchTree {
     /*
     Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
@@ -27,7 +32,7 @@ public class _109ConvertSortedListToBinarySearchTree {
         int mid = (start + end) >>> 1;
 
         TreeNode left = sortedLlistToBST(head, start, mid - 1);
-        TreeNode p = new TreeNode(head[0].val);
+        TreeNode p = new TreeNode(head[0].data);
         head[0] = head[0].next;
         TreeNode right = sortedLlistToBST(head, mid + 1, end);
         p.left = left;

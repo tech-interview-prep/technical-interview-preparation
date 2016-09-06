@@ -1,12 +1,12 @@
 package utils;
 
 public class TreeNode {
-    public int val;
+    public int data;
     public TreeNode left;
     public TreeNode right;
 
     public TreeNode(int x) {
-        val = x;
+        data = x;
     }
 
     public static void inOrder(TreeNode root) {
@@ -14,7 +14,7 @@ public class TreeNode {
             return;
         }
         inOrder(root.left);
-        System.out.print(root.val + "\t");
+        System.out.print(root.data + "\t");
         inOrder(root.right);
     }
 
@@ -22,7 +22,7 @@ public class TreeNode {
         if (root == null) {
             return;
         }
-        System.out.print(root.val + "\t");
+        System.out.print(root.data + "\t");
         preOrder(root.left);
         preOrder(root.right);
     }

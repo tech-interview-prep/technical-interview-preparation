@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _042TrappingRainWater {
     /*
     Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much

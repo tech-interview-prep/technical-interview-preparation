@@ -4,6 +4,11 @@ import utils.Utils;
 
 import java.util.ArrayList;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _068TextJustification {
     /*
     Given an array of words and a length L, format the text such that each line has exactly L characters and is fully

@@ -4,6 +4,11 @@ import java.util.Stack;
 
 import utils.TreeNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _156BinaryTreeUpsideDown {
     /*
     Given a binary tree where all the right nodes are either leaf nodes with a sibling
@@ -63,7 +68,7 @@ public class _156BinaryTreeUpsideDown {
         if (root == null)
             System.out.print("#,");
         else {
-            System.out.print(root.val + ",");
+            System.out.print(root.data + ",");
             preorderPrintTree(root.left);
             preorderPrintTree(root.right);
         }

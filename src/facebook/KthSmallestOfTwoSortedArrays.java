@@ -1,11 +1,11 @@
 package facebook;
 
-/* 	
+/*
 	Find the k-th Smallest Element in the Union of Two Sorted Arrays
-	
+
 	Link: https://gist.github.com/bittib/5562284
 
-*/	
+*/
 public class KthSmallestOfTwoSortedArrays {
     /*
      * http://leetcode.com/2011/01/find-k-th-smallest-element-in-union-of.html

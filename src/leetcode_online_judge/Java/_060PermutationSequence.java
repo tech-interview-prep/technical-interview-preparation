@@ -5,6 +5,11 @@ import utils.Utils;
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _060PermutationSequence {
     /*
     The set [1,2,3,�,n] contains a total of n! unique permutations.

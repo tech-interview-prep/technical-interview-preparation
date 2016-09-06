@@ -1,7 +1,5 @@
-package facebook;
-
-/* 	
-	Given a sorted (increasing order) array, write an algorithm to create a binary tree with
+/*
+    Given a sorted (increasing order) array, write an algorithm to create a binary tree with
     minimal height.
 
     We will try to create a binary tree such that for each node, the number of nodes
@@ -12,12 +10,16 @@ package facebook;
         2. Insert (into the left subtree) the left subarray elements
         3. Insert (into the right subtree) the right subarray elements
         4. Recurse
-	
-	Link: https://gist.github.com/zac-xin/2625543
 
-	Time: O(N logN)
+    Link: https://gist.github.com/zac-xin/2625543
 
-*/	
+    Time: O(N logN)
+
+*/
+package facebook;
+
+import utils.TreeNode;
+
 public class CreateBSTWithMinimalHeight {
     public static TreeNode createMinimalBST(int[] input, int start, int end){
         if(end < start)

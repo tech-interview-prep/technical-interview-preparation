@@ -1,12 +1,12 @@
 package facebook;
 
-/* 	
+/*
 	 Implement an algorithm to determine if a string has all unique characters.
 	 What if you can not use additional data structures?
-	
+
 	Link: https://gist.github.com/zac-xin/2398387
 
-*/	
+*/
 public class HasUniqueCharactersString {
     // the time complexity is O(n), the space complexity is also O(n)
     public static boolean isUniqueChars2(String str) {

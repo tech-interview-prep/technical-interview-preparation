@@ -4,18 +4,39 @@ import java.util.Random;
 
 public class ListNode {
 
-    public int val;
+    public int data;
     public ListNode next;
 
-    public ListNode(int x) {
-        val = x;
-        next = null;
+    public ListNode() {
+      this.data = 0;
+      this.next = null;
+    }
+    
+    public ListNode(int data) {
+        this.data = data;
+        this.next = null;
+    }
+    
+    public void setData(int data) {
+      this.data = data;
+    }
+    
+    public int getData() {
+      return this.data;
+    }
+    
+    public void setNext(ListNode next) {
+      this.next = next;
+    }
+    
+    public ListNode getNext() {
+      return this.next;
     }
 
     public static void print(ListNode root) {
         ListNode node = root;
         while (node != null) {
-            System.out.print(node.val + "\t");
+            System.out.print(node.data + "\t");
             node = node.next;
         }
         System.out.println();

@@ -6,6 +6,11 @@ import utils.Utils;
 import java.util.ArrayList;
 import java.util.Stack;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _103BinaryTreeZigzagLevelOrderTraversal {
     /*
     Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).
@@ -49,7 +54,7 @@ public class _103BinaryTreeZigzagLevelOrderTraversal {
                         l2.add(node.right);
                     }
                 }
-                level.add(node.val);
+                level.add(node.data);
             }
             isReverse = !isReverse;
             ret.add(level);

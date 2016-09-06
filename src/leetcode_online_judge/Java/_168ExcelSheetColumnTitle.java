@@ -1,7 +1,12 @@
 package leetcode_online_judge.Java;
 
+/**
+ * https://leetcode.com/problems/excel-sheet-column-title/
+ * @author bkoteshwarreddy
+ */
+
 public class _168ExcelSheetColumnTitle {
-    /*
+  /*
     Given a positive integer, return its corresponding column title as appear in an Excel sheet.
 
     For example:
@@ -13,32 +18,31 @@ public class _168ExcelSheetColumnTitle {
         26 -> Z
         27 -> AA
         28 -> AB
-     */
-    static char[] alp = new char[27];
-	static {
-		alp[1] = 'A';
-		for (int i = 2; i < 27; i++) {
-			alp[i] = (char) (alp[i - 1] + 1);
-		}
-	}
-	// Time:O(n/26) Space:O(1)
-	public String convertToTitle(int n) {
-		StringBuilder res = new StringBuilder();
-		return convertToTitle(res, n);
-	}
+   */
 
-	private String convertToTitle(StringBuilder res, int n) {
-		if (n == 0) {
-			return res.toString();
-		}
-		int div = n / 26;
-		int mod = n % 26;
-		if (mod == 0) {
-			res.insert(0, alp[26]);
-			div--;
-		} else {
-			res.insert(0, alp[mod]);
-		}
-		return convertToTitle(res, div);
-	}
+  /**
+   * Get the remainder in each loop
+   * It should be the last digit
+   * Note that the map shall have 1 offset
+   */
+  public static String convertToTitle(int n) {
+    if (n <= 0) return "";
+    StringBuilder title = new StringBuilder();
+
+    while (n > 0) {
+      n--; // note the 1 offset
+      int r = n % 26;
+      title.insert(0, (char)('A' + r));
+      n = n / 26;
+    }
+
+    return title.toString();
+  }
+
+  /**
+   * Recursive version, one line
+   */
+  public static String convertToTitleRec(int n) {
+      return n <= 0 ? "" : convertToTitleRec(--n / 26) + (char)('A' + (n % 26));
+  }
 }

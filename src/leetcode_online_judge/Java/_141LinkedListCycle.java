@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.ListNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _141LinkedListCycle {
     /*
     Given a linked list, determine if it has a cycle in it.
@@ -21,7 +26,7 @@ public class _141LinkedListCycle {
         }
 
         while (slowNode !=null && fastNode!=null){
-            if (slowNode.val == fastNode.val ) return true;
+            if (slowNode.data == fastNode.data ) return true;
 
             slowNode = slowNode.next;
             fastNode = fastNode.next;

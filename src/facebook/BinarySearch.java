@@ -1,6 +1,6 @@
 package facebook;
 
-/* 	
+/*
 	Sorted array, given a key, find its left most index or right most index in array.
 	If it isn't in array, return -1.
 

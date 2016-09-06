@@ -1,12 +1,14 @@
+/*
+    Build Tree From Inorder and Preorder
+
+    Link: https://gist.github.com/zac-xin/4015124
+          http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+
+*/
 package facebook;
 
-/* 	
-	Build Tree From Inorder and Preorder
-	
-	Link: https://gist.github.com/zac-xin/4015124
-	      http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+import utils.TreeNode;
 
-*/	
 public class BuildTreeFromInorderAndPreorder {
     public static TreeNode buildTree(int[] preorder, int[] inorder) {
         return build(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);

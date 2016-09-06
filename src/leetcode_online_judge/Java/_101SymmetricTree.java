@@ -3,6 +3,11 @@ package leetcode_online_judge.Java;
 import utils.TreeNode;
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _101SymmetricTree {
     /*
     Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
@@ -38,7 +43,7 @@ public class _101SymmetricTree {
             return leftNode == null && rightNode == null;
         }
 
-        return leftNode.val == rightNode.val
+        return leftNode.data == rightNode.data
                 && isSymmetric(leftNode.left, rightNode.right)
                 && isSymmetric(leftNode.right, rightNode.left);
     }

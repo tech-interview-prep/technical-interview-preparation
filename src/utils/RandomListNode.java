@@ -5,11 +5,11 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class RandomListNode {
-    public int label;
+    public int data;
     public RandomListNode next;
 	public RandomListNode random;
     public RandomListNode(int x) {
-        this.label = x;
+        this.data = x;
     }
 
     public static RandomListNode constructRandomList(int length) {
@@ -37,7 +37,7 @@ public class RandomListNode {
     public void print() {
         RandomListNode node = this;
         while (node != null) {
-            System.out.print("(" + node.label + ", " + node.random.label + ")\t");
+            System.out.print("(" + node.data + ", " + node.random.data + ")\t");
             node = node.next;
         }
         System.out.println();

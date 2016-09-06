@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import java.util.ArrayList;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _131PalindromePartitioning {
     /*
     Given a string s, partition s such that every substring of the partition is a palindrome.

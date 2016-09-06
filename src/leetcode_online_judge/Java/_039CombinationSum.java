@@ -5,6 +5,11 @@ import utils.Utils;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * https://leetcode.com/problems/combination-sum/
+ * @author bkoteshwarreddy
+ */
+
 public class _039CombinationSum {
     /*
     Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.

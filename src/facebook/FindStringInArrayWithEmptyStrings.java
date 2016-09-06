@@ -1,6 +1,6 @@
 package facebook;
 
-/* 	
+/*
 	Given a sorted array of strings which is interspersed with empty strings,
     write a meth- od to find the location of a given string.
 
@@ -8,10 +8,10 @@ package facebook;
         will return 4
     Example: find “ballcar” in [“at”, “”, “”, “”, “”, “ball”, “car”, “”, “”, “dad”, “”, “”]
         will return -1
-	
+
 	Link: https://gist.github.com/zac-xin/3950000
 
-*/	
+*/
 public class FindStringInArrayWithEmptyStrings {
     public static int searchI(String[] strings, String str, int first, int last) {
         while (first <= last) {

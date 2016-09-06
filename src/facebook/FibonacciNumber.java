@@ -1,11 +1,11 @@
 package facebook;
 
-/* 	
+/*
 	Write a method to generate the nth Fibonacci number.
-	
+
 	Link: https://gist.github.com/zac-xin/3936282
 
-*/	
+*/
 public class FibonacciNumber {
     public static int getFibonacci(int n){
         int fib[] = new int[n];

@@ -8,7 +8,7 @@ import java.util.Stack;
 	return the absolute path created from the combination of the first two paths.
 	In the example strings, the answer should be "/etc/abc".
 
-*/	
+*/
 public class PrintPath {
     public static String printPath(String ab, String rel){
         Stack<String> s = new Stack<String>();

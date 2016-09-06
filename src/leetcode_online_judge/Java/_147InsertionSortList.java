@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.ListNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _147InsertionSortList {
     /*
     Sort a linked list using insertion sort.
@@ -11,7 +16,7 @@ public class _147InsertionSortList {
 
         for (ListNode node = head; node != null; ) {
             ListNode insertNode, nextNode = node.next;
-            for (insertNode = dummyHead; insertNode.next != null && node.val >= insertNode.next.val; insertNode = insertNode.next);
+            for (insertNode = dummyHead; insertNode.next != null && node.data >= insertNode.next.data; insertNode = insertNode.next);
             node.next = insertNode.next;
             insertNode.next = node;
             node = nextNode;

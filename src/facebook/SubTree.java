@@ -1,13 +1,15 @@
 package facebook;
 
-/* 	
+import utils.TreeNode;
+
+/*
 	You have two very large binary trees: T1, with millions of nodes,
     and T2, with hundreds of nodes.
     Create an algorithm to decide if T2 is a subtree of T1.
-	
+
 	Link: https://gist.github.com/zac-xin/2644019
 
-*/	
+*/
 public class SubTree {
     public static boolean containsTree(TreeNode t1, TreeNode t2) {
         if (t2 == null)

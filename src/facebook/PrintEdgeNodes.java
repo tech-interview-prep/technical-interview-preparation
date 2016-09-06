@@ -1,16 +1,18 @@
+/*
+    Boundary Traversal of binary tree
+
+    Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root.
+
+    For example, boundary traversal of the following tree is “20 8 4 10 14 25 22″
+
+    Link: http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+          http://leetcode.com/2010/10/print-edge-nodes-boundary-of-binary.html
+
+*/
 package facebook;
 
-/* 	
-	Boundary Traversal of binary tree
+import utils.TreeNode;
 
-	Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root.
-
-	For example, boundary traversal of the following tree is “20 8 4 10 14 25 22″
-	
-	Link: http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
-	      http://leetcode.com/2010/10/print-edge-nodes-boundary-of-binary.html
-
-*/	
 public class PrintEdgeNodes {
     // A function to do boundary traversal of a given binary tree
     void printBoundary (TreeNode root)

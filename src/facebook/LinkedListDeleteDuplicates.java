@@ -1,7 +1,3 @@
-package facebook;
-
-import java.util.HashSet;
-
 /*
     A LinkedList class with a private static inner node class
     based on:
@@ -11,9 +7,14 @@ import java.util.HashSet;
 
     CarrerCup 2.1  removeDup() removeDupWithoutBuffer()
 
-	Link: https://gist.github.com/zac-xin/2515371#file-linkedlist-java
+    Link: https://gist.github.com/zac-xin/2515371#file-linkedlist-java
 
-*/	
+*/
+package facebook;
+
+import java.util.HashSet;
+import utils.ListNode;
+
 public class LinkedListDeleteDuplicates {
     public void deleteDupsA(ListNode n) {
         HashSet<Integer> set = new HashSet<Integer>();

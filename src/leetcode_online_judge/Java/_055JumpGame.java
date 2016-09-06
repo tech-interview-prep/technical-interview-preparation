@@ -4,6 +4,11 @@ import utils.Utils;
 
 import java.io.*;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _055JumpGame {
     /*
      Given an array of non-negative integers, you are initially positioned at the first index of the array.

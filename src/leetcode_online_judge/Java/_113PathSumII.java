@@ -5,6 +5,11 @@ import utils.Utils;
 
 import java.util.ArrayList;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _113PathSumII {
     /*
     Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
@@ -35,8 +40,8 @@ public class _113PathSumII {
             return;
         }
 
-        path.add(node.val);
-        currentSum += node.val;
+        path.add(node.data);
+        currentSum += node.data;
 
         if (node.left == null && node.right == null && currentSum == sum) {
             ret.add(new ArrayList<Integer>(path));

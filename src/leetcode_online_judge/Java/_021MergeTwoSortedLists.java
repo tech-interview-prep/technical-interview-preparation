@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.ListNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _021MergeTwoSortedLists {
     /*
     Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the
@@ -10,7 +15,7 @@ public class _021MergeTwoSortedLists {
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummyNode = new ListNode(0), node1 = l1, node2 = l2, tail = dummyNode;
         while (node1 != null && node2 != null) {
-            if (node1.val < node2.val) {
+            if (node1.data < node2.data) {
                 tail.next = node1;
                 node1 = node1.next;
             } else {

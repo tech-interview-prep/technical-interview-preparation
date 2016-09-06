@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.ListNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _148SortList {
     /*
     Sort a linked list in O(n log n) time using constant space complexity.
@@ -28,7 +33,7 @@ public class _148SortList {
         ListNode dummyNode = new ListNode(0);
         ListNode tail = dummyNode;
         while (node1 != null && node2 != null) {
-            if (node1.val < node2.val) {
+            if (node1.data < node2.data) {
                 tail.next = node1;
                 node1 = node1.next;
             } else {

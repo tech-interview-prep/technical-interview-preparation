@@ -4,6 +4,11 @@ import utils.Utils;
 
 import java.util.ArrayList;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _046Permutations {
     /*
     Given a collection of numbers, return all possible permutations.

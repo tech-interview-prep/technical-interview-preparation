@@ -3,6 +3,11 @@ package leetcode_online_judge.Java;
 import utils.TreeNode;
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _098ValidateBinarySearchTree {
     /*
     Given a binary tree, determine if it is a valid binary search tree (BST).
@@ -21,20 +26,20 @@ public class _098ValidateBinarySearchTree {
         int leftMax = Integer.MIN_VALUE, rightMin = Integer.MAX_VALUE;
         TreeNode node = root.left;
         while (node != null ) {
-            leftMax = node.val;
+            leftMax = node.data;
             node = node.right;
         }
-        if (leftMax > root.val) {
+        if (leftMax > root.data) {
             return false;
         }
 
         node = root.right;
         while (node != null) {
-            rightMin = node.val;
+            rightMin = node.data;
             node = node.left;
         }
 
-        return rightMin > root.val && isValidBST(root.left) && isValidBST(root.right);
+        return rightMin > root.data && isValidBST(root.left) && isValidBST(root.right);
     }
 
     private static void test() {

@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.TreeNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _100SameTree {
     /*
     Given two binary trees, write a function to check if they are equal or not.
@@ -16,7 +21,7 @@ public class _100SameTree {
 
         if ((p != null && q == null)
                 || (p == null && q != null)
-                || (p.val != q.val)) {
+                || (p.data != q.data)) {
             return false;
         }
 

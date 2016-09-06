@@ -6,6 +6,11 @@ import java.util.HashSet;
 import java.util.Arrays;
 import java.util.Set;
 
+/**
+ * https://leetcode.com/problems/word-break/
+ * @author bkoteshwarreddy
+ */
+
 public class _139WordBreak {
     /*
     Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence

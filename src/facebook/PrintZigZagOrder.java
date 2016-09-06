@@ -1,13 +1,14 @@
+/*
+    Print a binary tree in zig zag level order
+
+    Link: https://gist.github.com/zac-xin/4076432
+
+*/
 package facebook;
 
 import java.util.Stack;
+import utils.TreeNode;
 
-/*
-	Print a binary tree in zig zag level order
-	
-	Link: https://gist.github.com/zac-xin/4076432
-
-*/	
 public class PrintZigZagOrder {
     public static void printZigZagOrder(TreeNode root){
         Stack<TreeNode> s1 = new Stack<TreeNode>();

@@ -6,6 +6,11 @@ import utils.Utils;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _149MaxPointsOnALine {
     /*
     Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.

@@ -2,6 +2,11 @@ package leetcode_online_judge.Java;
 
 import utils.ListNode;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _092ReverseLinkedListII {
     /*
     Reverse a linked list from position m to n. Do it in-place and in one-pass.

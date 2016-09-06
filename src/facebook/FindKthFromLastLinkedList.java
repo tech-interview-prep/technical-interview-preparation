@@ -1,5 +1,3 @@
-package facebook;
-
 /*
     A LinkedList class with a private static inner node class
     based on:
@@ -9,10 +7,14 @@ package facebook;
     Find Kth from Last
 
     CarrerCup 2.2 findLastNth()
-	
-	Link: https://gist.github.com/zac-xin/2515371#file-linkedlist-java
 
-*/	
+    Link: https://gist.github.com/zac-xin/2515371#file-linkedlist-java
+
+*/
+package facebook;
+
+import utils.ListNode;
+
 public class FindKthFromLastLinkedList {
     public ListNode nthToLast(ListNode head, int n) {
         ListNode p1 = head;

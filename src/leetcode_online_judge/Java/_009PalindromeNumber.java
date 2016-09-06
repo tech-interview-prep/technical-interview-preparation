@@ -2,19 +2,33 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
+/**
+ * https://leetcode.com/problems/palindrome-number/
+ * @author bkoteshwarreddy
+ */
+
 public class _009PalindromeNumber {
     /*
-    Determine whether an integer is a palindrome. Do this without extra space.
-
-    Some hints:
-    Could negative integers be palindromes? (ie, -1)
-
-    If you are thinking of converting the integer to string, note the restriction of using extra space.
-
-    You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?
-
-    There is a more generic way of solving this problem.
-    */
+     * Determine whether an integer is a palindrome. Do this without extra space.
+     *
+     * Some hints:
+     * Could negative integers be palindromes? (ie, -1)
+     *
+     * If you are thinking of converting the integer to string, note the restriction of using
+     * extra space.
+     *
+     * You could also try reversing an integer. However, if you have solved the problem
+     * "Reverse Integer", you know that the reversed integer might overflow. How would you handle
+     * such case?
+     *
+     * There is a more generic way of solving this problem.
+     *
+     */
     public static boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
@@ -25,7 +39,7 @@ public class _009PalindromeNumber {
 
         return x == newX;
     }
-    
+
     public boolean isPalindrome2(int x) {
         //optimizations
         if(x<0) return false;
@@ -45,7 +59,7 @@ public class _009PalindromeNumber {
         if(v>x){v/=10;}
         return v==x?true:false;
     }
-    
+
     public boolean isPalindrome3(int x) {
         if(x<0 || (x!=0 && x%10==0))
         return false;

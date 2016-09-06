@@ -1,14 +1,16 @@
+/*
+    Design an algorithm to find common ancestor of two nodes in a binary tree. Avoid storing addistional nodes in a data
+    structure.
+
+    NOTE: This is not necessarily a binary search tree.
+
+    Link: https://gist.github.com/zac-xin/2641366
+
+*/
 package facebook;
 
-/* 	
-	Design an algorithm to find common ancestor of two nodes in a binary tree. Avoid storing addistional nodes in a data
-	structure.
+import utils.TreeNode;
 
-	NOTE: This is not necessarily a binary search tree.
-	
-	Link: https://gist.github.com/zac-xin/2641366
-
-*/	
 public class FindCommonAncestor {
 
     // O(N) subtrees searched over and over

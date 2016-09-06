@@ -1,11 +1,11 @@
 package facebook;
 
-/* 	
+/*
 	find the minimum and maximum element from an array with minimum time of comparision
-	
+
 	Link: https://gist.github.com/bittib/5567049
 
-*/	
+*/
 public class MinAndMaxWithMinTime {
     /*
         Time Complexity : Comparision time : 3 * n/2 + 1

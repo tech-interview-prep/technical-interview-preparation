@@ -6,10 +6,10 @@ import java.util.Queue;
 /*
 	Given a directed graph, design an algorithm to find out whether there is a route
     between two nodes.
-	
+
 	Link: https://gist.github.com/zac-xin/2601219
 
-*/	
+*/
 public class GraphRouteTwoNodes {
     public enum State {
         Unvisited, Visited, Visiting;
