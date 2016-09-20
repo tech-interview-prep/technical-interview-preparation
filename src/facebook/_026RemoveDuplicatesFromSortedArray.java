@@ -19,7 +19,7 @@ package facebook;
 public class _026RemoveDuplicatesFromSortedArray {
   public static void main(String[] args) {
     Solution_RemoveDuplicatesFromSortedArray sol = new Solution_RemoveDuplicatesFromSortedArray();
-    
+
     int[] A = new int[]{1, 1, 2};
     int length = sol.removeDuplicates(A);
     for (int i = 0; i < length; i++) {

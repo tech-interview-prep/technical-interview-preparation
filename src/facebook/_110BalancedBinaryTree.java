@@ -9,7 +9,7 @@ package facebook;
 import utils.TreeNode;
 
 public class _110BalancedBinaryTree {
-  
+
 }
 
 class Solution_BalancedBinaryTree {

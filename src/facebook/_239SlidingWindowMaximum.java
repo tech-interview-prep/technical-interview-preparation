@@ -16,7 +16,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class _239SlidingWindowMaximum {
-  
+
 }
 
 class Solution_SlidingWindowMaximum {

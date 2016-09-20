@@ -8,7 +8,7 @@ package facebook;
 */
 public class _029DivideTwoIntegers {
 public static void main(String[] args) {
-    
+
   }
 }
 

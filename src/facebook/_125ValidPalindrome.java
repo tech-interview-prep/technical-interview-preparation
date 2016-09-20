@@ -31,6 +31,24 @@ public class _125ValidPalindrome {
 }
 
 class Solution_ValidPalindrome {
+    public boolean isPalindrome(String s) {
+        s = s.toLowerCase();
+        int start = 0, end = s.length() - 1;
+        while(start < end) {
+            if(!Character.isAlphabetic(s.charAt(start)) && !Character.isDigit(s.charAt(start))) {
+                start++;
+            } else if(!Character.isAlphabetic(s.charAt(end)) && !Character.isDigit(s.charAt(end))) {
+                end--;
+            } else if(s.charAt(start) != s.charAt(end)){
+                return false;
+            } else {
+                start++;
+                end--;
+            }
+        }
+        return true;
+    }
+
     public boolean isValidPalindrome(String s){
         if(s==null || s.length()==0) return false;
 
@@ -64,32 +82,5 @@ class Solution_ValidPalindrome {
             k = k / 100;
         }
         return true;
-    }
-
-    public boolean isPalindrome(String s) {
-        int  start =  0, end = s.length() - 1;
-        char charAtStart, charAtEnd;
-        while (start < end) {
-            if (!isAlphanumeric(charAtStart = s.charAt(start))) {
-                start++;
-            }
-
-            if (!isAlphanumeric(charAtEnd = s.charAt(end))) {
-                end--;
-            }
-
-            if (isAlphanumeric(charAtStart) && isAlphanumeric(charAtEnd)) {
-                if (charAtStart != charAtEnd && charAtStart - 'A' + 'a' != charAtEnd && charAtStart + 'A' - 'a' != charAtEnd) {
-                    return false;
-                }
-                start++;
-                end--;
-            }
-        }
-        return true;
-    }
-
-    private boolean isAlphanumeric(char c) {
-        return c >= '0' && c <= '9' || c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
     }
 }

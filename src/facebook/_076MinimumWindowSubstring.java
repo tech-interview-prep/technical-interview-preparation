@@ -27,7 +27,7 @@ import java.util.HashMap;
 public class _076MinimumWindowSubstring {
     public static void main(String[] args) {
       Solution_MinimumWindowSubstring sol = new Solution_MinimumWindowSubstring();
-      
+
       Utils.printTestln(sol.minWindow("adobecodebanc", "abc"), "banc");
       Utils.printTestln(sol.minWindow("a", "aa"), "");
     }

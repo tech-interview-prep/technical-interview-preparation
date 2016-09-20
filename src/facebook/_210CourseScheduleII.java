@@ -25,6 +25,9 @@ Topological sort could also be done via (BFS)[http://en.wikipedia.org/wiki/Topol
    */
 package facebook;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * https://leetcode.com/problems/course-schedule-ii/
  * @author bkoteshwarreddy
@@ -33,7 +36,31 @@ public class _210CourseScheduleII {
 }
 
 class Solution_CourseScheduleII {
-  public int[] findOrder(int numCourses, int[][] prerequisites) {
-    return null;
-  }
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        int[] degree = new int[numCourses];
+        for (int i = 0; i < prerequisites.length; ++i) {
+            degree[prerequisites[i][0]]++;
+        }
+        Queue<Integer> queue = new LinkedList<Integer>();
+        for (int i = 0; i < degree.length; ++i) {
+            if (degree[i] == 0)
+                queue.offer(i);
+        }
+        int[] result = new int[numCourses];
+        int index = 0;
+        while (!queue.isEmpty()) {
+            int top = queue.remove();
+            result[index++] = top;
+            for (int i = 0; i < prerequisites.length; ++i) {
+                if (prerequisites[i][1] == top) {
+                    degree[prerequisites[i][0]]--;
+                    if (degree[prerequisites[i][0]] == 0)
+                        queue.offer(prerequisites[i][0]);
+                }
+            }
+        }
+        if (index == numCourses)
+            return result;
+        return new int[0];
+    }
 }

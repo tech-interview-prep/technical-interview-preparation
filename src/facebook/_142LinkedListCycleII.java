@@ -19,7 +19,7 @@ import utils.ListNode;
 public class _142LinkedListCycleII {
 }
 
-class Solution_LinkedListCycleII {  
+class Solution_LinkedListCycleII {
   public static ListNode FindBeginning(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;

@@ -21,7 +21,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class _295FindMedianFromDataStream {
-  
+
 }
 
 class Solution_FindMedianFromDataStream {

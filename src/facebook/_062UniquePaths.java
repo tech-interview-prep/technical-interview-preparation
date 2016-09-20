@@ -13,7 +13,7 @@ package facebook;
 
 public class _062UniquePaths {
   public static void main(String[] args) {
-    
+
   }
 }
 

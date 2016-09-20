@@ -30,7 +30,7 @@ import utils.Utils;
 public class _010RegularExpressionMatching {
   public static void main(String[] args) {
     Solution_RegularExpressionMatching sol = new Solution_RegularExpressionMatching();
-    
+
     Utils.printTestln(sol.isMatch("aa","a"), false);
     Utils.printTestln(sol.isMatch("aa","aa"), true);
     Utils.printTestln(sol.isMatch("aaa","aa"), false);

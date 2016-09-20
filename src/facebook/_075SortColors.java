@@ -30,7 +30,7 @@ import utils.Utils;
 public class _075SortColors {
     public static void main(String[] args) {
       Solution_SortColors sol = new Solution_SortColors();
-      
+
       int[] A = new int[]{1, 1, 0, 1, 2, 0, 1, 2, 0, 0, 1};
       sol.sortColors(A);
       Utils.printArrayln(A);

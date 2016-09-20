@@ -1,6 +1,6 @@
 /**
  * Given a string find the length of longest substring which has none of its character repeated.
- * 
+ *
  * Link: http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
  */
 package facebook;
@@ -18,6 +18,9 @@ public class _003LongestSubstringWithoutRepeatingCharacters {
 }
 
 class Solution_LongestSubstringNoRepeatingChars {
+    /*
+     * Link: http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+     */
     public int findNonRepeastSubString(String target){
         Map<Character, Integer> char2pos = new HashMap<Character, Integer>();
 
@@ -43,7 +46,8 @@ class Solution_LongestSubstringNoRepeatingChars {
     /*
 	 * "abcbbbbcccbdddadacb", the longest substring that
 	 * contains 2 unique character is "bcbbbbcccb".
-	 *
+     *
+     * http://www.geeksforgeeks.org/find-the-longest-substring-with-k-unique-characters-in-a-given-string/
 	 */
     public String longestSubStrWithTwoChars(String s){
         if(s==null || s.isEmpty())

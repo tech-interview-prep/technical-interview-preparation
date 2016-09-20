@@ -1,3 +1,13 @@
+  /*
+    You are a professional robber planning to rob houses along a street. Each house has a certain amount of money
+    stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system
+    connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
+
+    Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount
+    of money you can rob tonight without alerting the police.
+
+    http://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
+  */
 package leetcode_online_judge.Java;
 
 /**
@@ -6,14 +16,6 @@ package leetcode_online_judge.Java;
  */
 
 public class _198HouseRobber {
-  /*
-    You are a professional robber planning to rob houses along a street. Each house has a certain amount of money
-    stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system
-    connected and it will automatically contact the police if two adjacent houses were broken into on the same night.
-
-    Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount
-    of money you can rob tonight without alerting the police.
-  */
   public int rob(int[] nums) {
     if (nums == null || nums.length == 0) return 0;
 
@@ -31,5 +33,22 @@ public class _198HouseRobber {
     }
 
     return dp[n];
+  }
+
+  public int rob2(int[] nums) {
+    if(nums == null) {
+        return 0;
+    }
+
+    int max = 0;
+    int pre = 0;
+
+    for(int i = nums.length-1; i >= 0; i--) {
+        int preMax = max;
+        max = Math.max(max, pre + nums[i]);
+        pre = preMax;
+    }
+
+    return max;
   }
 }

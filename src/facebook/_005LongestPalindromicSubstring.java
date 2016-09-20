@@ -1,6 +1,10 @@
 /*
+		Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000,
+		and there exists one unique longest palindromic substring.
 
     Link: http://www.programcreek.com/2013/12/leetcode-solution-of-longest-palindromic-substring-java/
+    http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+    http://www.geeksforgeeks.org/longest-palindromic-substring-set-2/
  */
 
 package facebook;
@@ -12,45 +16,7 @@ public class _005LongestPalindromicSubstring {
 }
 
 class Solution_LongestPalindromicSubstring {
-
-	// 1. Naive Approach
-	public static String longestPalindrome1(String s) {
-
-		int maxPalinLength = 0;
-		String longestPalindrome = null;
-		int length = s.length();
-
-		// check all possible sub strings
-		for (int i = 0; i < length; i++) {
-			for (int j = i + 1; j < length; j++) {
-				int len = j - i;
-				String curr = s.substring(i, j + 1);
-				if (isPalindrome(curr)) {
-					if (len > maxPalinLength) {
-						longestPalindrome = curr;
-						maxPalinLength = len;
-					}
-				}
-			}
-		}
-
-		return longestPalindrome;
-	}
-
-	public static boolean isPalindrome(String s) {
-
-		for (int i = 0; i < s.length() - 1; i++) {
-			if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {
-				return false;
-			}
-		}
-
-		return true;
-	}
-
-
-	// 2. With center
-
+	// 1. With center
 	public String longestPalindrome(String s) {
 		if (s.isEmpty()) {
 			return null;
@@ -89,6 +55,6 @@ class Solution_LongestPalindromicSubstring {
 	}
 
 
-	// 3. Manacher's Algorithm
+	// 2. Manacher's Algorithm
 
 }

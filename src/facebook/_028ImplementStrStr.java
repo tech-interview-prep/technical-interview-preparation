@@ -20,7 +20,7 @@ import utils.Utils;
 public class _028ImplementStrStr {
   public static void main(String[] args) {
     Solution_ImplementStrStr sol = new Solution_ImplementStrStr();
-    
+
     Utils.printTestln(sol.strStr("hello, world", "world"), "worldd");
     Utils.printTestln(sol.strStr("hello, world", "word"), null);
     Utils.printTestln(sol.strStr("a", ""), "a");

@@ -16,7 +16,7 @@ import utils.Utils;
 public class _069Sqrt {
     public static void main(String[] args) {
       Solution_Sqrt sol = new Solution_Sqrt();
-      
+
       Utils.printTestln(sol.sqrt(0), 0);
       Utils.printTestln(sol.sqrt(4), 2);
       Utils.printTestln(sol.sqrt(9), 3);
