@@ -15,7 +15,7 @@ import utils.Utils;
 public class _043MultiplyStrings {
   public static void main(String[] args) {
     Solution_MultiplyStrings sol = new Solution_MultiplyStrings();
-    
+
     Utils.printTestln(sol.multiply("1234", "45"), String.valueOf(1234 * 45));
     Utils.printTestln(sol.multiply("1234", "0"), "0");
   }
@@ -23,89 +23,58 @@ public class _043MultiplyStrings {
 
 class Solution_MultiplyStrings {
   public String multiply(String num1, String num2) {
-    if ("0".equals(num1) || "0".equals(num2)) {
-      return "0";
+    if (num1 == null || num2 == null) {
+      return null;
     }
 
-    String ret = "0";
-    for (int i = num2.length() - 1; i >= 0; i--) {
-      ret = add(ret, muliply10(multiply(num1, num2.charAt(i)), num2.length() - 1 - i));
+    final int len1 = num1.length();
+    final int len2 = num2.length();
+
+    // digits1 holds the integer array representation of num1
+    int[] digits1 = new int[len1];
+    // digits2 holds the integer array representation of num2
+    int[] digits2 = new int[len2];
+    // maximum number of digits of the product is len1+len2+2
+    // reason:
+    //      num1 < 10^(len1+1), num2 < 10^(len2+1)
+    //      so, num1 * num2 < 10 * (len1+len2+2)
+    int[] results = new int[len1 + len2 + 1];
+
+    // instead of dealing with characters,
+    // we deal with integers for the maximum performance
+    for (int i = 0; i < len1; i++) {
+      digits1[i] = num1.charAt(i) - '0';
     }
 
-    return ret;
-  }
-
-  private static String muliply10(String num, int t) {
-    for (int i = 0; i < t; i++) {
-      num += "0";
+    for (int i = 0; i < len2; i++) {
+      digits2[i] = num2.charAt(i) - '0';
     }
 
-    return num;
-  }
-
-  private static String multiply(String num, char c) {
-    String ret = "";
-    int carrier = 0, i;
-
-    for (i = num.length() - 1; i >= 0; i--) {
-      int p = (num.charAt(i) - '0') * (c - '0') + carrier;
-
-      if (p >= 10) {
-        carrier = p / 10;
-        p %= 10;
-      } else {
-        carrier = 0;
+    for (int i = len2 - 1; i >= 0; i--) {
+      for (int j = len1 - 1; j >= 0; j--) {
+        results[i + j + 2] += digits1[j] * digits2[i];
       }
-
-      ret = p + ret ;
     }
 
-    if (carrier > 0) {
-      ret = carrier + ret;
+    StringBuilder sb = new StringBuilder(len1 + len2 + 2);
+
+    // now, we process the carries together in one loop
+    // if you do this inside the previous loop,
+    // you need len1 * len2 operations.
+    // Now, we reduce it to len1 + len2
+    for (int i = len1 + len2; i > 0; i--) {
+      results[i - 1] += results[i] / 10;
+      results[i] %= 10;
     }
 
-    return ret;
-  }
+    // skip leading zeros
+    int i = 0;
+    while (i < results.length - 1 && results[i] == 0) i++;
 
-  private static String add(String num1, String num2) {
-    String ret = "";
-    int carrier = 0, m, n;
-
-    for(m = num1.length() - 1, n = num2.length() - 1; m >= 0 && n >= 0; m--, n--) {
-      int sum = num1.charAt(m) + num2.charAt(n) - '0' - '0' + carrier;
-
-      if (sum >= 10) {
-        carrier = 1;
-        sum -= 10;
-      } else  {
-        carrier = 0;
-      }
-
-      ret = sum + ret;
+    // convert to strings
+    while (i < results.length) {
+      sb.append(results[i++]);
     }
-
-    if (n >= 0) {
-      m = n;
-      num1 = num2;
-    }
-
-    for (; m >= 0; m--) {
-      int sum = num1.charAt(m) + carrier - '0';
-
-      if (sum >= 10) {
-        carrier = 1;
-        sum -= 10;
-      } else {
-          carrier = 0;
-      }
-
-      ret = sum + ret;
-    }
-
-    if (carrier == 1) {
-      ret = "1" + ret;
-    }
-
-    return ret;
+    return sb.toString();
   }
 }

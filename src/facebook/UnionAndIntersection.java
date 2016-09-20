@@ -1,10 +1,6 @@
-package facebook;
-
-import java.util.Arrays;
-
 /*
-	Given two arrays of sorted integers, merge them keeping in mind that there might be common elements in the
-	arrays and that common elements must only appear once in the merged array.
+    Given two arrays of sorted integers, merge them keeping in mind that there might be common elements in the
+    arrays and that common elements must only appear once in the merged array.
 
     Union and Intersection of two sorted arrays
     For example, if the input arrays are:
@@ -12,10 +8,14 @@ import java.util.Arrays;
     arr2[] = {2, 3, 5, 6}
     Then your program should print Union as {1, 2, 3, 4, 5, 6, 7} and Intersection as {3, 5}.
 
-	Link: http://www.careercup.com/question?id=4713484755402752
-	      http://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/
+    Link: http://www.careercup.com/question?id=4713484755402752
+          http://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/
 
 */
+package facebook;
+
+import java.util.Arrays;
+
 public class UnionAndIntersection {
     public int[] union(int arr1[], int arr2[]){
         int m = arr1.length;

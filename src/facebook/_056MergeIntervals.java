@@ -24,7 +24,7 @@ import java.util.Comparator;
 public class _056MergeIntervals {
     public static void main(String[] args) {
       Solution_MergeIntervals sol = new Solution_MergeIntervals();
-      
+
       //[1, 3], [2, 6], [5, 9], [8, 10], [15, 18] --> [1, 10], [15, 18]
       for (Interval interval : sol.merge(Interval.getSampleIntervals())) {
           System.out.print(interval + "\t");

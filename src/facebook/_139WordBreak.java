@@ -7,6 +7,8 @@
     dict = ["leet", "code"].
 
     Return true because "leetcode" can be segmented as "leet code".
+
+    Link: http://www.programcreek.com/2012/12/leetcode-solution-word-break/
      */
 
 package facebook;
@@ -26,7 +28,7 @@ import java.util.Set;
 public class _139WordBreak {
     public static void main(String[] args) {
       Solution_WordBreak sol = new Solution_WordBreak();
-      
+
       Utils.printTestln(sol.wordBreak("leetcode", new HashSet<String>(Arrays.asList("leet", "code"))), true);
       Utils.printTestln(sol.wordBreak("letecoed", new HashSet<String>(Arrays.asList("leet", "code"))), false);
       Utils.printTestln(sol.wordBreak("aaaaaaa", new HashSet<String>(Arrays.asList("aaaa", "aa"))), false);
@@ -42,24 +44,6 @@ public class _139WordBreak {
 }
 
 class Solution_WordBreak {
-    public boolean wordBreak(String s, Set<String> dict) {
-        return wordBreak(s, 0, dict);
-    }
-
-    private boolean wordBreak(String s, int start, Set<String> dict) {
-        if (start == s.length()) {
-            return true;
-        }
-
-        for (int i = start + 1; i <= s.length(); i++) {
-            if (dict.contains(s.substring(start, i)) && wordBreak(s, i, dict)) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     public boolean wordBreakDP(String s, Set<String> dict) {
         Set<Integer> indice = new HashSet<Integer>();
         indice.add(s.length());
@@ -76,36 +60,54 @@ class Solution_WordBreak {
         return indice.contains(0);
     }
 
-    /*
-    Time Complexity: O(string length * dict size)
+    public boolean wordBreakDP2(String s, Set<String> wordDict) {
+        int[] pos = new int[s.length()+1];
 
-    Link: http://www.programcreek.com/2012/12/leetcode-solution-word-break/
-     */
-    public boolean wordsInDictionary(String str, ArrayList<String> dictionary) {
-        if (str == null || dictionary == null) {
-            return false;
-        }
-        int length = str.length();
-        String firstHalf = str.substring(0, length/2);
-        String secondHalf = str.substring(length/2);
-        int append = 0;
-        int longest = firstHalf.length() > secondHalf.length() ? firstHalf.length() : secondHalf.length();
+        Arrays.fill(pos, -1);
 
-        for(int i=0; i<longest;i++) {
-            if(dictionary.contains(firstHalf)) {
-                if(dictionary.contains(secondHalf.substring(2*append))) {
-                    return true;
+        pos[0]=0;
+
+        for(int i=0; i<s.length(); i++){
+            if(pos[i]!=-1){
+                for(int j=i+1; j<=s.length(); j++){
+                    String sub = s.substring(i, j);
+                    if(wordDict.contains(sub)){
+                        pos[j]=i;
+                    }
                 }
-            } else if(dictionary.contains(secondHalf)) {
-                if(dictionary.contains(firstHalf.substring(0, firstHalf.length() - 2*append))) {
-                    return true;
-                }
-            } else {
-                firstHalf = str.substring(0, i + 1 + length/2);
-                secondHalf = str.substring(length/2 - i - 1);
-                append++;
             }
         }
-        return false;
+
+        return pos[s.length()]!=-1;
+    }
+
+    /*
+    Time Complexity: O(string length * dict size)
+     */
+    public boolean wordBreak(String s, Set<String> dict) {
+        boolean[] t = new boolean[s.length()+1];
+        t[0] = true; //set first to be true, why?
+        //Because we need initial state
+
+        for(int i=0; i<s.length(); i++){
+            //should continue from match position
+            if(!t[i])
+                continue;
+
+            for(String a: dict){
+                int len = a.length();
+                int end = i + len;
+                if(end > s.length())
+                    continue;
+
+                if(t[end]) continue;
+
+                if(s.substring(i, end).equals(a)){
+                    t[end] = true;
+                }
+            }
+        }
+
+        return t[s.length()];
     }
 }

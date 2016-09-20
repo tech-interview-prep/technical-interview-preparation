@@ -22,7 +22,7 @@ import utils.Utils;
 public class _038CountAndSay {
   public static void main(String[] args) {
     Solution_CountAndSay sol = new Solution_CountAndSay();
-    
+
     Utils.printTestln(sol.countAndSay(5), "111221");
   }
 }

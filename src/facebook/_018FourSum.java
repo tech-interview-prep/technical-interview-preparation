@@ -21,7 +21,7 @@ import java.util.Arrays;
 
 public class _018FourSum {
   public static void main(String[] args) {
-    
+
   }
 }
 

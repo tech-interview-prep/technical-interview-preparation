@@ -1,4 +1,6 @@
-/*
+/**
+ * @author bkoteshwarreddy
+ * 
  * Given an array of integers, return indices of the two numbers such that they add up to
  * a specific target.
  *
@@ -13,23 +15,21 @@
  * UPDATE (2016/2/13):
  *    The return format had been changed to zero-based indices. Please read the above updated
  *    description carefully.
+ *
+ * https://leetcode.com/problems/two-sum/
+ * http://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/
  */
 
 package facebook;
 
 import utils.Utils;
-
 import java.util.Arrays;
 import java.util.HashMap;
 
-/**
- * https://leetcode.com/problems/two-sum/
- * @author bkoteshwarreddy
- */
 public class _001TwoSum {
   public static void main(String[] args) {
-    Solution_TwoSum sol = new Solution_TwoSum();  
-    
+    Solution_TwoSum sol = new Solution_TwoSum();
+
     Utils.printTestArrayln(sol.twoSum_HashMap(new int[]{2, 7, 11, 15}, 9), new int[]{0, 1});
     Utils.printTestArrayln(sol.twoSum_HashMap(new int[]{7, 11, 2, 15}, 9), new int[]{0, 2});
   }

@@ -13,7 +13,7 @@ package facebook;
 
 public class _048RotateImage {
 public static void main(String[] args) {
-    
+
   }
 }
 

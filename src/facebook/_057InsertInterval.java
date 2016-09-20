@@ -28,7 +28,7 @@ import java.util.ArrayList;
 public class _057InsertInterval {
   public static void main(String[] args) {
     Solution_InsertInterval sol = new Solution_InsertInterval();
-    
+
     ArrayList<Interval> intervals = new ArrayList<Interval>();
     intervals.add(new Interval(1, 2));
     intervals.add(new Interval(3, 5));

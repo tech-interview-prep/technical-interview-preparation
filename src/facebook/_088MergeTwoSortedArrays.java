@@ -1,26 +1,24 @@
-  /*
-  Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
-
-  Note:
-    You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional
-    elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.
-
-  Link: https://leetcode.com/problems/merge-sorted-array/
-  Link: http://www.programcreek.com/2012/12/leetcode-merge-sorted-array-java/
-  Link: https://gist.github.com/zac-xin/3943308
-
-  The key to solve this problem is moving element of A and B backwards.
-  If B has some elements left after A is done, also need to handle that case.
-  */
+/**
+ * @author bkoteshwarreddy
+ * 
+ * Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
+ * 
+ * Note:
+ *      You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional
+ *      elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.
+ *      
+ * https://leetcode.com/problems/merge-sorted-array/
+ * 
+ * Link: http://www.programcreek.com/2012/12/leetcode-merge-sorted-array-java/
+ *       https://gist.github.com/zac-xin/3943308
+ *       
+ * The key to solve this problem is moving element of A and B backwards.
+ * If B has some elements left after A is done, also need to handle that case.
+ */
 package facebook;
 
-/**
- * https://leetcode.com/problems/merge-sorted-array/
- * @author bkoteshwarreddy
- */
 public class _088MergeTwoSortedArrays {
   public static void main(String[] args) {
-    Solution_MergeTwoSortedArrays sol = new Solution_MergeTwoSortedArrays();
   }
 }
 
@@ -43,24 +41,24 @@ class Solution_MergeTwoSortedArrays {
     }
   }
 
-  public void merge(int A[], int m, int B[], int n) {
+  public void merge(int a[], int m, int b[], int n) {
         int i, j;
         for(i = m - 1, j = n - 1; i >= 0 && j >= 0;) {
-            if (A[i] < B[j]) {
-                A[i + j + 1] = B[j];
+            if (a[i] < b[j]) {
+                a[i + j + 1] = b[j];
                 j--;
             } else {
-                A[i + j + 1] = A[i];
+                a[i + j + 1] = a[i];
                 i--;
             }
         }
 
         for (; i >= 0; i--) {
-            A[i + j + 1] = A[i];
+            a[i + j + 1] = a[i];
         }
 
         for (; j >= 0; j--) {
-            A[i + j + 1] = B[j];
+            a[i + j + 1] = b[j];
         }
     }
 }

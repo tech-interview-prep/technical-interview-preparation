@@ -26,7 +26,7 @@ import java.util.Stack;
 public class _071SimplifyPath {
     public static void main(String[] args) {
       Solution_SimplifyPath sol = new Solution_SimplifyPath();
-      
+
       Utils.printTestln(sol.simplifyPath("/a/./b/../../c/"), "/c");
       Utils.printTestln(sol.simplifyPath("/home/"), "/home");
       Utils.printTestln(sol.simplifyPath("/../"), "/");

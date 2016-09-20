@@ -62,7 +62,7 @@ public class IntegerToAlphabet {
 
 	// Method to create a binary tree which stores all interpretations
     // of arr[] in lead nodes
-    public static Node createTree(int data, String pString, int[] arr) {
+    public Node createTree(int data, String pString, int[] arr) {
 
         // Invalid input as alphabets maps from 1 to 26
         if (data > 26)
@@ -100,7 +100,7 @@ public class IntegerToAlphabet {
     }
 
     // To print out leaf nodes
-    public static void printleaf(Node root) {
+    public void printleaf(Node root) {
         if (root == null)
             return;
 
@@ -112,7 +112,7 @@ public class IntegerToAlphabet {
     }
 
     // The main function that prints all interpretations of array
-    static void printAllInterpretations(int[] arr) {
+    public void printAllInterpretations(int[] arr) {
 
         // Step 1: Create Tree
         Node root = createTree(0, "", arr);
@@ -124,7 +124,7 @@ public class IntegerToAlphabet {
     }
 
     // For simplicity I am taking it as string array. Char Array will save space
-    private static final String[] alphabet = {"", "a", "b", "c", "d", "e",
+    private final String[] alphabet = {"", "a", "b", "c", "d", "e",
         "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
         "s", "t", "u", "v", "w", "x", "v", "z"};
 }

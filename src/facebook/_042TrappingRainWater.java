@@ -10,7 +10,7 @@ package facebook;
 public class _042TrappingRainWater {
   public static void main(String[] args) {
     Solution_TrappingRainWater sol = new Solution_TrappingRainWater();
-    
+
     sol.trap(null);
   }
 }

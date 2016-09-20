@@ -24,7 +24,7 @@ import utils.ListNode;
 public class _025ReverseNodeInKGroup {
   public static void main(String[] args){
     Solution_ReverseNodeInKGroup sol = new Solution_ReverseNodeInKGroup();
-    
+
     ListNode.print(sol.reverseKGroup(ListNode.getSampleList(5), 2));
     ListNode.print(sol.reverseKGroup(ListNode.getSampleList(5), 3));
     ListNode.print(sol.reverseKGroup(null, 1));

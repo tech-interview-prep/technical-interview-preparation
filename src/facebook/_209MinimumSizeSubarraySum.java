@@ -18,6 +18,23 @@ public class _209MinimumSizeSubarraySum {
 
 class Solution_MinimumSizeSubarraySum {
   public int minSubArrayLen(int s, int[] nums) {
-    return 0;
-  }
+        if(nums.length == 0) {
+            return 0;
+        }
+        // sliding window
+        int sum = 0;
+        int min_len = Integer.MAX_VALUE;
+        // two sides of window
+        int l = 0, r = 0;
+        while(r < nums.length) {
+            while(sum < s && r < nums.length) {
+                sum += nums[r++];
+            }
+            while(sum >= s) {
+                min_len = Math.min(min_len, r - l);
+                sum -= nums[l++];
+            }
+        }
+        return (min_len == Integer.MAX_VALUE) ? 0 : min_len;
+    }
 }

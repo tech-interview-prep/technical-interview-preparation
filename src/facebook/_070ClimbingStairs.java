@@ -9,7 +9,7 @@ package facebook;
 
 public class _070ClimbingStairs {
   public static void main(String[] args) {
-    
+
   }
 }
 

@@ -8,6 +8,8 @@ Note: next() and hasNext() should run in average O(1) time and uses O(h) memory,
 */
 package facebook;
 
+import java.util.LinkedList;
+
 import utils.TreeNode;
 
 /**
@@ -19,18 +21,30 @@ public class _173BinarySearchTreeIterator {
 }
 
 class BSTIterator {
+    LinkedList<TreeNode> stack;
     public BSTIterator(TreeNode root) {
-
+        TreeNode cur = root;
+        stack = new LinkedList<TreeNode>();
+        while(cur != null) {
+            stack.addFirst(cur);
+            cur = cur.left;
+        }
     }
 
     /** @return whether we have a next smallest number */
     public boolean hasNext() {
-      return false;
+        return !stack.isEmpty();
     }
 
     /** @return the next smallest number */
     public int next() {
-      return 0;
+        TreeNode top = stack.poll();
+        TreeNode cur = top.right;
+        while(cur != null) {
+            stack.addFirst(cur);
+            cur = cur.left;
+        }
+        return top.data;
     }
 }
 

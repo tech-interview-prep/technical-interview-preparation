@@ -24,7 +24,7 @@ import utils.Utils;
 public class _067AddBinary {
     public static void main(String[] args) {
       Solution_AddBinary sol = new Solution_AddBinary();
-      
+
       Utils.printTestln(sol.addBinary("11", "1"), "100");
     }
 }

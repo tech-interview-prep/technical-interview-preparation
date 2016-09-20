@@ -24,7 +24,7 @@ import utils.Utils;
 public class _091DecodeWays {
     public static void main(String[] args) {
       Solution_DecodeWays sol = new Solution_DecodeWays();
-      
+
       Utils.printTestln(sol.numDecodings("12"), 2);
       Utils.printTestln(sol.numDecodings("123"), 3);
       Utils.printTestln(sol.numDecodings("132"), 2);

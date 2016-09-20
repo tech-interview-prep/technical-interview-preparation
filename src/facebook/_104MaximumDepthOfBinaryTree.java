@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import utils.TreeNode;
 
 public class _104MaximumDepthOfBinaryTree {
-  
+
 }
 
 class Solution_MaximumDepthOfBinaryTree {

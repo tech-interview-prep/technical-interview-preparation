@@ -1,6 +1,8 @@
 /*
     convert string to int
 
+    http://www.geeksforgeeks.org/write-your-own-atoi/
+    http://www.geeksforgeeks.org/implement-itoa/
 */
 
 package facebook;

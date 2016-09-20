@@ -14,7 +14,7 @@ import java.util.*;
 
 public class _049GroupAnagrams {
 public static void main(String[] args) {
-    
+
   }
 }
 

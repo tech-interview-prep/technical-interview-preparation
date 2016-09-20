@@ -12,7 +12,7 @@ package facebook;
 import java.util.Arrays;
 
 public class _300LongestIncreasingSubsequence {
-  
+
 }
 
 class Solution_LongestIncreasingSequence {

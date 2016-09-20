@@ -24,6 +24,8 @@
 
 
         Link:  http://www.programcreek.com/2012/12/leetcode-median-of-two-sorted-arrays-java/
+        http://www.geeksforgeeks.org/median-of-two-sorted-arrays/
+        http://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/
  */
 
 package facebook;

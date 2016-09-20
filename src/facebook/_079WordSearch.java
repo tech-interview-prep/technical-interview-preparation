@@ -36,9 +36,9 @@ public class _079WordSearch {
         "sfcs".toCharArray(),
         "adee".toCharArray()
       };
-      
+
       Solution_WordSearch sol = new Solution_WordSearch();
-      
+
       Utils.printTestln(sol.exist(board, "abcced"), true);
       Utils.printTestln(sol.exist(board, "see"), true);
       Utils.printTestln(sol.exist(board, "abcb"), false);

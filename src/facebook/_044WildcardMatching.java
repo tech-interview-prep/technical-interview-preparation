@@ -10,13 +10,13 @@ The function prototype should be:
 bool isMatch(const char *s, const char *p)
 
 Some examples:
-isMatch("aa","a") ? false
-isMatch("aa","aa") ? true
-isMatch("aaa","aa") ? false
-isMatch("aa", "*") ? true
-isMatch("aa", "a*") ? true
-isMatch("ab", "?*") ? true
-isMatch("aab", "c*a*b") ? false
+  isMatch("aa","a") ? false
+  isMatch("aa","aa") ? true
+  isMatch("aaa","aa") ? false
+  isMatch("aa", "*") ? true
+  isMatch("aa", "a*") ? true
+  isMatch("ab", "?*") ? true
+  isMatch("aab", "c*a*b") ? false
  */
 
 package facebook;
@@ -39,7 +39,7 @@ public class _044WildcardMatching {
 
     public static void main(String[] args) {
       Solution_WildcardMatching sol = new Solution_WildcardMatching();
-      
+
       long s = System.currentTimeMillis();
 
       Utils.printTestln(sol.isMatch("",""), true);
@@ -62,6 +62,33 @@ public class _044WildcardMatching {
 }
 
 class Solution_WildcardMatching {
+    /*
+        Iterative solution, from http://blog.sina.com.cn/s/blog_b9285de20101gw2x.html
+    */
+    public boolean isMatch2(String s, String p){
+        if (s == null) return p == null;
+        if (p == null) return false;
+        int n = s.length(), m = p.length(), i = 0, j=0, starPosition = -1, iback = 0;
+        while (i < n){
+            while (j < m && p.charAt(j) == '*'){
+                starPosition = j++;
+                iback = i;
+            }
+            if (j == m && (p.charAt(j) != '?' && p.charAt(j) != s.charAt(i))){
+                if (starPosition == -1)
+                    return false;
+                j = starPosition + 1;
+                i = ++iback;
+            }else{
+                i++;
+                j++;
+            }
+        }
+        while (j < m && p.charAt(j) == '*')
+            j++;
+        return j == m;
+    }
+
     public boolean isMatch(String s, String p) {
         int i1 = 0, i2 = 0, lastWildcard = -1;
 

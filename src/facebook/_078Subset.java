@@ -34,7 +34,7 @@ import java.util.Arrays;
 public class _078Subset {
     public static void main(String[] args) {
       Solution_Subset sol = new Solution_Subset();
-      
+
       Utils.printListListln(sol.subsets(new int[]{1, 2, 3}));
     }
 }

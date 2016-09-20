@@ -24,7 +24,7 @@ import java.util.List;
 
 public class _054SpiralMatrix {
 public static void main(String[] args) {
-    
+
   }
 }
 

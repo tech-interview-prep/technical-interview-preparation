@@ -16,7 +16,8 @@ public class _206ReverseLinkedList {
 
 class Solution_ReverseLinkedList {
   public ListNode reverseList(ListNode head) {
-    return null;
+    ListNode reversedHead = reverse(head, null);
+    return reversedHead;
   }
 
   public ListNode reverse(ListNode ptr , ListNode previous) {
@@ -31,7 +32,7 @@ class Solution_ReverseLinkedList {
         }
     }
 
-  public ListNode reverse(ListNode ptr ) {
+  public ListNode reverse(ListNode ptr) {
         ListNode temp;
         ListNode previous = null;
         while(ptr != null) {
