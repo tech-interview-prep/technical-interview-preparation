@@ -17,17 +17,16 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - Arrays
 - Vectors
 - ArrayLists
-- LinkedLists
+- [LinkedLists](https://www.youtube.com/watch?v=njTh_OwMljA)
 - Hashset
 - Hashmap
-- Hashtable
+- [Hashtables](https://www.youtube.com/watch?v=shs0KM3wKv8)
 - Dictionary
-- Stacks
-- Queues
+- [Stacks and Queues](https://www.youtube.com/watch?v=wjI1WNcIntg)
 - Priority queues
-- Tree (Binary Tree, Binary Search Tree, kd Tree, 2-3 Tree, AVL)
-- Tries
-- Heap (MinHeap, MaxHeap)
+- [Trees](https://www.youtube.com/watch?v=oSWTXtMglKE) (Binary Tree, [Binary Search Tree](https://www.youtube.com/watch?v=i_Q0v_Ct5lY), kd Tree, 2-3 Tree, AVL)
+- [Tries](https://www.youtube.com/watch?v=zIjfhVPRZCg)
+- [Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) (MinHeap, MaxHeap)
 - Graph
 - Bloom Filter
 - Strings
@@ -35,15 +34,15 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - StringBuilder
 
 #####**Sorting:**
-- Merge sort/Poly phase merge sort
-- Quick sort
+- [Merge sort](https://www.youtube.com/watch?v=KF2j-9iSf4Q)/Poly phase merge sort
+- [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)
 - Insertion sort
 - Bucket sort
 
 #####**Searching:**
 - BFS
 - DFS
-- Binary Search
+- [Binary Search](https://www.youtube.com/watch?v=P3YID7liBug)
 - Tree insert / find
 - Heap Search
 
@@ -52,7 +51,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - 3 Way Partitioning
 - Tree Balancing
 - Divide and conquer
-- Dynamic programming / Memoization
+- [Dynamic programming / Memoization](https://www.youtube.com/watch?v=P8Xa2BitN3I)
 - [Recursion](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/)
 - Rsync algorithm
 - [A* Search Algorithm](http://www.geeksforgeeks.org/a-search-algorithm/)
