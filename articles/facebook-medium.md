@@ -7,198 +7,12 @@
         - [Two elements whose sum is closest to zero](http://www.geeksforgeeks.org/two-elements-whose-sum-is-closest-to-zero/)
         - [Find the closest pair from two sorted arrays](http://www.geeksforgeeks.org/given-two-sorted-arrays-number-x-find-pair-whose-sum-closest-x/)
         - [Find the closest leaf in a Binary Tree](http://www.geeksforgeeks.org/find-closest-leaf-binary-tree/)
-- [259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)
-    - [Solution](../src/facebook/_259ThreeSumSmaller.java):
-    - Related articles on geeksforgeeks:
-        - [Count smaller elements on right side](http://www.geeksforgeeks.org/count-smaller-elements-on-right-side/)
-        - [Find the nearest smaller numbers on left side in an array](http://www.geeksforgeeks.org/find-the-nearest-smaller-numbers-on-left-side-in-an-array/)
-        - [Count triplets with sum smaller that a  given value](http://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/)
-- [139. Word Break](https://leetcode.com/problems/word-break/)
-    - [Solution](../src/facebook/_139WordBreak.java):
-    - Related articles on geeksforgeeks:
-        - [Dynamic Programming - Set 32 (Word Break Problem)](http://www.geeksforgeeks.org/dynamic-programming-set-32-word-break-problem/)
-        - [Reverse words in a given string](http://www.geeksforgeeks.org/reverse-words-in-a-given-string/)
-        - [Find the k most frequent words from a file](http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/)
-- [161. One Edit Distance](https://leetcode.com/problems/one-edit-distance/)
-    - [Solution](../src/facebook/_161OneEditDistance.java):
-    - Related articles on geeksforgeeks:
-        - [Check if edit distance between two strings is one](http://www.geeksforgeeks.org/check-if-two-given-strings-are-at-edit-distance-one/)
-        - [Dynamic Programming - Set 5 (Edit Distance)](http://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/)
-        - [Find the minimum distance between two numbers](http://www.geeksforgeeks.org/find-the-minimum-distance-between-two-numbers/)
-- [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
-    - [Solution](../src/facebook/_236LowestCommonAncestorBinaryTree.java):
-    - Related articles on geeksforgeeks:
-        - [Lowest Common Ancestor in a Binary Search Tree.](http://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/)
-        - [Lowest Common Ancestor in a Binary Tree - Set 1](http://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/)
-        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
-- [211. Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
-    - [Solution](../src/facebook/_211AddandSearchWord_DataStructureDesign.java):
-    - Related articles on geeksforgeeks:
-        - [Design a data structure that supports insert, delete, search and getRandom in constant time](http://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/)
-        - [Design an efficient data structure for given operations](http://www.geeksforgeeks.org/a-data-structure-question/)
-        - [Applications of tree data structure](http://www.geeksforgeeks.org/applications-of-tree-data-structure/)
-- [311. Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)
-    - [Solution](../src/facebook/_311SparseMatrixMultiplication.java):
-    - Related articles on geeksforgeeks:
-        - [Find Next Sparse Number](http://www.geeksforgeeks.org/given-a-number-find-next-sparse-number/)
-        - [Dynamic Programming - Set 8 (Matrix Chain Multiplication)](http://www.geeksforgeeks.org/dynamic-programming-set-8-matrix-chain-multiplication/)
-        - [Divide and Conquer - Set 5 (Strassen’s Matrix Multiplication)](http://www.geeksforgeeks.org/strassens-matrix-multiplication/)
-- [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
-    - [Solution](../src/facebook/_200NumberOfIslands.java):
-    - Related articles on geeksforgeeks:
-        - [Find the number of islands](http://www.geeksforgeeks.org/find-number-of-islands/)
-        - [Count number of islands where every island is row-wise and column-wise separated](http://www.geeksforgeeks.org/count-number-islands-every-island-separated-line/)
-        - [Next higher number with same number of set bits](http://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
 - [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
     - [Solution](../src/facebook/_017LetterCombinationOfAPhoneNumber.java):
     - Related articles on geeksforgeeks:
         - [Print all combinations of points that can compose a given number](http://www.geeksforgeeks.org/print-all-combinations-of-points-that-can-compose-a-given-number/)
         - [Next higher number with same number of set bits](http://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
         - [How to check if a given number is Fibonacci number?](http://www.geeksforgeeks.org/check-number-fibonacci-number/)
-- [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
-    - [Solution](../src/facebook/_253MeetingRoomsII.java):
-    - Related articles on geeksforgeeks:
-        - [OYO Rooms Interview Experience for Software Engineer](http://www.geeksforgeeks.org/oyo-rooms-interview-experience-for-software-engineer/)
-        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
-        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
-- [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
-    - [Solution](../src/facebook/_075SortColors.java):
-    - Related articles on geeksforgeeks:
-        - [Sort a nearly sorted (or K sorted) array](http://www.geeksforgeeks.org/nearly-sorted-algorithm/)
-        - [Topological Sorting](http://www.geeksforgeeks.org/topological-sorting/)
-        - [Sort an almost sorted array where only two elements are swapped](http://www.geeksforgeeks.org/sort-an-almost-sorted-array-where-only-two-elements-are-swapped/)
-- [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)
-    - [Solution](../src/facebook/_285InorderSuccessorinBST.java):
-    - Related articles on geeksforgeeks:
-        - [Inorder predecessor and successor for a given key in BST](http://www.geeksforgeeks.org/inorder-predecessor-successor-given-key-bst/)
-        - [Populate Inorder Successor for all nodes](http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/)
-        - [Inorder Successor in Binary Search Tree](http://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/)
-- [91. Decode Ways](https://leetcode.com/problems/decode-ways/)
-    - [Solution](../src/facebook/_091DecodeWays.java):
-    - Related articles on geeksforgeeks:
-        - [Efficient way to multiply with 7](http://www.geeksforgeeks.org/efficient-way-to-multiply-with-7/)
-        - [Count ways to reach the n’th stair](http://www.geeksforgeeks.org/count-ways-reach-nth-stair/)
-        - [Count possible ways to construct buildings](http://www.geeksforgeeks.org/count-possible-ways-to-construct-buildings/)
-- [78. Subsets](https://leetcode.com/problems/subsets/)
-    - [Solution](../src/facebook/_078Subset.java):
-    - Related articles on geeksforgeeks:
-        - [Count number of ways to partition a set into k subsets](http://www.geeksforgeeks.org/count-number-of-ways-to-partition-a-set-into-k-subsets/)
-        - [Backtracking - Set 4 (Subset Sum)](http://www.geeksforgeeks.org/backttracking-set-4-subset-sum/)
-        - [Dynamic Programming - Set 25 (Subset Sum Problem)](http://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/)
-- [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
-    - [Solution](../src/facebook/_209MinimumSizeSubarraySum.java):
-    - Related articles on geeksforgeeks:
-        - [Find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
-        - [Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
-        - [Maximum circular subarray sum](http://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
-- [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
-    - [Solution](../src/facebook/_090SubsetII.java):
-    - Related articles on geeksforgeeks:
-        - [Backtracking - Set 4 (Subset Sum)](http://www.geeksforgeeks.org/backttracking-set-4-subset-sum/)
-        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
-        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
-- [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
-    - [Solution](../src/facebook/_043MultiplyStrings.java):
-    - Related articles on geeksforgeeks:
-        - [Given two strings, find if first string is a subsequence of second](http://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)
-        - [String matching where one string contains wildcard characters](http://www.geeksforgeeks.org/wildcard-character-matching/)
-        - [Remove characters from the first string which are present in the second string](http://www.geeksforgeeks.org/remove-characters-from-the-first-string-which-are-present-in-the-second-string/)
-- [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
-    - [Solution](../src/facebook/_133CloneGraph.java):
-    - Related articles on geeksforgeeks:
-        - [Graph and its representations](http://www.geeksforgeeks.org/graph-and-its-representations/)
-        - [Bridges in a graph](http://www.geeksforgeeks.org/bridge-in-a-graph/)
-        - [Biconnected graph](http://www.geeksforgeeks.org/biconnectivity-in-a-graph/)
-- [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
-    - [Solution](../src/facebook/_127WordLadder.java):
-    - Related articles on geeksforgeeks:
-        - [Snake and Ladder Problem](http://www.geeksforgeeks.org/snake-ladder-problem-2/)
-        - [Reverse words in a given string](http://www.geeksforgeeks.org/reverse-words-in-a-given-string/)
-        - [Find the k most frequent words from a file](http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/)
-- [277. Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)
-    - [Solution](../src/facebook/_277FindtheCelebrity.java):
-    - Related articles on geeksforgeeks:
-        - [The Celebrity Problem](http://www.geeksforgeeks.org/the-celebrity-problem/)
-- [325. Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)
-    - [Solution](../src/facebook/_325MaximumSizeSubarraySumEqualsk.java):
-    - Related articles on geeksforgeeks:
-        - [Find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
-        - [Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
-        - [Maximum circular subarray sum](http://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
-- [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
-    - [Solution](../src/facebook/_238ProductofArrayExceptSelf.java):
-    - Related articles on geeksforgeeks:
-        - [A Product Array Puzzle](http://www.geeksforgeeks.org/a-product-array-puzzle/)
-        - [Find a pair with maximum product in array of Integers](http://www.geeksforgeeks.org/return-a-pair-with-maximum-product-in-array-of-integers/)
-        - [If you’re not paying for a product, then you probably are the product](http://www.geeksforgeeks.org/if-youre-not-paying-for-a-product-then-you-probably-are-the-product/)
-- [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
-    - [Solution](../src/facebook/_098ValidateBinarySearchTree.java):
-    - Related articles on geeksforgeeks:
-        - [Binary Tree to Binary Search Tree Conversion](http://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/)
-        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
-        - [Treap (A Randomized Binary Search Tree)](http://www.geeksforgeeks.org/treap-a-randomized-binary-search-tree/)
-- [71. Simplify Path](https://leetcode.com/problems/simplify-path/)
-    - [Solution](../src/facebook/_071SimplifyPath.java):
-    - Related articles on geeksforgeeks:
-        - [Maximum Sum Path in Two Arrays](http://www.geeksforgeeks.org/maximum-sum-path-across-two-arrays/)
-        - [Find if there is a path between two vertices in a directed graph](http://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/)
-        - [Some interesting shortest path questions - Set 1](http://www.geeksforgeeks.org/interesting-shortest-path-questions-set-1/)
-- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
-    - [Solution](../src/facebook/_069Sqrt.java):
-    - Related articles on geeksforgeeks:
-- [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
-    - [Solution](../src/facebook/_208ImplementTrie_PrefixTree.java):
-    - Related articles on geeksforgeeks:
-        - [Convert a given tree to its Sum Tree](http://www.geeksforgeeks.org/convert-a-given-tree-to-sum-tree/)
-        - [Binary Indexed Tree or Fenwick tree](http://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/)
-        - [Longest prefix matching – A Trie based solution in Java](http://www.geeksforgeeks.org/longest-prefix-matching-a-trie-based-solution-in-java/)
-- [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
-    - [Solution](../src/facebook/_050Pow.java):
-    - Related articles on geeksforgeeks:
-        - [Longest Monotonically Increasing Subsequence Size (N log N)](http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/)
-        - [Given p and n, find the largest x such that p^x divides n!](http://www.geeksforgeeks.org/given-p-and-n-find-the-largest-x-such-that-px-divides-n-2/)
-        - [Construction of Longest Monotonically Increasing Subsequence (N log N)](http://www.geeksforgeeks.org/construction-of-longest-monotonically-increasing-subsequence-n-log-n/)
-- [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
-    - [Solution](../src/facebook/_215KthLargestElementinanArray.java):
-    - Related articles on geeksforgeeks:
-        - [K’th Smallest/Largest Element in Unsorted Array - Set 1](http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)
-        - [K’th Smallest/Largest Element in Unsorted Array - Set 2 (Expected Linear Time)](http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/)
-        - [Find the two non-repeating elements in an array of repeating elements](http://www.geeksforgeeks.org/find-two-non-repeating-elements-in-an-array-of-repeating-elements/)
-        - [Search an element in an array where difference between adjacent elements is 1](http://www.geeksforgeeks.org/search-an-element-in-an-array-where-difference-between-adjacent-elements-is-1/)
-        - [K’th largest element in a stream](http://www.geeksforgeeks.org/kth-largest-element-in-a-stream/)
-- [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
-    - [Solution](../src/facebook/_341FlattenNestedListIterator.java):
-    - Related articles on geeksforgeeks:
-- [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)
-    - [Solution](../src/facebook/_334IncreasingTripletSubsequence.java):
-    - Related articles on geeksforgeeks:
-- [274. H-Index](https://leetcode.com/problems/h-index/)
-    - [Solution](../src/facebook/_274H_Index.java):
-    - Related articles on geeksforgeeks:
-- [275. H-Index II](https://leetcode.com/problems/h-index-ii/)
-    - [Solution](../src/facebook/_275H_IndexII.java):
-    - Related articles on geeksforgeeks:
-        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
-        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
-        - [Flipkart Interview Experience - Set 17 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-experience-set-17-for-sde-ii/)
-- [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
-    - [Solution](../src/facebook/_221MaximalSquare.java):
-    - Related articles on geeksforgeeks:
-        - [Magic Square](http://www.geeksforgeeks.org/magic-square/)
-        - [Square root of an integer](http://www.geeksforgeeks.org/square-root-of-an-integer/)
-        - [Babylonian method for square root](http://www.geeksforgeeks.org/square-root-of-a-perfect-square/)
-- [79. Word Search](https://leetcode.com/problems/word-search/)
-    - [Solution](../src/facebook/_079WordSearch.java):
-    - Related articles on geeksforgeeks:
-        - [Search a Word in a 2D Grid of characters](http://www.geeksforgeeks.org/search-a-word-in-a-2d-grid-of-characters/)
-        - [Interpolation search vs Binary search](http://www.geeksforgeeks.org/g-fact-84/)
-        - [Anagram Substring Search (Or Search for all permutations)](http://www.geeksforgeeks.org/anagram-substring-search-search-permutations/)
-- [49. Group Anagrams](https://leetcode.com/problems/anagrams/)
-    - [Solution](../src/facebook/_049GroupAnagrams.java):
-    - Related articles on geeksforgeeks:
-        - [Check whether two strings are anagram of each other](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)
-        - [UHG(United Health Group) Interview Experience](http://www.geeksforgeeks.org/uhgunited-health-group-interview-experience/)
-        - [Aricent Group Chennai Interview Experience](http://www.geeksforgeeks.org/aricent-group-chennai-interview-experience/)
 - [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
     - [Solution](../src/facebook/_039CombinationSum.java):
     - Related articles on geeksforgeeks:
@@ -211,97 +25,290 @@
         - [Find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
         - [Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
         - [Count of n digit numbers whose sum of digits equals to given sum](http://www.geeksforgeeks.org/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-given-sum/)
-- [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
-    - [Solution](../src/facebook/_216CombinationSumIII.java):
+- [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/)
+    - [Solution](../src/facebook/_043MultiplyStrings.java):
     - Related articles on geeksforgeeks:
-        - [Find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
-        - [Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
-        - [Count of n digit numbers whose sum of digits equals to given sum](http://www.geeksforgeeks.org/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-given-sum/)
-- [377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)
-    - [Solution](../src/facebook/_377CombinationSumIV.java):
+        - [Given two strings, find if first string is a subsequence of second](http://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)
+        - [String matching where one string contains wildcard characters](http://www.geeksforgeeks.org/wildcard-character-matching/)
+        - [Remove characters from the first string which are present in the second string](http://www.geeksforgeeks.org/remove-characters-from-the-first-string-which-are-present-in-the-second-string/)
+- [49. Group Anagrams](https://leetcode.com/problems/anagrams/)
+    - [Solution](../src/facebook/_049GroupAnagrams.java):
     - Related articles on geeksforgeeks:
-- [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
-    - [Solution](../src/facebook/_173BinarySearchTreeIterator.java):
+        - [Check whether two strings are anagram of each other](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)
+        - [UHG(United Health Group) Interview Experience](http://www.geeksforgeeks.org/uhgunited-health-group-interview-experience/)
+        - [Aricent Group Chennai Interview Experience](http://www.geeksforgeeks.org/aricent-group-chennai-interview-experience/)
+- [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
+    - [Solution](../src/facebook/_050Pow.java):
     - Related articles on geeksforgeeks:
-        - [Binary Tree to Binary Search Tree Conversion](http://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/)
-        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
-        - [Treap (A Randomized Binary Search Tree)](http://www.geeksforgeeks.org/treap-a-randomized-binary-search-tree/)
-- [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
-    - [Solution](../src/facebook/_207CourseSchedule.java):
+        - [Longest Monotonically Increasing Subsequence Size (N log N)](http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/)
+        - [Given p and n, find the largest x such that p^x divides n!](http://www.geeksforgeeks.org/given-p-and-n-find-the-largest-x-such-that-px-divides-n-2/)
+        - [Construction of Longest Monotonically Increasing Subsequence (N log N)](http://www.geeksforgeeks.org/construction-of-longest-monotonically-increasing-subsequence-n-log-n/)
+- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+    - [Solution](../src/facebook/_069Sqrt.java):
     - Related articles on geeksforgeeks:
-        - [Weighted Job Scheduling](http://www.geeksforgeeks.org/weighted-job-scheduling/)
-        - [Project Idea - (Online Course Registration)](http://www.geeksforgeeks.org/project-idea-online-course-registration/)
-        - [Dynamic Programming - Set 34 (Assembly Line Scheduling)](http://www.geeksforgeeks.org/dynamic-programming-set-34-assembly-line-scheduling/)
-- [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
-    - [Solution](../src/facebook/_210CourseScheduleII.java):
+- [71. Simplify Path](https://leetcode.com/problems/simplify-path/)
+    - [Solution](../src/facebook/_071SimplifyPath.java):
     - Related articles on geeksforgeeks:
-        - [Weighted Job Scheduling](http://www.geeksforgeeks.org/weighted-job-scheduling/)
-        - [Project Idea - (Online Course Registration)](http://www.geeksforgeeks.org/project-idea-online-course-registration/)
-        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
+        - [Maximum Sum Path in Two Arrays](http://www.geeksforgeeks.org/maximum-sum-path-across-two-arrays/)
+        - [Find if there is a path between two vertices in a directed graph](http://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/)
+        - [Some interesting shortest path questions - Set 1](http://www.geeksforgeeks.org/interesting-shortest-path-questions-set-1/)
+- [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
+    - [Solution](../src/facebook/_075SortColors.java):
+    - Related articles on geeksforgeeks:
+        - [Sort a nearly sorted (or K sorted) array](http://www.geeksforgeeks.org/nearly-sorted-algorithm/)
+        - [Topological Sorting](http://www.geeksforgeeks.org/topological-sorting/)
+        - [Sort an almost sorted array where only two elements are swapped](http://www.geeksforgeeks.org/sort-an-almost-sorted-array-where-only-two-elements-are-swapped/)
+- [78. Subsets](https://leetcode.com/problems/subsets/)
+    - [Solution](../src/facebook/_078Subset.java):
+    - Related articles on geeksforgeeks:
+        - [Count number of ways to partition a set into k subsets](http://www.geeksforgeeks.org/count-number-of-ways-to-partition-a-set-into-k-subsets/)
+        - [Backtracking - Set 4 (Subset Sum)](http://www.geeksforgeeks.org/backttracking-set-4-subset-sum/)
+        - [Dynamic Programming - Set 25 (Subset Sum Problem)](http://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/)
+- [79. Word Search](https://leetcode.com/problems/word-search/)
+    - [Solution](../src/facebook/_079WordSearch.java):
+    - Related articles on geeksforgeeks:
+        - [Search a Word in a 2D Grid of characters](http://www.geeksforgeeks.org/search-a-word-in-a-2d-grid-of-characters/)
+        - [Interpolation search vs Binary search](http://www.geeksforgeeks.org/g-fact-84/)
+        - [Anagram Substring Search (Or Search for all permutations)](http://www.geeksforgeeks.org/anagram-substring-search-search-permutations/)
 - [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
     - [Solution](../src/facebook/_080RemoveDuplicatesFromSortedArrayII.java):
     - Related articles on geeksforgeeks:
         - [Remove duplicates from a sorted linked list](http://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
         - [Sort a nearly sorted (or K sorted) array](http://www.geeksforgeeks.org/nearly-sorted-algorithm/)
         - [Search in an almost sorted array](http://www.geeksforgeeks.org/search-almost-sorted-array/)
-- [286. Walls and Gates](https://leetcode.com/problems/walls-and-gates/)
-    - [Solution](../src/facebook/_286WallsandGates.java):
-    - Related articles on geeksforgeeks:
-- [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
-    - [Solution](../src/facebook/_314BinaryTreeVerticalOrderTraversal.java):
-    - Related articles on geeksforgeeks:
-- [398. Random Pick Index](https://leetcode.com/problems/random-pick-index/)
-    - [Solution](../src/facebook/_398RandomPickIndex.java):
-    - Related articles on geeksforgeeks:
-- [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
-    - [Solution](../src/facebook/_261GraphValidTree.java):
-    - Related articles on geeksforgeeks:
-        - [Convert a given tree to its Sum Tree](http://www.geeksforgeeks.org/convert-a-given-tree-to-sum-tree/)
-        - [Binary Indexed Tree or Fenwick tree](http://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/)
-        - [Tree Traversals](http://www.geeksforgeeks.org/618/)
-- [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
-    - [Solution](../src/facebook/_122BestTimeToBuyAndSellStockII.java):
-    - Related articles on geeksforgeeks:
-        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
-        - [Maximum profit by buying and selling a share at most twice](http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
-        - [The Stock Span Problem](http://www.geeksforgeeks.org/the-stock-span-problem/)
-- [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
-    - [Solution](../src/facebook/_309BestTimeToBuyAndSellStockWithCooldown.java):
-    - Related articles on geeksforgeeks:
-        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
-        - [Maximum profit by buying and selling a share at most twice](http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
-        - [The Stock Span Problem](http://www.geeksforgeeks.org/the-stock-span-problem/)
-- [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
-    - [Solution](../src/facebook/_092ReverseLinkedListII.java):
-    - Related articles on geeksforgeeks:
-        - [Reverse a Doubly Linked List](http://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)
-        - [Write a function to reverse a linked list](http://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)
-        - [Reverse a Linked List in groups of given size](http://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
-- [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
-    - [Solution](../src/facebook/_167TwoSumII_InputArrayIsSorted.java):
-    - Related articles on geeksforgeeks:
-        - [Sort a nearly sorted (or K sorted) array](http://www.geeksforgeeks.org/nearly-sorted-algorithm/)
-        - [Search in an almost sorted array](http://www.geeksforgeeks.org/search-almost-sorted-array/)
-        - [Median of two sorted arrays](http://www.geeksforgeeks.org/median-of-two-sorted-arrays/)
-- [256. Paint House](https://leetcode.com/problems/paint-house/)
-    - [Solution](../src/facebook/_256PaintHouse.java):
-    - Related articles on geeksforgeeks:
-        - [Flood fill Algorithm – how to implement fill() in paint?](http://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/)
-- [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
-    - [Solution](../src/facebook/_116PopulatingNextRightPointersInEachNode.java):
-    - Related articles on geeksforgeeks:
-        - [Populate Inorder Successor for all nodes](http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/)
-        - [Find next right node of a given key](http://www.geeksforgeeks.org/find-next-right-node-of-a-given-key/)
-        - [Delete nodes which have a greater value on right side](http://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/)
 - [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
     - [Solution](../src/facebook/_081SearchInRotatedSortedArrayII.java):
     - Related articles on geeksforgeeks:
         - [Search in an almost sorted array](http://www.geeksforgeeks.org/search-almost-sorted-array/)
         - [Search an element in a sorted and pivoted array](http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/)
         - [Find the minimum element in a sorted and rotated array](http://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/)
+- [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+    - [Solution](../src/facebook/_090SubsetII.java):
+    - Related articles on geeksforgeeks:
+        - [Backtracking - Set 4 (Subset Sum)](http://www.geeksforgeeks.org/backttracking-set-4-subset-sum/)
+        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
+        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
+- [91. Decode Ways](https://leetcode.com/problems/decode-ways/)
+    - [Solution](../src/facebook/_091DecodeWays.java):
+    - Related articles on geeksforgeeks:
+        - [Efficient way to multiply with 7](http://www.geeksforgeeks.org/efficient-way-to-multiply-with-7/)
+        - [Count ways to reach the n’th stair](http://www.geeksforgeeks.org/count-ways-reach-nth-stair/)
+        - [Count possible ways to construct buildings](http://www.geeksforgeeks.org/count-possible-ways-to-construct-buildings/)
+- [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+    - [Solution](../src/facebook/_092ReverseLinkedListII.java):
+    - Related articles on geeksforgeeks:
+        - [Reverse a Doubly Linked List](http://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)
+        - [Write a function to reverse a linked list](http://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)
+        - [Reverse a Linked List in groups of given size](http://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
+- [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+    - [Solution](../src/facebook/_098ValidateBinarySearchTree.java):
+    - Related articles on geeksforgeeks:
+        - [Binary Tree to Binary Search Tree Conversion](http://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/)
+        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
+        - [Treap (A Randomized Binary Search Tree)](http://www.geeksforgeeks.org/treap-a-randomized-binary-search-tree/)
+- [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+    - [Solution](../src/facebook/_116PopulatingNextRightPointersInEachNode.java):
+    - Related articles on geeksforgeeks:
+        - [Populate Inorder Successor for all nodes](http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/)
+        - [Find next right node of a given key](http://www.geeksforgeeks.org/find-next-right-node-of-a-given-key/)
+        - [Delete nodes which have a greater value on right side](http://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/)
+- [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+    - [Solution](../src/facebook/_122BestTimeToBuyAndSellStockII.java):
+    - [Editorial Solution](https://leetcode.com/articles/best-time-buy-and-sell-stock-ii)
+    - Related articles on geeksforgeeks:
+        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
+        - [Maximum profit by buying and selling a share at most twice](http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
+        - [The Stock Span Problem](http://www.geeksforgeeks.org/the-stock-span-problem/)
+- [127. Word Ladder](https://leetcode.com/problems/word-ladder/)
+    - [Solution](../src/facebook/_127WordLadder.java):
+    - Related articles on geeksforgeeks:
+        - [Snake and Ladder Problem](http://www.geeksforgeeks.org/snake-ladder-problem-2/)
+        - [Reverse words in a given string](http://www.geeksforgeeks.org/reverse-words-in-a-given-string/)
+        - [Find the k most frequent words from a file](http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/)
+- [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
+    - [Solution](../src/facebook/_133CloneGraph.java):
+    - Related articles on geeksforgeeks:
+        - [Graph and its representations](http://www.geeksforgeeks.org/graph-and-its-representations/)
+        - [Bridges in a graph](http://www.geeksforgeeks.org/bridge-in-a-graph/)
+        - [Biconnected graph](http://www.geeksforgeeks.org/biconnectivity-in-a-graph/)
+- [139. Word Break](https://leetcode.com/problems/word-break/)
+    - [Solution](../src/facebook/_139WordBreak.java):
+    - Related articles on geeksforgeeks:
+        - [Dynamic Programming - Set 32 (Word Break Problem)](http://www.geeksforgeeks.org/dynamic-programming-set-32-word-break-problem/)
+        - [Reverse words in a given string](http://www.geeksforgeeks.org/reverse-words-in-a-given-string/)
+        - [Find the k most frequent words from a file](http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/)
+- [161. One Edit Distance](https://leetcode.com/problems/one-edit-distance/)
+    - [Solution](../src/facebook/_161OneEditDistance.java):
+    - Related articles on geeksforgeeks:
+        - [Check if edit distance between two strings is one](http://www.geeksforgeeks.org/check-if-two-given-strings-are-at-edit-distance-one/)
+        - [Dynamic Programming - Set 5 (Edit Distance)](http://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/)
+        - [Find the minimum distance between two numbers](http://www.geeksforgeeks.org/find-the-minimum-distance-between-two-numbers/)
+- [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+    - [Solution](../src/facebook/_167TwoSumII_InputArrayIsSorted.java):
+    - Related articles on geeksforgeeks:
+        - [Sort a nearly sorted (or K sorted) array](http://www.geeksforgeeks.org/nearly-sorted-algorithm/)
+        - [Search in an almost sorted array](http://www.geeksforgeeks.org/search-almost-sorted-array/)
+        - [Median of two sorted arrays](http://www.geeksforgeeks.org/median-of-two-sorted-arrays/)
+- [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
+    - [Solution](../src/facebook/_173BinarySearchTreeIterator.java):
+    - Related articles on geeksforgeeks:
+        - [Binary Tree to Binary Search Tree Conversion](http://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/)
+        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
+        - [Treap (A Randomized Binary Search Tree)](http://www.geeksforgeeks.org/treap-a-randomized-binary-search-tree/)
+- [200. Number of Islands](https://leetcode.com/problems/number-of-islands/)
+    - [Solution](../src/facebook/_200NumberOfIslands.java):
+    - Related articles on geeksforgeeks:
+        - [Find the number of islands](http://www.geeksforgeeks.org/find-number-of-islands/)
+        - [Count number of islands where every island is row-wise and column-wise separated](http://www.geeksforgeeks.org/count-number-islands-every-island-separated-line/)
+        - [Next higher number with same number of set bits](http://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
+- [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+    - [Solution](../src/facebook/_207CourseSchedule.java):
+    - Related articles on geeksforgeeks:
+        - [Weighted Job Scheduling](http://www.geeksforgeeks.org/weighted-job-scheduling/)
+        - [Project Idea - (Online Course Registration)](http://www.geeksforgeeks.org/project-idea-online-course-registration/)
+        - [Dynamic Programming - Set 34 (Assembly Line Scheduling)](http://www.geeksforgeeks.org/dynamic-programming-set-34-assembly-line-scheduling/)
+- [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
+    - [Solution](../src/facebook/_208ImplementTrie_PrefixTree.java):
+    - [Editorial Solution](https://leetcode.com/articles/implement-trie-prefix-tree)
+    - Related articles on geeksforgeeks:
+        - [Convert a given tree to its Sum Tree](http://www.geeksforgeeks.org/convert-a-given-tree-to-sum-tree/)
+        - [Binary Indexed Tree or Fenwick tree](http://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/)
+        - [Longest prefix matching – A Trie based solution in Java](http://www.geeksforgeeks.org/longest-prefix-matching-a-trie-based-solution-in-java/)
+- [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+    - [Solution](../src/facebook/_209MinimumSizeSubarraySum.java):
+    - Related articles on geeksforgeeks:
+        - [Find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
+        - [Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
+        - [Maximum circular subarray sum](http://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
+- [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+    - [Solution](../src/facebook/_210CourseScheduleII.java):
+    - Related articles on geeksforgeeks:
+        - [Weighted Job Scheduling](http://www.geeksforgeeks.org/weighted-job-scheduling/)
+        - [Project Idea - (Online Course Registration)](http://www.geeksforgeeks.org/project-idea-online-course-registration/)
+        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
+- [211. Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
+    - [Solution](../src/facebook/_211AddandSearchWord_DataStructureDesign.java):
+    - Related articles on geeksforgeeks:
+        - [Design a data structure that supports insert, delete, search and getRandom in constant time](http://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/)
+        - [Design an efficient data structure for given operations](http://www.geeksforgeeks.org/a-data-structure-question/)
+        - [Applications of tree data structure](http://www.geeksforgeeks.org/applications-of-tree-data-structure/)
+- [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+    - [Solution](../src/facebook/_215KthLargestElementinanArray.java):
+    - Related articles on geeksforgeeks:
+        - [K’th Smallest/Largest Element in Unsorted Array - Set 1](http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)
+        - [K’th Smallest/Largest Element in Unsorted Array - Set 2 (Expected Linear Time)](http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/)
+        - [Find the two non-repeating elements in an array of repeating elements](http://www.geeksforgeeks.org/find-two-non-repeating-elements-in-an-array-of-repeating-elements/)
+        - [Search an element in an array where difference between adjacent elements is 1](http://www.geeksforgeeks.org/search-an-element-in-an-array-where-difference-between-adjacent-elements-is-1/)
+        - [K’th largest element in a stream](http://www.geeksforgeeks.org/kth-largest-element-in-a-stream/)
+- [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
+    - [Solution](../src/facebook/_216CombinationSumIII.java):
+    - Related articles on geeksforgeeks:
+        - [Find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
+        - [Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
+        - [Count of n digit numbers whose sum of digits equals to given sum](http://www.geeksforgeeks.org/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-given-sum/)
+- [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
+    - [Solution](../src/facebook/_221MaximalSquare.java):
+    - [Editorial Solution](https://leetcode.com/articles/maximal-square)
+    - Related articles on geeksforgeeks:
+        - [Magic Square](http://www.geeksforgeeks.org/magic-square/)
+        - [Square root of an integer](http://www.geeksforgeeks.org/square-root-of-an-integer/)
+        - [Babylonian method for square root](http://www.geeksforgeeks.org/square-root-of-a-perfect-square/)
+- [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+    - [Solution](../src/facebook/_236LowestCommonAncestorBinaryTree.java):
+    - Related articles on geeksforgeeks:
+        - [Lowest Common Ancestor in a Binary Search Tree.](http://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/)
+        - [Lowest Common Ancestor in a Binary Tree - Set 1](http://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/)
+        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
+- [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+    - [Solution](../src/facebook/_238ProductofArrayExceptSelf.java):
+    - Related articles on geeksforgeeks:
+        - [A Product Array Puzzle](http://www.geeksforgeeks.org/a-product-array-puzzle/)
+        - [Find a pair with maximum product in array of Integers](http://www.geeksforgeeks.org/return-a-pair-with-maximum-product-in-array-of-integers/)
+        - [If you’re not paying for a product, then you probably are the product](http://www.geeksforgeeks.org/if-youre-not-paying-for-a-product-then-you-probably-are-the-product/)
+- [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
+    - [Solution](../src/facebook/_253MeetingRoomsII.java):
+    - Related articles on geeksforgeeks:
+        - [OYO Rooms Interview Experience for Software Engineer](http://www.geeksforgeeks.org/oyo-rooms-interview-experience-for-software-engineer/)
+        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
+        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
+- [256. Paint House](https://leetcode.com/problems/paint-house/)
+    - [Solution](../src/facebook/_256PaintHouse.java):
+    - Related articles on geeksforgeeks:
+        - [Flood fill Algorithm – how to implement fill() in paint?](http://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/)
+- [259. 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)
+    - [Solution](../src/facebook/_259ThreeSumSmaller.java):
+    - [Editorial Solution](https://leetcode.com/articles/3sum-smaller)
+    - Related articles on geeksforgeeks:
+        - [Count smaller elements on right side](http://www.geeksforgeeks.org/count-smaller-elements-on-right-side/)
+        - [Find the nearest smaller numbers on left side in an array](http://www.geeksforgeeks.org/find-the-nearest-smaller-numbers-on-left-side-in-an-array/)
+        - [Count triplets with sum smaller that a  given value](http://www.geeksforgeeks.org/count-triplets-with-sum-smaller-that-a-given-value/)
+- [261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+    - [Solution](../src/facebook/_261GraphValidTree.java):
+    - Related articles on geeksforgeeks:
+        - [Convert a given tree to its Sum Tree](http://www.geeksforgeeks.org/convert-a-given-tree-to-sum-tree/)
+        - [Binary Indexed Tree or Fenwick tree](http://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/)
+        - [Tree Traversals](http://www.geeksforgeeks.org/618/)
+- [274. H-Index](https://leetcode.com/problems/h-index/)
+    - [Solution](../src/facebook/_274H_Index.java):
+    - [Editorial Solution](https://leetcode.com/articles/h-index)
+    - Related articles on geeksforgeeks:
+- [275. H-Index II](https://leetcode.com/problems/h-index-ii/)
+    - [Solution](../src/facebook/_275H_IndexII.java):
+    - Related articles on geeksforgeeks:
+        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
+        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
+        - [Flipkart Interview Experience - Set 17 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-experience-set-17-for-sde-ii/)
+- [277. Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/)
+    - [Solution](../src/facebook/_277FindtheCelebrity.java):
+    - Related articles on geeksforgeeks:
+        - [The Celebrity Problem](http://www.geeksforgeeks.org/the-celebrity-problem/)
+- [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)
+    - [Solution](../src/facebook/_285InorderSuccessorinBST.java):
+    - Related articles on geeksforgeeks:
+        - [Inorder predecessor and successor for a given key in BST](http://www.geeksforgeeks.org/inorder-predecessor-successor-given-key-bst/)
+        - [Populate Inorder Successor for all nodes](http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/)
+        - [Inorder Successor in Binary Search Tree](http://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/)
+- [286. Walls and Gates](https://leetcode.com/problems/walls-and-gates/)
+    - [Solution](../src/facebook/_286WallsandGates.java):
+    - [Editorial Solution](https://leetcode.com/articles/walls-and-gates)
+    - Related articles on geeksforgeeks:
 - [298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)
     - [Solution](../src/facebook/_298BinaryTreeLongestConsecutiveSequence.java):
+    - [Editorial Solution](https://leetcode.com/articles/binary-tree-longest-consecutive-sequence)
     - Related articles on geeksforgeeks:
         - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
         - [Convert a Binary Tree to Threaded binary tree](http://www.geeksforgeeks.org/convert-binary-tree-threaded-binary-tree/)
         - [Binary Tree to Binary Search Tree Conversion](http://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/)
+- [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
+    - [Solution](../src/facebook/_309BestTimeToBuyAndSellStockWithCooldown.java):
+    - Related articles on geeksforgeeks:
+        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
+        - [Maximum profit by buying and selling a share at most twice](http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
+        - [The Stock Span Problem](http://www.geeksforgeeks.org/the-stock-span-problem/)
+- [311. Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication/)
+    - [Solution](../src/facebook/_311SparseMatrixMultiplication.java):
+    - Related articles on geeksforgeeks:
+        - [Find Next Sparse Number](http://www.geeksforgeeks.org/given-a-number-find-next-sparse-number/)
+        - [Dynamic Programming - Set 8 (Matrix Chain Multiplication)](http://www.geeksforgeeks.org/dynamic-programming-set-8-matrix-chain-multiplication/)
+        - [Divide and Conquer - Set 5 (Strassen’s Matrix Multiplication)](http://www.geeksforgeeks.org/strassens-matrix-multiplication/)
+- [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
+    - [Solution](../src/facebook/_314BinaryTreeVerticalOrderTraversal.java):
+    - Related articles on geeksforgeeks:
+- [325. Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/)
+    - [Solution](../src/facebook/_325MaximumSizeSubarraySumEqualsk.java):
+    - Related articles on geeksforgeeks:
+        - [Find subarray with given sum](http://www.geeksforgeeks.org/find-subarray-with-given-sum/)
+        - [Find if there is a subarray with 0 sum](http://www.geeksforgeeks.org/find-if-there-is-a-subarray-with-0-sum/)
+        - [Maximum circular subarray sum](http://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
+- [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)
+    - [Solution](../src/facebook/_334IncreasingTripletSubsequence.java):
+    - Related articles on geeksforgeeks:
+- [341. Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/)
+    - [Solution](../src/facebook/_341FlattenNestedListIterator.java):
+    - Related articles on geeksforgeeks:
+- [377. Combination Sum IV](https://leetcode.com/problems/combination-sum-iv/)
+    - [Solution](../src/facebook/_377CombinationSumIV.java):
+    - Related articles on geeksforgeeks:
+- [398. Random Pick Index](https://leetcode.com/problems/random-pick-index/)
+    - [Solution](../src/facebook/_398RandomPickIndex.java):
+    - Related articles on geeksforgeeks:

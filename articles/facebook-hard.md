@@ -4,153 +4,147 @@
         - [Expression Tree](http://www.geeksforgeeks.org/expression-tree/)
         - [Expression Evaluation](http://www.geeksforgeeks.org/expression-evaluation/)
         - [Maximum Bipartite Matching](http://www.geeksforgeeks.org/maximum-bipartite-matching/)
-- [265. Paint House II](https://leetcode.com/problems/paint-house-ii/)
-    - [Solution](../src/facebook/_265PaintHouseII.java):
-    - Related articles on geeksforgeeks:
-        - [Flood fill Algorithm – how to implement fill() in paint?](http://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/)
-        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
-        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
-- [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
-    - [Solution](../src/facebook/_117PopulatingNextRightPointersInEachNodeII.java):
-    - Related articles on geeksforgeeks:
-        - [Populate Inorder Successor for all nodes](http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/)
-        - [Find next right node of a given key](http://www.geeksforgeeks.org/find-next-right-node-of-a-given-key/)
-        - [Delete nodes which have a greater value on right side](http://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/)
-- [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
-    - [Solution](../src/facebook/_025ReverseNodeInKGroup.java):
-    - Related articles on geeksforgeeks:
-        - [Reverse alternate K nodes in a Singly Linked List](http://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/)
-        - [Given a linked list, reverse alternate nodes and append at the end](http://www.geeksforgeeks.org/given-linked-list-reverse-alternate-nodes-append-end/)
-        - [Print all nodes that are at distance k from a leaf node](http://www.geeksforgeeks.org/print-nodes-distance-k-leaf-node/)
-- [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)
-    - [Solution](../src/facebook/_085MaximalRectangle.java):
-    - Related articles on geeksforgeeks:
-        - [Find if two rectangles overlap](http://www.geeksforgeeks.org/find-two-rectangles-overlap/)
-        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
-        - [Find zeroes to be flipped so that number of consecutive 1’s is maximized](http://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/)
-- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
-    - [Solution](../src/facebook/_033SearchInRotatedSortedArray.java):
-    - Related articles on geeksforgeeks:
-        - [Search in an almost sorted array](http://www.geeksforgeeks.org/search-almost-sorted-array/)
-        - [Search an element in a sorted and pivoted array](http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/)
-        - [Find the minimum element in a sorted and rotated array](http://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/)
-- [218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)
-    - [Solution](../src/facebook/_218TheSkylineProblem.java):
-    - Related articles on geeksforgeeks:
-        - [Program Creek - The Skyline Problem](http://www.programcreek.com/2014/06/leetcode-the-skyline-problem-java/) 
-        - [Divide and Conquer - Set 7 (The Skyline Problem)](http://www.geeksforgeeks.org/divide-and-conquer-set-7-the-skyline-problem/)
-        - [Tiling Problem](http://www.geeksforgeeks.org/tiling-problem/)
-        - [The Celebrity Problem](http://www.geeksforgeeks.org/the-celebrity-problem/)
-- [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
-    - [Solution](../src/facebook/_128LongestConsecutiveSequence.java):
-    - Related articles on geeksforgeeks:
-        - [Longest Consecutive Subsequence](http://www.geeksforgeeks.org/longest-consecutive-subsequence/)
-        - [Find length of the longest consecutive path from a given starting character](http://www.geeksforgeeks.org/find-length-of-the-longest-consecutive-path-in-a-character-matrix/)
-        - [Look-and-Say Sequence](http://www.geeksforgeeks.org/look-and-say-sequence/)
-- [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
-    - [Solution](../src/facebook/_044WildcardMatching.java):
-    - Related articles on geeksforgeeks:
-        - [String matching where one string contains wildcard characters](http://www.geeksforgeeks.org/wildcard-character-matching/)
-        - [Maximum Bipartite Matching](http://www.geeksforgeeks.org/maximum-bipartite-matching/)
-        - [Hopcroft–Karp Algorithm for Maximum Matching - Set 2 (Implementation)](http://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
-- [282. Expression Add Operators](https://leetcode.com/problems/expression-add-operators/)
-    - [Solution](../src/facebook/_282ExpressionAddOperators.java):
-    - Related articles on geeksforgeeks:
-        - [Add two numbers without using arithmetic operators](http://www.geeksforgeeks.org/add-two-numbers-without-using-arithmetic-operators/)
-        - [Increment (Decrement) operators require L-value Expression](http://www.geeksforgeeks.org/increment-decrement-operators-require-l-value-expression/)
-        - [Expression Tree](http://www.geeksforgeeks.org/expression-tree/)
-- [269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
-    - [Solution](../src/facebook/_269AlienDictionary.java):
-    - Related articles on geeksforgeeks:
-        - [Given a sorted dictionary of an alien language, find order of characters](http://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/)
-        - [Data Structure for Dictionary and Spell Checker?](http://www.geeksforgeeks.org/data-structure-dictionary-spell-checker/)
-- [158. Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/)
-    - [Solution](../src/facebook/_158ReadNCharactersGivenRead4II_CallMultipleTimes.java):
-    - Related articles on geeksforgeeks:
-        - [Given a string, find its first non-repeating character](http://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)
-        - [Given p and n, find the largest x such that p^x divides n!](http://www.geeksforgeeks.org/given-p-and-n-find-the-largest-x-such-that-px-divides-n-2/)
-        - [Given an array of of size n and a number k, find all elements that appear more than n/k times](http://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/)
-- [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
-    - [Solution](../src/facebook/_146LRUCache.java):
-    - Related articles on geeksforgeeks:
-        - [Implement LRU Cache](http://www.geeksforgeeks.org/implement-lru-cache/)
-        - [How to Implement Reverse DNS Look Up Cache?](http://www.geeksforgeeks.org/implement-reverse-dns-look-cache/)
-        - [How to Implement Forward DNS Look Up Cache?](http://www.geeksforgeeks.org/implement-forward-dns-look-cache/)
-- [57. Insert Interval](https://leetcode.com/problems/insert-interval/)
-    - [Solution](../src/facebook/_057InsertInterval.java):
-    - Related articles on geeksforgeeks:
-        - [Interval Tree](http://www.geeksforgeeks.org/interval-tree/)
-        - [Trie - (Insert and Search)](http://www.geeksforgeeks.org/trie-insert-and-search/)
-        - [Merge Overlapping Intervals](http://www.geeksforgeeks.org/merging-intervals/)
-- [301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)
-    - [Solution](../src/facebook/_301RemoveInvalidParentheses.java):
-    - Related articles on geeksforgeeks:
-        - [Remove spaces from a given string](http://www.geeksforgeeks.org/remove-spaces-from-a-given-string/)
-        - [Remove all duplicates from the input string.](http://www.geeksforgeeks.org/remove-all-duplicates-from-the-input-string/)
-        - [Recursively remove all adjacent duplicates](http://www.geeksforgeeks.org/recursively-remove-adjacent-duplicates-given-string/)
-- [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
-    - [Solution](../src/facebook/_273IntegertoEnglishWords.java):
-    - Related articles on geeksforgeeks:
-        - [Median in a stream of integers (running integers)](http://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
-        - [Square root of an integer](http://www.geeksforgeeks.org/square-root-of-an-integer/)
-        - [Integer Promotions in C](http://www.geeksforgeeks.org/integer-promotions-in-c/)
-- [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-    - [Solution](../src/facebook/_056MergeIntervals.java):
-    - Related articles on geeksforgeeks:
-        - [Merge Overlapping Intervals](http://www.geeksforgeeks.org/merging-intervals/)
-        - [Interval Tree](http://www.geeksforgeeks.org/interval-tree/)
-        - [Iterative Merge Sort](http://www.geeksforgeeks.org/iterative-merge-sort/)
-- [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
-    - [Solution](../src/facebook/_076MinimumWindowSubstring.java):
-    - Related articles on geeksforgeeks:
-        - [Find the maximum of minimums for every window size in a given array](http://www.geeksforgeeks.org/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/)
-        - [Maximum and minimum of an array using minimum number of comparisons](http://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/)
-        - [Find if a given string can be represented from a substring by iterating the substring “n” times](http://www.geeksforgeeks.org/find-given-string-can-represented-substring-iterating-substring-n-times/)
 - [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
     - [Solution](../src/facebook/_023MergeKSortedLists.java):
     - Related articles on geeksforgeeks:
         - [Merge two sorted linked lists](http://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
         - [Merge Sort for Linked Lists](http://www.geeksforgeeks.org/merge-sort-for-linked-list/)
         - [Merge Sort for Doubly Linked List](http://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
-- [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
-    - [Solution](../src/facebook/_297SerializeandDeserializeBinaryTree.java):
+- [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+    - [Solution](../src/facebook/_025ReverseNodeInKGroup.java):
     - Related articles on geeksforgeeks:
-        - [Serialize and Deserialize a Binary Tree](http://www.geeksforgeeks.org/serialize-deserialize-binary-tree/)
-        - [Serialize and Deserialize an N-ary Tree](http://www.geeksforgeeks.org/serialize-deserialize-n-ary-tree/)
-        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
+        - [Reverse alternate K nodes in a Singly Linked List](http://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/)
+        - [Given a linked list, reverse alternate nodes and append at the end](http://www.geeksforgeeks.org/given-linked-list-reverse-alternate-nodes-append-end/)
+        - [Print all nodes that are at distance k from a leaf node](http://www.geeksforgeeks.org/print-nodes-distance-k-leaf-node/)
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+    - [Solution](../src/facebook/_033SearchInRotatedSortedArray.java):
+    - Related articles on geeksforgeeks:
+        - [Search in an almost sorted array](http://www.geeksforgeeks.org/search-almost-sorted-array/)
+        - [Search an element in a sorted and pivoted array](http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/)
+        - [Find the minimum element in a sorted and rotated array](http://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/)
+- [44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)
+    - [Solution](../src/facebook/_044WildcardMatching.java):
+    - Related articles on geeksforgeeks:
+        - [String matching where one string contains wildcard characters](http://www.geeksforgeeks.org/wildcard-character-matching/)
+        - [Maximum Bipartite Matching](http://www.geeksforgeeks.org/maximum-bipartite-matching/)
+        - [Hopcroft–Karp Algorithm for Maximum Matching - Set 2 (Implementation)](http://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
+- [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+    - [Solution](../src/facebook/_056MergeIntervals.java):
+    - Related articles on geeksforgeeks:
+        - [Merge Overlapping Intervals](http://www.geeksforgeeks.org/merging-intervals/)
+        - [Interval Tree](http://www.geeksforgeeks.org/interval-tree/)
+        - [Iterative Merge Sort](http://www.geeksforgeeks.org/iterative-merge-sort/)
+- [57. Insert Interval](https://leetcode.com/problems/insert-interval/)
+    - [Solution](../src/facebook/_057InsertInterval.java):
+    - Related articles on geeksforgeeks:
+        - [Interval Tree](http://www.geeksforgeeks.org/interval-tree/)
+        - [Trie - (Insert and Search)](http://www.geeksforgeeks.org/trie-insert-and-search/)
+        - [Merge Overlapping Intervals](http://www.geeksforgeeks.org/merging-intervals/)
+- [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+    - [Solution](../src/facebook/_076MinimumWindowSubstring.java):
+    - Related articles on geeksforgeeks:
+        - [Find the maximum of minimums for every window size in a given array](http://www.geeksforgeeks.org/find-the-maximum-of-minimums-for-every-window-size-in-a-given-array/)
+        - [Maximum and minimum of an array using minimum number of comparisons](http://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/)
+        - [Find if a given string can be represented from a substring by iterating the substring “n” times](http://www.geeksforgeeks.org/find-given-string-can-represented-substring-iterating-substring-n-times/)
+- [85. Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)
+    - [Solution](../src/facebook/_085MaximalRectangle.java):
+    - Related articles on geeksforgeeks:
+        - [Find if two rectangles overlap](http://www.geeksforgeeks.org/find-two-rectangles-overlap/)
+        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
+        - [Find zeroes to be flipped so that number of consecutive 1’s is maximized](http://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/)
+- [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/)
+    - [Solution](../src/facebook/_117PopulatingNextRightPointersInEachNodeII.java):
+    - Related articles on geeksforgeeks:
+        - [Populate Inorder Successor for all nodes](http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/)
+        - [Find next right node of a given key](http://www.geeksforgeeks.org/find-next-right-node-of-a-given-key/)
+        - [Delete nodes which have a greater value on right side](http://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/)
 - [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
     - [Solution](../src/facebook/_123BestTimeToBuyAndSellStockIII.java):
     - Related articles on geeksforgeeks:
         - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
         - [Maximum profit by buying and selling a share at most twice](http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
         - [The Stock Span Problem](http://www.geeksforgeeks.org/the-stock-span-problem/)
-- [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
-    - [Solution](../src/facebook/_188BestTimeToBuyAndSellStockIV.java):
-    - Related articles on geeksforgeeks:
-        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
-        - [Maximum profit by buying and selling a share at most twice](http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
-        - [The Stock Span Problem](http://www.geeksforgeeks.org/the-stock-span-problem/)
-- [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)
-    - [Solution](../src/facebook/_305NumberofIslandsII.java):
-    - Related articles on geeksforgeeks:
-        - [Find the number of islands](http://www.geeksforgeeks.org/find-number-of-islands/)
-        - [Count number of islands where every island is row-wise and column-wise separated](http://www.geeksforgeeks.org/count-number-islands-every-island-separated-line/)
-        - [Next higher number with same number of set bits](http://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
-- [140. Word Break II](https://leetcode.com/problems/word-break-ii/)
-    - [Solution](../src/facebook/_140WordBreakII.java):
-    - Related articles on geeksforgeeks:
-        - [Dynamic Programming - Set 32 (Word Break Problem)](http://www.geeksforgeeks.org/dynamic-programming-set-32-word-break-problem/)
-        - [Reverse words in a given string](http://www.geeksforgeeks.org/reverse-words-in-a-given-string/)
-        - [Find the k most frequent words from a file](http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/)
 - [126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)
     - [Solution](../src/facebook/_126WordLadderII.java):
     - Related articles on geeksforgeeks:
         - [Snake and Ladder Problem](http://www.geeksforgeeks.org/snake-ladder-problem-2/)
         - [Reverse words in a given string](http://www.geeksforgeeks.org/reverse-words-in-a-given-string/)
         - [Find the k most frequent words from a file](http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/)
+- [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+    - [Solution](../src/facebook/_128LongestConsecutiveSequence.java):
+    - Related articles on geeksforgeeks:
+        - [Longest Consecutive Subsequence](http://www.geeksforgeeks.org/longest-consecutive-subsequence/)
+        - [Find length of the longest consecutive path from a given starting character](http://www.geeksforgeeks.org/find-length-of-the-longest-consecutive-path-in-a-character-matrix/)
+        - [Look-and-Say Sequence](http://www.geeksforgeeks.org/look-and-say-sequence/)
+- [140. Word Break II](https://leetcode.com/problems/word-break-ii/)
+    - [Solution](../src/facebook/_140WordBreakII.java):
+    - Related articles on geeksforgeeks:
+        - [Dynamic Programming - Set 32 (Word Break Problem)](http://www.geeksforgeeks.org/dynamic-programming-set-32-word-break-problem/)
+        - [Reverse words in a given string](http://www.geeksforgeeks.org/reverse-words-in-a-given-string/)
+        - [Find the k most frequent words from a file](http://www.geeksforgeeks.org/find-the-k-most-frequent-words-from-a-file/)
+- [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
+    - [Solution](../src/facebook/_146LRUCache.java):
+    - Related articles on geeksforgeeks:
+        - [Implement LRU Cache](http://www.geeksforgeeks.org/implement-lru-cache/)
+        - [How to Implement Reverse DNS Look Up Cache?](http://www.geeksforgeeks.org/implement-reverse-dns-look-cache/)
+        - [How to Implement Forward DNS Look Up Cache?](http://www.geeksforgeeks.org/implement-forward-dns-look-cache/)
+- [158. Read N Characters Given Read4 II - Call multiple times](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/)
+    - [Solution](../src/facebook/_158ReadNCharactersGivenRead4II_CallMultipleTimes.java):
+    - Related articles on geeksforgeeks:
+        - [Given a string, find its first non-repeating character](http://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)
+        - [Given p and n, find the largest x such that p^x divides n!](http://www.geeksforgeeks.org/given-p-and-n-find-the-largest-x-such-that-px-divides-n-2/)
+        - [Given an array of of size n and a number k, find all elements that appear more than n/k times](http://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/)
+- [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
+    - [Solution](../src/facebook/_188BestTimeToBuyAndSellStockIV.java):
+    - Related articles on geeksforgeeks:
+        - [Stock Buy Sell to Maximize Profit](http://www.geeksforgeeks.org/stock-buy-sell/)
+        - [Maximum profit by buying and selling a share at most twice](http://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
+        - [The Stock Span Problem](http://www.geeksforgeeks.org/the-stock-span-problem/)
 - [212. Word Search II](https://leetcode.com/problems/word-search-ii/)
     - [Solution](../src/facebook/_212WordSearchII.java):
     - Related articles on geeksforgeeks:
         - [Search a Word in a 2D Grid of characters](http://www.geeksforgeeks.org/search-a-word-in-a-2d-grid-of-characters/)
         - [Interpolation search vs Binary search](http://www.geeksforgeeks.org/g-fact-84/)
         - [Anagram Substring Search (Or Search for all permutations)](http://www.geeksforgeeks.org/anagram-substring-search-search-permutations/)
+- [218. The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/)
+    - [Solution](../src/facebook/_218TheSkylineProblem.java):
+    - Related articles on geeksforgeeks:
+        - [Program Creek - The Skyline Problem](http://www.programcreek.com/2014/06/leetcode-the-skyline-problem-java/)
+        - [Divide and Conquer - Set 7 (The Skyline Problem)](http://www.geeksforgeeks.org/divide-and-conquer-set-7-the-skyline-problem/)
+        - [Tiling Problem](http://www.geeksforgeeks.org/tiling-problem/)
+        - [The Celebrity Problem](http://www.geeksforgeeks.org/the-celebrity-problem/)
+- [265. Paint House II](https://leetcode.com/problems/paint-house-ii/)
+    - [Solution](../src/facebook/_265PaintHouseII.java):
+    - Related articles on geeksforgeeks:
+        - [Flood fill Algorithm – how to implement fill() in paint?](http://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/)
+        - [Flipkart Interview - Set 7 (For SDE II)](http://www.geeksforgeeks.org/flipkart-interview-set-7-sde-ii/)
+        - [Microsoft Interview Experience - Set 75 (For SDE II)](http://www.geeksforgeeks.org/microsoft-interview-experience-set-75-for-sde-ii/)
+- [269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
+    - [Solution](../src/facebook/_269AlienDictionary.java):
+    - Related articles on geeksforgeeks:
+        - [Given a sorted dictionary of an alien language, find order of characters](http://www.geeksforgeeks.org/given-sorted-dictionary-find-precedence-characters/)
+        - [Data Structure for Dictionary and Spell Checker?](http://www.geeksforgeeks.org/data-structure-dictionary-spell-checker/)
+- [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/)
+    - [Solution](../src/facebook/_273IntegertoEnglishWords.java):
+    - Related articles on geeksforgeeks:
+        - [Median in a stream of integers (running integers)](http://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
+        - [Square root of an integer](http://www.geeksforgeeks.org/square-root-of-an-integer/)
+        - [Integer Promotions in C](http://www.geeksforgeeks.org/integer-promotions-in-c/)
+- [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
+    - [Solution](../src/facebook/_297SerializeandDeserializeBinaryTree.java):
+    - Related articles on geeksforgeeks:
+        - [Serialize and Deserialize a Binary Tree](http://www.geeksforgeeks.org/serialize-deserialize-binary-tree/)
+        - [Serialize and Deserialize an N-ary Tree](http://www.geeksforgeeks.org/serialize-deserialize-n-ary-tree/)
+        - [Check whether a binary tree is a full binary tree or not](http://www.geeksforgeeks.org/check-whether-binary-tree-full-binary-tree-not/)
+- [301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/)
+    - [Solution](../src/facebook/_301RemoveInvalidParentheses.java):
+    - Related articles on geeksforgeeks:
+        - [Remove spaces from a given string](http://www.geeksforgeeks.org/remove-spaces-from-a-given-string/)
+        - [Remove all duplicates from the input string.](http://www.geeksforgeeks.org/remove-all-duplicates-from-the-input-string/)
+        - [Recursively remove all adjacent duplicates](http://www.geeksforgeeks.org/recursively-remove-adjacent-duplicates-given-string/)
+- [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/)
+    - [Solution](../src/facebook/_305NumberofIslandsII.java):
+    - Related articles on geeksforgeeks:
+        - [Find the number of islands](http://www.geeksforgeeks.org/find-number-of-islands/)
+        - [Count number of islands where every island is row-wise and column-wise separated](http://www.geeksforgeeks.org/count-number-islands-every-island-separated-line/)
+        - [Next higher number with same number of set bits](http://www.geeksforgeeks.org/next-higher-number-with-same-number-of-set-bits/)
