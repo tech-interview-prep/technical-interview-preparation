@@ -31,21 +31,23 @@
 package facebook;
 
 public class _004MedianOfTwoSortedArrays {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-  }
+    }
 }
 
 class Solution_MedianOfSortedArrays {
 	public double findMedianSortedArrays(int A[], int B[]) {
         int lengthA = A.length;
         int lengthB = B.length;
+
         if ((lengthA + lengthB) % 2 == 0) {
             double r1 = (double) findMedianSortedArrays(A, 0, lengthA, B, 0, lengthB, (lengthA + lengthB) / 2);
             double r2 = (double) findMedianSortedArrays(A, 0, lengthA, B, 0, lengthB, (lengthA + lengthB) / 2 + 1);
             return (r1 + r2) / 2;
-        } else
+        } else {
             return findMedianSortedArrays(A, 0, lengthA, B, 0, lengthB, (lengthA + lengthB + 1) / 2);
+        }
     }
 
     public int findMedianSortedArrays(int A[], int startA, int endA, int B[], int startB, int endB, int k) {
@@ -66,16 +68,17 @@ class Solution_MedianOfSortedArrays {
         int midB = (startB + endB) / 2;
 
         if (A[midA] <= B[midB]) {
-            if (n / 2 + m / 2 + 1 >= k)
+            if (n / 2 + m / 2 + 1 >= k) {
                 return findMedianSortedArrays(A, startA, endA, B, startB, midB, k);
-            else
+            } else {
                 return findMedianSortedArrays(A, midA + 1, endA, B, startB, endB, k - n / 2 - 1);
+            }
         } else {
-            if (n / 2 + m / 2 + 1 >= k)
+            if (n / 2 + m / 2 + 1 >= k) {
                 return findMedianSortedArrays(A, startA, midA, B, startB, endB, k);
-            else
+            } else {
                 return findMedianSortedArrays(A, startA, endA, B, midB + 1, endB, k - m / 2 - 1);
-
+            }
         }
     }
 }
