@@ -1,5 +1,5 @@
 ###List of topics
-- Big O
+- [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)
 - Powers of 2 Table
 
 Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
@@ -14,34 +14,35 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 40 | 1,099,511,627,776 | 1 trillion | 1 TB
 
 #####**[Data Structures](https://www.coursera.org/learn/data-structures/home):**
-- Arrays
+- [Arrays](https://www.youtube.com/watch?v=NLAzwv4D5iI)
 - Vectors
-- ArrayLists
+- [ArrayLists](https://www.youtube.com/watch?v=NLAzwv4D5iI)
+- [Strings](https://www.youtube.com/watch?v=gbxodBVkElQ)
+- [StringBuffer](https://www.youtube.com/watch?v=gbxodBVkElQ)
+- [StringBuilder](https://www.youtube.com/watch?v=gbxodBVkElQ)
 - [LinkedLists](https://www.youtube.com/watch?v=njTh_OwMljA)
 - Hashset
 - Hashmap
 - [Hashtables](https://www.youtube.com/watch?v=shs0KM3wKv8)
 - Dictionary
 - [Stacks and Queues](https://www.youtube.com/watch?v=wjI1WNcIntg)
-- Priority queues
+- [Heaps/Priority queues](https://www.youtube.com/watch?v=t0Cq6tVNRBA)
 - [Trees](https://www.youtube.com/watch?v=oSWTXtMglKE) (Binary Tree, [Binary Search Tree](https://www.youtube.com/watch?v=i_Q0v_Ct5lY), kd Tree, 2-3 Tree, AVL)
 - [Tries](https://www.youtube.com/watch?v=zIjfhVPRZCg)
 - [Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) (MinHeap, MaxHeap)
 - Graph
 - Bloom Filter
-- Strings
-- StringBuffer
-- StringBuilder
 
 #####**Sorting:**
 - [Merge sort](https://www.youtube.com/watch?v=KF2j-9iSf4Q)/Poly phase merge sort
 - [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)
 - Insertion sort
+- [Bubble sort](https://www.youtube.com/watch?v=6Gv8vg0kcHc)
 - Bucket sort
 
 #####**Searching:**
-- BFS
-- DFS
+- [BFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
+- [DFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
 - [Binary Search](https://www.youtube.com/watch?v=P3YID7liBug)
 - Tree insert / find
 - Heap Search
