@@ -1,4 +1,8 @@
 ###List of topics
+- [How Companies Evaluate Technical Interviews](https://www.youtube.com/watch?v=jxAWQN5t6wg)
+- [How to Approach Behavioral Questions](https://www.youtube.com/watch?v=tZxNNKqxXnw)
+- [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w)
+- [3 Algorithm Strategies](https://www.youtube.com/watch?v=84UYVCluClQ)
 - [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)
 - Powers of 2 Table
 
