@@ -1,5 +1,7 @@
 package interview_bit.two_pointers;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Created by priyavivek on 10/22/15.

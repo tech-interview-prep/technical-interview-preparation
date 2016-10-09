@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _090SubsetII {
     /*
     Given a collection of integers that might contain duplicates, S, return all possible subsets.
@@ -35,7 +34,7 @@ public class _090SubsetII {
         Arrays.sort(num);
         int pre = num.length == 0 || num[0] == 0 ? 1 : num[0] >> 1, lastUpdateIdx = 0, startIdx;
 
-        for(int i = 0 ; i < num.length; i++) {
+        for (int i = 0 ; i < num.length; i++) {
             startIdx = pre == num[i] ? lastUpdateIdx : 0;
             pre = num[i];
             lastUpdateIdx = ret.size();
@@ -50,7 +49,7 @@ public class _090SubsetII {
     }
 
     private static void test() {
-        for (ArrayList<Integer> il : subsetsWithDup(new int[]{1, 2, 2})) {
+        for (ArrayList<Integer> il : subsetsWithDup(new int[] {1, 2, 2})) {
             Utils.printIntListln(il);
         }
     }

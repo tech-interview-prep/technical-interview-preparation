@@ -1,23 +1,22 @@
 package uber;
 
-import utils.Utils;
-
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/valid-sudoku/
  * @author bkoteshwarreddy
  */
-
 public class _036ValidSudoku {
-  /**
-   * Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
-   *
-   * The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
-   *
-   * A partially filled sudoku which is valid.
-   */
+    /**
+     * Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
+     *
+     * The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
+     *
+     * A partially filled sudoku which is valid.
+     */
     public static boolean isValidSudoku(char[][] board) {
         Set<Character> rowSet = new HashSet<Character>();
         Set<Character> colSet = new HashSet<Character>();
@@ -56,30 +55,30 @@ public class _036ValidSudoku {
     }
 
     private static void test() {
-        char[][] board = new char[][]{
-        ".1...1...".toCharArray(),
-        ".........".toCharArray(),
-        ".........".toCharArray(),
-        ".........".toCharArray(),
-        ".........".toCharArray(),
-        ".........".toCharArray(),
-        ".........".toCharArray(),
-        ".........".toCharArray(),
-        ".........".toCharArray()
+        char[][] board = new char[][] {
+            ".1...1...".toCharArray(),
+            ".........".toCharArray(),
+            ".........".toCharArray(),
+            ".........".toCharArray(),
+            ".........".toCharArray(),
+            ".........".toCharArray(),
+            ".........".toCharArray(),
+            ".........".toCharArray(),
+            ".........".toCharArray()
         };
 
         Utils.printTestln(isValidSudoku(board), false);
 
         board = new char[][] {
-                ".87654321".toCharArray(),
-                "2........".toCharArray(),
-                "3........".toCharArray(),
-                "4........".toCharArray(),
-                "5........".toCharArray(),
-                "6........".toCharArray(),
-                "7........".toCharArray(),
-                "8........".toCharArray(),
-                "9........".toCharArray()
+            ".87654321".toCharArray(),
+            "2........".toCharArray(),
+            "3........".toCharArray(),
+            "4........".toCharArray(),
+            "5........".toCharArray(),
+            "6........".toCharArray(),
+            "7........".toCharArray(),
+            "8........".toCharArray(),
+            "9........".toCharArray()
         };
         Utils.printTestln(isValidSudoku(board), true);
 

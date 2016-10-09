@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _041FirstMissingPositive {
     /*
     Given an unsorted integer array, find the first missing positive integer.
@@ -35,9 +34,9 @@ public class _041FirstMissingPositive {
     }
 
     private static void test() {
-        Utils.printTestln(firstMissingPositive(new int[]{1, 1}), 2);
-        Utils.printTestln(firstMissingPositive(new int[]{1, 2, 0}), 3);
-        Utils.printTestln(firstMissingPositive(new int[]{3, 4, -1, 1}), 2);
+        Utils.printTestln(firstMissingPositive(new int[] {1, 1}), 2);
+        Utils.printTestln(firstMissingPositive(new int[] {1, 2, 0}), 3);
+        Utils.printTestln(firstMissingPositive(new int[] {3, 4, -1, 1}), 2);
     }
 
     public static void main(String[] args) {

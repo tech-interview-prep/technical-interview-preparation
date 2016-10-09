@@ -30,7 +30,7 @@
      now we can move a bit left to test the second LSB
      continue until 2^column>n
 
-    Link: https://gist.github.com/zac-xin/2728968
+     https://gist.github.com/zac-xin/2728968
 
 */
 package facebook;
@@ -41,30 +41,30 @@ public class _268MissingNumber {
 }
 
 class FindMissingNumber {
-    public static boolean getBit(int n, int index){
+    public static boolean getBit(int n, int index) {
         return (n & (1 << index)) > 0;
     }
     // we try to find missing number from 1 - n;
-    public static int findMissing(ArrayList<Integer> list, int column, int n){
-        if(Math.pow(2, column) > n)  // 迭代的退出条件
+    public static int findMissing(ArrayList<Integer> list, int column, int n) {
+        if (Math.pow(2, column) > n) // 迭代的退出条件
             return 0;
 
         ArrayList<Integer> oddIndices = new ArrayList<Integer>();
         ArrayList<Integer> evenIndices = new ArrayList<Integer>();
 
-        for(Integer i : list){
-            if(getBit(i, column))
+        for (Integer i : list) {
+            if (getBit(i, column))
                 oddIndices.add(i);
             else
                 evenIndices.add(i);
         }
 
-        if(oddIndices.size() >= evenIndices.size()) // missing number has a 0 in the index of column
-			/* the last zero in the return statement is that we got in this method
-			 * the rest we need to use recursion
-			 * in each recursion we just add a 0 or 1 to the last bit
-			 * the call to findMissing(evens, column+1) decide the rest
-			 */
+        if (oddIndices.size() >= evenIndices.size()) // missing number has a 0 in the index of column
+            /* the last zero in the return statement is that we got in this method
+             * the rest we need to use recursion
+             * in each recursion we just add a 0 or 1 to the last bit
+             * the call to findMissing(evens, column+1) decide the rest
+             */
             return findMissing(evenIndices, column + 1, n) << 1 | 0;
         else
             return findMissing(oddIndices, column + 1, n) << 1 | 1;

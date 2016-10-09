@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.Stack;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _085MaximalRectangle {
     /*
     Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
@@ -57,9 +56,10 @@ public class _085MaximalRectangle {
     }
 
     private static void test() {
-        Utils.printTestln(maximalRectangle(new char[][]{"010".toCharArray(),
-                "011".toCharArray(),
-                "011".toCharArray()}), 4);
+        Utils.printTestln(maximalRectangle(new char[][] {"010".toCharArray(),
+                                           "011".toCharArray(),
+                                           "011".toCharArray()
+                                                        }), 4);
 
     }
 

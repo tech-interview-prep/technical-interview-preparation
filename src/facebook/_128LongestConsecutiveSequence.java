@@ -9,20 +9,19 @@
     */
 package facebook;
 
-import utils.Utils;
-
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/longest-consecutive-sequence/
  * @author bkoteshwarreddy
  */
-
 public class _128LongestConsecutiveSequence {
     public static void main(String[] args) {
-      Solution_LongestConsecutiveSequence sol = new Solution_LongestConsecutiveSequence();
-      Utils.printTestln(sol.longestConsecutive(new int[]{100, 4, 200, 1, 3, 2}), 4);
+        Solution_LongestConsecutiveSequence sol = new Solution_LongestConsecutiveSequence();
+        Utils.printTestln(sol.longestConsecutive(new int[] {100, 4, 200, 1, 3, 2}), 4);
     }
 }
 
@@ -48,7 +47,7 @@ class Solution_LongestConsecutiveSequence {
     }
 
     /*
-    Link: http://www.programcreek.com/2013/01/leetcode-longest-consecutive-sequence-java/
+     http://www.programcreek.com/2013/01/leetcode-longest-consecutive-sequence-java/
 
     We can use a HashSet to add and remove elements. HashSet is implemented by using a hash table.
     Elements are not ordered. The add, remove and contains methods have constant time complexity O(1).
@@ -64,7 +63,7 @@ class Solution_LongestConsecutiveSequence {
     sequence, and m==n, then the time complexity is O(n^2). The reason is that in this case, no element
     is removed from the set each time. You can use this array to get the point: {1,3,5,7,9}.
     */
-   public int longestConsecutive2(int[] num) {
+    public int longestConsecutive2(int[] num) {
         // if array is empty, return 0
         if (num.length == 0) {
             return 0;

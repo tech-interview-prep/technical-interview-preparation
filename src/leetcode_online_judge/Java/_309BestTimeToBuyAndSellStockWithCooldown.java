@@ -4,7 +4,6 @@ package leetcode_online_judge.Java;
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
  * @author bkoteshwarreddy
  */
-
 public class _309BestTimeToBuyAndSellStockWithCooldown {
     /*
       Say you have an array for which the ith element is the price of a given stock on day i.
@@ -22,7 +21,7 @@ public class _309BestTimeToBuyAndSellStockWithCooldown {
      */
 
     public int maxProfit(int[] prices) {
-      return 0;
+        return 0;
     }
 
     public static void main(String[] args) {

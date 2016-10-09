@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _031NextPermutation {
     /*
     Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
@@ -39,7 +38,7 @@ public class _031NextPermutation {
     }
 
     private static void test() {
-        int[] num = new int[]{1, 2, 3};
+        int[] num = new int[] {1, 2, 3};
         nextPermutation(num);
         Utils.printArrayln(num);
     }

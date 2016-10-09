@@ -1,7 +1,6 @@
 package interview_bit.arrays;
 
-import java.util.*;
-import java.util.HashMap;
+import java.util.ArrayList;
 
 /**
  * Created by priyavivek on 10/18/15.

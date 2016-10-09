@@ -1,5 +1,5 @@
-  /*
-  Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
+/*
+Convert a non-negative integer to its english words representation. Given input is guaranteed to be less than 231 - 1.
 
 For example,
 123 -> "One Hundred Twenty Three"
@@ -13,7 +13,7 @@ Hint:
 convert just that chunk to words.
 3. There are many edge cases. What are some good test cases? Does your code work with input such as 0? Or 1000010?
 (middle chunk is zero and should not be printed out)
-   */
+ */
 
 package facebook;
 
@@ -21,7 +21,6 @@ package facebook;
  * https://leetcode.com/problems/integer-to-english-words/
  * @author bkoteshwarreddy
  */
-
 public class _273IntegertoEnglishWords {
 }
 
@@ -29,13 +28,16 @@ class Solution_IntegertoEnglishWords {
     static String[] units = {"Thousand", "Million", "Billion"};
 
     static String[] ones = {"One", "Two", "Three", "Four",
-        "Five", "Six", "Seven", "Eight", "Nine"};
+                            "Five", "Six", "Seven", "Eight", "Nine"
+                           };
 
     static String[] teens = {"Ten", "Eleven", "Twelve", "Thirteen",
-        "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+                             "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"
+                            };
 
     static String[] ties = {"Twenty", "Thirty", "Forty",
-        "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+                            "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"
+                           };
 
     public String numberToWords(int num) {
         if (num == 0)

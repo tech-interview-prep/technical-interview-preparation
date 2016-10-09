@@ -7,7 +7,6 @@ import utils.Utils;
  * https://leetcode.com/problems/maximum-depth-of-binary-tree/
  * @author bkoteshwarreddy
  */
-
 public class _104MaximumDepthOfBinaryTree {
     /*
     Given a binary tree, find its maximum depth.

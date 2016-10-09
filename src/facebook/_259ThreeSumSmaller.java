@@ -18,7 +18,6 @@ import java.util.Arrays;
  * https://leetcode.com/problems/3sum-smaller/
  * @author bkoteshwarreddy
  */
-
 public class _259ThreeSumSmaller {
 
 }
@@ -36,8 +35,7 @@ class Solution_ThreeSumSmaller {
                 if (nums[i] + nums[left] + nums[right] < target) {
                     answer += right - left;
                     ++left;
-                }
-                else {
+                } else {
                     --right;
                 }
             }

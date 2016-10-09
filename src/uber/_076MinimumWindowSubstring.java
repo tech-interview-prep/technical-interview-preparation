@@ -14,22 +14,21 @@ If there are multiple such windows, you are guaranteed that there will always be
 
 package uber;
 
-import utils.Utils;
-
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/minimum-window-substring/
  * @author bkoteshwarreddy
  */
-
 public class _076MinimumWindowSubstring {
     public static void main(String[] args) {
-      Solution_MinimumWindowSubstring sol = new Solution_MinimumWindowSubstring();
+        Solution_MinimumWindowSubstring sol = new Solution_MinimumWindowSubstring();
 
-      Utils.printTestln(sol.minWindow("adobecodebanc", "abc"), "banc");
-      Utils.printTestln(sol.minWindow("a", "aa"), "");
+        Utils.printTestln(sol.minWindow("adobecodebanc", "abc"), "banc");
+        Utils.printTestln(sol.minWindow("a", "aa"), "");
     }
 }
 

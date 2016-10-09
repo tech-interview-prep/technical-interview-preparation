@@ -17,45 +17,45 @@ public class Anagrams {
 
         Sample #2: @[@"gab", @"bat", @"laf"]; // output FALSE
 
-        Link: http://www.careercup.com/question?id=5654505932718080
+         http://www.careercup.com/question?id=5654505932718080
 
     */
     public boolean hasAnagrams(String[] input) {
-	    if(input == null || input.length <= 1) {
+        if (input == null || input.length <= 1) {
             return false;
         }
 
         HashSet<String> set = new HashSet<String>();
 
-        for(String s: input) {
+        for (String s : input) {
             String sortedString = sort(s);
-            if(set.contains(sortedString)) {
+            if (set.contains(sortedString)) {
                 return true;
             } else {
                 set.add(sortedString);
             }
         }
-		return false;
-	}
+        return false;
+    }
 
     /*
         Group Anagrams
         input = ["star, astr, car, rac, st"]
         output = [["star, astr"],["car","rac"],["st"]);
 
-        Link: http://www.careercup.com/question?id=5733320654585856
+         http://www.careercup.com/question?id=5733320654585856
 
     */
     public List<List<String>> groupAnagrams(String[] input) {
-        if(input == null || input.length <= 0) {
+        if (input == null || input.length <= 0) {
             return new ArrayList<List<String>>();
         }
 
         HashMap<String, List<String>> set = new HashMap<String, List<String>>();
 
-        for(String s: input) {
+        for (String s : input) {
             String sortedString = sort(s);
-            if(set.containsKey(sortedString)) {
+            if (set.containsKey(sortedString)) {
                 set.get(sortedString).add(s);
             } else {
                 List<String> list = new ArrayList<String>();
@@ -67,7 +67,7 @@ public class Anagrams {
     }
 
     public String sort(String s) {
-        if(s == null) {
+        if (s == null) {
             return "";
         }
 
@@ -102,19 +102,18 @@ public class Anagrams {
 
     // ---------------------------------------------------------- //
 
-    public static void anagramSort(ArrayList<String> list){
+    public static void anagramSort(ArrayList<String> list) {
         //important!
         Collections.sort(list, new AnagramComparator());
     }
 }
 
 class AnagramComparator implements Comparator<String> {
-
-    public int compare(String s1, String s2){
+    public int compare(String s1, String s2) {
         return sort(s1).compareTo(sort(s2));
     }
 
-    public static String sort(String s){
+    public static String sort(String s) {
         char[] array = s.toCharArray();
         //important!
         Arrays.sort(array);

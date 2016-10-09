@@ -1,14 +1,17 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
-import java.util.*;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _126WordLadderII {
     /*
     Given two words (start and end), and a dictionary, find all shortest transformation sequence(s) from start to end, such that:
@@ -30,7 +33,7 @@ public class _126WordLadderII {
     All words have the same length.
     All words contain only lowercase alphabetic characters.
      */
-	public static List<List<String>> findLadders(String beginWord, String endWord, Set<String> wordList) {
+    public static List<List<String>> findLadders(String beginWord, String endWord, Set<String> wordList) {
         HashMap<String, ArrayList<String>> h = new HashMap<String, ArrayList<String>>();
         Set<String> set1 = new HashSet<String>(), set2 = new HashSet<String>();
         set1.add(beginWord); set2.add(endWord);
@@ -79,26 +82,26 @@ public class _126WordLadderII {
         }
         if (!connected && !set3.isEmpty())
             BFS(set3, set2, wordList, h, forward);
+    }
+
+    private static void DFS(String str, String ed, HashMap<String, ArrayList<String>> h, List<String> cur, List<List<String>> ans) {
+        if (str.equals(ed)) {
+            ans.add(new ArrayList<String>(cur));
+            return;
         }
 
-        private static void DFS(String str, String ed, HashMap<String, ArrayList<String>> h, List<String> cur, List<List<String>> ans) {
-            if (str.equals(ed)) {
-                ans.add(new ArrayList<String>(cur));
-                return;
-            }
-
-            if (!h.containsKey(str)) return;
-            List<String> next = h.get(str);
-            for (String i : next) {
-                cur.add(i);
-                DFS(i, ed, h, cur, ans);
-                cur.remove(cur.size() - 1);
-            }
+        if (!h.containsKey(str)) return;
+        List<String> next = h.get(str);
+        for (String i : next) {
+            cur.add(i);
+            DFS(i, ed, h, cur, ans);
+            cur.remove(cur.size() - 1);
         }
+    }
 
     private static void test() {
         HashSet<String> dict = new HashSet<String>();
-        String[] dictArrays = new String[]{"hot","dot","dog","lot","log"};
+        String[] dictArrays = new String[] {"hot", "dot", "dog", "lot", "log"};
         for (String w : dictArrays) {
             dict.add(w);
         }

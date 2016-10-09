@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _143ReorderList {
     /*
     Given a singly linked list L: L0?L1?�?Ln-1?Ln,
@@ -59,7 +58,7 @@ public class _143ReorderList {
         ListNode.print(head);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         test();
     }
 

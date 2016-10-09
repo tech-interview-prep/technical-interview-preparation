@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/spiral-matrix/
  * @author bkoteshwarreddy
  */
-
 public class _054SpiralMatrix {
     /*
     Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
@@ -61,23 +60,23 @@ public class _054SpiralMatrix {
     }
 
     private static void test() {
-        Utils.printTestListln(spiralOrder(new int[][]{}), new ArrayList<Integer>());
+        Utils.printTestListln(spiralOrder(new int[][] {}), new ArrayList<Integer>());
 
-        Utils.printTestListln(spiralOrder(new int[][]{
+        Utils.printTestListln(spiralOrder(new int[][] {
             {1}
         }), Arrays.asList(1));
 
-        Utils.printTestListln(spiralOrder(new int[][]{
+        Utils.printTestListln(spiralOrder(new int[][] {
             {1, 2, 3}
         }), Arrays.asList(1, 2, 3));
 
-        Utils.printTestListln(spiralOrder(new int[][]{
+        Utils.printTestListln(spiralOrder(new int[][] {
             {1},
             {2},
             {3}
         }), Arrays.asList(1, 2, 3));
 
-        Utils.printTestListln(spiralOrder(new int[][]{
+        Utils.printTestListln(spiralOrder(new int[][] {
             {1, 2, 3},
             {4, 5, 6},
             {7, 8, 9},

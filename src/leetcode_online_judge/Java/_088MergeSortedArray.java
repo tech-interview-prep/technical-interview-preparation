@@ -4,7 +4,6 @@ package leetcode_online_judge.Java;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _088MergeSortedArray {
     /*
     Given two sorted integer arrays A and B, merge B into A as one sorted array.
@@ -15,7 +14,7 @@ public class _088MergeSortedArray {
     */
     public static void merge(int A[], int m, int B[], int n) {
         int i, j;
-        for(i = m - 1, j = n - 1; i >= 0 && j >= 0;) {
+        for (i = m - 1, j = n - 1; i >= 0 && j >= 0;) {
             if (A[i] < B[j]) {
                 A[i + j + 1] = B[j];
                 j--;

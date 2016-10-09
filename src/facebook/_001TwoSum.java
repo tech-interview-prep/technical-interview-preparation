@@ -1,6 +1,11 @@
+package facebook;
+
+import java.util.Arrays;
+import java.util.HashMap;
+
+import utils.Utils;
+
 /**
- * @author bkoteshwarreddy
- *
  * Given an array of integers, return indices of the two numbers such that they add up to
  * a specific target.
  *
@@ -17,21 +22,13 @@
  *    description carefully.
  *
  * https://leetcode.com/problems/two-sum/
- * http://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/
  */
-
-package facebook;
-
-import utils.Utils;
-import java.util.Arrays;
-import java.util.HashMap;
-
 public class _001TwoSum {
     public static void main(String[] args) {
         Solution_TwoSum sol = new Solution_TwoSum();
 
-        Utils.printTestArrayln(sol.twoSum_HashMap(new int[]{2, 7, 11, 15}, 9), new int[]{0, 1});
-        Utils.printTestArrayln(sol.twoSum_HashMap(new int[]{7, 11, 2, 15}, 9), new int[]{0, 2});
+        Utils.printTestArrayln(sol.twoSum_HashMap(new int[] {2, 7, 11, 15}, 9), new int[] {0, 1});
+        Utils.printTestArrayln(sol.twoSum_HashMap(new int[] {7, 11, 2, 15}, 9), new int[] {0, 2});
     }
 }
 
@@ -91,8 +88,8 @@ class Solution_TwoSum {
 
         if (found) {
             System.out.println("Sum " + target
-                + " is found, values the making sum are " + numbers[start] + " , "
-                + numbers[end]);
+                               + " is found, values the making sum are " + numbers[start] + " , "
+                               + numbers[end]);
         } else {
             System.out.println("No pair exists whose sum is " + target);
         }
@@ -109,9 +106,9 @@ class Solution_TwoSum {
             int tofind = target - numbers[i];
             int returned = Arrays.binarySearch(numbers, i + 1, numbers.length, tofind);
             if (returned > 0) {
-            System.out.println("Sum " + target
-                + " is found, values the making sum are " + numbers[i]
-                + " , " + numbers[returned]);
+                System.out.println("Sum " + target
+                                   + " is found, values the making sum are " + numbers[i]
+                                   + " , " + numbers[returned]);
             }
         }
     }

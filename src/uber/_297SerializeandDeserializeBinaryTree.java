@@ -20,8 +20,8 @@ need to follow this format, so please be creative and come up with different app
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms
 should be stateless.
 
-Link: http://www.careercup.com/question?id=5729456584916992
-Link: https://gist.github.com/bittib/5620951
+ http://www.careercup.com/question?id=5729456584916992
+ https://gist.github.com/bittib/5620951
 */
 
 package uber;
@@ -34,20 +34,19 @@ import utils.TreeNode;
  * https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
  * @author bkoteshwarreddy
  */
-
 public class _297SerializeandDeserializeBinaryTree {
 }
 
 class Codec {
 
     // Encodes a tree to a single string.
-    public String serialize(TreeNode root){
+    public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
         serialize(root, sb);
         return sb.toString();
     }
 
-    private void serialize(TreeNode x, StringBuilder sb){
+    private void serialize(TreeNode x, StringBuilder sb) {
         if (x == null) {
             sb.append("# ");
         } else {
@@ -58,13 +57,13 @@ class Codec {
     }
 
     // Decodes your encoded data to tree.
-    public TreeNode deserialize(String data){
+    public TreeNode deserialize(String data) {
         if (data == null || data.length() == 0) return null;
         StringTokenizer st = new StringTokenizer(data, " ");
         return deserialize(st);
     }
 
-    private TreeNode deserialize(StringTokenizer st){
+    private TreeNode deserialize(StringTokenizer st) {
         if (!st.hasMoreTokens())
             return null;
         String val = st.nextToken();

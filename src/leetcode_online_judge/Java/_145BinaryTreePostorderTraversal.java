@@ -1,16 +1,15 @@
 package leetcode_online_judge.Java;
 
-import utils.TreeNode;
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Stack;
+
+import utils.TreeNode;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _145BinaryTreePostorderTraversal {
     /*
     Given a binary tree, return the postorder traversal of its nodes' values.
@@ -102,7 +101,7 @@ public class _145BinaryTreePostorderTraversal {
                 node = s.pop();
             } else if (node.left == null && node.right == null || preNode != null && (node.left == preNode || node.right == preNode)) {
                 ret.add(node.data);
-                if (s.isEmpty()){
+                if (s.isEmpty()) {
                     return ret;
                 }
                 preNode = node;

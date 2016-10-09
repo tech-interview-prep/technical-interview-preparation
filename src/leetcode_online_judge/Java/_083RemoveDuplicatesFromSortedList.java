@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _083RemoveDuplicatesFromSortedList {
     /*
     Given a sorted linked list, delete all duplicates such that each element appear only once.

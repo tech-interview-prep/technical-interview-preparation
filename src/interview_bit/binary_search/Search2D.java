@@ -1,7 +1,8 @@
 package interview_bit.binary_search;
 //import com.sun.tools.corba.se.idl.InterfaceGen;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 /**
  * Created by priyavivek on 10/20/15.
  *
@@ -28,40 +29,38 @@ import java.util.*;
  Return 0 / 1 ( 0 if the element is not present, 1 if the element is present ) for this problem
  */
 public class Search2D {
-
     public int searchMatrix(ArrayList<ArrayList<Integer>> a, int b) {
 
         int rowNum;
 
-        rowNum = getRowNum(0,a.size()-1,b,a);
+        rowNum = getRowNum(0, a.size() - 1, b, a);
 
 
         ArrayList<Integer> currRow = a.get(rowNum);
-        return searchRow(0,currRow.size()-1,b,currRow);
+        return searchRow(0, currRow.size() - 1, b, currRow);
 
 
     }
 
-    public int getRowNum(int lo,int hi,int b,ArrayList<ArrayList<Integer>> a){
-        if(lo > hi){
-            return a.size()-1;
-        }else{
-            int mid = (lo+hi)/2;
+    public int getRowNum(int lo, int hi, int b, ArrayList<ArrayList<Integer>> a) {
+        if (lo > hi) {
+            return a.size() - 1;
+        } else {
+            int mid = (lo + hi) / 2;
             int midVal = a.get(mid).get(0);
-            if(mid >= a.size()-1){
+            if (mid >= a.size() - 1) {
                 return mid;
             }
-            int midValNext = a.get(mid+1).get(0);
-            if(midVal == b){
+            int midValNext = a.get(mid + 1).get(0);
+            if (midVal == b) {
                 return mid;
-            }else if(b>midVal && b <midValNext){
+            } else if (b > midVal && b < midValNext) {
                 return mid;
-            }
-            else if(midVal > b){
-                return getRowNum(lo,mid-1,b,a);
-            }else if (midVal < b){
-                return getRowNum(mid+1,hi,b,a);
-            }else{
+            } else if (midVal > b) {
+                return getRowNum(lo, mid - 1, b, a);
+            } else if (midVal < b) {
+                return getRowNum(mid + 1, hi, b, a);
+            } else {
                 return mid;
             }
 
@@ -71,20 +70,20 @@ public class Search2D {
     }
 
 
-    public int searchRow(int lo,int hi,int b,ArrayList<Integer> a){
+    public int searchRow(int lo, int hi, int b, ArrayList<Integer> a) {
 
-        if(lo>hi){
+        if (lo > hi) {
             return 0;
-        }else{
-            int mid = (lo+hi)/2;
+        } else {
+            int mid = (lo + hi) / 2;
             int midVal = a.get(mid);
-           if(midVal > b){
-               return searchRow(lo,mid-1,b,a);
-           }else if(midVal < b){
-               return searchRow(mid+1,hi,b,a);
-           }else{
-               return 1;
-           }
+            if (midVal > b) {
+                return searchRow(lo, mid - 1, b, a);
+            } else if (midVal < b) {
+                return searchRow(mid + 1, hi, b, a);
+            } else {
+                return 1;
+            }
 
 
         }
@@ -92,7 +91,7 @@ public class Search2D {
     }
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Search2D s = new Search2D();
         ArrayList<Integer> x = new ArrayList<Integer>(Arrays.asList(1, 4, 5, 5, 6, 14, 14, 16, 19));
         ArrayList<Integer> y = new ArrayList<Integer>(Arrays.asList(22, 24, 28, 33, 35, 37, 38, 40, 41));
@@ -134,7 +133,7 @@ public class Search2D {
         ip.add(a1);
         ip.add(b1);*/
 
-        int result = s.searchMatrix(ip,68);
+        int result = s.searchMatrix(ip, 68);
 
         System.out.println(result);
 

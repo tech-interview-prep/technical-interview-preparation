@@ -1,47 +1,42 @@
-/*
-Given a collection of intervals, merge all overlapping intervals.
-
-For example,
-Given [1,3],[2,6],[8,10],[15,18],
-return [1,6],[8,10],[15,18].
- */
-
 package facebook;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import utils.Interval;
 
-import java.util.Collections;
-import java.util.Comparator;
-
 /**
+ * Given a collection of intervals, merge all overlapping intervals.
+ *
+ * For example,
+ * Given [1,3],[2,6],[8,10],[15,18],
+ * return [1,6],[8,10],[15,18].
+ *
  * https://leetcode.com/problems/merge-intervals/
- * @author bkoteshwarreddy
  */
-
 public class _056MergeIntervals {
     public static void main(String[] args) {
-      Solution_MergeIntervals sol = new Solution_MergeIntervals();
+        Solution_MergeIntervals sol = new Solution_MergeIntervals();
 
-      //[1, 3], [2, 6], [5, 9], [8, 10], [15, 18] --> [1, 10], [15, 18]
-      for (Interval interval : sol.merge(Interval.getSampleIntervals())) {
-          System.out.print(interval + "\t");
-      }
-      System.out.println();
+        //[1, 3], [2, 6], [5, 9], [8, 10], [15, 18] --> [1, 10], [15, 18]
+        for (Interval interval : sol.merge(Interval.getSampleIntervals())) {
+            System.out.print(interval + "\t");
+        }
+        System.out.println();
 
-      //[1, 4], [4, 5] --> [1, 5]
-      for (Interval interval : sol.merge(Interval.getSampleIntervals2())) {
-          System.out.print(interval + "\t");
-      }
-      System.out.println();
+        //[1, 4], [4, 5] --> [1, 5]
+        for (Interval interval : sol.merge(Interval.getSampleIntervals2())) {
+            System.out.print(interval + "\t");
+        }
+        System.out.println();
 
-      //[1, 4], [2, 3] --> [1, 4]
-      for (Interval interval : sol.merge(Interval.getSampleIntervals3())) {
-          System.out.print(interval + "\t");
-      }
-      System.out.println();
+        //[1, 4], [2, 3] --> [1, 4]
+        for (Interval interval : sol.merge(Interval.getSampleIntervals3())) {
+            System.out.print(interval + "\t");
+        }
+        System.out.println();
     }
 }
 

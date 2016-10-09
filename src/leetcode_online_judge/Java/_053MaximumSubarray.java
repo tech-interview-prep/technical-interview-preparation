@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _053MaximumSubarray {
     /*
     Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
@@ -24,7 +23,7 @@ public class _053MaximumSubarray {
     }
 
     private static void test() {
-        Utils.printTestln(maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}), 6);
+        Utils.printTestln(maxSubArray(new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4}), 6);
     }
 
     public static void main(String[] args) {

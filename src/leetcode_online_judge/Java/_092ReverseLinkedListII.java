@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _092ReverseLinkedListII {
     /*
     Reverse a linked list from position m to n. Do it in-place and in one-pass.
@@ -26,7 +25,7 @@ public class _092ReverseLinkedListII {
         }
 
         int index;
-        ListNode dummyHead = new ListNode(0), insertNode, node,nextNode;
+        ListNode dummyHead = new ListNode(0), insertNode, node, nextNode;
         dummyHead.next = head;
         for (insertNode = dummyHead, index = 1; index < m; index++, insertNode = insertNode.next);
 

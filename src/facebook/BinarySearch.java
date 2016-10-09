@@ -1,17 +1,15 @@
 package facebook;
 
 /*
-	Sorted array, given a key, find its left most index or right most index in array.
-	If it isn't in array, return -1.
+    Sorted array, given a key, find its left most index or right most index in array.
+    If it isn't in array, return -1.
 
-	Binary Search Of Left Or Right Boundary
+    Binary Search Of Left Or Right Boundary
 
-	Link: https://gist.github.com/bittib/5651966
+     https://gist.github.com/bittib/5651966
 
 */
-
 public class BinarySearch {
-
     public static int binarySearch(int[] a, int x) {
         int low = 0;
         int high = a.length - 1;

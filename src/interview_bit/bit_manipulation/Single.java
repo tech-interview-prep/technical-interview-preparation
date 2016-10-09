@@ -1,5 +1,5 @@
 package interview_bit.bit_manipulation;
-import java.util.*;
+import java.util.List;
 
 /**
  * Created by priyavivek on 10/20/15.
@@ -17,10 +17,9 @@ import java.util.*;
  Output : 3
  */
 public class Single {
-
     public int singleNumber(final List<Integer> a) {
 
-       int x = 0;
+        int x = 0;
         for (int b : a) {
             x = x ^ b;
         }

@@ -35,52 +35,51 @@ import utils.TreeNode;
  You can use extra memory, helper functions, and can modify the node struct but, you can’t add a parent pointer.
  */
 public class LCA {
-
     public int lca(TreeNode a, int val1, int val2) {
 
         //Check if both the values are present in the tree
-        if(!isNodePresent(a,val1) || !isNodePresent(a,val2)){
+        if (!isNodePresent(a, val1) || !isNodePresent(a, val2)) {
             return -1;
         }
 
         //Find the lowest common ancestor
-        TreeNode lcaNode = getLCA(a,val1,val2);
+        TreeNode lcaNode = getLCA(a, val1, val2);
 
         return lcaNode.data;
 
 
     }
 
-    public boolean isNodePresent(TreeNode a,int val){
-        if(a == null){
+    public boolean isNodePresent(TreeNode a, int val) {
+        if (a == null) {
             return false;
         }
 
-        if(a.data == val){
+        if (a.data == val) {
             return true;
         }
 
-        return isNodePresent(a.left,val) || isNodePresent(a.right,val);
+        return isNodePresent(a.left, val) || isNodePresent(a.right, val);
     }
 
-    public TreeNode getLCA(TreeNode a,int val1,int val2){
-        if(a == null){
+    public TreeNode getLCA(TreeNode a, int val1, int val2) {
+        if (a == null) {
             return null;
         }
 
-        if(a.data == val1 || a.data == val2){
+        if (a.data == val1 || a.data == val2) {
             return a;
         }
 
-        TreeNode left = getLCA(a.left,val1,val2);
-        TreeNode right = getLCA(a.right,val1,val2);
+        TreeNode left = getLCA(a.left, val1, val2);
+        TreeNode right = getLCA(a.right, val1, val2);
 
         //If both the left and right trees return true then the current node is the LCA
-        if(left != null && right != null){
+        if (left != null && right != null) {
             return a;
         }
 
-        if(left == null){
+        if (left == null) {
             return right;
         }
 
@@ -91,12 +90,12 @@ public class LCA {
 
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         LCA l = new LCA();
 
-        ArrayList<String> s = new ArrayList<>(Arrays.asList("15","20","34","35","5","14","16","26","null","25","23","null","30","3","36","null","null","7","24","11","32","null","null","21","null","null","null","29","4","9","null","33","13","null","null","null","null","22","31","null","27","19","1","null","12","18","6","null","null","null","2","null","null","null","null","10","null","null","null","null","8","null","28","null","null","null","null","null","17","null","null","null","null"));
+        ArrayList<String> s = new ArrayList<>(Arrays.asList("15", "20", "34", "35", "5", "14", "16", "26", "null", "25", "23", "null", "30", "3", "36", "null", "null", "7", "24", "11", "32", "null", "null", "21", "null", "null", "null", "29", "4", "9", "null", "33", "13", "null", "null", "null", "null", "22", "31", "null", "27", "19", "1", "null", "12", "18", "6", "null", "null", "null", "2", "null", "null", "null", "null", "10", "null", "null", "null", "null", "8", "null", "28", "null", "null", "null", "null", "null", "17", "null", "null", "null", "null"));
         TreeNode root = CreateBST.insertElements(s);
-        int result = l.lca(root,33,5);
+        int result = l.lca(root, 33, 5);
         System.out.println(result);
 
 

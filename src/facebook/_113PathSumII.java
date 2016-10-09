@@ -3,7 +3,7 @@
     to print all paths which sum up to that value. Note that it can be any path in the tree
     it does not have to start at the root.
 
-    Link: https://gist.github.com/zac-xin/2650564
+     https://gist.github.com/zac-xin/2650564
 
 */
 package facebook;
@@ -19,11 +19,11 @@ class Solution_PathSumII {
             return;
         }
 
-		/* Insert current node into path */
+        /* Insert current node into path */
         path[level] = node.data;
 
         int t = 0;
-        for (int i = level; i >= 0; i--){
+        for (int i = level; i >= 0; i--) {
             t += path[i];
             if (t == sum) {
                 print(path, i, level);
@@ -33,9 +33,9 @@ class Solution_PathSumII {
         findSum(node.left, sum, path, level + 1);
         findSum(node.right, sum, path, level + 1);
 
-		/* Remove current node from path. Not strictly necessary, since we would
-		 * ignore this value, but it's good practice.
-		 */
+        /* Remove current node from path. Not strictly necessary, since we would
+         * ignore this value, but it's good practice.
+         */
         path[level] = Integer.MIN_VALUE;
     }
 

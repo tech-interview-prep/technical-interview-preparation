@@ -1,5 +1,5 @@
-    /*
-    Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
+/*
+Implement an iterator over a binary search tree (BST). Your iterator will be initialized with the root node of a BST.
 
 Calling next() will return the next smallest number in the BST.
 
@@ -16,7 +16,6 @@ import utils.TreeNode;
  * https://leetcode.com/problems/binary-search-tree-iterator/
  * @author bkoteshwarreddy
  */
-
 public class _173BinarySearchTreeIterator {
 }
 
@@ -25,7 +24,7 @@ class BSTIterator {
     public BSTIterator(TreeNode root) {
         TreeNode cur = root;
         stack = new LinkedList<TreeNode>();
-        while(cur != null) {
+        while (cur != null) {
             stack.addFirst(cur);
             cur = cur.left;
         }
@@ -40,7 +39,7 @@ class BSTIterator {
     public int next() {
         TreeNode top = stack.poll();
         TreeNode cur = top.right;
-        while(cur != null) {
+        while (cur != null) {
             stack.addFirst(cur);
             cur = cur.left;
         }

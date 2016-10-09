@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _073SetMatrixZeros {
     /*
     Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
@@ -75,9 +74,9 @@ public class _073SetMatrixZeros {
 
 
     private static void test() {
-        test(new int[][]{{1, 0}});
-        test(new int[][]{{1}, {0}});
-        test(new int[][]{{1,2,3,4},{5,0,5,2},{8,9,2,0},{5,7,2,1}});
+        test(new int[][] {{1, 0}});
+        test(new int[][] {{1}, {0}});
+        test(new int[][] {{1, 2, 3, 4}, {5, 0, 5, 2}, {8, 9, 2, 0}, {5, 7, 2, 1}});
     }
 
     public static void main(String[] args) {

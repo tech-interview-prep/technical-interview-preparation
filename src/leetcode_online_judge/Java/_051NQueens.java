@@ -1,14 +1,17 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
-import java.util.*;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _051NQueens {
     /*
     The n-queens puzzle is the problem of placing n queens on an n?n chessboard such that no two queens attack each other.
@@ -44,7 +47,7 @@ public class _051NQueens {
 
     // x_1 + y_1 == x_2 + y_2 or x_1 - y_1 == x_2 - y_2 means those two points diagnally meet
     private static void solveNQueens(int n, int row, ArrayList<String[]> ret, Map<Integer, Integer> col2Row,
-                                        Set<Integer> diff, Set<Integer> sum) {
+                                     Set<Integer> diff, Set<Integer> sum) {
         if (row == n)  {
             ret.add(convert(col2Row, n));
         }

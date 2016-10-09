@@ -21,7 +21,7 @@ public class _234PalindromeLinkedList {
 
 
 class Solution_PalindromeLinkedList {
-  // O(n) time, O(1) space.
+    // O(n) time, O(1) space.
     public boolean isPalindrome(ListNode head) {
         ListNode second = reverse(secondHalf(head));
         while (second != null) {
@@ -61,7 +61,7 @@ class Solution_PalindromeLinkedList {
         return head;
     }
 
-/*******************************************************************/
+    /*******************************************************************/
 
     // O(n) time, O(n) space.
     public boolean isPalindrome2(ListNode head) {

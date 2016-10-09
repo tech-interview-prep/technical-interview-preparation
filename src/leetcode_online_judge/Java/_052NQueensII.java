@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
-import java.util.Set;
 import java.util.HashSet;
+import java.util.Set;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _052NQueensII {
     /*
     Follow up for N-Queens problem.
@@ -44,7 +43,7 @@ public class _052NQueensII {
     }
 
     private static void test() {
-        int[] nq = new int[]{1, 0, 0 , 2, 10, 4, 40, 92};
+        int[] nq = new int[] {1, 0, 0 , 2, 10, 4, 40, 92};
         for (int i = 0; i < nq.length; i++) {
             Utils.printTestln(totalNQueens(i + 1), nq[i]);
         }

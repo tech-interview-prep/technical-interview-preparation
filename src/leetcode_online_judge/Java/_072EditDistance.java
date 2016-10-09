@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _072EditDistance {
     /*
     Given two words word1 and word2, find the minimum number of steps required to convert word1 to word2.
@@ -36,7 +35,7 @@ public class _072EditDistance {
         }
 
         return 1 + Math.min(Math.min(minDistance(w1, s1 + 1,  w2,  s2 + 1), minDistance(w1, s1,  w2,  s2 + 1)),
-                minDistance(w1, s1 + 1,  w2,  s2));
+                            minDistance(w1, s1 + 1,  w2,  s2));
     }
 
     public static int minDistanceDP(String word1, String word2) {
@@ -47,14 +46,14 @@ public class _072EditDistance {
 
         int[][] minDist = new int[l1][l2];
 
-        minDist[l1 - 1][l2 - 1] = word1.charAt(l1 - 1) == word2.charAt(l2 - 1) ? 0: 1;
+        minDist[l1 - 1][l2 - 1] = word1.charAt(l1 - 1) == word2.charAt(l2 - 1) ? 0 : 1;
 
         for (int i = l1 - 2; i >= 0; i--) {
-            minDist[i][l2 - 1] = word1.charAt(i) == word2.charAt(l2 - 1) ? l1 - i - 1: 1 + minDist[i + 1][l2 - 1];
+            minDist[i][l2 - 1] = word1.charAt(i) == word2.charAt(l2 - 1) ? l1 - i - 1 : 1 + minDist[i + 1][l2 - 1];
         }
 
         for (int i = l2 - 2; i >= 0; i--) {
-            minDist[l1 - 1][i] = word1.charAt(l1 - 1) == word2.charAt(i) ? l2 - i - 1: 1 + minDist[l1 -1][i + 1];
+            minDist[l1 - 1][i] = word1.charAt(l1 - 1) == word2.charAt(i) ? l2 - i - 1 : 1 + minDist[l1 - 1][i + 1];
         }
 
         for (int i = l1 - 2; i >= 0; i--) {

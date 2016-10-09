@@ -4,7 +4,6 @@ package leetcode_online_judge.Java;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _158ReadNCharactersGivenRead4II_CallMultipleTimes {
 
     /*
@@ -63,7 +62,7 @@ public class _158ReadNCharactersGivenRead4II_CallMultipleTimes {
     }
 
     public static void main(String[] args) {
-    	_158ReadNCharactersGivenRead4II_CallMultipleTimes solution = new _158ReadNCharactersGivenRead4II_CallMultipleTimes();
+        _158ReadNCharactersGivenRead4II_CallMultipleTimes solution = new _158ReadNCharactersGivenRead4II_CallMultipleTimes();
         char[] buf = new char[100];
         int n = 5;
         System.out.println(solution.read(buf, n)); //5

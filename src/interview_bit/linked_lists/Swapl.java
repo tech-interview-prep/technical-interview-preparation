@@ -18,20 +18,19 @@ import utils.ListNode;
  Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
  */
 public class Swapl {
-
     public ListNode swapPairs(ListNode a) {
         ListNode aCopy = a;
         int listSize = 0;
-        while(aCopy != null){
+        while (aCopy != null) {
             listSize++;
             aCopy = aCopy.next;
         }
 
-        if(listSize == 1){
+        if (listSize == 1) {
             return a;
         }
 
-        if(listSize == 0){
+        if (listSize == 0) {
             return  null;
         }
 
@@ -40,11 +39,11 @@ public class Swapl {
 
         ListNode currHead = head.next.next;
 
-        while(currHead != null){
+        while (currHead != null) {
             ListNode swappedHead = swapNodes(currHead);
             prev.next = swappedHead;
             prev = swappedHead.next;
-            if(prev == null){
+            if (prev == null) {
                 break;
             }
             currHead = swappedHead.next.next;
@@ -57,10 +56,10 @@ public class Swapl {
     }
 
     //Swap 2 nodes
-    public ListNode swapNodes(ListNode A){
+    public ListNode swapNodes(ListNode A) {
 
         ListNode B = A.next;
-        if(B == null){
+        if (B == null) {
             return A;
         }
 
@@ -73,16 +72,16 @@ public class Swapl {
         return B;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Swapl s = new Swapl();
 
         ListNode A = new ListNode(1);
         ListNode B = A;
-        ArrayList<Integer> vals = new ArrayList<Integer>(Arrays.asList(2,3,4,5));
-        for(int i=0;i<vals.size();i++){
+        ArrayList<Integer> vals = new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5));
+        for (int i = 0; i < vals.size(); i++) {
             ListNode temp = new ListNode(vals.get(i));
             B.next = temp;
-            B=B.next;
+            B = B.next;
         }
 
         ListNode result = s.swapPairs(A);

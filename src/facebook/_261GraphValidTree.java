@@ -1,4 +1,4 @@
-  /*
+/*
 Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function
 to check whether these edges make up a valid tree.
 
@@ -15,14 +15,13 @@ According to the definition of tree on Wikipedia: “a tree is an undirected gra
 by exactly one path. In other words, any connected graph without simple cycles is a tree.”
 Note: you can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as
 [1, 0] and thus will not appear together in edges.
-   */
+ */
 package facebook;
 
 /**
  * https://leetcode.com/problems/graph-valid-tree/
  * @author bkoteshwarreddy
  */
-
 public class _261GraphValidTree {
 }
 
@@ -30,7 +29,7 @@ class Solution_GraphValidTree {
     // union find cycle detection
     int[] dp;
     public int find(int i) {
-        while(i != dp[i]) {
+        while (i != dp[i]) {
             i = dp[i];
         }
         return i;
@@ -43,11 +42,11 @@ class Solution_GraphValidTree {
 
     public boolean validTree(int n, int[][] edges) {
         dp = new int[n];
-        for(int i = 0; i < n; ++i) {
+        for (int i = 0; i < n; ++i) {
             dp[i] = i;
         }
-        for(int i = 0; i < edges.length; ++i) {
-            if(find(edges[i][0]) != find(edges[i][1])) {
+        for (int i = 0; i < edges.length; ++i) {
+            if (find(edges[i][0]) != find(edges[i][1])) {
                 union(edges[i][0], edges[i][1]);
                 n--;
             } else {

@@ -1,10 +1,10 @@
 package facebook;
 
 /*
-	 Implement an algorithm to determine if a string has all unique characters.
-	 What if you can not use additional data structures?
+     Implement an algorithm to determine if a string has all unique characters.
+     What if you can not use additional data structures?
 
-	Link: https://gist.github.com/zac-xin/2398387
+     https://gist.github.com/zac-xin/2398387
 
 */
 public class HasUniqueCharactersString {
@@ -13,12 +13,15 @@ public class HasUniqueCharactersString {
         if (str.length() > 256) {
             return false;
         }
+
         boolean[] char_set = new boolean[256];
+
         for (int i = 0; i < str.length(); i++) {
             int val = str.charAt(i);
             if (char_set[val]) return false;
             char_set[val] = true;
         }
+
         return true;
     }
 
@@ -27,12 +30,15 @@ public class HasUniqueCharactersString {
         if (str.length() > 256) {
             return false;
         }
+
         int checker = 0;
+
         for (int i = 0; i < str.length(); i++) {
             int val = str.charAt(i) - 'a';
             if ((checker & (1 << val)) > 0) return false;
             checker |= (1 << val);
         }
+
         return true;
     }
 }

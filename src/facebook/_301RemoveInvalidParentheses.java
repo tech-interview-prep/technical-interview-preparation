@@ -1,5 +1,5 @@
-  /*
-  Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
+/*
+Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
 
 Note: The input string may contain letters other than the parentheses ( and ).
 
@@ -7,7 +7,7 @@ Examples:
 "()())()" -> ["()()()", "(())()"]
 "(a)())()" -> ["(a)()()", "(a())()"]
 ")(" -> [""]
-   */
+ */
 package facebook;
 
 import java.util.ArrayList;
@@ -19,7 +19,6 @@ import java.util.List;
  * https://leetcode.com/problems/remove-invalid-parentheses/
  * @author bkoteshwarreddy
  */
-
 public class _301RemoveInvalidParentheses {
 }
 
@@ -32,18 +31,18 @@ class Solution_RemoveInvalidParentheses {
         queue.addLast(s);
         boolean GoNext = true;
         // FIFO implemented on queue
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             StringBuffer cur = new StringBuffer(queue.pollFirst());
             // this is the last element in the queue
-            if(isValid(cur.toString())) {
+            if (isValid(cur.toString())) {
                 GoNext = false;
                 res.add(cur.toString());
-            }else {
-                for(int i = 0; i < cur.length(); ++i) {
-                    if(cur.toString().charAt(i) == '(' || cur.toString().charAt(i) == ')') {
+            } else {
+                for (int i = 0; i < cur.length(); ++i) {
+                    if (cur.toString().charAt(i) == '(' || cur.toString().charAt(i) == ')') {
                         StringBuffer tmp = new StringBuffer(cur);
                         tmp.deleteCharAt(i);
-                        if(!nextqueue.contains(tmp.toString())) {
+                        if (!nextqueue.contains(tmp.toString())) {
                             nextqueue.add(tmp.toString());
                         }
                     }
@@ -51,8 +50,8 @@ class Solution_RemoveInvalidParentheses {
             }
             // if queue is empty:
             // decide whether or not to go to the next level
-            if(queue.isEmpty() && GoNext) {
-                    queue.addAll(nextqueue);
+            if (queue.isEmpty() && GoNext) {
+                queue.addAll(nextqueue);
             }
         }
         return res;
@@ -60,12 +59,12 @@ class Solution_RemoveInvalidParentheses {
     // not stack implementation of "valid parenthese"
     public boolean isValid(String s) {
         int count = 0;
-        for(char c : s.toCharArray()) {
-            if(c == '(') {
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
                 count ++;
-            } else if(c == ')') {
+            } else if (c == ')') {
                 count --;
-                if(count < 0) {
+                if (count < 0) {
                     return false;
                 }
             }

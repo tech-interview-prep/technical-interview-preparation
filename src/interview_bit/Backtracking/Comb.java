@@ -1,6 +1,9 @@
 package interview_bit.backtracking;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 
 /**
  * Created by priyavivek on 12/1/15.
@@ -29,7 +32,7 @@ import java.util.*;
  */
 public class Comb {
     ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();
-    HashMap<ArrayList,Integer> mappings = new HashMap<ArrayList,Integer>();
+    HashMap<ArrayList<Integer>,Integer> mappings = new HashMap<ArrayList<Integer>,Integer>();
 
     public ArrayList<ArrayList<Integer>> combinationSum(ArrayList<Integer> a, int b) {
         ArrayList<Integer> currList = new ArrayList<Integer>();
@@ -77,9 +80,6 @@ public class Comb {
             temp.addAll(currList);
             temp.add(a.get(i));
             findCombs(a,temp,targetSum - a.get(i));
-
-
         }
-
     }
 }

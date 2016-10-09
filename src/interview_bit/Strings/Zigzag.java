@@ -23,72 +23,71 @@ package interview_bit.strings;
  and hence the answer would be ACBD.
  */
 public class Zigzag {
-
-    public enum Direction{
-        UP,DOWN
+    public enum Direction {
+        UP, DOWN
     }
 
     public String convert(String a, int b) {
         StringBuilder cleanA = new StringBuilder();
         StringBuilder result = new StringBuilder();
-        for(int i=0;i<a.length();i++){
-            if(a.charAt(i)==' '){
+        for (int i = 0; i < a.length(); i++) {
+            if (a.charAt(i) == ' ') {
                 break;
-            }else{
+            } else {
                 cleanA.append(a.charAt(i));
             }
 
         }
 
-        if(cleanA.length() <=b || b==1){
+        if (cleanA.length() <= b || b == 1) {
             return cleanA.toString();
         }
 
 
 
-       Direction mDIRECTION = Direction.DOWN;
+        Direction mDIRECTION = Direction.DOWN;
 
-       for(int i=0;i<b;i++){
-           int j=i;
+        for (int i = 0; i < b; i++) {
+            int j = i;
 
             //The first and last rows are special cases. They can be thought of as only going down or up
-           if(i==0){
-               mDIRECTION = Direction.DOWN;
-           }
+            if (i == 0) {
+                mDIRECTION = Direction.DOWN;
+            }
 
-           if(i==b-1){
-               mDIRECTION=Direction.UP;
-           }
+            if (i == b - 1) {
+                mDIRECTION = Direction.UP;
+            }
 
-           while(j<cleanA.length()){
-               result.append(cleanA.charAt(j));
-               if(mDIRECTION == Direction.DOWN){
-                   j = j + 2*(b-1-i);
-                   //Dont change directions for first row
-                   if(i!=0) {
-                       mDIRECTION = Direction.UP;
-                   }
-               }else if(mDIRECTION == Direction.UP){
-                   j = j + 2*i;
-                   //Dont change directions for last row
-                   if(i!=b-1) {
-                       mDIRECTION = Direction.DOWN;
-                   }
-               }
-           }
+            while (j < cleanA.length()) {
+                result.append(cleanA.charAt(j));
+                if (mDIRECTION == Direction.DOWN) {
+                    j = j + 2 * (b - 1 - i);
+                    //Dont change directions for first row
+                    if (i != 0) {
+                        mDIRECTION = Direction.UP;
+                    }
+                } else if (mDIRECTION == Direction.UP) {
+                    j = j + 2 * i;
+                    //Dont change directions for last row
+                    if (i != b - 1) {
+                        mDIRECTION = Direction.DOWN;
+                    }
+                }
+            }
 
-           //Reset direction to default - DOWN
-           mDIRECTION = Direction.DOWN;
+            //Reset direction to default - DOWN
+            mDIRECTION = Direction.DOWN;
 
-       }
+        }
 
         return result.toString();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Zigzag z = new Zigzag();
-        String result = z.convert("PAYPALISHIRING",5);
+        String result = z.convert("PAYPALISHIRING", 5);
         System.out.println(result);
 
 

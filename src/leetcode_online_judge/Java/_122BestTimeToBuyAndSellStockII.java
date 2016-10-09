@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
  * @author bkoteshwarreddy
  */
-
 public class _122BestTimeToBuyAndSellStockII {
     /*
     Say you have an array for which the ith element is the price of a given stock on day i.
@@ -32,8 +31,8 @@ public class _122BestTimeToBuyAndSellStockII {
     }
 
     private static void test() {
-        Utils.printTestln(maxProfit(new int[]{3,2,6,5,0,3}), 7);
-        Utils.printTestln(maxProfit(new int[]{1,2,4}), 3);
+        Utils.printTestln(maxProfit(new int[] {3, 2, 6, 5, 0, 3}), 7);
+        Utils.printTestln(maxProfit(new int[] {1, 2, 4}), 3);
     }
 
     public static void main(String[] args) {

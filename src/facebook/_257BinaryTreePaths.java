@@ -67,20 +67,20 @@ class Solution_BinaryTreePaths {
     Later, extend the solution to work with graphs, careful attention to cycles which you should print
     as paths as well (without printing visited nodes twice).
 
-    Link: http://www.careercup.com/question?id=5742219382226944
+     http://www.careercup.com/question?id=5742219382226944
 
     public void printRootToLeaf(TreeNode node)
- */
+    */
     public void printRootToLeaf(TreeNode node) {
         List<String> path = new ArrayList<String>();
         printRootToLeaf(node, path);
     }
 
     private void printRootToLeaf(TreeNode node, List<String> path) {
-        if(node != null) {
+        if (node != null) {
             path.add(String.valueOf(node.data));
 
-            if(node.left == null && node.right == null) {
+            if (node.left == null && node.right == null) {
                 printPath(path);
             } else {
                 printRootToLeaf(node.left, path);
@@ -90,7 +90,7 @@ class Solution_BinaryTreePaths {
     }
 
     private void printPath(List<String> path) {
-        for(String s : path) {
+        for (String s : path) {
             System.out.println(s);
         }
     }

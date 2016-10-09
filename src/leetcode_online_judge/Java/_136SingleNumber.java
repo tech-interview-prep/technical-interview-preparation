@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _136SingleNumber {
     /*
     Given an array of integers, every element appears twice except for one. Find that single one.
@@ -24,7 +23,7 @@ public class _136SingleNumber {
     }
 
     private static void test() {
-        Utils.printTestln(singleNumber(new int[]{1, 3, 5, 6, 5, 3, 1}), 6);
+        Utils.printTestln(singleNumber(new int[] {1, 3, 5, 6, 5, 3, 1}), 6);
 
     }
 

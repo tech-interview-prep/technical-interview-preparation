@@ -12,11 +12,10 @@ import utils.Utils;
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
  * @author bkoteshwarreddy
  */
-
 public class _121BestTimeToBuyAndSellStock {
     public static void main(String[] args) {
-      Solution_BestTimeToBuyAndSellStock sol = new Solution_BestTimeToBuyAndSellStock();
-      Utils.printTestln(sol.maxProfit(new int[]{3,2,6,5,0,3}), 4);
+        Solution_BestTimeToBuyAndSellStock sol = new Solution_BestTimeToBuyAndSellStock();
+        Utils.printTestln(sol.maxProfit(new int[] {3, 2, 6, 5, 0, 3}), 4);
     }
 }
 
@@ -38,7 +37,7 @@ class Solution_BestTimeToBuyAndSellStock {
     public int maxProfit2(int[] prices) {
         int size = prices.length;
 
-        if (size<=1){
+        if (size <= 1) {
             return 0;
         }
 
@@ -46,15 +45,15 @@ class Solution_BestTimeToBuyAndSellStock {
         int max = prices[1] - min;
         for (int i = 2; i < size; i++) {
 
-            if (min > prices[i-1]) {
-                min = prices[i-1];
+            if (min > prices[i - 1]) {
+                min = prices[i - 1];
             }
 
-            if (max < (prices[i]-min)) {
-                max = prices[i]-min;
+            if (max < (prices[i] - min)) {
+                max = prices[i] - min;
             }
         }
 
-        return (max<0) ? 0 : max;
+        return (max < 0) ? 0 : max;
     }
 }

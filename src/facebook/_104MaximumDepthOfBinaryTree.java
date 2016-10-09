@@ -1,12 +1,13 @@
 /*
     Find the maximum depth of binary tree?
 
-    Link: http://www.careercup.com/question?id=5735068173598720
+     http://www.careercup.com/question?id=5735068173598720
           http://n00tc0d3r.blogspot.com/2013/04/maximum-depth-of-binary-tree.html
 */
 package facebook;
 
 import java.util.LinkedList;
+
 import utils.TreeNode;
 
 public class _104MaximumDepthOfBinaryTree {
@@ -14,31 +15,31 @@ public class _104MaximumDepthOfBinaryTree {
 }
 
 class Solution_MaximumDepthOfBinaryTree {
-	 public int maxDepth_Recursive(TreeNode root) {
-		 if (root == null) return 0;
+    public int maxDepth_Recursive(TreeNode root) {
+        if (root == null) return 0;
 
-		 return 1 + Math.max(maxDepth_Recursive(root.left), maxDepth_Recursive(root.right));
-	 }
+        return 1 + Math.max(maxDepth_Recursive(root.left), maxDepth_Recursive(root.right));
+    }
 
-	 public int maxDepth_Iterative(TreeNode root) {
-		 int len = 0;
-		 LinkedList<TreeNode> que = new LinkedList<TreeNode>();
-		 if (root != null) {
-			 que.addLast(root);
-			 que.addLast(null); // add a special node for level breaker
-		 }
+    public int maxDepth_Iterative(TreeNode root) {
+        int len = 0;
+        LinkedList<TreeNode> que = new LinkedList<TreeNode>();
+        if (root != null) {
+            que.addLast(root);
+            que.addLast(null); // add a special node for level breaker
+        }
 
-		 while (!que.isEmpty()) {
-			 TreeNode cur = que.removeFirst();
-			 if (cur == null) { // finish one level
-				 ++len;
-				 if (!que.isEmpty()) que.addLast(null);
-			 } else {
-				 if (cur.left != null) que.addLast(cur.left);
-				 if (cur.right != null) que.addLast(cur.right);
-			 }
-		 }
+        while (!que.isEmpty()) {
+            TreeNode cur = que.removeFirst();
+            if (cur == null) { // finish one level
+                ++len;
+                if (!que.isEmpty()) que.addLast(null);
+            } else {
+                if (cur.left != null) que.addLast(cur.left);
+                if (cur.right != null) que.addLast(cur.right);
+            }
+        }
 
-		 return len;
-	 }
+        return len;
+    }
 }

@@ -8,39 +8,38 @@
      */
 package uber;
 
-import utils.Utils;
-
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/lru-cache/
  * @author bkoteshwarreddy
  */
-
 public class _146LRUCache {
     public static void main(String[] args) {
-      Solution_LRUCache cache = new Solution_LRUCache(2);
-      cache.set(1, 1);
-      cache.set(2, 2);
-      cache.set(3, 3);
-      Utils.printTestln(cache.get(1), -1);
-      Utils.printTestln(cache.get(2), 2);
-      cache.set(4, 4);
-      Utils.printTestln(cache.get(3), -1);
-      Utils.printTestln(cache.get(2), 2);
-      Utils.printTestln(cache.get(4), 4);
-      cache.set(4, 3);
-      Utils.printTestln(cache.get(4), 3);
+        Solution_LRUCache cache = new Solution_LRUCache(2);
+        cache.set(1, 1);
+        cache.set(2, 2);
+        cache.set(3, 3);
+        Utils.printTestln(cache.get(1), -1);
+        Utils.printTestln(cache.get(2), 2);
+        cache.set(4, 4);
+        Utils.printTestln(cache.get(3), -1);
+        Utils.printTestln(cache.get(2), 2);
+        Utils.printTestln(cache.get(4), 4);
+        cache.set(4, 3);
+        Utils.printTestln(cache.get(4), 3);
 
-      cache.set(2, 1);
-      cache.set(3, 2);
-      Utils.printTestln(cache.get(3), 2);
-      Utils.printTestln(cache.get(2), 1);
-      cache.set(4, 3);
-      Utils.printTestln(cache.get(2), 1);
-      Utils.printTestln(cache.get(3), -1);
-      Utils.printTestln(cache.get(4), 3);
+        cache.set(2, 1);
+        cache.set(3, 2);
+        Utils.printTestln(cache.get(3), 2);
+        Utils.printTestln(cache.get(2), 1);
+        cache.set(4, 3);
+        Utils.printTestln(cache.get(2), 1);
+        Utils.printTestln(cache.get(3), -1);
+        Utils.printTestln(cache.get(4), 3);
     }
 }
 

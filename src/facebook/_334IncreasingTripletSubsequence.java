@@ -1,5 +1,5 @@
-  /*
-  Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
+/*
+Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
 
 Formally the function should:
 Return true if there exists i, j, k
@@ -12,7 +12,7 @@ return true.
 
 Given [5, 4, 3, 2, 1],
 return false.
-   */
+ */
 
 package facebook;
 

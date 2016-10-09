@@ -7,7 +7,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _110BalancedBinaryTree {
     /*
     Given a binary tree, determine if it is height-balanced.

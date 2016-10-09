@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _080RemoveDuplicatesFromSortedArrayII {
     /*
     Follow up for "Remove Duplicates":
@@ -37,10 +36,10 @@ public class _080RemoveDuplicatesFromSortedArrayII {
     }
 
     private static void test() {
-        int[] A = new int[]{1, 1, 1, 2, 2, 3};
+        int[] A = new int[] {1, 1, 1, 2, 2, 3};
         Utils.printTestln(removeDuplicates(A), 5);
 
-        Utils.printTestln(removeDuplicates(new int[]{1}), 1);
+        Utils.printTestln(removeDuplicates(new int[] {1}), 1);
         Utils.printTestln(removeDuplicates(new int[0]), 0);
     }
 

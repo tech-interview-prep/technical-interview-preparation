@@ -1,12 +1,12 @@
-    /*
-    Given a binary tree, determine if it is a valid binary search tree (BST).
+/*
+Given a binary tree, determine if it is a valid binary search tree (BST).
 
-    Assume a BST is defined as follows:
+Assume a BST is defined as follows:
 
-    The left subtree of a node contains only nodes with keys less than the node's key.
-    The right subtree of a node contains only nodes with keys greater than the node's key.
-    Both the left and right subtrees must also be binary search trees.
-    */
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+*/
 
 package facebook;
 
@@ -17,11 +17,10 @@ import utils.Utils;
  * https://leetcode.com/problems/validate-binary-search-tree/
  * @author bkoteshwarreddy
  */
-
 public class _098ValidateBinarySearchTree {
     public static void main(String[] args) {
-      Solution_ValidateBinarySearchTree sol = new Solution_ValidateBinarySearchTree();
-      Utils.printTestln(sol.isValidBST(TreeNode.getSampleTree()), false);
+        Solution_ValidateBinarySearchTree sol = new Solution_ValidateBinarySearchTree();
+        Utils.printTestln(sol.isValidBST(TreeNode.getSampleTree()), false);
     }
 }
 
@@ -77,11 +76,11 @@ class Solution_ValidateBinarySearchTree {
         return helper(root, Integer.MAX_VALUE, Integer.MIN_VALUE);
     }
 
-    public boolean helper(TreeNode root, int max, int min){
-        if(root == null)
+    public boolean helper(TreeNode root, int max, int min) {
+        if (root == null)
             return true;
 
-        if(root.data < max && root.data > min && helper(root.left, root.data, min) &&
+        if (root.data < max && root.data > min && helper(root.left, root.data, min) &&
                 helper(root.right, max, root.data))
             return true;
 

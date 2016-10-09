@@ -1,10 +1,10 @@
 package facebook;
 
 /*
-	Write an algorithm to find the ‘next’ node (e.g., in-order successor) of
+    Write an algorithm to find the ‘next’ node (e.g., in-order successor) of
     a given node.
 
-	Link: https://gist.github.com/zac-xin/2636153
+     https://gist.github.com/zac-xin/2636153
 
 */
 public class InorderSuccessor {
@@ -36,34 +36,34 @@ public class InorderSuccessor {
         return n;
     }
 
-    class TreeNodeWithParent{
+    class TreeNodeWithParent {
         public int data;
         public TreeNodeWithParent left;
         public TreeNodeWithParent right;
         public TreeNodeWithParent parent;
 
-        public TreeNodeWithParent(int data){
+        public TreeNodeWithParent(int data) {
             this.data = data;
             left = null;
             right = null;
             parent = null;
         }
 
-        public TreeNodeWithParent(int data, TreeNodeWithParent left, TreeNodeWithParent right){
+        public TreeNodeWithParent(int data, TreeNodeWithParent left, TreeNodeWithParent right) {
             this.data = data;
             this.left = left;
             this.right = right;
             parent = null;
         }
 
-        public TreeNodeWithParent getLeftMost(){
-            if(left == null)
+        public TreeNodeWithParent getLeftMost() {
+            if (left == null)
                 return this;
             else
                 return left.getLeftMost();
         }
 
-        public String toString(){
+        public String toString() {
             StringBuilder sb = new StringBuilder();
             sb.append(data);
             return sb.toString();

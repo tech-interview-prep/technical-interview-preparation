@@ -16,7 +16,7 @@
  * @"eht yob nar"
  * Tell the complexity of the solution.
  *
- * Link: http://www.careercup.com/question?id=5106757177180160
+ *  http://www.careercup.com/question?id=5106757177180160
  */
 package facebook;
 
@@ -29,15 +29,15 @@ public class _344ReverseString {
 
 class Solution_ReverseString {
     // hello --> olleh
-	public String reverseString(String str) {
-        if( str == null) {
+    public String reverseString(String str) {
+        if ( str == null) {
             return null;
         }
 
         char[] charArray = str.toCharArray();
-        int i=0;
-        int j=charArray.length-1;
-        while(i<j) {
+        int i = 0;
+        int j = charArray.length - 1;
+        while (i < j) {
             char temp = charArray[j];
             charArray[j] = charArray[i];
             charArray[i] = temp;
@@ -46,15 +46,15 @@ class Solution_ReverseString {
         }
 
         return new String(charArray);
-	}
+    }
 
     // "the boy ran" --> "ran boy the"
     public String reverseWordsInLine(String str) {
-        if( str == null) {
+        if ( str == null) {
             return null;
         }
         StringBuffer sb = new StringBuffer();
-        for(String s: str.split(" ")) {
+        for (String s : str.split(" ")) {
             sb.append(reverseString(s));
             sb.append(" ");
         }
@@ -64,11 +64,11 @@ class Solution_ReverseString {
 
     // "the boy ran" --> "eht yob nar"
     public String reverseTheLine(String str) {
-        if( str == null) {
+        if ( str == null) {
             return null;
         }
         StringBuffer sb = new StringBuffer();
-        for(String s: str.split(" ")) {
+        for (String s : str.split(" ")) {
             sb.append(reverseString(s));
             sb.append(" ");
         }

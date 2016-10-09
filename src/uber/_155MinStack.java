@@ -28,7 +28,7 @@ class MinStack {
      *   minStack.getMin();   --> Returns -2.
      */
 
-    private Stack s = new Stack<>();
+    private Stack<Integer> s = new Stack<Integer>();
     /**
      * Standard solution, two ss
      * a minStack to store minimums

@@ -1,5 +1,8 @@
 package interview_bit.hashing;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by priyavivek on 11/11/15.
@@ -21,32 +24,31 @@ import java.util.*;
  Ordering of the result : You should not change the relative ordering of the words / phrases within
  */
 public class Anagrams {
-
     public ArrayList<ArrayList<Integer>> anagrams(final List<String> a) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
 
         //Initialize a boolean array that indicates if a word in the list has already been visited and it was found to be in an anagram group.
         boolean[] flags = new boolean[a.size()];
 
-        for(int i=0;i<a.size();i++){
+        for (int i = 0; i < a.size(); i++) {
             String string1 = a.get(i);
             ArrayList<Integer> temp = new ArrayList<>();
 
             //Check if the current element hasn't been visited before
 
-            if(flags[i] != true) {
+            if (flags[i] != true) {
                 temp.add(i + 1);
-                flags[i]=true;
-            }else{
+                flags[i] = true;
+            } else {
                 continue;
             }
 
             //Find the groups of anagrams in the list
-            for(int j=0;j<a.size();j++){
-                if(j!=i && flags[j] != true){
+            for (int j = 0; j < a.size(); j++) {
+                if (j != i && flags[j] != true) {
                     String string2 = a.get(j);
-                    if(isAnagram(string1,string2)){
-                        temp.add(j+1);
+                    if (isAnagram(string1, string2)) {
+                        temp.add(j + 1);
                         flags[j] = true;
                     }
                 }
@@ -63,32 +65,32 @@ public class Anagrams {
 
 
     //Method to determine if 2 strings are anagrams of each other or not
-    public boolean isAnagram(String a,String b){
-        if(a.length() != b.length()){
+    public boolean isAnagram(String a, String b) {
+        if (a.length() != b.length()) {
             return false;
         }
 
-        HashMap<Character,Integer> aTable = new HashMap<>();
+        HashMap<Character, Integer> aTable = new HashMap<>();
 
         //Store the counts of all the characters of the first string in a hashmap
-        for(int i=0;i<a.length();i++){
+        for (int i = 0; i < a.length(); i++) {
             Character currChar = a.charAt(i);
-            if(aTable.containsKey(currChar)){
-                aTable.put(currChar,aTable.get(currChar)+1);
-            }else{
-                aTable.put(currChar,1);
+            if (aTable.containsKey(currChar)) {
+                aTable.put(currChar, aTable.get(currChar) + 1);
+            } else {
+                aTable.put(currChar, 1);
             }
         }
 
         //Now iterate through the second string and decrement the count of the characters
-        for(int j=0;j<b.length();j++){
+        for (int j = 0; j < b.length(); j++) {
             Character currChar = b.charAt(j);
-            if(!aTable.containsKey(currChar)){
+            if (!aTable.containsKey(currChar)) {
                 return false;
-            }else if(aTable.get(currChar) == 0){
+            } else if (aTable.get(currChar) == 0) {
                 return false;
-            }else if(aTable.get(currChar) > 0){
-                aTable.put(currChar,aTable.get(currChar)-1);
+            } else if (aTable.get(currChar) > 0) {
+                aTable.put(currChar, aTable.get(currChar) - 1);
             }
 
         }
@@ -98,7 +100,7 @@ public class Anagrams {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Anagrams a = new Anagrams();
         List<String> ip = new ArrayList<String>(Arrays.asList( "abbbaabbbabbbbabababbbbbbbaabaaabbaaababbabbabbaababbbaaabbabaabbaabbabbbbbababbbababbbbaabababba", "abaaabbbabaaabbbbabaabbabaaaababbbbabbbaaaabaababbbbaaaabbbaaaabaabbaaabbaabaaabbabbaaaababbabbaa", "babbabbaaabbbbabaaaabaabaabbbabaabaaabbbbbbabbabababbbabaabaabbaabaabaabbaabbbabaabbbabaaaabbbbab", "bbbabaaabaaaaabaabaaaaaaabbabaaaabbababbabbabbaabbabaaabaabbbabbaabaabaabaaaabbabbabaaababbaababb", "abbbbbbbbbbbbabaabbbbabababaabaabbbababbabbabaaaabaabbabbaaabbaaaabbaabbbbbaaaabaaaaababababaabab", "aabbbbaaabbaabbbbabbbbbaabbababbbbababbbabaabbbbbbababaaaabbbabaabbbbabbbababbbaaabbabaaaabaaaaba", "abbaaababbbabbbbabababbbababbbaaaaabbbbbbaaaabbaaabbbbbbabbabbabbaabbbbaabaabbababbbaabbbaababbaa", "aabaaabaaaaaabbbbaabbabaaaabbaababaaabbabbaaaaababaaabaabbbabbababaabababbaabaababbaabbabbbaaabbb"));
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();

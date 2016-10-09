@@ -28,8 +28,7 @@ import java.util.ArrayList;
 
 
 public class Setzero {
-
-    public void setZeroes(ArrayList<ArrayList<Integer>> a){
+    public void setZeroes(ArrayList<ArrayList<Integer>> a) {
 
 
         int numRows = a.size();
@@ -39,14 +38,14 @@ public class Setzero {
         ArrayList<Integer> colInds = new ArrayList<Integer>();
 
 
-        for(int i=0;i<numRows;i++){
-            for(int j=0;j<numCols;j++){
-                if(a.get(i).get(j) == 0){
-                    if(!rowInds.contains(i)){
+        for (int i = 0; i < numRows; i++) {
+            for (int j = 0; j < numCols; j++) {
+                if (a.get(i).get(j) == 0) {
+                    if (!rowInds.contains(i)) {
                         rowInds.add(i);
                     }
 
-                    if(!colInds.contains(j)){
+                    if (!colInds.contains(j)) {
                         colInds.add(j);
                     }
 
@@ -58,18 +57,18 @@ public class Setzero {
 
 
         ArrayList<Integer> currRow = new ArrayList<Integer>();
-        for(int i=0;i<numRows;i++){
-            currRow=a.get(i);
-            if(rowInds.contains(i)){
-                for(int j=0;j<numCols;j++) {
-                    currRow.set(j,0);
+        for (int i = 0; i < numRows; i++) {
+            currRow = a.get(i);
+            if (rowInds.contains(i)) {
+                for (int j = 0; j < numCols; j++) {
+                    currRow.set(j, 0);
 
                 }
 
             }
 
-            for(int k=0;k<colInds.size();k++){
-                currRow.set(colInds.get(k),0);
+            for (int k = 0; k < colInds.size(); k++) {
+                currRow.set(colInds.get(k), 0);
             }
 
         }
@@ -79,7 +78,7 @@ public class Setzero {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Setzero x = new Setzero();
         ArrayList<ArrayList<Integer>> ip = new ArrayList<ArrayList<Integer>>();
         ArrayList<Integer> temp = new ArrayList<Integer>();

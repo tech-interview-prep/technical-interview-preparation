@@ -16,19 +16,18 @@ package facebook;
  * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
  * @author bkoteshwarreddy
  */
-
 public class _167TwoSumII_InputArrayIsSorted {
 }
 
 class Solution_TwoSumII_InputArrayIsSorted {
-  public int[] twoSum(int[] numbers, int target) {
+    public int[] twoSum(int[] numbers, int target) {
         int[] res = new int[2];
         int start = 0, end = numbers.length - 1, sum;
-        while(start < end) {
-            sum = numbers[start]+numbers[end];
-            if(sum > target) {
+        while (start < end) {
+            sum = numbers[start] + numbers[end];
+            if (sum > target) {
                 end --;
-            } else if(sum < target) {
+            } else if (sum < target) {
                 start ++;
             } else {
                 res[0] = start + 1;

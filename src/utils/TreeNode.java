@@ -2,6 +2,7 @@ package utils;
 
 public class TreeNode {
     public int data;
+    public boolean isFinished;
     public TreeNode left;
     public TreeNode right;
 

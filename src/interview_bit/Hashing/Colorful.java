@@ -1,5 +1,5 @@
 package interview_bit.hashing;
-import java.util.*;
+import java.util.HashMap;
 
 /**
  * Created by priyavivek on 11/18/15.

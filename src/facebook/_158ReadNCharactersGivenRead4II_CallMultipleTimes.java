@@ -1,5 +1,8 @@
+package facebook;
+
 /**
  * Leetcode 158: https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
+ *
  * The API: int read4(char *buf) reads 4 characters at a time from a file.
  *
  * The return value is the actual number of characters read. For example, it
@@ -10,16 +13,9 @@
  *
  * Note: The read function may be called multiple times.
  */
-package facebook;
-
-/**
- * https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
- * @author bkoteshwarreddy
- */
-
 public class _158ReadNCharactersGivenRead4II_CallMultipleTimes {
     public static void main(String[] args) {
-      Solution_ReadNCharactersGivenRead4II_CallMultipleTimes solution = new Solution_ReadNCharactersGivenRead4II_CallMultipleTimes();
+        Solution_ReadNCharactersGivenRead4II_CallMultipleTimes solution = new Solution_ReadNCharactersGivenRead4II_CallMultipleTimes();
         char[] buf = new char[100];
         int n = 5;
         System.out.println(solution.read(buf, n)); //5

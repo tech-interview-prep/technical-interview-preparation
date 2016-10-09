@@ -1,22 +1,20 @@
-/*
-    Boundary Traversal of binary tree
-
-    Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root.
-
-    For example, boundary traversal of the following tree is “20 8 4 10 14 25 22″
-
-    Link: http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
-          http://leetcode.com/2010/10/print-edge-nodes-boundary-of-binary.html
-
-*/
 package facebook;
 
 import utils.TreeNode;
 
+/**
+ * Boundary Traversal of binary tree
+ *
+ * Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root.
+ *
+ * For example, boundary traversal of the following tree is “20 8 4 10 14 25 22″
+ *
+ * http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+ * http://leetcode.com/2010/10/print-edge-nodes-boundary-of-binary.html
+ */
 public class PrintEdgeNodes {
     // A function to do boundary traversal of a given binary tree
-    void printBoundary (TreeNode root)
-    {
+    void printBoundary (TreeNode root) {
         if (root != null) {
             System.out.println(root.data);
 
@@ -55,8 +53,7 @@ public class PrintEdgeNodes {
                 // before calling itself for left subtree
                 System.out.println(root.data);
                 printBoundaryLeft(root.left);
-            }
-            else if(root.right != null) {
+            } else if (root.right != null) {
                 System.out.println(root.data);
                 printBoundaryLeft(root.right);
             }
@@ -74,8 +71,7 @@ public class PrintEdgeNodes {
                 //  subtree, then print this node
                 printBoundaryRight(root.right);
                 System.out.println(root.data);
-            }
-            else if (root.left != null) {
+            } else if (root.left != null) {
                 printBoundaryRight(root.left);
                 System.out.println(root.data);
             }

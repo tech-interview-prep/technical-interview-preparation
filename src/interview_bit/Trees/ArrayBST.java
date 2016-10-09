@@ -1,5 +1,5 @@
 package interview_bit.trees;
-import java.util.*;
+import java.util.List;
 
 import utils.TreeNode;
 
@@ -23,22 +23,21 @@ import utils.TreeNode;
 
  */
 public class ArrayBST {
-
     public TreeNode sortedArrayToBST(final List<Integer> a) {
-        TreeNode root = makeBST(a,0,a.size()-1);
+        TreeNode root = makeBST(a, 0, a.size() - 1);
         return root;
 
     }
 
-    public TreeNode makeBST(List<Integer> a,int lo,int hi){
-        if(lo > hi){
+    public TreeNode makeBST(List<Integer> a, int lo, int hi) {
+        if (lo > hi) {
             return null;
         }
 
-        int mid = (lo + hi)/2;
+        int mid = (lo + hi) / 2;
         TreeNode x = new TreeNode(a.get(mid));
-        x.left = makeBST(a,lo,mid-1);
-        x.right = makeBST(a,mid+1,hi);
+        x.left = makeBST(a, lo, mid - 1);
+        x.right = makeBST(a, mid + 1, hi);
         return x;
 
     }

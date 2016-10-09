@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _148SortList {
     /*
     Sort a linked list in O(n log n) time using constant space complexity.

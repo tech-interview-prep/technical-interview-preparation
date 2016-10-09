@@ -7,7 +7,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _124BinaryTreeMaximumPathSum {
     /*
     Given a binary tree, find the maximum path sum.
@@ -29,7 +28,7 @@ public class _124BinaryTreeMaximumPathSum {
     //int[0] is the maxPathSum with root at node, int[1] is the maxPathSum with from ancestor nodes to root
     private static int[] maxPathSumHelper(TreeNode node) {
         if (node == null) {
-            return new int[]{Integer.MIN_VALUE, 0};
+            return new int[] {Integer.MIN_VALUE, 0};
         }
 
         int[] leftMax = maxPathSumHelper(node.left);

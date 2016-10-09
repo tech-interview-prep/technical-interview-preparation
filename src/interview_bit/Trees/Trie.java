@@ -1,6 +1,7 @@
 package interview_bit.trees;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by priyavivek on 11/21/15.

@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _067AddBinary {
     /*
     Given two binary strings, return their sum (also a binary string).
@@ -32,14 +31,14 @@ public class _067AddBinary {
             a = b;
         }
 
-        for (; s1 >=0; s1--) {
+        for (; s1 >= 0; s1--) {
             int sum = a.charAt(s1) - '0' + carrier;
             carrier = sum >> 1;
             sum &= 1;
             ret = sum + ret;
         }
 
-        return carrier > 0 ? carrier + ret: ret;
+        return carrier > 0 ? carrier + ret : ret;
     }
 
     private static void test() {

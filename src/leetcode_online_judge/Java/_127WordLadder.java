@@ -1,14 +1,18 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Set;
 
-import java.util.*;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _127WordLadder {
     /*
     Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start to end, such that:
@@ -47,7 +51,7 @@ public class _127WordLadder {
             if (w == null && !q.isEmpty()) {
                 q.add(null);
                 level++;
-            } else if (w != null){
+            } else if (w != null) {
                 for (String n : getNeighbors(w)) {
                     if (n.equals(end)) {
                         return level + 1;

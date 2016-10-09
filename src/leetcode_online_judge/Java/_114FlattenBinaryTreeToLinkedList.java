@@ -6,7 +6,6 @@ import utils.TreeNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _114FlattenBinaryTreeToLinkedList {
     /*
     Given a binary tree, flatten it to a linked list in-place.

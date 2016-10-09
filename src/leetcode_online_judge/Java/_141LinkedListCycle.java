@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _141LinkedListCycle {
     /*
     Given a linked list, determine if it has a cycle in it.
@@ -19,18 +18,18 @@ public class _141LinkedListCycle {
         ListNode slowNode = head;
         ListNode fastNode = head;
 
-        if (head !=null && head.next != null) {
+        if (head != null && head.next != null) {
             fastNode = head.next;
         } else {
             return false;
         }
 
-        while (slowNode !=null && fastNode!=null){
+        while (slowNode != null && fastNode != null) {
             if (slowNode.data == fastNode.data ) return true;
 
             slowNode = slowNode.next;
             fastNode = fastNode.next;
-            if (fastNode!=null){
+            if (fastNode != null) {
                 fastNode = fastNode.next;
             }
         }

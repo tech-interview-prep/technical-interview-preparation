@@ -4,10 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /*
-	Given a directed graph, design an algorithm to find out whether there is a route
+    Given a directed graph, design an algorithm to find out whether there is a route
     between two nodes.
 
-	Link: https://gist.github.com/zac-xin/2601219
+     https://gist.github.com/zac-xin/2601219
 
 */
 public class GraphRouteTwoNodes {
@@ -15,21 +15,21 @@ public class GraphRouteTwoNodes {
         Unvisited, Visited, Visiting;
     }
     /*
-	 * we can use breadth first search or depth first search
-	 */
-    public static boolean breadthFirstSearch(Graph_AdjacencyList g, int start, int end){
+     * we can use breadth first search or depth first search
+     */
+    public static boolean breadthFirstSearch(Graph_AdjacencyList g, int start, int end) {
         boolean[] visited = new boolean[g.size() + 1];
         visited[start] = true;
         Queue<Integer> queue = new LinkedList<Integer>();
         queue.add(start);
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             int v = queue.remove();
-            for(int item: g.neighbours(v)){
-                if(!visited[item]){
-                    if(item == end)
+            for (int item : g.neighbours(v)) {
+                if (!visited[item]) {
+                    if (item == end)
                         return true;
-                    else{
+                    else {
                         visited[item] = true;
                         queue.add(item);
                     }
@@ -39,17 +39,17 @@ public class GraphRouteTwoNodes {
         return false;
     }
 
-    public static boolean depthFirstSearch(Graph_AdjacencyList g, int start, int end){
+    public static boolean depthFirstSearch(Graph_AdjacencyList g, int start, int end) {
         boolean visited[] = new boolean[g.size() + 1];
         return depthRecursive(g, start, end, visited);
     }
 
     public static boolean depthRecursive(Graph_AdjacencyList g,
-            int start, int end, boolean[] visited){
+                                         int start, int end, boolean[] visited) {
         visited[start] = true;
-        for(int item: g.neighbours(start)){
-            if(!visited[item]){
-                if(item == end)
+        for (int item : g.neighbours(start)) {
+            if (!visited[item]) {
+                if (item == end)
                     return true;
                 else
                     return depthRecursive(g, item, end, visited);
@@ -60,7 +60,7 @@ public class GraphRouteTwoNodes {
 
     // ------------------------ Cracking the coding interview ----------------------------- //
 
-    public static boolean search(Graph g,GraphNode start,GraphNode end) {
+    public static boolean search(Graph g, GraphNode start, GraphNode end) {
         LinkedList<GraphNode> q = new LinkedList<GraphNode>();
         for (GraphNode u : g.getNodes()) {
             u.state = State.Unvisited;
@@ -68,7 +68,7 @@ public class GraphRouteTwoNodes {
         start.state = State.Visiting;
         q.add(start);
         GraphNode u;
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             u = q.removeFirst();
             if (u != null) {
                 for (GraphNode v : u.getAdjacent()) {
