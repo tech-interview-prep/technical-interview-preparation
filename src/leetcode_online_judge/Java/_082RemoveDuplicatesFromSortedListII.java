@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _082RemoveDuplicatesFromSortedListII {
     /*
     Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.

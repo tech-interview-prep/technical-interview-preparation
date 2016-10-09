@@ -1,25 +1,23 @@
-    /*
-        Given "n", generate all valid parenthesis strings of length "2n".
+/*
+    Given "n", generate all valid parenthesis strings of length "2n".
 
-        Example:
-        Given n=2
+    Example:
+    Given n=2
 
-        Output:
-        (())
-        ()()
+    Output:
+    (())
+    ()()
 
-        Link: http://www.careercup.com/question?id=6234634354425856
+     http://www.careercup.com/question?id=6234634354425856
 
-    */
+*/
 package facebook;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Stack;
 
 public class GenerateValidParantheses {
     public ArrayList<String> generateParens(int count) {
-        char[] str = new char[count*2];
+        char[] str = new char[count * 2];
         ArrayList<String> list = new ArrayList<String>();
         addParen(list, count, count, str, 0);
         return list;

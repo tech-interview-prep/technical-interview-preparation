@@ -18,10 +18,9 @@ import java.util.List;
  *
  */
 public class Largestnum {
-
     public String largestNumber(final List<Integer> a) {
 
-        if(a.size() == 1){
+        if (a.size() == 1) {
             return String.valueOf(a.get(0));
         }
 
@@ -29,7 +28,7 @@ public class Largestnum {
         int count = 0;
 
         //Convert to String array
-        for(Integer i : a){
+        for (Integer i : a) {
             aToString[count] = String.valueOf(i);
             count++;
         }
@@ -46,27 +45,27 @@ public class Largestnum {
 
 
         StringBuffer sb = new StringBuffer();
-        for(String s:aToString){
+        for (String s : aToString) {
             sb.append(s);
         }
 
         String result = sb.toString();
 
         //Account for the case where input could be a list of 0's.
-        if(result.charAt(0) == '0'){
+        if (result.charAt(0) == '0') {
             return "0";
-        }else{
+        } else {
             return result;
         }
 
 
     }
 
-    public static void main(String[] args){
-        String s1="3";
-        String s2="34";
-        String o1 = s1+s2;
-        String o2 = s2+s1;
+    public static void main(String[] args) {
+        String s1 = "3";
+        String s2 = "34";
+        String o1 = s1 + s2;
+        String o2 = s2 + s1;
 
         System.out.println("334 vs 343" + o2.compareTo(o1));
 

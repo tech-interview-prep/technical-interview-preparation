@@ -2,16 +2,15 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
- /**
-  * https://leetcode.com/problems/longest-palindromic-substring/
-  * @author bkoteshwarreddy
-  */
+/**
+ * https://leetcode.com/problems/longest-palindromic-substring/
+ * @author bkoteshwarreddy
+ */
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _005LongestPalindromicSubstring {
     /*
      * Given a string S, find the longest palindromic substring in S. You may assume that

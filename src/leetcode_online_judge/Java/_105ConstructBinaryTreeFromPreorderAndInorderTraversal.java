@@ -6,7 +6,6 @@ import utils.TreeNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _105ConstructBinaryTreeFromPreorderAndInorderTraversal {
     /*
     Given preorder and inorder traversal of a tree, construct the binary tree.
@@ -39,7 +38,7 @@ public class _105ConstructBinaryTreeFromPreorderAndInorderTraversal {
      3   4   6
      */
     private static void test() {
-        TreeNode.inOrder(buildTree(new int[]{1, 2, 3, 4, 5, 6}, new int[]{3, 2, 4, 1, 5, 6}));
+        TreeNode.inOrder(buildTree(new int[] {1, 2, 3, 4, 5, 6}, new int[] {3, 2, 4, 1, 5, 6}));
 //        TreeNode.inOrder(buildTree(new int[]{1, 2, 3}, new int[]{1, 2, 3}));
     }
 

@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _075SortColors {
     /*
     Given an array with n objects colored red, white or blue, sort them so that objects of the same color are adjacent,
@@ -25,14 +24,14 @@ public class _075SortColors {
     Could you come up with an one-pass algorithm using only constant space?
     */
     public static void sortColors(int[] A) {
-        for(int index = 0, start = 0, end = A.length - 1; index <= end;) {
+        for (int index = 0, start = 0, end = A.length - 1; index <= end;) {
             if (A[index] == 0) {
                 A[start++] = 0;
                 if (index >= start) {
                     A[index] = 1;
                 }
                 index++;
-            } else if (A[index] == 2){
+            } else if (A[index] == 2) {
                 A[index] = A[end];
                 A[end--] = 2;
             } else {
@@ -42,7 +41,7 @@ public class _075SortColors {
     }
 
     private static void test() {
-        int[] A = new int[]{1, 1, 0, 1, 2, 0, 1, 2, 0, 0, 1};
+        int[] A = new int[] {1, 1, 0, 1, 2, 0, 1, 2, 0, 0, 1};
         sortColors(A);
         Utils.printArrayln(A);
     }

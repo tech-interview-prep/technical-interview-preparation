@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import java.util.Queue;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Queue;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _130SurroundedRegions {
     /*
     Given a 2D board containing 'X' and 'O', capture all regions surrounded by 'X'.
@@ -146,7 +145,7 @@ public class _130SurroundedRegions {
                 queue.add(i);
                 queue.add(j - 1);
                 board[i][j - 1] = 'V';
-            }if (j < n - 1 && board[i][j + 1] == 'O') {
+            } if (j < n - 1 && board[i][j + 1] == 'O') {
                 queue.add(i);
                 queue.add(j + 1);
                 board[i][j + 1] = 'V';
@@ -165,21 +164,21 @@ public class _130SurroundedRegions {
     }
 
     private static char[][] getSampleBoard() {
-        return new char[][]{
-            "XXXX".toCharArray(),
-            "XOOX".toCharArray(),
-            "XXOX".toCharArray(),
-            "XOXX".toCharArray()
-        };
+        return new char[][] {
+                   "XXXX".toCharArray(),
+                   "XOOX".toCharArray(),
+                   "XXOX".toCharArray(),
+                   "XOXX".toCharArray()
+               };
     }
 
     private static char[][] getSampleBoard2() {
-        return new char[][]{
-                "XOXOXO".toCharArray(),
-                "OXOXOX".toCharArray(),
-                "XOXOXO".toCharArray(),
-                "OXOXOX".toCharArray()
-        };
+        return new char[][] {
+                   "XOXOXO".toCharArray(),
+                   "OXOXOX".toCharArray(),
+                   "XOXOXO".toCharArray(),
+                   "OXOXOX".toCharArray()
+               };
     }
 
     private static void printBoard(char[][] board) {

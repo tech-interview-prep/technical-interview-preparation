@@ -11,16 +11,14 @@ import utils.TreeNode;
  *
  * In-order, pre-order and post-order traversal
  */
-
 public class Treetraversal {
-
     public ArrayList<Integer> arrayIn = new ArrayList<>();
     public ArrayList<Integer> arrayPre = new ArrayList<>();
     public ArrayList<Integer> arrayPost = new ArrayList<>();
 
-    public void inOrderRecursive(TreeNode a){
+    public void inOrderRecursive(TreeNode a) {
 
-        if(a == null){
+        if (a == null) {
             return;
         }
         inOrderRecursive(a.left);
@@ -29,15 +27,15 @@ public class Treetraversal {
 
     }
 
-    public ArrayList<Integer> inOrderIterative(TreeNode a){
+    public ArrayList<Integer> inOrderIterative(TreeNode a) {
         ArrayList<Integer> result = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-        while(!stack.isEmpty() || a!=null){
-            if(a !=null) {
+        while (!stack.isEmpty() || a != null) {
+            if (a != null) {
                 stack.push(a);
                 a = a.left;
 
-            }else {
+            } else {
                 TreeNode temp = stack.pop();
                 result.add(temp.data);
                 a = temp.right;
@@ -49,8 +47,8 @@ public class Treetraversal {
     }
 
 
-    public void preOrderRecursive(TreeNode a){
-        if(a == null){
+    public void preOrderRecursive(TreeNode a) {
+        if (a == null) {
             return;
         }
         arrayPre.add(a.data);
@@ -59,8 +57,8 @@ public class Treetraversal {
 
     }
 
-    public void postOrderRecursive(TreeNode a){
-        if(a == null){
+    public void postOrderRecursive(TreeNode a) {
+        if (a == null) {
             return;
         }
         postOrderRecursive(a.left);
@@ -69,9 +67,9 @@ public class Treetraversal {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        ArrayList<String> s = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10","11","12","13","14","15","null", "null", "null", "null", "null", "null", "null", "null", "null", "null","null", "null", "null", "null", "null", "null"));
+        ArrayList<String> s = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null"));
         TreeNode root = CreateBST.insertElements(s);
 
         Treetraversal t = new Treetraversal();
@@ -80,17 +78,17 @@ public class Treetraversal {
         t.postOrderRecursive(root);
 
         System.out.println("Printing in-order");
-        for(int i=0;i<t.arrayIn.size();i++){
+        for (int i = 0; i < t.arrayIn.size(); i++) {
             System.out.println(t.arrayIn.get(i));
         }
 
         System.out.println("Printing pre-order");
-        for(int i=0;i<t.arrayPre.size();i++){
+        for (int i = 0; i < t.arrayPre.size(); i++) {
             System.out.println(t.arrayPre.get(i));
         }
 
         System.out.println("Printing post-order");
-        for(int i=0;i<t.arrayPost.size();i++){
+        for (int i = 0; i < t.arrayPost.size(); i++) {
             System.out.println(t.arrayPost.get(i));
         }
 

@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.Stack;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _084LargestRectangelInHistogram {
     /*
     Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
@@ -45,7 +44,7 @@ public class _084LargestRectangelInHistogram {
         for (rightStart = minIdx; rightStart < end && height[rightStart] == min; rightStart++);
 
         return Math.max(min * (end - start), Math.max(largestRectangleAreaHelper(height, start, leftEnd + 1),
-                largestRectangleAreaHelper(height, rightStart, end)));
+                        largestRectangleAreaHelper(height, rightStart, end)));
     }
 
     public static int largestRectangleArea2(int[] height) {
@@ -72,21 +71,21 @@ public class _084LargestRectangelInHistogram {
     }
 
     private static void test() {
-        Utils.printTestln(largestRectangleArea(new int[]{}), 0);
-        Utils.printTestln(largestRectangleArea(new int[]{2,1}), 2);
-        Utils.printTestln(largestRectangleArea(new int[]{2,1, 2}), 3);
-        Utils.printTestln(largestRectangleArea(new int[]{1,1}), 2);
-        Utils.printTestln(largestRectangleArea(new int[]{4,2,0,3,2,5}), 6);
-        Utils.printTestln(largestRectangleArea(new int[]{2,1,5,6,2,3}), 10);
+        Utils.printTestln(largestRectangleArea(new int[] {}), 0);
+        Utils.printTestln(largestRectangleArea(new int[] {2, 1}), 2);
+        Utils.printTestln(largestRectangleArea(new int[] {2, 1, 2}), 3);
+        Utils.printTestln(largestRectangleArea(new int[] {1, 1}), 2);
+        Utils.printTestln(largestRectangleArea(new int[] {4, 2, 0, 3, 2, 5}), 6);
+        Utils.printTestln(largestRectangleArea(new int[] {2, 1, 5, 6, 2, 3}), 10);
 
         System.out.println("\n>>>Below is the linear algorithm:\n");
 
-        Utils.printTestln(largestRectangleArea2(new int[]{}), 0);
-        Utils.printTestln(largestRectangleArea2(new int[]{2,1}), 2);
-        Utils.printTestln(largestRectangleArea2(new int[]{2,1, 2}), 3);
-        Utils.printTestln(largestRectangleArea2(new int[]{1,1}), 2);
-        Utils.printTestln(largestRectangleArea2(new int[]{4,2,0,3,2,5}), 6);
-        Utils.printTestln(largestRectangleArea2(new int[]{2,1,5,6,2,3}), 10);
+        Utils.printTestln(largestRectangleArea2(new int[] {}), 0);
+        Utils.printTestln(largestRectangleArea2(new int[] {2, 1}), 2);
+        Utils.printTestln(largestRectangleArea2(new int[] {2, 1, 2}), 3);
+        Utils.printTestln(largestRectangleArea2(new int[] {1, 1}), 2);
+        Utils.printTestln(largestRectangleArea2(new int[] {4, 2, 0, 3, 2, 5}), 6);
+        Utils.printTestln(largestRectangleArea2(new int[] {2, 1, 5, 6, 2, 3}), 10);
     }
 
     public static void main(String[] args) {

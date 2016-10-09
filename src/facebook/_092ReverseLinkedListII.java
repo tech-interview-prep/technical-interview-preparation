@@ -1,25 +1,21 @@
-/**
- * @author bkoteshwarreddy
- * 
- * Reverse a linked list from position m to n. Do it in-place and in one-pass.
- * 
- * For example:
- * Given 1->2->3->4->5->NULL, m = 2 and n = 4,
- * 
- * return 1->4->3->2->5->NULL.
- * 
- * Note:
- * Given m, n satisfy the following condition:
- * 1 ≤ m ≤ n ≤ length of list.
- * 
- * https://leetcode.com/problems/reverse-linked-list-ii/
- * 
- */
-
 package facebook;
 
 import utils.ListNode;
 
+/**
+ * Reverse a linked list from position m to n. Do it in-place and in one-pass.
+ *
+ * For example:
+ * Given 1->2->3->4->5->NULL, m = 2 and n = 4,
+ *
+ * return 1->4->3->2->5->NULL.
+ *
+ * Note:
+ * Given m, n satisfy the following condition:
+ * 1 ≤ m ≤ n ≤ length of list.
+ *
+ * https://leetcode.com/problems/reverse-linked-list-ii/
+ */
 public class _092ReverseLinkedListII {
     public static void main(String[] args) {
         Solution_ReverseLinkedListII sol = new Solution_ReverseLinkedListII();
@@ -35,7 +31,7 @@ class Solution_ReverseLinkedListII {
         }
 
         int index;
-        ListNode dummyHead = new ListNode(0), insertNode, node,nextNode;
+        ListNode dummyHead = new ListNode(0), insertNode, node, nextNode;
         dummyHead.next = head;
         for (insertNode = dummyHead, index = 1; index < m; index++, insertNode = insertNode.next);
 

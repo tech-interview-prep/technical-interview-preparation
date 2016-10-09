@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _058LengthOfLastWord {
     /*
     Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last

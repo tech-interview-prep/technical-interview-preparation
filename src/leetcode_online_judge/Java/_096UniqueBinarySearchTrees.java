@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _096UniqueBinarySearchTrees {
     /*
     Given n, how many structurally unique BST's (binary search trees) that store values 1...n?
@@ -18,8 +17,8 @@ public class _096UniqueBinarySearchTrees {
     \       /     /      / \      \
      3     2     1      1   3      2
     /     /       \                 \
-   2     1         2                 3
-   */
+    2     1         2                 3
+    */
     public static int numTrees(int n) {
         if (n == 0) {
             return 1;

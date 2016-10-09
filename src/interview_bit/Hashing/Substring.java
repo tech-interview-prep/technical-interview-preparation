@@ -1,6 +1,10 @@
 package interview_bit.hashing;
-import java.util.*;
 //import static org.junit.Assert.assertEquals;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by priyavivek on 11/14/15.

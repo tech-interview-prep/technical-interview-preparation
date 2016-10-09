@@ -9,20 +9,19 @@ import utils.ListNode;
  * https://leetcode.com/problems/reverse-linked-list/
  * @author bkoteshwarreddy
  */
-
 public class _206ReverseLinkedList {
 
 }
 
 class Solution_ReverseLinkedList {
-  public ListNode reverseList(ListNode head) {
-    ListNode reversedHead = reverse(head, null);
-    return reversedHead;
-  }
+    public ListNode reverseList(ListNode head) {
+        ListNode reversedHead = reverse(head, null);
+        return reversedHead;
+    }
 
-  public ListNode reverse(ListNode ptr , ListNode previous) {
+    public ListNode reverse(ListNode ptr , ListNode previous) {
         ListNode temp;
-        if(ptr.next == null) {
+        if (ptr.next == null) {
             ptr.next = previous;
             return ptr;
         } else {
@@ -32,10 +31,10 @@ class Solution_ReverseLinkedList {
         }
     }
 
-  public ListNode reverse(ListNode ptr) {
+    public ListNode reverse(ListNode ptr) {
         ListNode temp;
         ListNode previous = null;
-        while(ptr != null) {
+        while (ptr != null) {
             temp = ptr.next;
             ptr.next = previous;
             previous = ptr;

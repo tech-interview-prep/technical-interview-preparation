@@ -1,23 +1,18 @@
-    /*
-    Implement pow(x, n).
-    */
-
 package facebook;
 
 import utils.Utils;
 
 /**
+ * Implement pow(x, n).
+ *
  * https://leetcode.com/problems/powx-n/
- * @author bkoteshwarreddy
  */
-
 public class _050Pow {
-
     public static void main(String[] args) {
-      Solution_Pow sol = new Solution_Pow();
-      Utils.printTestln(sol.pow(2, 10), 1024.0);
-      Utils.printTestln(sol.pow(3, 5), 243.0);
-      Utils.printTestln(sol.pow(3, -5), 1/243.0);
+        Solution_Pow sol = new Solution_Pow();
+        Utils.printTestln(sol.pow(2, 10), 1024.0);
+        Utils.printTestln(sol.pow(3, 5), 243.0);
+        Utils.printTestln(sol.pow(3, -5), 1 / 243.0);
     }
 }
 
@@ -33,6 +28,6 @@ class Solution_Pow {
             nl >>= 1;
             x *= x;
         }
-        return n < 0 ? 1/ret : ret;
+        return n < 0 ? 1 / ret : ret;
     }
 }

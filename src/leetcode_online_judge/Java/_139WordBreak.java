@@ -1,16 +1,15 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
-import java.util.HashSet;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/word-break/
  * @author bkoteshwarreddy
  */
-
 public class _139WordBreak {
     /*
     Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence
@@ -67,7 +66,7 @@ public class _139WordBreak {
         Utils.printTestln(wordBreakDP("letecoed", new HashSet<String>(Arrays.asList("leet", "code"))), false);
         Utils.printTestln(wordBreakDP("aaaaaaa", new HashSet<String>(Arrays.asList("aaaa", "aa"))), false);
         Utils.printTestln(wordBreakDP("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
-                new HashSet<String>(Arrays.asList("a","aa","aaa","aaaa","aaaaa","aaaaaa","aaaaaaa","aaaaaaaa","aaaaaaaaa","aaaaaaaaaa"))), false);
+                                      new HashSet<String>(Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"))), false);
     }
 
     public static void main(String[] args) {

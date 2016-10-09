@@ -1,38 +1,35 @@
-    /*
-    Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the
-    candidate numbers sums to T.
-
-    Each number in C may only be used once in the combination.
-
-    Note:
-    All numbers (including target) will be positive integers.
-    Elements in a combination (a1, a2, � , ak) must be in non-descending order. (ie, a1 � a2 � � � ak).
-    The solution set must not contain duplicate combinations.
-    For example, given candidate set 10,1,2,7,6,1,5 and target 8,
-    A solution set is:
-    [1, 7]
-    [1, 2, 5]
-    [2, 6]
-    [1, 1, 6]
-     */
-
 package facebook;
-
-import utils.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * https://leetcode.com/problems/combination-sum-ii/
- * @author bkoteshwarreddy
- */
+import utils.Utils;
 
+/**
+ * Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the
+ * candidate numbers sums to T.
+ *
+ * Each number in C may only be used once in the combination.
+ *
+ * Note:
+ *     All numbers (including target) will be positive integers.
+ *     Elements in a combination (a1, a2, ...., ak) must be in non-descending order. (ie, a1 a2 ... ak).
+ *     The solution set must not contain duplicate combinations.
+ *
+ * For example, given candidate set 10,1,2,7,6,1,5 and target 8,
+ *
+ * A solution set is:
+ *     [1, 7]
+ *     [1, 2, 5]
+ *     [2, 6]
+ *     [1, 1, 6]
+ * https://leetcode.com/problems/combination-sum-ii/
+ */
 public class _040CombinationSumII {
     public static void main(String[] args) {
-      Solution_CombinationSumII sol = new Solution_CombinationSumII();
-        Utils.printListListln(sol.combinationSum2(new int[]{10,1,2,7,6,1,5}, 8));
+        Solution_CombinationSumII sol = new Solution_CombinationSumII();
+        Utils.printListListln(sol.combinationSum2(new int[] {10, 1, 2, 7, 6, 1, 5}, 8));
     }
 }
 
@@ -45,7 +42,7 @@ class Solution_CombinationSumII {
     }
 
     public void dfs(List<List<Integer>> result, List<Integer> list,
-            int[] num, int position, int target) {
+                    int[] num, int position, int target) {
         if (target == 0) {
             result.add(new ArrayList<Integer>(list));
             return;
@@ -81,8 +78,8 @@ class Solution_CombinationSumII {
 
         int nextStart, sum;
         for (nextStart = start + 1, sum = num[start], current.add(num[start]);
-             nextStart < num.length && num[nextStart] == num[start];
-             current.add(num[nextStart]), sum += num[start], nextStart++);
+                nextStart < num.length && num[nextStart] == num[start];
+                current.add(num[nextStart]), sum += num[start], nextStart++);
 
         for (int i = nextStart; i >= start; i--) {
             combinationSum2(num, nextStart, target - sum, ret, current);

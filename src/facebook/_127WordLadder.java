@@ -1,50 +1,57 @@
-        /*
-    Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start to end, such that:
+/*
+Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start to end, such that:
 
-    Only one letter can be changed at a time
-    Each intermediate word must exist in the dictionary
-    For example,
+Only one letter can be changed at a time
+Each intermediate word must exist in the dictionary
+For example,
 
-    Given:
-    start = "hit"
-    end = "cog"
-    dict = ["hot","dot","dog","lot","log"]
-    As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
-    return its length 5.
+Given:
+start = "hit"
+end = "cog"
+dict = ["hot","dot","dog","lot","log"]
+As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
+return its length 5.
 
-    Note:
-    Return 0 if there is no such transformation sequence.
-    All words have the same length.
-    All words contain only lowercase alphabetic characters.
+Note:
+Return 0 if there is no such transformation sequence.
+All words have the same length.
+All words contain only lowercase alphabetic characters.
 
-    Link: http://www.programcreek.com/2012/12/leetcode-word-ladder/
-    */
+ http://www.programcreek.com/2012/12/leetcode-word-ladder/
+*/
 package facebook;
 
-import utils.Utils;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
-import java.util.*;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/word-ladder/
  * @author bkoteshwarreddy
  */
-
 public class _127WordLadder {
     public static void main(String[] args) {
-      Solution_WordLadder sol = new Solution_WordLadder();
-      HashSet<String> dict = new HashSet<String>();
-      dict.add("hot");
-      dict.add("dot");
-      dict.add("dog");
-      dict.add("lot");
-      dict.add("log");
-      Utils.printTestln(sol.ladderLength("hit", "cog", dict), 5);
+        Solution_WordLadder sol = new Solution_WordLadder();
+        HashSet<String> dict = new HashSet<String>();
+        dict.add("hot");
+        dict.add("dot");
+        dict.add("dog");
+        dict.add("lot");
+        dict.add("log");
+        Utils.printTestln(sol.ladderLength("hit", "cog", dict), 5);
 
-      dict.clear();
-      dict.add("hit");
-      dict.add("cog");
-      Utils.printTestln(sol.ladderLength("hit", "cog", dict), 0);
+        dict.clear();
+        dict.add("hit");
+        dict.add("cog");
+        Utils.printTestln(sol.ladderLength("hit", "cog", dict), 0);
     }
 }
 
@@ -67,7 +74,7 @@ class Solution_WordLadder {
             if (w == null && !q.isEmpty()) {
                 q.add(null);
                 level++;
-            } else if (w != null){
+            } else if (w != null) {
                 for (String n : getNeighbors(w)) {
                     if (n.equals(end)) {
                         return level + 1;
@@ -113,23 +120,23 @@ class Solution_WordLadder {
         distanceQueue.add(1);
 
 
-        while(!wordQueue.isEmpty()){
+        while (!wordQueue.isEmpty()) {
             String currWord = wordQueue.pop();
             Integer currDistance = distanceQueue.pop();
 
-            if(currWord.equals(end)){
+            if (currWord.equals(end)) {
                 return currDistance;
             }
 
-            for(int i=0; i<currWord.length(); i++){
+            for (int i = 0; i < currWord.length(); i++) {
                 char[] currCharArr = currWord.toCharArray();
-                for(char c='a'; c<='z'; c++){
+                for (char c = 'a'; c <= 'z'; c++) {
                     currCharArr[i] = c;
 
                     String newWord = new String(currCharArr);
-                    if(dict.contains(newWord)){
+                    if (dict.contains(newWord)) {
                         wordQueue.add(newWord);
-                        distanceQueue.add(currDistance+1);
+                        distanceQueue.add(currDistance + 1);
                         dict.remove(newWord);
                     }
                 }

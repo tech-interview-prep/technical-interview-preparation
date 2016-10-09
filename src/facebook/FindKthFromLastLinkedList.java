@@ -8,7 +8,7 @@
 
     CarrerCup 2.2 findLastNth()
 
-    Link: https://gist.github.com/zac-xin/2515371#file-linkedlist-java
+     https://gist.github.com/zac-xin/2515371#file-linkedlist-java
 
 */
 package facebook;

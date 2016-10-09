@@ -1,36 +1,32 @@
-/*
-Implement int sqrt(int x).
-
-Compute and return the square root of x.
- */
-
 package facebook;
 
 import utils.Utils;
 
 /**
+ * Implement int sqrt(int x).
+ *
+ * Compute and return the square root of x.
+ *
  * https://leetcode.com/problems/sqrtx/
- * @author bkoteshwarreddy
  */
-
 public class _069Sqrt {
     public static void main(String[] args) {
-      Solution_Sqrt sol = new Solution_Sqrt();
+        Solution_Sqrt sol = new Solution_Sqrt();
 
-      Utils.printTestln(sol.sqrt(0), 0);
-      Utils.printTestln(sol.sqrt(4), 2);
-      Utils.printTestln(sol.sqrt(9), 3);
-      Utils.printTestln(sol.sqrt(2147483647), 46341);
-      Utils.printTestln(sol.sqrt(2), 1);
+        Utils.printTestln(sol.sqrt(0), 0);
+        Utils.printTestln(sol.sqrt(4), 2);
+        Utils.printTestln(sol.sqrt(9), 3);
+        Utils.printTestln(sol.sqrt(2147483647), 46341);
+        Utils.printTestln(sol.sqrt(2), 1);
 
-      System.out.println("\n>>>Below is the Newton Iteration version:");
+        System.out.println("\n>>>Below is the Newton Iteration version:");
 
-      Utils.printTestln(sol.sqrt2(0), 0);
-      Utils.printTestln(sol.sqrt2(3), 2);
-      Utils.printTestln(sol.sqrt2(4), 2);
-      Utils.printTestln(sol.sqrt2(9), 3);
-      Utils.printTestln(sol.sqrt2(2147483647), 46341);
-      Utils.printTestln(sol.sqrt2(2), 1);
+        Utils.printTestln(sol.sqrt2(0), 0);
+        Utils.printTestln(sol.sqrt2(3), 2);
+        Utils.printTestln(sol.sqrt2(4), 2);
+        Utils.printTestln(sol.sqrt2(9), 3);
+        Utils.printTestln(sol.sqrt2(2147483647), 46341);
+        Utils.printTestln(sol.sqrt2(2), 1);
     }
 }
 
@@ -72,7 +68,7 @@ class Solution_Sqrt {
           a) Get the next approximation for root using average of x and y
           b) Set y = n/x
 
-        Link: http://www.geeksforgeeks.org/square-root-of-a-perfect-square/
+         http://www.geeksforgeeks.org/square-root-of-a-perfect-square/
 
     */
 
@@ -91,14 +87,14 @@ class Solution_Sqrt {
     }
 
     double squareRoot(double n) {
-      /*We are using n itself as initial approximation
-       This can definitely be improved */
+        /*We are using n itself as initial approximation
+         This can definitely be improved */
         double x = n;
         double y = 1;
         double e = 0.000001; /* e decides the accuracy level*/
-        while(x - y > e) {
-            x = (x + y)/2;
-            y = n/x;
+        while (x - y > e) {
+            x = (x + y) / 2;
+            y = n / x;
         }
 
         return x;
@@ -108,14 +104,14 @@ class Solution_Sqrt {
     public int sqrt3(int x) {
         long low = 0;
         long high = x;
-        while(low <= high){
+        while (low <= high) {
             long mid = low + (high - low) / 2;
             long result = mid * mid;
-            if(result == x){
+            if (result == x) {
                 return (int)mid;
-            } else if(result > x){
+            } else if (result > x) {
                 high = mid - 1;
-            } else{
+            } else {
 
                 low = mid + 1;
             }

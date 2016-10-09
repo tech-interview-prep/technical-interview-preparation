@@ -4,7 +4,6 @@ package leetcode_online_judge.Java;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _153FindMinimumInRotatedSortedArray {
     /*
     Find Minimum in Rotated Sorted Array
@@ -17,25 +16,22 @@ public class _153FindMinimumInRotatedSortedArray {
     You may assume no duplicate exists in the array.
      */
     public int findMin(int[] num) {
-        int[] A=num;
-        for (int l=0, r=num.length-1;l<=r;)
-        	if (A[l]<=A[r]) {
+        int[] A = num;
+        for (int l = 0, r = num.length - 1; l <= r;)
+            if (A[l] <= A[r]) {
                 return A[l];
-            }
-        	else {
-        		int m=l+(r-l)/2;
-        		if (A[m]<A[l]) {
-        			if (A[m-1]<A[m]) {
+            } else {
+                int m = l + (r - l) / 2;
+                if (A[m] < A[l]) {
+                    if (A[m - 1] < A[m]) {
                         r = m - 1;
-                    }
-        			else {
+                    } else {
                         return A[m];
                     }
-        		}
-                else {
+                } else {
                     l = m + 1;
                 }
-        	}
-    	return A[0];
+            }
+        return A[0];
     }
 }

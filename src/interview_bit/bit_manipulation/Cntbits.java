@@ -1,5 +1,5 @@
 package interview_bit.bit_manipulation;
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Created by priyavivek on 10/21/15.

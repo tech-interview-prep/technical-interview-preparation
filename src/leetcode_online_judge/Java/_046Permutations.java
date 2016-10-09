@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _046Permutations {
     /*
     Given a collection of numbers, return all possible permutations.
@@ -49,7 +48,7 @@ public class _046Permutations {
     }
 
     private static void test() {
-        Utils.printListListln(permute(new int[]{1, 2, 3}));
+        Utils.printListListln(permute(new int[] {1, 2, 3}));
     }
 
     public static void main(String[] args) {

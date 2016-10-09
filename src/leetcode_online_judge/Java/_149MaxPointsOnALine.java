@@ -1,16 +1,15 @@
 package leetcode_online_judge.Java;
 
-import utils.Point;
-import utils.Utils;
-
 import java.util.HashMap;
 import java.util.Map;
+
+import utils.Point;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _149MaxPointsOnALine {
     /*
     Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
@@ -26,7 +25,7 @@ public class _149MaxPointsOnALine {
                 if (points[j].x == points[i].x && points[j].y == points[i].y) {
                     numSamePts++;
                 } else {
-                    double slope = points[j].x == points[i].x ? Double.NEGATIVE_INFINITY : (points[j].y - points[i].y)/(double)(points[j].x - points[i].x);
+                    double slope = points[j].x == points[i].x ? Double.NEGATIVE_INFINITY : (points[j].y - points[i].y) / (double)(points[j].x - points[i].x);
                     slope = slope == 0.0 ? 0.0 : slope; // (-0.0 and 0.0);
 
                     if (!slopeCount.containsKey(slope)) {
@@ -46,11 +45,12 @@ public class _149MaxPointsOnALine {
 
     private static void test() {
         Utils.printTestln(maxPoints(Point.getPoints()), 3);
-        Utils.printTestln(maxPoints(new Point[]{new Point(), new Point(1, 1), new Point()}), 3);
-        Utils.printTestln(maxPoints(new Point[]{new Point(1, 1), new Point(1, 1), new Point(1, 1)}), 3);
-        Utils.printTestln(maxPoints(new Point[]{new Point(2, 3), new Point(3, 3), new Point(-5, 3)}), 3);
-        Utils.printTestln(maxPoints(new Point[]{new Point(84,250), new Point(0, 0), new Point(1, 0), new Point(0, -70),
-                new Point(0, -70), new Point(1, -1), new Point(21, 10), new Point(42, 90), new Point(-42, -230)}), 6);
+        Utils.printTestln(maxPoints(new Point[] {new Point(), new Point(1, 1), new Point()}), 3);
+        Utils.printTestln(maxPoints(new Point[] {new Point(1, 1), new Point(1, 1), new Point(1, 1)}), 3);
+        Utils.printTestln(maxPoints(new Point[] {new Point(2, 3), new Point(3, 3), new Point(-5, 3)}), 3);
+        Utils.printTestln(maxPoints(new Point[] {new Point(84, 250), new Point(0, 0), new Point(1, 0), new Point(0, -70),
+                              new Point(0, -70), new Point(1, -1), new Point(21, 10), new Point(42, 90), new Point(-42, -230)
+        }), 6);
     }
 
     public static void main(String[] args) {

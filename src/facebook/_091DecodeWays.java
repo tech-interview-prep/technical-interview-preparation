@@ -1,51 +1,47 @@
-    /*
-    A message containing letters from A-Z is being encoded to numbers using the following mapping:
-
-    'A' -> 1
-    'B' -> 2
-    ...
-    'Z' -> 26
-    Given an encoded message containing digits, determine the total number of ways to decode it.
-
-    For example,
-    Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
-
-    The number of ways decoding "12" is 2.
-     */
 package facebook;
 
 import utils.Utils;
 
-/**
- * https://leetcode.com/problems/decode-ways/
- * @author bkoteshwarreddy
- */
+/*
+A message containing letters from A-Z is being encoded to numbers using the following mapping:
 
+'A' -> 1
+'B' -> 2
+...
+'Z' -> 26
+Given an encoded message containing digits, determine the total number of ways to decode it.
+
+For example,
+Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
+
+The number of ways decoding "12" is 2.
+https://leetcode.com/problems/decode-ways/
+ */
 public class _091DecodeWays {
     public static void main(String[] args) {
-      Solution_DecodeWays sol = new Solution_DecodeWays();
+        Solution_DecodeWays sol = new Solution_DecodeWays();
 
-      Utils.printTestln(sol.numDecodings("12"), 2);
-      Utils.printTestln(sol.numDecodings("123"), 3);
-      Utils.printTestln(sol.numDecodings("132"), 2);
-      Utils.printTestln(sol.numDecodings("201"), 1);
-      Utils.printTestln(sol.numDecodings(""), 0);
+        Utils.printTestln(sol.numDecodings("12"), 2);
+        Utils.printTestln(sol.numDecodings("123"), 3);
+        Utils.printTestln(sol.numDecodings("132"), 2);
+        Utils.printTestln(sol.numDecodings("201"), 1);
+        Utils.printTestln(sol.numDecodings(""), 0);
 
-      System.out.println("\n>>>below is the DP solution:\n");
+        System.out.println("\n>>>below is the DP solution:\n");
 
-      Utils.printTestln(sol.numDecodingsDP("12"), 2);
-      Utils.printTestln(sol.numDecodingsDP("123"), 3);
-      Utils.printTestln(sol.numDecodingsDP("132"), 2);
-      Utils.printTestln(sol.numDecodingsDP("201"), 1);
-      Utils.printTestln(sol.numDecodingsDP(""), 0);
+        Utils.printTestln(sol.numDecodingsDP("12"), 2);
+        Utils.printTestln(sol.numDecodingsDP("123"), 3);
+        Utils.printTestln(sol.numDecodingsDP("132"), 2);
+        Utils.printTestln(sol.numDecodingsDP("201"), 1);
+        Utils.printTestln(sol.numDecodingsDP(""), 0);
 
-      System.out.println("\n>>>below is the space optimized DP solution:\n");
+        System.out.println("\n>>>below is the space optimized DP solution:\n");
 
-      Utils.printTestln(sol.numDecodingsDP2("12"), 2);
-      Utils.printTestln(sol.numDecodingsDP2("123"), 3);
-      Utils.printTestln(sol.numDecodingsDP2("132"), 2);
-      Utils.printTestln(sol.numDecodingsDP2("201"), 1);
-      Utils.printTestln(sol.numDecodingsDP2(""), 0);
+        Utils.printTestln(sol.numDecodingsDP2("12"), 2);
+        Utils.printTestln(sol.numDecodingsDP2("123"), 3);
+        Utils.printTestln(sol.numDecodingsDP2("132"), 2);
+        Utils.printTestln(sol.numDecodingsDP2("201"), 1);
+        Utils.printTestln(sol.numDecodingsDP2(""), 0);
     }
 }
 
@@ -108,7 +104,7 @@ class Solution_DecodeWays {
 
             if (sum < 10) {
                 next = 0;
-            } else if (sum <= 26){
+            } else if (sum <= 26) {
                 next = num1 + num2;
             } else {
                 next = num1;

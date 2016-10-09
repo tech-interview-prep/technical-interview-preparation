@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _040CombinationSumII {
     /*
     Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the
@@ -48,8 +47,8 @@ public class _040CombinationSumII {
 
         int nextStart, sum;
         for (nextStart = start + 1, sum = num[start], current.add(num[start]);
-             nextStart < num.length && num[nextStart] == num[start];
-             current.add(num[nextStart]), sum += num[start], nextStart++);
+                nextStart < num.length && num[nextStart] == num[start];
+                current.add(num[nextStart]), sum += num[start], nextStart++);
 
         for (int i = nextStart; i >= start; i--) {
             combinationSum2(num, nextStart, target - sum, ret, current);
@@ -61,7 +60,7 @@ public class _040CombinationSumII {
     }
 
     private static void test() {
-        Utils.printListListln(combinationSum2(new int[]{10,1,2,7,6,1,5}, 8));
+        Utils.printListListln(combinationSum2(new int[] {10, 1, 2, 7, 6, 1, 5}, 8));
     }
 
     public static void main(String[] args) {

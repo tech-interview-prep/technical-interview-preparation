@@ -47,7 +47,6 @@ import java.util.List;
  * https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
  * @author bkoteshwarreddy
  */
-
 public class _305NumberofIslandsII {
 
 }
@@ -57,17 +56,17 @@ class Solution_NumberofIslandsII {
     int []id;
     // deceide the root
     public int root(int n) {
-        if(id[n] == 0) {
+        if (id[n] == 0) {
             return 0;
         }
-        while(id[n] != n) {
+        while (id[n] != n) {
             n = id[n];
         }
         return n;
     }
 
     public boolean neighbor(int row, int col, int m, int n) {
-        if(row < 0 || col < 0 || row >= m || col >= n) {
+        if (row < 0 || col < 0 || row >= m || col >= n) {
             return false;
         }
         return id[row * n + col + 1] != 0;
@@ -84,33 +83,33 @@ class Solution_NumberofIslandsII {
         int count = 1;
         int pos = row * n + col + 1;
         // up
-        if(neighbor(row - 1, col, m, n)) {
+        if (neighbor(row - 1, col, m, n)) {
             int idx = (row - 1) * n + col + 1;
-            if(root(idx) != pos) {
+            if (root(idx) != pos) {
                 union(root(idx), pos);
                 --count;
             }
         }
         // down
-        if(neighbor(row + 1, col, m, n)) {
+        if (neighbor(row + 1, col, m, n)) {
             int idx = (row + 1) * n + col + 1;
-            if(root(idx) != pos) {
+            if (root(idx) != pos) {
                 union(root(idx), pos);
                 --count;
             }
         }
         // left
-        if(neighbor(row, col - 1, m, n)) {
+        if (neighbor(row, col - 1, m, n)) {
             int idx = row * n + col;
-            if(root(idx) != pos) {
+            if (root(idx) != pos) {
                 union(root(idx), pos);
                 --count;
             }
         }
         // right
-        if(neighbor(row, col + 1, m, n)) {
+        if (neighbor(row, col + 1, m, n)) {
             int idx = row * n + col + 2;
-            if(root(idx) != pos) {
+            if (root(idx) != pos) {
                 union(root(idx), pos);
                 --count;
             }
@@ -120,14 +119,14 @@ class Solution_NumberofIslandsII {
 
     public List<Integer> numIslands2(int m, int n, int[][] positions) {
         List<Integer> res = new ArrayList<Integer>();
-        
-        if(m <= 0 || n <= 0 || positions == null) {
+
+        if (m <= 0 || n <= 0 || positions == null) {
             return res;
         }
-        
+
         id = new int[m * n + 1];
         int count = 0;
-        for(int i = 0; i < positions.length; ++i) {
+        for (int i = 0; i < positions.length; ++i) {
             // find neighbor with 1
             int row = positions[i][0];
             int col = positions[i][1];

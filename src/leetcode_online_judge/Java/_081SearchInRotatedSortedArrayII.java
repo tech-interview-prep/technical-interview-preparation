@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _081SearchInRotatedSortedArrayII {
     /*
     Follow up for "Search in Rotated Sorted Array":
@@ -50,7 +49,7 @@ public class _081SearchInRotatedSortedArrayII {
 //        Utils.printTestln(search(new int[]{1,1,3,1}, 2), false);
 //        Utils.printTestln(search(new int[]{1,1,3,1}, 2), false);
 //        Utils.printTestln(search(new int[]{0,0,1,1,2,0}, 2), true);
-        Utils.printTestln(search(new int[]{1,2,0,1,1,1}, 0), true);
+        Utils.printTestln(search(new int[] {1, 2, 0, 1, 1, 1}, 0), true);
 //        Utils.printTestln(search(new int[]{4,5,6,7,0,1,2}, 0), true);
 //        Utils.printTestln(search(new int[]{3,4,5,1, 2}, 3), true);
 //        Utils.printTestln(search(new int[]{3,4,5,1, 2}, 2), true);

@@ -1,16 +1,15 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _047PermutationsII {
     /*
     Given a collection of numbers that might contain duplicates, return all possible unique permutations.
@@ -57,9 +56,9 @@ public class _047PermutationsII {
     }
 
     private static void test() {
-        Utils.printListListln(permuteUnique(new int[]{1, 1, 2}));
+        Utils.printListListln(permuteUnique(new int[] {1, 1, 2}));
         System.out.println();
-        Utils.printListListln(permuteUnique(new int[]{1, 2, 3})); //[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+        Utils.printListListln(permuteUnique(new int[] {1, 2, 3})); //[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
     }
 
     public static void main(String[] args) {

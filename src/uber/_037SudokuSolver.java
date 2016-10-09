@@ -1,15 +1,9 @@
 package uber;
 
-import utils.Utils;
-
-import java.util.Set;
-import java.util.HashSet;
-
 /**
  * https://leetcode.com/problems/sudoku-solver/
  * @author bkoteshwarreddy
  */
-
 public class _037SudokuSolver {
     /*
     Write a program to solve a Sudoku puzzle by filling the empty cells.
@@ -22,7 +16,7 @@ public class _037SudokuSolver {
     }
 
     public static void main(String[] args) {
-        
+
     }
 
 }

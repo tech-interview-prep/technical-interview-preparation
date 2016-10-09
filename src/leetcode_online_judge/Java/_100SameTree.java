@@ -6,7 +6,6 @@ import utils.TreeNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _100SameTree {
     /*
     Given two binary trees, write a function to check if they are equal or not.

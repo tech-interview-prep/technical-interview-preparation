@@ -1,13 +1,15 @@
+package facebook;
+
+import utils.TreeLinkNode;
+
 /**
- * @author bkoteshwarreddy
- * 
  * Follow up for problem "Populating Next Right Pointers in Each Node".
- * 
+ *
  * What if the given tree could be any binary tree? Would your previous solution still work?
- * 
+ *
  * Note:
  *      You may only use constant extra space.
- *      
+ *
  * For example,
  * Given the following binary tree,
  *        1
@@ -15,30 +17,26 @@
  *      2    3
  *     / \    \
  *    4   5    7
- *    
+ *
  * After calling your function, the tree should look like:
  *         1 -> NULL
  *        /  \
  *       2 -> 3 -> NULL
  *      / \    \
  *     4-> 5 -> 7 -> NULL
- *     
+ *
  * https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
- * 
+ *
  */
-package facebook;
-
-import utils.TreeLinkNode;
-
 public class _117PopulatingNextRightPointersInEachNodeII {
     public static void main(String[] args) {
-      Solution_PopulatingNextRightPointersInEachNodeII sol = new Solution_PopulatingNextRightPointersInEachNodeII();
-      TreeLinkNode root = new TreeLinkNode(1);
-      root.left = new TreeLinkNode(2);
+        Solution_PopulatingNextRightPointersInEachNodeII sol = new Solution_PopulatingNextRightPointersInEachNodeII();
+        TreeLinkNode root = new TreeLinkNode(1);
+        root.left = new TreeLinkNode(2);
 
-      sol.connect(root);
+        sol.connect(root);
 
-      sol.connect2(root);
+        sol.connect2(root);
     }
 }
 
@@ -65,7 +63,7 @@ class Solution_PopulatingNextRightPointersInEachNodeII {
                     if (next.next != null)
                         next = next.next;
 
-                    if (next.next!= null)
+                    if (next.next != null)
                         next = next.next;
                 }
             }

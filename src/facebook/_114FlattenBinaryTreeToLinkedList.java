@@ -27,13 +27,14 @@
                 \
                  6
 
-    Link: https://gist.github.com/bittib/5697095
+     https://gist.github.com/bittib/5697095
           http://www.careercup.com/question?id=6241652616200192
 
 */
 package facebook;
 
 import java.util.Stack;
+
 import utils.TreeNode;
 
 public class _114FlattenBinaryTreeToLinkedList {
@@ -44,7 +45,7 @@ class Solution_FlattenBinaryTreeToLinkedList {
         return flatten(root, null);
     }
 
-    TreeNode flatten(TreeNode cur, TreeNode next){
+    TreeNode flatten(TreeNode cur, TreeNode next) {
         if (cur == null) return next;
         next = flatten(cur.right, next);
         next = flatten(cur.left, next);
@@ -56,18 +57,18 @@ class Solution_FlattenBinaryTreeToLinkedList {
     /*
      * Iterative version
      */
-    public void flatten_Iterative(TreeNode root){
+    public void flatten_Iterative(TreeNode root) {
         if (root == null) return;
         TreeNode prev = null, cur = root;
         Stack<TreeNode> stack = new Stack<TreeNode>();
         stack.push(cur);
-        while (!stack.isEmpty()){
+        while (!stack.isEmpty()) {
             cur = stack.pop();
             if (cur.right != null)
                 stack.push(cur.right);
             if (cur.left != null)
                 stack.push(cur.left);
-            if (prev != null){
+            if (prev != null) {
                 prev.right = cur;
                 prev.left = null;
             }

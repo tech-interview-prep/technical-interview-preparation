@@ -1,17 +1,27 @@
+package facebook;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import utils.Utils;
+
 /**
- * @author bkoteshwarreddy
- * 
- * Given two words (start and end), and a dictionary, find all shortest transformation sequence(s) from start to end, such that:
+ * Given two words (start and end), and a dictionary, find all shortest transformation sequence(s) from
+ * start to end, such that:
  *      Only one letter can be changed at a time
  *      Each intermediate word must exist in the dictionary
- * 
+ *
  * For example,
- * 
+ *
  *  Given:
  *  start = "hit"
  *  end = "cog"
  *  dict = ["hot","dot","dog","lot","log"]
- *  
+ *
  *  Return
  *   [
  *      ["hit","hot","dot","dog","cog"],
@@ -20,20 +30,14 @@
  *  Note:
  *      All words have the same length.
  *      All words contain only lowercase alphabetic characters.
- *      
+ *
  * https://leetcode.com/problems/word-ladder-ii/
- * 
  */
-package facebook;
-
-import utils.Utils;
-import java.util.*;
-
 public class _126WordLadderII {
     public static void main(String[] args) {
         Solution_WordLadderII sol = new Solution_WordLadderII();
         HashSet<String> dict = new HashSet<String>();
-        String[] dictArrays = new String[]{"hot","dot","dog","lot","log"};
+        String[] dictArrays = new String[] {"hot", "dot", "dog", "lot", "log"};
         for (String w : dictArrays) {
             dict.add(w);
         }
@@ -45,7 +49,7 @@ public class _126WordLadderII {
 }
 
 class Solution_WordLadderII {
-	public List<List<String>> findLadders(String beginWord, String endWord, Set<String> wordList) {
+    public List<List<String>> findLadders(String beginWord, String endWord, Set<String> wordList) {
         HashMap<String, ArrayList<String>> h = new HashMap<String, ArrayList<String>>();
         Set<String> set1 = new HashSet<String>(), set2 = new HashSet<String>();
         set1.add(beginWord); set2.add(endWord);
@@ -127,32 +131,32 @@ class Solution_WordLadderII {
         distance.put(start, 1);
         int min = Integer.MAX_VALUE;
 
-        for (int i=0; i<queue.size(); i++){
+        for (int i = 0; i < queue.size(); i++) {
             String u = queue.get(i);
             int steps = distance.get(u);
             if (steps == min)
                 break; // why ? since this is BFS. The minimum path will be discovered by within min steps only.
             char[] chs = u.toCharArray();
-            for (int j=0; j<chs.length; j++){
+            for (int j = 0; j < chs.length; j++) {
                 char oldch = chs[j];
-                for (char c = 'a'; c <= 'z'; c++){
+                for (char c = 'a'; c <= 'z'; c++) {
                     if (c == oldch)
                         continue;
                     chs[j] = c;
                     String v = new String(chs);
 
                     if (dict.contains(v)) {
-                        if (!distance.containsKey(v)){
+                        if (!distance.containsKey(v)) {
                             queue.add(v);
                             ArrayList<String> pList = new ArrayList<String>();
                             pList.add(u);
                             parents.put(v, pList);
                             distance.put(v, steps + 1);
-                        }else if (distance.get(v) == steps + 1){ // Don't forget this case
+                        } else if (distance.get(v) == steps + 1) { // Don't forget this case
                             parents.get(v).add(u);
                         }
                     }
-                    if (v.equals(end)){
+                    if (v.equals(end)) {
                         min = Math.min(min, steps + 1);
                     }
                 }// enf of for loop
@@ -162,16 +166,16 @@ class Solution_WordLadderII {
         return restorePath(end, parents, start);
     }
 
-    public List<List<String>> restorePath(String end, Map<String, List<String>> parents, String start){
+    public List<List<String>> restorePath(String end, Map<String, List<String>> parents, String start) {
         List<List<String>> paths = new ArrayList<List<String>>();
-        if (end.equals(start)){
+        if (end.equals(start)) {
             List<String> pList = new ArrayList<String>();
             pList.add(start);
             paths.add(pList);
-        }else if (parents.containsKey(end)){
-            for (String v : parents.get(end)){
+        } else if (parents.containsKey(end)) {
+            for (String v : parents.get(end)) {
                 List<List<String>> list = restorePath(v, parents, start);
-                for (List<String> p : list){
+                for (List<String> p : list) {
                     p.add(end);
                     paths.add(p);
                 }

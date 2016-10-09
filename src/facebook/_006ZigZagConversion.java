@@ -1,3 +1,7 @@
+package facebook;
+
+import utils.Utils;
+
 /**
  * The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows
  * like this:
@@ -15,20 +19,17 @@
  *
  * convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
  *
+ * https://leetcode.com/problems/zigzag-conversion/
  * http://www.geeksforgeeks.org/print-concatenation-of-zig-zag-string-form-in-n-rows/
  * http://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/
  */
-
-package facebook;
-
-import utils.Utils;
-
- /**
-  * https://leetcode.com/problems/zigzag-conversion/
-  * @author bkoteshwarreddy
-  */
-
 public class _006ZigZagConversion {
+    public static void main(String[] args) {
+
+    }
+}
+
+class Solution_ZigZagConversion {
     public static String convert(String s, int nRows) {
         if (nRows == 1) {
             return s;
@@ -63,10 +64,10 @@ public class _006ZigZagConversion {
         if (n == 1)
             return s;
         char res[] = new char[s.length()];
-        for (int row = 0,i=0,groupCount = 2*n-2; row < n; row++)
-            for (int index = row,secIndex = groupCount-row; index < s.length();index += groupCount,secIndex += groupCount){
+        for (int row = 0, i = 0, groupCount = 2 * n - 2; row < n; row++)
+            for (int index = row, secIndex = groupCount - row; index < s.length(); index += groupCount, secIndex += groupCount) {
                 res[i++] = s.charAt(index);
-                if (row >0 && row < n-1 && secIndex < s.length())
+                if (row > 0 && row < n - 1 && secIndex < s.length())
                     res[i++] = s.charAt(secIndex);
             }
         return new String(res);

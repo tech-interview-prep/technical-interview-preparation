@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _118PascalsTriangle {
     /*
     Given numRows, generate the first numRows of Pascal's triangle.

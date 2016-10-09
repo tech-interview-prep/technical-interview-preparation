@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _014LongestCommonPrefix {
     /*
     Write a function to find the longest common prefix string amongst an array of strings.
@@ -16,7 +15,7 @@ public class _014LongestCommonPrefix {
             return "";
         }
         StringBuffer ret = new StringBuffer();
-        for (int i = 0; ;i++) {
+        for (int i = 0; ; i++) {
             if (i >= strs[0].length()) {
                 return ret.toString();
             }
@@ -31,7 +30,7 @@ public class _014LongestCommonPrefix {
 
     private static void test() {
         Utils.printTestln(longestCommonPrefix(new String[0]), "");
-        Utils.printTestln(longestCommonPrefix(new String[]{""}), "");
+        Utils.printTestln(longestCommonPrefix(new String[] {""}), "");
     }
 
     public static void main(String[] args) {

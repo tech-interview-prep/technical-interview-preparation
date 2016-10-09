@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _115DistinctSubsequence {
     /*
     Given a string S and a string T, count the number of distinct subsequences of T in S.
@@ -103,8 +102,8 @@ public class _115DistinctSubsequence {
         Utils.printTestln(numDistinct("abcde", "ace"), 1);
         Utils.printTestln(numDistinct("abcde", "aec"), 0);
         Utils.printTestln(numDistinct("daacaedaceacabbaabdccdaaeaebacddadcaeaacadbceaecddecdeedcebcdacdaebccdee" +
-                "bcbdeaccabcecbeeaadbccbaeccbbdaeadecabbbedceaddcdeabbcdaeadcddedddcececbeeabcbecaeadddeddccbdb" +
-                "cdcbceabcacddbbcedebbcaccac", "ceadbaa"), 8556153);
+                                      "bcbdeaccabcecbeeaadbccbaeccbbdaeadecabbbedceaddcdeabbcdaeadcddedddcececbeeabcbecaeadddeddccbdb" +
+                                      "cdcbceabcacddbbcedebbcaccac", "ceadbaa"), 8556153);
 
         System.out.println("\nBelow is the DP algorithm:");
 
@@ -114,8 +113,8 @@ public class _115DistinctSubsequence {
         Utils.printTestln(numDistinctDP("abcde", "ace"), 1);
         Utils.printTestln(numDistinctDP("abcde", "aec"), 0);
         Utils.printTestln(numDistinctDP("daacaedaceacabbaabdccdaaeaebacddadcaeaacadbceaecddecdeedcebcdacdaebccdee" +
-                "bcbdeaccabcecbeeaadbccbaeccbbdaeadecabbbedceaddcdeabbcdaeadcddedddcececbeeabcbecaeadddeddccbdb" +
-                "cdcbceabcacddbbcedebbcaccac", "ceadbaa"), 8556153);
+                                        "bcbdeaccabcecbeeaadbccbaeccbbdaeadecabbbedceaddcdeabbcdaeadcddedddcececbeeabcbecaeadddeddccbdb" +
+                                        "cdcbceabcacddbbcedebbcaccac", "ceadbaa"), 8556153);
 
         System.out.println("\nBelow is the space optimized DP algorithm:");
 
@@ -125,8 +124,8 @@ public class _115DistinctSubsequence {
         Utils.printTestln(numDistinctDP2("abcde", "ace"), 1);
         Utils.printTestln(numDistinctDP2("abcde", "aec"), 0);
         Utils.printTestln(numDistinctDP2("daacaedaceacabbaabdccdaaeaebacddadcaeaacadbceaecddecdeedcebcdacdaebccdee" +
-                "bcbdeaccabcecbeeaadbccbaeccbbdaeadecabbbedceaddcdeabbcdaeadcddedddcececbeeabcbecaeadddeddccbdb" +
-                "cdcbceabcacddbbcedebbcaccac", "ceadbaa"), 8556153);
+                                         "bcbdeaccabcecbeeaadbccbaeccbbdaeadecabbbedceaddcdeabbcdaeadcddedddcececbeeabcbecaeadddeddccbdb" +
+                                         "cdcbceabcacddbbcedebbcaccac", "ceadbaa"), 8556153);
     }
 
     public static void main(String[] args) {

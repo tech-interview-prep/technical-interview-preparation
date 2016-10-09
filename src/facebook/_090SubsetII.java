@@ -1,37 +1,35 @@
-    /*
-    Given a collection of integers that might contain duplicates, S, return all possible subsets.
-
-    Note:
-    Elements in a subset must be in non-descending order.
-    The solution set must not contain duplicate subsets.
-    For example,
-    If S = [1,2,2], a solution is:
-
-    [
-      [2],
-      [1],
-      [1,2,2],
-      [2,2],
-      [1,2],
-      []
-    ]
-     */
 package facebook;
 
-import utils.Utils;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
+import utils.Utils;
+
+/*
+Given a collection of integers that might contain duplicates, S, return all possible subsets.
+
+Note:
+Elements in a subset must be in non-descending order.
+The solution set must not contain duplicate subsets.
+For example,
+If S = [1,2,2], a solution is:
+
+[
+  [2],
+  [1],
+  [1,2,2],
+  [2,2],
+  [1,2],
+  []
+]
  * https://leetcode.com/problems/subsets-ii/
- * @author bkoteshwarreddy
  */
 public class _090SubsetII {
     public static void main(String[] args) {
-      Solution_SubsetII sol = new Solution_SubsetII();
-      for (ArrayList<Integer> il : sol.subsetsWithDup(new int[]{1, 2, 2})) {
-          Utils.printIntListln(il);
-      }
+        Solution_SubsetII sol = new Solution_SubsetII();
+        for (ArrayList<Integer> il : sol.subsetsWithDup(new int[] {1, 2, 2})) {
+            Utils.printIntListln(il);
+        }
     }
 }
 
@@ -42,7 +40,7 @@ class Solution_SubsetII {
         Arrays.sort(num);
         int pre = num.length == 0 || num[0] == 0 ? 1 : num[0] >> 1, lastUpdateIdx = 0, startIdx;
 
-        for(int i = 0 ; i < num.length; i++) {
+        for (int i = 0 ; i < num.length; i++) {
             startIdx = pre == num[i] ? lastUpdateIdx : 0;
             pre = num[i];
             lastUpdateIdx = ret.size();

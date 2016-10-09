@@ -29,27 +29,26 @@ import java.util.Arrays;
  NOTE : If you are using your own declared global variables, make sure to clear them out in the
  */
 public class Minstack {
-
     public ArrayList<Integer> a = new ArrayList<Integer>();
     public int minVal;
 
-    Minstack(ArrayList<Integer> a){
+    Minstack(ArrayList<Integer> a) {
         this.a = a;
         this.minVal = Integer.MAX_VALUE;
-        for(int i=0;i<a.size();i++){
-            if(a.get(i) < minVal){
+        for (int i = 0; i < a.size(); i++) {
+            if (a.get(i) < minVal) {
                 minVal = a.get(i);
             }
         }
     }
 
-    Minstack(){
+    Minstack() {
         this.minVal = Integer.MAX_VALUE;
     }
 
     public void push(int x) {
         a.add(x);
-        if(x < minVal){
+        if (x < minVal) {
             minVal = x;
         }
 
@@ -57,11 +56,11 @@ public class Minstack {
 
     public void pop() {
 
-        if(!a.isEmpty()) {
-            int temp = a.get(a.size()-1);
+        if (!a.isEmpty()) {
+            int temp = a.get(a.size() - 1);
             a.remove(a.size() - 1);
 
-            if(temp == minVal) {
+            if (temp == minVal) {
 
                 minVal = Integer.MAX_VALUE;
 
@@ -78,27 +77,27 @@ public class Minstack {
     }
 
     public int top() {
-        if(a.isEmpty()){
+        if (a.isEmpty()) {
             return -1;
-        }else {
+        } else {
             return a.get(a.size() - 1);
         }
 
     }
 
     public int getMin() {
-        if(a.isEmpty()){
+        if (a.isEmpty()) {
             return -1;
-        }else{
+        } else {
             return minVal;
         }
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        ArrayList ip = new ArrayList<Integer>(Arrays.asList(2,6,9,-45,5));
-        Minstack m =new Minstack(ip);
+        ArrayList<Integer> ip = new ArrayList<Integer>(Arrays.asList(2, 6, 9, -45, 5));
+        Minstack m = new Minstack(ip);
         System.out.println(m.getMin());
         System.out.println(m.top());
         m.push(-89);

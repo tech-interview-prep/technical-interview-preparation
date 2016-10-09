@@ -24,7 +24,6 @@ import java.util.Random;
  * https://leetcode.com/problems/random-pick-index
  * @author bkoteshwarreddy
  */
-
 public class _398RandomPickIndex {
 }
 

@@ -1,16 +1,14 @@
 package leetcode_online_judge.Java;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import utils.TreeNode;
-
-import java.util.ArrayList;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _099RecoverBinarySearchTree {
     /*
     Two elements of a binary search tree (BST) are swapped by mistake.

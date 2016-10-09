@@ -1,33 +1,29 @@
-/**
- * @author bkoteshwarreddy
- * 
- * Follow up for "Search in Rotated Sorted Array":
- * What if duplicates are allowed?
- * 
- * Would this affect the run-time complexity? How and why?
- * 
- * Write a function to determine if a given target is in the array.
- * 
- * https://leetcode.com/problems/search-in-rotated-sorted-array-ii
- * 
- */
-
 package facebook;
 
 import utils.Utils;
 
+/**
+ * Follow up for "Search in Rotated Sorted Array":
+ * What if duplicates are allowed?
+ *
+ * Would this affect the run-time complexity? How and why?
+ *
+ * Write a function to determine if a given target is in the array.
+ *
+ * https://leetcode.com/problems/search-in-rotated-sorted-array-ii
+ */
 public class _081SearchInRotatedSortedArrayII {
     public static void main(String[] args) {
         Solution_SearchInRotatedSortedArrayII sol = new Solution_SearchInRotatedSortedArrayII();
-      
-        Utils.printTestln(sol.search(new int[]{1,1,3,1}, 2), false);
-        Utils.printTestln(sol.search(new int[]{1,1,3,1}, 2), false);
-        Utils.printTestln(sol.search(new int[]{0,0,1,1,2,0}, 2), true);
-        Utils.printTestln(sol.search(new int[]{1,2,0,1,1,1}, 0), true);
-        Utils.printTestln(sol.search(new int[]{4,5,6,7,0,1,2}, 0), true);
-        Utils.printTestln(sol.search(new int[]{3,4,5,1, 2}, 3), true);
-        Utils.printTestln(sol.search(new int[]{3,4,5,1, 2}, 2), true);
-        Utils.printTestln(sol.search(new int[]{3,4,5,1, 2}, 11), false);
+
+        Utils.printTestln(sol.search(new int[] {1, 1, 3, 1}, 2), false);
+        Utils.printTestln(sol.search(new int[] {1, 1, 3, 1}, 2), false);
+        Utils.printTestln(sol.search(new int[] {0, 0, 1, 1, 2, 0}, 2), true);
+        Utils.printTestln(sol.search(new int[] {1, 2, 0, 1, 1, 1}, 0), true);
+        Utils.printTestln(sol.search(new int[] {4, 5, 6, 7, 0, 1, 2}, 0), true);
+        Utils.printTestln(sol.search(new int[] {3, 4, 5, 1, 2}, 3), true);
+        Utils.printTestln(sol.search(new int[] {3, 4, 5, 1, 2}, 2), true);
+        Utils.printTestln(sol.search(new int[] {3, 4, 5, 1, 2}, 11), false);
     }
 }
 

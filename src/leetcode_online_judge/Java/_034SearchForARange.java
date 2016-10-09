@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _034SearchForARange {
     /*
     Given a sorted array of integers, find the starting and ending position of a given target value.
@@ -20,12 +19,12 @@ public class _034SearchForARange {
     return [3, 4].
      */
     public static int[] searchRange(int[] A, int target) {
-        int[] ret = new int[] {-1, - 1};
+        int[] ret = new int[] { -1, - 1};
 
         int start = 0, end = A.length - 1;
         while (start <= end) {
             int mid = (start + end) >>> 1;
-            if (A[mid] == target && (mid == 0 ||A[mid - 1] < target)) {
+            if (A[mid] == target && (mid == 0 || A[mid - 1] < target)) {
                 ret[0] = mid;
                 break;
             }
@@ -45,7 +44,7 @@ public class _034SearchForARange {
         end = A.length - 1;
         while (start <= end) {
             int mid = (start + end) >>> 1;
-            if (A[mid] == target && (mid == A.length -1 || A[mid + 1] > target)) {
+            if (A[mid] == target && (mid == A.length - 1 || A[mid + 1] > target)) {
                 ret[1] = mid;
                 return ret;
             }
@@ -61,7 +60,7 @@ public class _034SearchForARange {
     }
 
     private static void test() {
-        Utils.printArrayln(searchRange(new int[]{5, 7, 7, 8, 8, 10}, 8));
+        Utils.printArrayln(searchRange(new int[] {5, 7, 7, 8, 8, 10}, 8));
     }
 
     public static void main(String[] args) {

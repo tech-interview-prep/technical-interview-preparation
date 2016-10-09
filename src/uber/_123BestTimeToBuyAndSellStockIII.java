@@ -1,11 +1,11 @@
- /*
-    Say you have an array for which the ith element is the price of a given stock on day i.
+/*
+   Say you have an array for which the ith element is the price of a given stock on day i.
 
-    Design an algorithm to find the maximum profit. You may complete at most two transactions.
+   Design an algorithm to find the maximum profit. You may complete at most two transactions.
 
-    Note:
-    You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
-     */
+   Note:
+   You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+    */
 package uber;
 
 import utils.Utils;
@@ -14,14 +14,13 @@ import utils.Utils;
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
  * @author bkoteshwarreddy
  */
-
 public class _123BestTimeToBuyAndSellStockIII {
     public static void main(String[] args) {
-      Solution_BestTimeToBuyAndSellStockIII sol = new Solution_BestTimeToBuyAndSellStockIII();
-      Utils.printTestln(sol.maxProfit(new int[]{1, 2}), 1);
-      Utils.printTestln(sol.maxProfit(new int[]{1, 2, 4}), 3);
-      Utils.printTestln(sol.maxProfit(new int[]{4, 2, 1, 6, 8}), 7);
-      Utils.printTestln(sol.maxProfit(new int[]{2, 1, 2, 0, 1}), 2);
+        Solution_BestTimeToBuyAndSellStockIII sol = new Solution_BestTimeToBuyAndSellStockIII();
+        Utils.printTestln(sol.maxProfit(new int[] {1, 2}), 1);
+        Utils.printTestln(sol.maxProfit(new int[] {1, 2, 4}), 3);
+        Utils.printTestln(sol.maxProfit(new int[] {4, 2, 1, 6, 8}), 7);
+        Utils.printTestln(sol.maxProfit(new int[] {2, 1, 2, 0, 1}), 2);
     }
 }
 

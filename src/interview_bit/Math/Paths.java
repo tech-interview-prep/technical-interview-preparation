@@ -24,31 +24,30 @@ package interview_bit.math;
  *
  */
 public class Paths {
-
     public int uniquePaths(int a, int b) {
-        return uniquePaths(0,0,a-1,b-1);
+        return uniquePaths(0, 0, a - 1, b - 1);
 
     }
 
-    public int uniquePaths(int curra, int currb,int targeta,int targetb){
-        if(curra == targeta && currb == targetb){
+    public int uniquePaths(int curra, int currb, int targeta, int targetb) {
+        if (curra == targeta && currb == targetb) {
             return 1;
-        }else if(curra < targeta && currb<targetb){
-            return uniquePaths(curra+1,currb,targeta,targetb) + uniquePaths(curra,currb+1,targeta,targetb);
-        }else if(curra < targeta){
-            return uniquePaths(curra+1,currb,targeta,targetb);
-        }else if(currb < targetb){
-            return uniquePaths(curra,currb+1,targeta,targetb);
+        } else if (curra < targeta && currb < targetb) {
+            return uniquePaths(curra + 1, currb, targeta, targetb) + uniquePaths(curra, currb + 1, targeta, targetb);
+        } else if (curra < targeta) {
+            return uniquePaths(curra + 1, currb, targeta, targetb);
+        } else if (currb < targetb) {
+            return uniquePaths(curra, currb + 1, targeta, targetb);
         }
 
         return 0;
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Paths p = new Paths();
         int result;
-        result = p.uniquePaths(2,2);
+        result = p.uniquePaths(2, 2);
         System.out.println("Number of unique paths is " + result);
 
 

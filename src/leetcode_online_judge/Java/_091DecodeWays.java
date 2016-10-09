@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/decode-ways/
  * @author bkoteshwarreddy
  */
-
 public class _091DecodeWays {
     /*
     A message containing letters from A-Z is being encoded to numbers using the following mapping:
@@ -80,7 +79,7 @@ public class _091DecodeWays {
 
             if (sum < 10) {
                 next = 0;
-            } else if (sum <= 26){
+            } else if (sum <= 26) {
                 next = num1 + num2;
             } else {
                 next = num1;

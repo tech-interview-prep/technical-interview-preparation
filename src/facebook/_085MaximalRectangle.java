@@ -1,35 +1,32 @@
-/*
-Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
-
-For example, given the following matrix:
-
-1 0 1 0 0
-1 0 1 1 1
-1 1 1 1 1
-1 0 0 1 0
-
-Return 6.
-
-Link: http://www.careercup.com/question?id=6299074475065344
-Link: http://n00tc0d3r.blogspot.com/2013/04/maximum-rectangle.html
- */
-
 package facebook;
 
-import utils.Utils;
 import java.util.Stack;
 
-/**
- * https://leetcode.com/problems/maximal-rectangle/
- * @author bkoteshwarreddy
- */
+import utils.Utils;
 
+/**
+ * Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
+ *
+ * For example, given the following matrix:
+ *
+ * 1 0 1 0 0
+ * 1 0 1 1 1
+ * 1 1 1 1 1
+ * 1 0 0 1 0
+ *
+ * Return 6.
+ *
+ * https://leetcode.com/problems/maximal-rectangle/
+ * http://www.careercup.com/question?id=6299074475065344
+ * http://n00tc0d3r.blogspot.com/2013/04/maximum-rectangle.html
+ */
 public class _085MaximalRectangle {
     public static void main(String[] args) {
-      Solution_MaximalRectangle sol = new Solution_MaximalRectangle();
-      Utils.printTestln(sol.maximalRectangle(new char[][]{"010".toCharArray(),
-              "011".toCharArray(),
-              "011".toCharArray()}), 4);
+        Solution_MaximalRectangle sol = new Solution_MaximalRectangle();
+        Utils.printTestln(sol.maximalRectangle(new char[][] {"010".toCharArray(),
+                                               "011".toCharArray(),
+                                               "011".toCharArray()
+                                                            }), 4);
     }
 }
 
@@ -78,17 +75,16 @@ class Solution_MaximalRectangle {
     }
 
     public int maximalRectangle2(char[][] matrix) {
-        if(matrix == null || matrix.length == 0) {
+        if (matrix == null || matrix.length == 0) {
             return 0;
         }
 
         int[] row = new int[matrix[0].length];
         int maxRect = 0;
 
-        for(int i=0; i<matrix.length; i++){
-            for(int j=0; j<row.length; j++)
-            {
-                row[j] = (matrix[i][j] != '0') ? row[j]+1 : 0;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < row.length; j++) {
+                row[j] = (matrix[i][j] != '0') ? row[j] + 1 : 0;
             }
 
             maxRect = Math.max(maxRect, maxRectangle(row));
@@ -105,12 +101,12 @@ class Solution_MaximalRectangle {
                 ss.push(i++);
             } else {
                 maxArea = Math.max(maxArea,
-                        input[ss.pop()]*(ss.isEmpty() ? i : (i - ss.peek() - 1)));
+                                   input[ss.pop()] * (ss.isEmpty() ? i : (i - ss.peek() - 1)));
             }
         }
         while (!ss.isEmpty()) {
             maxArea = Math.max(maxArea,
-                    input[ss.pop()]*(ss.isEmpty() ? i : (i - ss.peek() - 1)));
+                               input[ss.pop()] * (ss.isEmpty() ? i : (i - ss.peek() - 1)));
         }
         return maxArea;
     }
@@ -121,7 +117,7 @@ class Solution_MaximalRectangle {
 
         For example, Given height = [2,1,5,6,2,3], return 10.
 
-        Link: https://gist.github.com/bittib/5653293
+         https://gist.github.com/bittib/5653293
               http://www.geeksforgeeks.org/largest-rectangle-under-histogram/
      */
 
@@ -129,10 +125,10 @@ class Solution_MaximalRectangle {
         int maxArea = 0;
         Stack<Bar> stack = new Stack<Bar>();
         stack.push(new Bar(-1, 0));
-        for (int i=0; i<=height.length; i++){
+        for (int i = 0; i <= height.length; i++) {
             int h = i < height.length ? height[i] : 0;
             int startIdx = i;
-            while (!stack.isEmpty() && stack.peek().height >= h){
+            while (!stack.isEmpty() && stack.peek().height >= h) {
                 Bar bar = stack.pop();
                 startIdx = bar.startIdx;
                 maxArea = Math.max(maxArea, (i - startIdx) * bar.height);
@@ -142,8 +138,8 @@ class Solution_MaximalRectangle {
         return maxArea;
     }
 
-    class Bar{
+    class Bar {
         int height, startIdx;
-        Bar(int h, int i){ this.height = h; this.startIdx = i; }
+        Bar(int h, int i) { this.height = h; this.startIdx = i; }
     }
 }

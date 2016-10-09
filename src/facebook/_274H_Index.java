@@ -1,6 +1,6 @@
-  /*
-  Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute
-  the researcher's h-index.
+/*
+Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute
+the researcher's h-index.
 
 According to the definition of h-index on Wikipedia: "A scientist has index h if h of his/her N papers have at least
 h citations each, and the other N − h papers have no more than h citations each."
@@ -16,7 +16,7 @@ Hint:
 An easy approach is to sort the array first.
 What are the possible values of h-index?
 A faster approach is to use extra space.
-   */
+ */
 package facebook;
 
 import java.util.Arrays;
@@ -25,7 +25,6 @@ import java.util.Arrays;
  * https://leetcode.com/problems/h-index/
  * @author bkoteshwarreddy
  */
-
 public class _274H_Index {
 }
 
@@ -44,7 +43,7 @@ class Solution_H_Index {
         return 0;
     }
 
-/*****************************************************************************/
+    /*****************************************************************************/
 
     // O(n * log(n)) time, O(1) space
     public int hIndex2(int[] citations) {

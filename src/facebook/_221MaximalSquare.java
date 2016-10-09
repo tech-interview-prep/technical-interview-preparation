@@ -1,5 +1,5 @@
-  /*
-  Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+/*
+Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
 
 For example, given the following matrix:
 
@@ -8,7 +8,7 @@ For example, given the following matrix:
 1 1 1 1 1
 1 0 0 1 0
 Return 4.
-   */
+ */
 package facebook;
 
 import java.util.Stack;
@@ -36,11 +36,11 @@ class Solution_MaximalSquare {
             Stack<Integer> stack = new Stack<Integer>();
             while (k < yLen || !stack.isEmpty()) {
                 if (k < yLen && (stack.isEmpty() ||
-                            height[k] >= height[stack.peek()])) {
+                                 height[k] >= height[stack.peek()])) {
                     stack.push(k++);
                 } else {
                     int a = Math.min(height[stack.pop()],
-                            stack.isEmpty() ? k : k - stack.peek() - 1);
+                                     stack.isEmpty() ? k : k - stack.peek() - 1);
                     result = Math.max(result, a * a);
                 }
             }

@@ -6,7 +6,6 @@ import utils.TreeNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _108ConvertSortedArrayToBinarySearchTree {
     /*
     Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
@@ -29,7 +28,7 @@ public class _108ConvertSortedArrayToBinarySearchTree {
     }
 
     private static void test() {
-        TreeNode.inOrder(sortedArrayToBST(new int[]{1, 3, 5, 7, 9, 10, 11, 12}));
+        TreeNode.inOrder(sortedArrayToBST(new int[] {1, 3, 5, 7, 9, 10, 11, 12}));
     }
 
     public static void main(String[] args) {

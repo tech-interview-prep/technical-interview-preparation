@@ -1,6 +1,6 @@
 package interview_bit.linked_lists;
 
-import java.util.*;
+import java.util.ArrayList;
 
 import utils.ListNode;
 

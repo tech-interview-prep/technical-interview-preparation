@@ -1,7 +1,7 @@
 /*
     Given a binary tree, determine if it is height-balanced.
 
-    Link: https://gist.github.com/zac-xin/4374453
+     https://gist.github.com/zac-xin/4374453
 
 */
 package facebook;
@@ -33,8 +33,7 @@ class Solution_BalancedBinaryTree {
         int heightDiff = leftHeight - rightHeight;
         if (Math.abs(heightDiff) > 1) {
             return -1;
-        }
-        else {
+        } else {
             return Math.max(leftHeight, rightHeight) + 1;
         }
     }

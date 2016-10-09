@@ -1,16 +1,14 @@
 package leetcode_online_judge.Java;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 import utils.TreeLinkNode;
-
-import java.util.LinkedList;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _116PopulatingNextRightPointersInEachNode {
     /*
     Given a binary tree

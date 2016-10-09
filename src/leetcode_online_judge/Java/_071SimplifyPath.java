@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.Stack;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _071SimplifyPath {
     /*
     Given an absolute path for a file (Unix-style), simplify it.
@@ -32,11 +31,11 @@ public class _071SimplifyPath {
         for (int i = 0; i <= l; i++) {
             if (i == l || path.charAt(i) == '/') {
                 String dir = sb.toString();
-                if ("..".equals(dir)){
+                if ("..".equals(dir)) {
                     if (!stack.isEmpty()) {
                         stack.pop();
                     }
-                } else if (sb.length() != 0 && !".".equals(dir)){
+                } else if (sb.length() != 0 && !".".equals(dir)) {
                     stack.push(dir);
                 }
                 sb.setLength(0);

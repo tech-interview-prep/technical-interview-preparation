@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _027RemoveElement {
     /*
     Given an array and a value, remove all instances of that value in place and return the new length.
@@ -25,7 +24,7 @@ public class _027RemoveElement {
     }
 
     private static void test() {
-        Utils.printTestln(removeElement(new int[]{1, 2, 6, 10, 9, 8, 10 , 11}, 10), 6);
+        Utils.printTestln(removeElement(new int[] {1, 2, 6, 10, 9, 8, 10 , 11}, 10), 6);
     }
 
     public static void main(String[] args) {

@@ -1,17 +1,16 @@
 package leetcode_online_judge.Java;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 import utils.TreeNode;
 import utils.Utils;
-
-import java.util.ArrayList;
-import java.util.Queue;
-import java.util.LinkedList;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _102BinaryTreeLevelOrderTraversal {
     /*
     Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).

@@ -16,7 +16,6 @@ import java.util.List;
  * https://leetcode.com/problems/implement-trie-prefix-tree/
  * @author bkoteshwarreddy
  */
-
 public class _208ImplementTrie_PrefixTree {
 }
 
@@ -45,9 +44,9 @@ class Trie {
     // Inserts a word into the trie.
     public void insert(String word) {
         TrieNode node = root;
-        for(int i = 0; i < word.length(); ++i) {
+        for (int i = 0; i < word.length(); ++i) {
             // prefix not exist
-            if(!node.index.containsKey(word.charAt(i))) {
+            if (!node.index.containsKey(word.charAt(i))) {
                 TrieNode cur = new TrieNode(word.charAt(i));
                 node.kids.add(cur);
                 node.index.put(word.charAt(i), node.kids.size() - 1);
@@ -60,8 +59,8 @@ class Trie {
     // Returns if the word is in the trie.
     public boolean search(String word) {
         TrieNode node = root;
-        for(int i = 0; i < word.length(); ++i) {
-            if(!node.index.containsKey(word.charAt(i))) {
+        for (int i = 0; i < word.length(); ++i) {
+            if (!node.index.containsKey(word.charAt(i))) {
                 return false;
             }
             node = node.kids.get(node.index.get(word.charAt(i)));
@@ -73,8 +72,8 @@ class Trie {
     // that starts with the given prefix.
     public boolean startsWith(String prefix) {
         TrieNode node = root;
-        for(int i = 0; i < prefix.length(); ++i) {
-            if(!node.index.containsKey(prefix.charAt(i))) {
+        for (int i = 0; i < prefix.length(); ++i) {
+            if (!node.index.containsKey(prefix.charAt(i))) {
                 return false;
             }
             node = node.kids.get(node.index.get(prefix.charAt(i)));

@@ -16,18 +16,17 @@ package facebook;
  * https://leetcode.com/problems/paint-house
  * @author bkoteshwarreddy
  */
-
 public class _256PaintHouse {
 }
 
 class Solution_PaintHouse {
     public int minCost(int[][] costs) {
-        if(costs == null || costs.length == 0 || costs[0].length == 0) {
+        if (costs == null || costs.length == 0 || costs[0].length == 0) {
             return 0;
         }
         int m = costs.length;
         // no extra space
-        for(int i = 1; i < m; ++i) {
+        for (int i = 1; i < m; ++i) {
             costs[i][0] += Math.min(costs[i - 1][1], costs[i - 1][2]);
             costs[i][1] += Math.min(costs[i - 1][0], costs[i - 1][2]);
             costs[i][2] += Math.min(costs[i - 1][0], costs[i - 1][1]);

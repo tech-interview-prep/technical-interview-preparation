@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _035SearchInsertPosition {
     /*
     Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
@@ -38,7 +37,7 @@ public class _035SearchInsertPosition {
     }
 
     private static void test() {
-        int[] A = new int[]{1, 3, 5, 6};
+        int[] A = new int[] {1, 3, 5, 6};
         Utils.printTestln(searchInsert(A, 5), 2);
         Utils.printTestln(searchInsert(A, 2), 1);
         Utils.printTestln(searchInsert(A, 7), 4);

@@ -1,18 +1,16 @@
 package leetcode_online_judge.Java;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import utils.Interval;
-
-import java.util.Collections;
-import java.util.Comparator;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _056MergeIntervals {
     /*
     Given a collection of intervals, merge all overlapping intervals.
@@ -41,7 +39,7 @@ public class _056MergeIntervals {
     }
 
 
-    private static void test(){
+    private static void test() {
         //[1, 3], [2, 6], [5, 9], [8, 10], [15, 18] --> [1, 10], [15, 18]
         for (Interval interval : merge(Interval.getSampleIntervals())) {
             System.out.print(interval + "\t");

@@ -1,14 +1,15 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
-import java.util.*;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _030SubstringWithConcatenationOfAllWords {
     /*
     You are given a string, S, and a list of words, L, that are all of the same length. Find all starting indices of
@@ -62,8 +63,8 @@ public class _030SubstringWithConcatenationOfAllWords {
     }
 
     private static void test() {
-        Utils.printIntListln(findSubstring("a", new String[]{"a"}));
-        Utils.printIntListln(findSubstring("barfoothefoobarman", new String[]{"foo", "bar"}));
+        Utils.printIntListln(findSubstring("a", new String[] {"a"}));
+        Utils.printIntListln(findSubstring("barfoothefoobarman", new String[] {"foo", "bar"}));
     }
 
     public static void main(String[] args) {

@@ -3,8 +3,8 @@
  *
  * Given two strings S and T, determine if they are both one edit distance
  * apart.
- * Link: http://www.careercup.com/question?id=5092486548553728
- * Link: https://gist.github.com/bittib/5677448
+ *  http://www.careercup.com/question?id=5092486548553728
+ *  https://gist.github.com/bittib/5677448
  */
 
 package uber;
@@ -13,7 +13,6 @@ package uber;
  * https://leetcode.com/problems/one-edit-distance/
  * @author bkoteshwarreddy
  */
-
 public class _161OneEditDistance {
 
 }
@@ -38,28 +37,28 @@ class Solution_OneEditDistance {
     }
 
     public boolean onlyOneEdit(String first, String second) {
-      if(first.equals(second)) {
-        return false;
-      }
-
-      int l1 = first.length();
-      int l2 = second.length();
-
-      if(l1 - l2 > 1 || l2 - l1 > 1) {
-        // At least two edits .. no need to continue
-        return false;
-      }
-
-      String longer = (l1 > l2)? first : second;
-      String shorter = (l1 > l2)? second : first;
-
-      for(int i = 0; i < shorter.length(); i++) {
-        if(longer.charAt(i) != shorter.charAt(i)) {
-            int shift = (l1 == l2)? 0 : 1;
-            return longer.substring(i + 1 + shift).equals(shorter.substring(i + 1));
+        if (first.equals(second)) {
+            return false;
         }
-      }
-      // No difference detected until the end of the shorter string
-      return true;
+
+        int l1 = first.length();
+        int l2 = second.length();
+
+        if (l1 - l2 > 1 || l2 - l1 > 1) {
+            // At least two edits .. no need to continue
+            return false;
+        }
+
+        String longer = (l1 > l2) ? first : second;
+        String shorter = (l1 > l2) ? second : first;
+
+        for (int i = 0; i < shorter.length(); i++) {
+            if (longer.charAt(i) != shorter.charAt(i)) {
+                int shift = (l1 == l2) ? 0 : 1;
+                return longer.substring(i + 1 + shift).equals(shorter.substring(i + 1));
+            }
+        }
+        // No difference detected until the end of the shorter string
+        return true;
     }
 }

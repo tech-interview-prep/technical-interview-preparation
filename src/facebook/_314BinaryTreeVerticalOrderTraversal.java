@@ -1,62 +1,62 @@
-  /*
-  Given a binary tree, return the vertical order traversal of its nodes' values. (ie, from top to bottom, column by
-  column).
+/*
+Given a binary tree, return the vertical order traversal of its nodes' values. (ie, from top to bottom, column by
+column).
 
 If two nodes are in the same row and column, the order should be from left to right.
 
 Examples:
 
 Given binary tree [3,9,20,null,null,15,7],
-   3
+  3
+ /\
+/  \
+9  20
   /\
  /  \
- 9  20
-    /\
-   /  \
-  15   7
+15   7
 return its vertical order traversal as:
 [
-  [9],
-  [3,15],
-  [20],
-  [7]
+[9],
+[3,15],
+[20],
+[7]
 ]
 Given binary tree [3,9,8,4,0,1,7],
-     3
-    /\
-   /  \
-   9   8
-  /\  /\
- /  \/  \
- 4  01   7
+    3
+   /\
+  /  \
+  9   8
+ /\  /\
+/  \/  \
+4  01   7
 return its vertical order traversal as:
 [
-  [4],
-  [9],
-  [3,0,1],
-  [8],
-  [7]
+[4],
+[9],
+[3,0,1],
+[8],
+[7]
 ]
 Given binary tree [3,9,8,4,0,1,7,null,null,null,2,5] (0's right child is 2 and 1's left child is 5),
-     3
-    /\
-   /  \
-   9   8
-  /\  /\
- /  \/  \
- 4  01   7
-    /\
-   /  \
-   5   2
+    3
+   /\
+  /  \
+  9   8
+ /\  /\
+/  \/  \
+4  01   7
+  /\
+ /  \
+ 5   2
 return its vertical order traversal as:
 [
-  [4],
-  [9,5],
-  [3,0,1],
-  [8,2],
-  [7]
+[4],
+[9,5],
+[3,0,1],
+[8,2],
+[7]
 ]
-   */
+ */
 
 package facebook;
 
@@ -71,7 +71,6 @@ import utils.TreeNode;
  * https://leetcode.com/problems/binary-tree-vertical-order-traversal/
  * @author bkoteshwarreddy
  */
-
 public class _314BinaryTreeVerticalOrderTraversal {
 }
 
@@ -79,7 +78,7 @@ class Solution_BinaryTreeVerticalOrderTraversal {
     // Hashmap & DFS
     public List<List<Integer>> verticalOrder(TreeNode root) {
         List<List<Integer>> res = new LinkedList<List<Integer>>();
-        if(root == null) {
+        if (root == null) {
             return res;
         }
         LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
@@ -89,32 +88,32 @@ class Solution_BinaryTreeVerticalOrderTraversal {
         index.add(0);
         int max = 0;
         int min = 0;
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             TreeNode cur = queue.poll();
             int curIndex = index.poll();
-            if(!map.containsKey(curIndex)) {
+            if (!map.containsKey(curIndex)) {
                 ArrayList<Integer> tmp = new ArrayList<Integer>();
                 tmp.add(cur.data);
                 map.put(curIndex, tmp);
             } else {
                 map.get(curIndex).add(cur.data);
             }
-            if(cur.left != null) {
+            if (cur.left != null) {
                 queue.add(cur.left);
-                if(min > curIndex - 1) {
+                if (min > curIndex - 1) {
                     min = curIndex - 1;
                 }
                 index.add(curIndex - 1);
             }
-            if(cur.right != null) {
+            if (cur.right != null) {
                 queue.add(cur.right);
-                if(max < curIndex + 1) {
+                if (max < curIndex + 1) {
                     max = curIndex + 1;
                 }
                 index.add(curIndex + 1);
             }
         }
-        for(int i = min; i <= max; ++i) {
+        for (int i = min; i <= max; ++i) {
             res.add(map.get(i));
         }
         return res;

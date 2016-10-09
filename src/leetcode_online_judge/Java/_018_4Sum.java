@@ -1,14 +1,18 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _018_4Sum {
     /*
     Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all
@@ -36,7 +40,7 @@ public class _018_4Sum {
         for (int i = 0; i < num.length; i++) {
             for (int j = i + 1; j < num.length; j++) {
                 sum = num[i] + num[j];
-                if (!sumIdx.containsKey(sum)){
+                if (!sumIdx.containsKey(sum)) {
                     sumIdx.put(sum, new ArrayList<Integer>());
                 }
                 sumIdx.get(sum).add(i);
@@ -72,7 +76,7 @@ public class _018_4Sum {
     }
 
     private static boolean hasCommon(int a1, int a2, int b1, int b2) {
-         return a1 == b1 || a1 == b2 || a2 == b1 || a2 == b2;
+        return a1 == b1 || a1 == b2 || a2 == b1 || a2 == b2;
     }
 
     private static void removeDuplicates(ArrayList<ArrayList<Integer>> ret) {
@@ -101,7 +105,7 @@ public class _018_4Sum {
     }
 
     private static boolean equals(List<Integer> l1, List<Integer> l2) {
-        for(int i = 0; i < 4; i++) {
+        for (int i = 0; i < 4; i++) {
             if (!l1.get(i).equals(l2.get(i))) {
                 return false;
             }
@@ -110,25 +114,26 @@ public class _018_4Sum {
     }
 
     private static void test() {
-        for (List<Integer> ilist : fourSum(new int[]{-5, 5, 4, -3, 0 , 0, 4, -2}, 4)) {
+        for (List<Integer> ilist : fourSum(new int[] { -5, 5, 4, -3, 0 , 0, 4, -2}, 4)) {
             Utils.printIntListln(ilist);
         }
 
-        for (List<Integer> ilist : fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0)) {
+        for (List<Integer> ilist : fourSum(new int[] {1, 0, -1, 0, -2, 2}, 0)) {
             Utils.printIntListln(ilist);
         }
 
-        for (List<Integer> ilist : fourSum(new int[]{0, 0, 0, 0}, 1)) {
+        for (List<Integer> ilist : fourSum(new int[] {0, 0, 0, 0}, 1)) {
             Utils.printIntListln(ilist);
         }
 
-        for (List<Integer> ilist : fourSum(new int[]{0, 0, 0}, 0)) {
+        for (List<Integer> ilist : fourSum(new int[] {0, 0, 0}, 0)) {
             Utils.printIntListln(ilist);
         }
 
-        for (List<Integer> ilist : fourSum(new int[]{-493,-470,-464,-453,-451,-446,-445,-407,-406,-393,-328,-312,-307,
-                -303,-259,-253,-252,-243,-221,-193,-126,-126,-122,-117,-106,-105,-101,-71,-20,-12,3,4,20,20,54,84,98,
-                111,148,149,152,171,175,176,211,218,227,331,352,389,410,420,448,485}, 1057)) {
+        for (List<Integer> ilist : fourSum(new int[] { -493, -470, -464, -453, -451, -446, -445, -407, -406, -393, -328, -312, -307,
+                                           -303, -259, -253, -252, -243, -221, -193, -126, -126, -122, -117, -106, -105, -101, -71, -20, -12, 3, 4, 20, 20, 54, 84, 98,
+                                           111, 148, 149, 152, 171, 175, 176, 211, 218, 227, 331, 352, 389, 410, 420, 448, 485
+                                                     }, 1057)) {
             Utils.printIntListln(ilist);
         }
     }

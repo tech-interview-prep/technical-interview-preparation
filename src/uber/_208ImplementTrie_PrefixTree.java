@@ -12,7 +12,6 @@ package uber;
  * https://leetcode.com/problems/implement-trie-prefix-tree/
  * @author bkoteshwarreddy
  */
-
 public class _208ImplementTrie_PrefixTree {
 }
 
@@ -37,21 +36,21 @@ class Trie {
 
     // Returns if the word is in the trie.
     public boolean search(String word) {
-      return false;
+        return false;
     }
 
     // Returns if there is any word in the trie
     // that starts with the given prefix.
     public boolean startsWith(String prefix) {
-      return false;
+        return false;
     }
 
     public TrieNode getRoot() {
-      return this.root;
+        return this.root;
     }
 
     public void setRoot(TrieNode root) {
-      this.root = root;
+        this.root = root;
     }
 }
 

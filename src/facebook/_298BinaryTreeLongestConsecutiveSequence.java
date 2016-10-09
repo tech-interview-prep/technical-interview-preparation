@@ -30,7 +30,6 @@ import utils.TreeNode;
  * https://leetcode.com/problems/binary-tree-longest-consecutive-sequence
  * @author bkoteshwarreddy
  */
-
 public class _298BinaryTreeLongestConsecutiveSequence {
 
 }
@@ -38,7 +37,7 @@ public class _298BinaryTreeLongestConsecutiveSequence {
 class Solution_BinaryTreeLongestConsecutiveSequence {
     int max = 0;
     public void helper(TreeNode root, int curLen, int target) {
-        if(root == null) return;
+        if (root == null) return;
         curLen = (target == root.data) ? curLen + 1 : 1;
         // find max length through dfs traversal
         max = Math.max(curLen, max);
@@ -47,7 +46,7 @@ class Solution_BinaryTreeLongestConsecutiveSequence {
         helper(root.right, curLen, root.data + 1);
     }
     public int longestConsecutive(TreeNode root) {
-        if(root == null) return 0;
+        if (root == null) return 0;
         helper(root, 0, root.data);
         return max;
     }

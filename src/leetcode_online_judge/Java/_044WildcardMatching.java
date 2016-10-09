@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _044WildcardMatching {
     /*
     Implement wildcard pattern matching with support for '?' and '*'.
@@ -46,7 +45,7 @@ public class _044WildcardMatching {
                 lastWildcard = 1;
                 i1 = i2;
             } else {
-                 if (i2 == p.length()) {
+                if (i2 == p.length()) {
                     return isMatchFromEnd2(s, start1, p, start2);
                 }
                 if ((i1 = isMatchHelp(s, start1, p, start2, i2)) == -1) {
@@ -59,13 +58,13 @@ public class _044WildcardMatching {
 
     private static boolean isMatchFromEnd(String s, int end, String p, int end2) {
         int i, j;
-        for (i = end - 1, j = end2 - 1; i < s.length() && i >= 0 && j < p.length() && j >= 0 && (p.charAt(j) == '?' ||s.charAt(i) == p.charAt(j)); i--, j--);
+        for (i = end - 1, j = end2 - 1; i < s.length() && i >= 0 && j < p.length() && j >= 0 && (p.charAt(j) == '?' || s.charAt(i) == p.charAt(j)); i--, j--);
         return j == -1 && i == -1;
     }
 
     private static boolean isMatchFromEnd2(String s, int start, String p, int start2) {
         int i, j;
-        for (i = s.length() - 1, j = p.length() - 1; i >= start && j >= start2 && (p.charAt(j) == '?' ||s.charAt(i) == p.charAt(j)); i--, j--);
+        for (i = s.length() - 1, j = p.length() - 1; i >= start && j >= start2 && (p.charAt(j) == '?' || s.charAt(i) == p.charAt(j)); i--, j--);
         return j == start2 - 1;
     }
 
@@ -82,11 +81,11 @@ public class _044WildcardMatching {
     private static void test() {
         long s = System.currentTimeMillis();
 
-        Utils.printTestln(isMatch("",""), true);
-        Utils.printTestln(isMatch("","ab*"), false);
-        Utils.printTestln(isMatch("aa","a"), false);
-        Utils.printTestln(isMatch("aa","aa"), true);
-        Utils.printTestln(isMatch("aaa","aa"), false);
+        Utils.printTestln(isMatch("", ""), true);
+        Utils.printTestln(isMatch("", "ab*"), false);
+        Utils.printTestln(isMatch("aa", "a"), false);
+        Utils.printTestln(isMatch("aa", "aa"), true);
+        Utils.printTestln(isMatch("aaa", "aa"), false);
         Utils.printTestln(isMatch("aa", "a*"), true);
         Utils.printTestln(isMatch("aab", "a*"), true);
         Utils.printTestln(isMatch("aa", "?*"), true);

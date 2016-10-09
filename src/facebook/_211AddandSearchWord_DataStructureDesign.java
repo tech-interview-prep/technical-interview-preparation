@@ -1,24 +1,24 @@
-  /*
-  Design a data structure that supports the following two operations:
+/*
+Design a data structure that supports the following two operations:
 
-  void addWord(word)
-  bool search(word)
-  search(word) can search a literal word or a regular expression string containing only letters a-z or .. A . means it can represent any one letter.
+void addWord(word)
+bool search(word)
+search(word) can search a literal word or a regular expression string containing only letters a-z or .. A . means it can represent any one letter.
 
-  For example:
+For example:
 
-  addWord("bad")
-  addWord("dad")
-  addWord("mad")
-  search("pad") -> false
-  search("bad") -> true
-  search(".ad") -> true
-  search("b..") -> true
-  Note:
-  You may assume that all words are consist of lowercase letters a-z.
+addWord("bad")
+addWord("dad")
+addWord("mad")
+search("pad") -> false
+search("bad") -> true
+search(".ad") -> true
+search("b..") -> true
+Note:
+You may assume that all words are consist of lowercase letters a-z.
 
-  You should be familiar with how a Trie works. If not, please work on this problem: (Implement Trie -Prefix Tree)[https://leetcode.com/problems/implement-trie-prefix-tree/] first.
-   */
+You should be familiar with how a Trie works. If not, please work on this problem: (Implement Trie -Prefix Tree)[https://leetcode.com/problems/implement-trie-prefix-tree/] first.
+ */
 package facebook;
 
 /**
@@ -26,11 +26,11 @@ package facebook;
  * @author bkoteshwarreddy
  */
 public class _211AddandSearchWord_DataStructureDesign {
-  public static void main(String[] args) {
-    WordDictionary wordDictionary = new WordDictionary();
-    wordDictionary.addWord("word");
-    wordDictionary.search("pattern");
-  }
+    public static void main(String[] args) {
+        WordDictionary wordDictionary = new WordDictionary();
+        wordDictionary.addWord("word");
+        wordDictionary.search("pattern");
+    }
 }
 
 class WordDictionary {
@@ -68,16 +68,16 @@ class WordDictionary {
             return node != null && dfs(node, word.substring(1));
         }
     }
-    
-    class TrieNode {
-      public TrieNode[] children;
-      public boolean isLeaf;
 
-      public TrieNode() {
-          children = new TrieNode[26];
-          isLeaf = false;
-      }
-  }
+    class TrieNode {
+        public TrieNode[] children;
+        public boolean isLeaf;
+
+        public TrieNode() {
+            children = new TrieNode[26];
+            isLeaf = false;
+        }
+    }
 }
 
 // Your WordDictionary object will be instantiated and called as such:

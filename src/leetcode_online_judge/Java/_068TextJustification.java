@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _068TextJustification {
     /*
     Given an array of words and a length L, format the text such that each line has exactly L characters and is fully
@@ -45,8 +44,8 @@ public class _068TextJustification {
         for (int i = 0; i < words.length;) {
             int start, length, extraSpace, firstSpace, index;
             for (start = i + 1, length = words[i].length();
-                 start < words.length && (length + words[start].length() + 1) <= L;
-                length += words[start++].length() + 1);
+                    start < words.length && (length + words[start].length() + 1) <= L;
+                    length += words[start++].length() + 1);
             sb.setLength(0);
 
             sb.append(words[i]);
@@ -93,8 +92,8 @@ public class _068TextJustification {
     }
 
     private static void test() {
-        Utils.printListln(fullJustify(new String[]{"This", "is", "an", "example", "of", "text", "justification."}, 16), "\n");
-        Utils.printListln(fullJustify(new String[]{"What", "must", "be", "shall", "be."}, 12), "\n");
+        Utils.printListln(fullJustify(new String[] {"This", "is", "an", "example", "of", "text", "justification."}, 16), "\n");
+        Utils.printListln(fullJustify(new String[] {"What", "must", "be", "shall", "be."}, 12), "\n");
     }
 
     public static void main(String[] args) {

@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/subsets/
  * @author bkoteshwarreddy
  */
-
 public class _078Subset {
     /*
     Given a set of distinct integers, S, return all possible subsets.
@@ -48,7 +47,7 @@ public class _078Subset {
     }
 
     private static void test() {
-        Utils.printListListln(subsets(new int[]{1, 2, 3}));
+        Utils.printListListln(subsets(new int[] {1, 2, 3}));
     }
 
     public static void main(String[] args) {

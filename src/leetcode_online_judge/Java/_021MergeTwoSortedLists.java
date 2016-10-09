@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _021MergeTwoSortedLists {
     /*
     Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the

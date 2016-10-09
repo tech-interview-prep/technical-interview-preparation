@@ -1,7 +1,7 @@
 package utils;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Interval {
     public int start;

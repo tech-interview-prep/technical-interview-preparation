@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.Stack;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _020ValidParentheses {
     /*
     Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
@@ -32,10 +31,10 @@ public class _020ValidParentheses {
 
     private static boolean doesMatch(char left, char right) {
         switch (left) {
-            case '(': return right == ')';
-            case '[': return right == ']';
-            case '{': return right == '}';
-            default: return false;
+        case '(': return right == ')';
+        case '[': return right == ']';
+        case '{': return right == '}';
+        default: return false;
         }
     }
 

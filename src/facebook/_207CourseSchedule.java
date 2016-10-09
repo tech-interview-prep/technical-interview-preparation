@@ -37,7 +37,6 @@ import java.util.Map;
  * https://leetcode.com/problems/course-schedule/
  * @author bkoteshwarreddy
  */
-
 public class _207CourseSchedule {
 
 }

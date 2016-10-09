@@ -82,10 +82,10 @@ class Solution_TheSkylineProblem {
             } else {
                 heightHeap.remove(edge.height);
 
-                if(heightHeap.isEmpty()){
+                if (heightHeap.isEmpty()) {
                     result.add(new int[] {edge.x, 0});
-                }else if(edge.height > heightHeap.peek()){
-                    result.add(new int[]{edge.x, heightHeap.peek()});
+                } else if (edge.height > heightHeap.peek()) {
+                    result.add(new int[] {edge.x, heightHeap.peek()});
                 }
             }
         }

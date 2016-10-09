@@ -7,17 +7,16 @@ import java.util.Set;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _159LongestSubstringWithAtMostTwoDistinctCharacters {
     /*
-	Longest Substring with At Most Two Distinct Characters
+    Longest Substring with At Most Two Distinct Characters
 
         Given a string, find the length of the longest substring T that contains at most 2 distinct characters.
         For example, Given s = “eceba”,
         T is “ece” which its length is 3.
-	 */
-    public static String longestSubStrWithTwoChars(String s){
-        if(s==null || s.isEmpty())
+     */
+    public static String longestSubStrWithTwoChars(String s) {
+        if (s == null || s.isEmpty())
             return null;
 
         char[] chars = s.toCharArray();
@@ -27,17 +26,17 @@ public class _159LongestSubstringWithAtMostTwoDistinctCharacters {
         int length = 0; //current longest substr length
         int pos = 0;    //current longest substr starting pos
 
-        for(current=0; current<chars.length; current++){
+        for (current = 0; current < chars.length; current++) {
             pos = current;
             Set<Character> found = new HashSet<Character>();
-            while(current<chars.length){
+            while (current < chars.length) {
                 found.add(chars[current]);
-                if(found.size()<3 )
+                if (found.size() < 3 )
                     current++;
                 else
                     break;
             }
-            if(length < current-pos){
+            if (length < current - pos) {
                 result = s.substring(pos, current);
                 length = current - pos;
             }

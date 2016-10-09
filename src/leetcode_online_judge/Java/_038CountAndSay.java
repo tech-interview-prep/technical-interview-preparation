@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _038CountAndSay {
     /*
     The count-and-say sequence is the sequence of integers beginning as follows:

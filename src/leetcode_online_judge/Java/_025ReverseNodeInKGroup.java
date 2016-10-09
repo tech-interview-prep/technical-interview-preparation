@@ -6,7 +6,6 @@ import utils.ListNode;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _025ReverseNodeInKGroup {
     /*
     Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
@@ -30,7 +29,7 @@ public class _025ReverseNodeInKGroup {
         }
 
         ListNode newHead = head;
-        for (int i = 1; i < k; i++, newHead = newHead.next){
+        for (int i = 1; i < k; i++, newHead = newHead.next) {
             if (newHead.next == null) {
                 return head;
             }
@@ -55,7 +54,7 @@ public class _025ReverseNodeInKGroup {
         ListNode.print(reverseKGroup(null, 1));
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         test();
     }
 }

@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/combination-sum/
  * @author bkoteshwarreddy
  */
-
 public class _039CombinationSum {
     /*
     Given a set of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
@@ -54,7 +53,7 @@ public class _039CombinationSum {
     }
 
     private static void test() {
-        Utils.printListListln(combinationSum(new int[]{2, 3 ,6, 7}, 7));
+        Utils.printListListln(combinationSum(new int[] {2, 3 , 6, 7}, 7));
     }
 
     public static void main(String[] args) {

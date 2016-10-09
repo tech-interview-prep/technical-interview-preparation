@@ -4,7 +4,6 @@ package leetcode_online_judge.Java;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _026RemoveDuplicatesFromSortedArray {
     /*Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
 
@@ -31,7 +30,7 @@ public class _026RemoveDuplicatesFromSortedArray {
     }
 
     private static void test() {
-        int[] A = new int[]{1, 1, 2};
+        int[] A = new int[] {1, 1, 2};
         int length = removeDuplicates(A);
         for (int i = 0; i < length; i++) {
             System.out.print(A[i] + "\t");

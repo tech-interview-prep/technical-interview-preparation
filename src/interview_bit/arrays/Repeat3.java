@@ -1,5 +1,9 @@
 package interview_bit.arrays;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by priyavivek on 11/1/15.
@@ -34,7 +38,7 @@ public class Repeat3 {
             }else if(counts.size() == 2 && !counts.containsKey(currElement)){
 
 
-                Iterator keyIterator = counts.keySet().iterator();
+                Iterator<Integer> keyIterator = counts.keySet().iterator();
 
                 while(keyIterator.hasNext()){
                     int currKey = (int )keyIterator.next();
@@ -49,7 +53,7 @@ public class Repeat3 {
 
         }
 
-        Iterator keyIterator = counts.keySet().iterator();
+        Iterator<Integer> keyIterator = counts.keySet().iterator();
         while(keyIterator.hasNext()){
             int val = 0;
             int currKey = (int )keyIterator.next();

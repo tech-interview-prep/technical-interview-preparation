@@ -1,5 +1,5 @@
-  /*
-  There are a total of n courses you have to take, labeled from 0 to n - 1.
+/*
+There are a total of n courses you have to take, labeled from 0 to n - 1.
 
 Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
 
@@ -22,7 +22,7 @@ Hints:
 This problem is equivalent to finding the topological order in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.
 (Topological Sort via DFS)[https://class.coursera.org/algo-003/lecture/52]] - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
 Topological sort could also be done via (BFS)[http://en.wikipedia.org/wiki/Topological_sorting#Algorithms].
-   */
+ */
 package facebook;
 
 import java.util.LinkedList;

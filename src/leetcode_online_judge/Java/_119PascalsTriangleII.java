@@ -1,14 +1,13 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
 import java.util.ArrayList;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _119PascalsTriangleII {
     /*
     Pascal's Triangle II Total Accepted: 3919 Total Submissions: 13385 My Submissions

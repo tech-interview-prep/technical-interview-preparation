@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _043MultiplyStrings {
     /*
     Given two numbers represented as strings, return multiplication of the numbers as a string.
@@ -55,7 +54,7 @@ public class _043MultiplyStrings {
         String ret = "";
 
         int carrier = 0, m, n;
-        for(m = num1.length() - 1, n = num2.length() - 1; m >= 0 && n >= 0; m--, n--) {
+        for (m = num1.length() - 1, n = num2.length() - 1; m >= 0 && n >= 0; m--, n--) {
             int sum = num1.charAt(m) + num2.charAt(n) - '0' - '0' + carrier;
             if (sum >= 10) {
                 carrier = 1;
@@ -75,7 +74,7 @@ public class _043MultiplyStrings {
             if (sum >= 10) {
                 carrier = 1;
                 sum -= 10;
-            }else {
+            } else {
                 carrier = 0;
             }
             ret = sum + ret;

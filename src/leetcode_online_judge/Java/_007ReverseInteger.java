@@ -2,22 +2,21 @@ package leetcode_online_judge.Java;
 
 import utils.Utils;
 
- /**
-  * https://leetcode.com/problems/reverse-integer/
-  * @author bkoteshwarreddy
-  */
+/**
+ * https://leetcode.com/problems/reverse-integer/
+ * @author bkoteshwarreddy
+ */
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _007ReverseInteger {
     /*
      * Reverse digits of an integer.
      *
-     * 		Example1: x = 123, return 321
-     *		Example2: x = -123, return -321
+     *      Example1: x = 123, return 321
+     *      Example2: x = -123, return -321
      *
      * click to show spoilers.
      *
@@ -35,13 +34,13 @@ public class _007ReverseInteger {
      *
      */
 
-    public static int reverse(int x){
+    public static int reverse(int x) {
         int newValue = 0;
 
-        while (x!=0) {
+        while (x != 0) {
             int mod = x % 10;
-            newValue = newValue*10 + mod;
-            x /=10;
+            newValue = newValue * 10 + mod;
+            x /= 10;
         }
         return newValue;
     }

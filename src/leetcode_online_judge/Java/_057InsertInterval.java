@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
+import java.util.ArrayList;
+
 import utils.Interval;
 import utils.Utils;
-
-import java.util.ArrayList;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _057InsertInterval {
     /*
     Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).

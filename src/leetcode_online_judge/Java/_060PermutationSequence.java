@@ -1,15 +1,14 @@
 package leetcode_online_judge.Java;
 
-import utils.Utils;
-
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+
+import utils.Utils;
 
 /**
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _060PermutationSequence {
     /*
     The set [1,2,3,�,n] contains a total of n! unique permutations.
@@ -39,7 +38,7 @@ public class _060PermutationSequence {
         }
 
         for (int i = n; i >= 1; i--) {
-            int digitIndex = (k - 1)/factorial[i - 1];
+            int digitIndex = (k - 1) / factorial[i - 1];
             ret.append(digits.get(digitIndex));
             digits.remove(digitIndex);
             k -= digitIndex * factorial[i - 1];

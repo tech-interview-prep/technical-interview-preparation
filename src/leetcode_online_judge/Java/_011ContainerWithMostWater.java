@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _011ContainerWithMostWater {
     /*
     Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical
@@ -53,30 +52,30 @@ public class _011ContainerWithMostWater {
 
     public int maxArea3(int[] height) { //best
         int maxRes = Integer.MIN_VALUE;
-          int maxHeight;
-          int tmpRes;
-          int leftPointer =0,rightPointer = height.length-1;
-          while(leftPointer<rightPointer){
-              tmpRes = rightPointer-leftPointer;
-              // judge if the left pointer's height bigger?
-              if (height[leftPointer]<height[rightPointer]) {
-                  maxHeight =  height[leftPointer++];
-              }else {
-                  maxHeight = height[rightPointer--];
-              }
-              // to get the result of result now
-              tmpRes = maxHeight*tmpRes;
-              // get the max result
-              if (tmpRes>maxRes) {
-                  maxRes = tmpRes;
-              }
-          }
-          return maxRes;
-      }
+        int maxHeight;
+        int tmpRes;
+        int leftPointer = 0, rightPointer = height.length - 1;
+        while (leftPointer < rightPointer) {
+            tmpRes = rightPointer - leftPointer;
+            // judge if the left pointer's height bigger?
+            if (height[leftPointer] < height[rightPointer]) {
+                maxHeight =  height[leftPointer++];
+            } else {
+                maxHeight = height[rightPointer--];
+            }
+            // to get the result of result now
+            tmpRes = maxHeight * tmpRes;
+            // get the max result
+            if (tmpRes > maxRes) {
+                maxRes = tmpRes;
+            }
+        }
+        return maxRes;
+    }
 
     private static void test() {
-        Utils.printTestln(maxArea(new int[]{3, 5, 3, 4, 6, 8}), 20);
-        Utils.printTestln(maxArea2(new int[]{3, 5, 3, 4, 6, 8}), 20);
+        Utils.printTestln(maxArea(new int[] {3, 5, 3, 4, 6, 8}), 20);
+        Utils.printTestln(maxArea2(new int[] {3, 5, 3, 4, 6, 8}), 20);
     }
 
     public static void main(String[] args) {

@@ -36,7 +36,6 @@ import java.util.Set;
  * https://leetcode.com/problems/word-search-ii
  * @author bkoteshwarreddy
  */
-
 public class _212WordSearchII {
 }
 
@@ -57,7 +56,7 @@ class Solution_WordSearchII {
     }
 
     public void dfs(char[][] board, boolean[][] isVisited, int i, int j,
-            String s, Trie trie, Set<String> set) {
+                    String s, Trie trie, Set<String> set) {
         int xLen = board.length;
         int yLen = board[0].length;
         if (i < 0 || i >= xLen || j < 0 || j >= yLen || isVisited[i][j])
@@ -74,55 +73,55 @@ class Solution_WordSearchII {
         dfs(board, isVisited, i, j - 1, s, trie, set);
         isVisited[i][j] = false;
     }
-    
+
     class Trie {
 
-      private TrieNode root;
+        private TrieNode root;
 
-      public Trie() {
-          root = new TrieNode();
-      }
+        public Trie() {
+            root = new TrieNode();
+        }
 
-      public void insert(String word) {
-          TrieNode cur = root;
-          for (char c : word.toCharArray()) {
-              if (cur.children[c - 'a'] == null)
-                  cur.children[c - 'a'] = new TrieNode();
-              cur = cur.children[c - 'a'];
-          }
-          cur.isLeaf = true;
-      }
+        public void insert(String word) {
+            TrieNode cur = root;
+            for (char c : word.toCharArray()) {
+                if (cur.children[c - 'a'] == null)
+                    cur.children[c - 'a'] = new TrieNode();
+                cur = cur.children[c - 'a'];
+            }
+            cur.isLeaf = true;
+        }
 
-      public boolean search(String word) {
-          TrieNode cur = root;
-          for (char c : word.toCharArray()) {
-              if (cur.children[c - 'a'] != null)
-                  cur = cur.children[c - 'a'];
-          }
-          return cur.isLeaf;
-      }
+        public boolean search(String word) {
+            TrieNode cur = root;
+            for (char c : word.toCharArray()) {
+                if (cur.children[c - 'a'] != null)
+                    cur = cur.children[c - 'a'];
+            }
+            return cur.isLeaf;
+        }
 
-      public boolean startsWith(String prefix) {
-          TrieNode cur = root;
-          for (char c : prefix.toCharArray()) {
-              if (cur.children[c - 'a'] == null)
-                  return false;
-              cur = cur.children[c - 'a'];
-          }
-          return true;
-      }
+        public boolean startsWith(String prefix) {
+            TrieNode cur = root;
+            for (char c : prefix.toCharArray()) {
+                if (cur.children[c - 'a'] == null)
+                    return false;
+                cur = cur.children[c - 'a'];
+            }
+            return true;
+        }
 
-  }
+    }
 
-  class TrieNode {
+    class TrieNode {
 
-      TrieNode[] children;
-      boolean isLeaf;
+        TrieNode[] children;
+        boolean isLeaf;
 
-      public TrieNode() {
-          children = new TrieNode[26];
-          isLeaf = false;
-      }
+        public TrieNode() {
+            children = new TrieNode[26];
+            isLeaf = false;
+        }
 
-  }
+    }
 }

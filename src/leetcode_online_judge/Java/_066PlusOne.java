@@ -6,7 +6,6 @@ import utils.Utils;
  * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
-
 public class _066PlusOne {
     /*
     Given a number represented as an array of digits, plus one to the number.
@@ -28,8 +27,8 @@ public class _066PlusOne {
     }
 
     private static void test() {
-        Utils.printArrayln(plusOne(new int[]{1, 2, 8}));
-        Utils.printArrayln(plusOne(new int[]{9, 9}));
+        Utils.printArrayln(plusOne(new int[] {1, 2, 8}));
+        Utils.printArrayln(plusOne(new int[] {9, 9}));
     }
 
     public static void main(String[] args) {

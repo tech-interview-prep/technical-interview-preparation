@@ -1,15 +1,17 @@
-/**
- * Write a program to sum numbers represented by linked list.
- *
- * Input: (7 -> 1 -> 6) + (5 -> 9 -> 2) 617 + 295
- * Output: 2 -> 1 -> 9
- *
- * http://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/
- */
 package facebook;
 
 import utils.ListNode;
 
+/**
+ * You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order
+ * and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+ *
+ * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+ * Output: 7 -> 0 -> 8
+ *
+ * https://leetcode.com/problems/add-two-numbers
+ * http://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/
+ */
 public class _002AddTwoNumbers {
     public static void main(String[] args) {
         Solution_AddTwoNumbers sol = new Solution_AddTwoNumbers();
@@ -19,9 +21,18 @@ public class _002AddTwoNumbers {
 
 class Solution_AddTwoNumbers {
     public ListNode addListsIterative(ListNode l1, ListNode l2) {
+        if (l1 == null && l2 == null) {
+            return null;
+        } else if (l1 == null) {
+            return l2;
+        } else if (l2 == null) {
+            return l1;
+        }
+
         ListNode dummyHead = new ListNode(0);
         ListNode p = l1, q = l2, curr = dummyHead;
         int carry = 0;
+
         while (p != null || q != null) {
             int x = (p != null) ? p.data : 0;
             int y = (q != null) ? q.data : 0;
@@ -32,9 +43,11 @@ class Solution_AddTwoNumbers {
             if (p != null) p = p.next;
             if (q != null) q = q.next;
         }
+
         if (carry > 0) {
             curr.next = new ListNode(carry);
         }
+
         return dummyHead.next;
     }
 
@@ -60,8 +73,8 @@ class Solution_AddTwoNumbers {
 
         result.data = value % 10;
         ListNode more = addLists(l1 == null ? null : l1.next,
-                l2 == null ? null : l2.next,
-                value >= 10 ? 1 : 0);
+                                 l2 == null ? null : l2.next,
+                                 value >= 10 ? 1 : 0);
         result.setNext(more);
 
         return result;

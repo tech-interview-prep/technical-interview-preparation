@@ -22,62 +22,61 @@ import utils.Utils;
  * https://leetcode.com/problems/two-sum-iii-data-structure-design/
  * @author bkoteshwarreddy
  */
-
 public class _170TwoSumIII_DataStructureDesign {
-  public static void main(String[] args) {
-    Solution_TwoSum sol = new Solution_TwoSum();
+    public static void main(String[] args) {
+        Solution_TwoSum sol = new Solution_TwoSum();
 
-    Utils.printTestArrayln(sol.twoSum_HashMap(new int[]{2, 7, 11, 15}, 9), new int[]{0, 1});
-    Utils.printTestArrayln(sol.twoSum_HashMap(new int[]{7, 11, 2, 15}, 9), new int[]{0, 2});
-  }
+        Utils.printTestArrayln(sol.twoSum_HashMap(new int[] {2, 7, 11, 15}, 9), new int[] {0, 1});
+        Utils.printTestArrayln(sol.twoSum_HashMap(new int[] {7, 11, 2, 15}, 9), new int[] {0, 2});
+    }
 }
 
 class Solution_TwoSumIII_DataStructureDesign {
-  private List<Integer> list = new ArrayList<Integer>();
-  private Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+    private List<Integer> list = new ArrayList<Integer>();
+    private Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
     // Add the number to an internal data structure.
-  public void add(int number) {
-      if (map.containsKey(number)) map.put(number, map.get(number) + 1);
-      else {
-          map.put(number, 1);
-          list.add(number);
-      }
-  }
+    public void add(int number) {
+        if (map.containsKey(number)) map.put(number, map.get(number) + 1);
+        else {
+            map.put(number, 1);
+            list.add(number);
+        }
+    }
 
     // Find if there exists any pair of numbers which sum is equal to the value.
-  public boolean find(int value) {
-      for (int i = 0; i < list.size(); i++){
-          int num1 = list.get(i), num2 = value - num1;
-          if ((num1 == num2 && map.get(num1) > 1) || (num1 != num2 && map.containsKey(num2))) return true;
-      }
-      return false;
-  }
+    public boolean find(int value) {
+        for (int i = 0; i < list.size(); i++) {
+            int num1 = list.get(i), num2 = value - num1;
+            if ((num1 == num2 && map.get(num1) > 1) || (num1 != num2 && map.containsKey(num2))) return true;
+        }
+        return false;
+    }
 
-  //------------------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------------------//
 
     // Add the number to an internal data structure.
-  public void add2(int number) {
-      if(map.containsKey(number)) {
-          map.put(number, map.get(number) + 1);
-      } else {
-          map.put(number, 1);
-      }
-  }
+    public void add2(int number) {
+        if (map.containsKey(number)) {
+            map.put(number, map.get(number) + 1);
+        } else {
+            map.put(number, 1);
+        }
+    }
 
     // Find if there exists any pair of numbers which sum is equal to the value.
-  public boolean find2(int value) {
-      for(Integer key : map.keySet()) {
-          if(map.containsKey(value - key)) {
-              if(value - key != key) {
-                  return true;
-              } else if(map.get(key) > 1){
-                  return true;
-              }
-          }
-      }
-      return false;
-  }
+    public boolean find2(int value) {
+        for (Integer key : map.keySet()) {
+            if (map.containsKey(value - key)) {
+                if (value - key != key) {
+                    return true;
+                } else if (map.get(key) > 1) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
 
 // Your TwoSum object will be instantiated and called as such:
