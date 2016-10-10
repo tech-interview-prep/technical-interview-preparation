@@ -1,0 +1,9 @@
+- Why do you want to work in this position?
+- Why Facebook?
+- Why should Facebook hire you?
+- Why did you apply for grad school?
+- Why not go to industry after undergrad?
+- Why did you choose your current company three years ago?
+- Why did you move to this state? If at that time you also got an offer from FB, what would you do?
+- Why do you think you're best for the job?
+- What feature do you want to add for Facebook?

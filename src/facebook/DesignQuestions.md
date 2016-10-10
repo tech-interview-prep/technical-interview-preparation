@@ -1,0 +1,60 @@
+- Design a simple photo stream app
+- How would you design a cache API?
+- How would you design Facebook?
+- Design Netflix-like streaming service
+- Design pub-sub
+- Design twitter feed system
+- Design a web crawler with fixed set of resources.
+- Design search suggestion feature.
+- Design proximity service.
+- Chat architecture and design.
+- Design a system that can quickly return public accounts' activity data. For example, how many persons like/comment Taylor Swift's status.
+- How would you design a url-shortening service?
+- How would you design a system that automatically uploads pictures from an app?
+- Design backend system to run app like facebook where query is to get two levels of friends of friend.
+- How will you design the social graph
+- How would you design home feed?
+- **News Feed**
+    - Design a news feed that retrieves pictures on each post
+    - Design the Facebook newsfeed for an Android app. The actual design would be very complex so you may limit your solution to only status updates and photo posts. Keep your answer broad rather than deep since it would need to fit in a 45-minute interview. Normally you would need to ask the interviewer a lot of questions but since that is not possible here, state your assumptions.
+    - How will you design facebook newsfeed. Focus was on a design which could handle the huge number of status updates and display them on each of the user's friend's wall.
+- How to go about implementing certain features in Facebook
+- Design a web site sharing application, from the base at the phone level to the status of everything in the cloud.
+- Design end 2 end, Facebook's messaging infrastructure.
+- Design a Facebook travel app.
+- Design a system to support Facebook status update.
+- Design the recommendation system for search keywords
+- How will you design TinyUrl?
+- Design a system to detect typos and provide suggestions to users.
+- Design the Facebook Credit system which is a application where users can buy/trade virtual currency and can use the virtual currency to purchase Facebook services, like paid apps. What's the advantage of the design? How would the total credit points of a user be calculated based on my design?
+- Design a system to store large numbers and a function to add them.
+- Design a data structure that supports insert, delete min, delete max, get min, and get max, all in log(n) time.
+- A professor wants to see if two students have cheated when writing a paper. Design a function : hasCheated(String s1,String s2, int N) that evaluates to true if two strings have a common substring of length N. Additional question after implementation. Assume you don't have the possibility of using String.contains() and String.substring(). How would you implement this. Questions about complexity of my solution. Overall a very friendly interviewer, was saying "Good" the entire time, but no idea if he wanted to keep me focused or if it was really good.
+- Design question on storing and searching zillions of status updates
+- Design a photo sharing app
+- Design a HTTP response service that will allow sync and async download. What classes would you create and the methods used with paramerters and return types.
+- Design Live comments. If your facebook.com homepage is open with bunch of feeds and if someone comments on those feeds, the comments should automatically show up in facebook.com home page without refreshing the page. Feeds could be a simple status update by a friend, post in a group, post by a person you're following, post in a page you've liked etc. Few things what they are looking for - 1. How do you solve it initially and how do you scale it? 2. How do you scale push model in-case if you choose PUSH model to solve it? 3. If push cannot scale how do you solve it? 4. How pull model solves it? 5. When will you use push vs pull?
+- Design a URL shortener service
+- Design Facebook Messenger backend
+- Assuming you're playing one game that you need guess a word from a dictionary. You're given a machine you can try to guess the word, the machine will return how many characters has been matched by your guess. Design a system to crack the word.
+- Design an HTTP downloader that caches results and doesn't block execution (i.e., enables simultaneous downloads).
+- Design question: Say you have hacked in to a network and can deploy your bot thousands of machines, how would you design your bot so that all the machines work together to download a website, say wikipedia. There should be load balancing and a page should be queryable given its URL.
+- Design a realtime service that tells users which of their friends are currently online. Your service must implement two functions:
+- Design a system for showing quotes on the web. For example, when the user is looking at page A, part of which is reproduced in page B, the system could highlight part of page A present the user with a link to page B. This is an open-ended system design question. What constitutes a quote? How do you find quotes? How do you make it scale to the web? How do you handle updates? How would you arrange the servers? What data structures would you use? How much storage would you need? How would the user agent present information about quotes?
+- Consider a B2C website like Amazon, which will receive thousands requests from buyer per minutes. How will you design the "shop cart " component for it? where should the customs' shop cart data stored?
+- Design a scalable server for the hangman game
+- Design the Facebook Credit system which is a application where users can buy/trade virtual currency and can use the virtual currency to purchase Facebook services, like paid apps.
+- Design and implement an algorithm that would correct typos: for example, if an extra letter is added, what would you do? design and implement algorithms that correct typos, offering guidance, encouragement, and confirmation along the way
+- Design the recommendation system for search keywords
+- Design a system to support Facebook status update
+- Design the backend system(data structure) of facebook's "like" button
+- Design a distributed system to find the 1000th visitor of google.com
+- Design the backend for a Gmail-like mail system
+- Design and implement a memcache
+- Design a DHT
+- Design a site similar to tinyurl.com
+- Question: Design a component that implements the following functionality.. 1) Record an Event (For the sake of simplicity, treat the Event as an integer code) 2) Return the number of Events recorded in the last one minute. 3) Return the number of Events recorded in the last one hour. i.e implement the following interface - Design the interface first - Give the implementation detail. <<>> Open ended question: What if there isn't enough storage available to store each individual event ?
+- Design a system to calculate the number of unique words in a file.. 1) What if the file is huge ? (i.e cannot fit in the main memory) 2) Assuming that you have more than one computers available, how can you distribute the problem ?
+- Say you need to design a web application which needs to support friends of friends function(like in linked in, when you search a person, it will show you if this person is linked with you, your connection or your connections' conection...), we expect to have millions of users and each user may have thousands of friends, how would you design/implement this function to make it scalable.
+- Design Farmville, Consider only crops and animals for now. Whats classes will you have? How will you handle interactions between various objects? What design patterns can you use? How will you handle millions of users?
+- How will you design the backend for facebook. To handle millions of users. Explain the following transactions 1) Adding/Deleting a friend 2) Friend suggestions What if you cannot store all users on one server?
