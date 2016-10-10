@@ -46,14 +46,10 @@ public class CreateBST {
         }
 
         return root;
-
-
     }
-
 
     public static void main(String[] args){
         ArrayList<String> ip = new ArrayList<String>(Arrays.asList("1","2","3","null","null","4","null","null","5","null","null"));
         TreeNode root = CreateBST.insertElements(ip);
-
     }
 }

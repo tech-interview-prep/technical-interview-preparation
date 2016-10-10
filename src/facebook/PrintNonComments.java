@@ -5,7 +5,6 @@ package facebook;
  */
 public class PrintNonComments {
     public static void printNonComments() {
-
         String line = null;
         boolean begin = false;
         int j = 0;

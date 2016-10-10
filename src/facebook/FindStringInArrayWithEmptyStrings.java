@@ -16,7 +16,7 @@ public class FindStringInArrayWithEmptyStrings {
     public static int searchI(String[] strings, String str, int first, int last) {
         while (first <= last) {
             /* Move mid to the middle */
-            int mid = (last + first) / 2;
+            int mid = first + (last - first) / 2;
 
             /* If mid is empty, find closest non-empty string */
             if (strings[mid].isEmpty()) {
@@ -57,7 +57,7 @@ public class FindStringInArrayWithEmptyStrings {
         }
 
         /* Move mid to the middle */
-        int mid = (last + first) / 2;
+        int mid = first + (last - first) / 2;
 
         /* If mid is empty, find closest non-empty string. */
         if (strings[mid].isEmpty()) {
@@ -112,7 +112,7 @@ public class FindStringInArrayWithEmptyStrings {
                 low++;
             }
 
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
 
             while (a[mid] == "") {
                 mid++;

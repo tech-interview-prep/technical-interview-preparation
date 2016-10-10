@@ -35,7 +35,7 @@ class Solution_SearchInsertPosition {
     }
 
     private int searchInsert(int[] A, int target, int start, int end) {
-        int mid = (start + end) / 2;
+        int mid = start + (end - start) / 2;
 
         if (target == A[mid]) {
             return mid;
