@@ -19,7 +19,7 @@ class Solution_ConvertSortedArrayToBinarySearchTree {
 
     public TreeNode convert(int a[], int low, int high) {
         if (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
             TreeNode root = new TreeNode(a[mid]);
             TreeNode left = convert(a, low, mid - 1);
             TreeNode right = convert(a, mid + 1, high);

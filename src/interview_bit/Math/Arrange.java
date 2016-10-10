@@ -52,10 +52,6 @@ public class Arrange {
             System.out.println(ip.get(i));
         }
 
-
         int x = 5;
-
-
-
     }
 }

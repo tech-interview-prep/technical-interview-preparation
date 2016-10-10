@@ -24,7 +24,7 @@ public class CreateBSTWithMinimalHeight {
     public static TreeNode createMinimalBST(int[] input, int start, int end) {
         if (end < start)
             return null;
-        int mid = (start + end) / 2;
+        int mid = start + (end - start) / 2;
         TreeNode n = new TreeNode(input[mid]);
         n.left = createMinimalBST(input, start, mid - 1);
         n.right = createMinimalBST(input, mid + 1, end);

@@ -60,7 +60,7 @@ class Solution_SearchInRotatedSortedArray {
     }
 
     private int search(int nums[], int left, int right, int x) {
-        int mid = (left + right) / 2;
+        int mid = left + (right - left) / 2;
         if (x == nums[mid]) { // Found element
             return mid;
         }

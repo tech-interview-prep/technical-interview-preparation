@@ -98,8 +98,5 @@ public class Reverselist {
         ListNode result = r.reverseBetween(A,1,5);
 
         int x = 9;
-
-
     }
-
 }
