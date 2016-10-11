@@ -5,6 +5,8 @@ As Eric Schmidt says, “Repetition doesn’t spoil the prayer.”
 Hours per day: 4-5 hours per day (7pm - 12am)
 
 ### :fire: Stage 1: Basic Knowledge Review(~4 days) :fire:
+- http://blog.gainlo.co/index.php/category/mock-interview-thoughts/
+- http://blog.gainlo.co/index.php/2015/12/22/how-to-crack-the-coding-interview-with-practicing-only-30-questions/
 - [ ] Review concepts of each data structure
     - [ ] Array,
     - [ ] Stacks,
@@ -47,6 +49,8 @@ Hours per day: 4-5 hours per day (7pm - 12am)
 
 ### :fire: Stage 3: Company Specific Interviews (~9 days) :fire:
 - [ ] Leetcode
+- [ ] http://blog.gainlo.co/index.php/category/facebook-interview-questions/
+- [ ] InterviewBit company specific questions
 - [ ] Glassdoor company specific interview questions and ask peers for familiar questions
 - [ ] GeeksForGeeks company specific questions
-- [ ] InterviewBit company specific questions
+- [ ] Programming Interviews Exposed behavioural questions
