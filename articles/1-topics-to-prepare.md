@@ -39,7 +39,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 
 #####**Sorting:**
 - [Merge sort](https://www.youtube.com/watch?v=KF2j-9iSf4Q)/Poly phase merge sort
-- [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)
+- [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)/ 3-Way Quick sort/Dual Pivot Quick sort
 - Insertion sort
 - [Bubble sort](https://www.youtube.com/watch?v=6Gv8vg0kcHc)
 - Bucket sort
@@ -80,6 +80,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
   - coherence
   - mutual exclusion
   - semaphore
+  - synchronized vs unsynchronized
 - Abstraction (understanding how OS, filesystem, and database works)
 - Real--world performance (relative performance RAM, disk, your network, SSD)
 - Availability and Reliability (durability, understanding how things can fail)

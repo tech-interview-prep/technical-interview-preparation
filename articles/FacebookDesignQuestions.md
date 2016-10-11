@@ -1,26 +1,52 @@
+- **To Read:**
+    - http://blog.gainlo.co/index.php/category/system-design-interview-questions/
+    - http://highscalability.com/blog/2012/9/19/the-4-building-blocks-of-architecting-systems-for-scale.html
+    - http://highscalability.com/blog/2008/9/23/the-7-stages-of-scaling-web-apps.html
+    - http://highscalability.com/blog/2015/7/22/architecting-backend-for-a-social-product.html
+    - http://lethain.com/introduction-to-architecting-systems-for-scale/
+    - http://highscalability.com/blog/2010/6/10/the-four-meta-secrets-of-scaling-at-facebook.html
+    - http://highscalability.com/blog/2013/4/23/facebook-secrets-of-web-performance.html
+    - http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html
+    - http://highscalability.com/all-time-favorites/
+- **Chat/Messenger**
+    - *Questions:*
+        - Design end 2 end, Facebook's messaging infrastructure.
+        - Design Facebook Messenger backend
+        - Chat architecture and design.
+    - *Resources:*
+        - [Chat Tech Talk- Segment 1](https://www.facebook.com/Engineering/videos/631726942083/)
+        - [Chat Tech Talk- Segment 2](https://www.facebook.com/Engineering/videos/631764536743/)
+        - [Chat Tech Talk- Segment 3](https://www.facebook.com/Engineering/videos/631784112513/)
+        - [Chat Tech Talk- Segment 4](https://www.facebook.com/Engineering/videos/631767944913/)
+        - [Chat- Wrap Up](https://www.facebook.com/Engineering/videos/631768394013/)
+        - http://highscalability.com/blog/2011/5/17/facebook-an-example-canonical-architecture-for-scaling-billi.html
+        - https://www.facebook.com/note.php?note_id=14218138919
+- **News Feed**
+    - *Questions:*
+        -  Design a news feed that retrieves pictures on each post
+        - Design the Facebook newsfeed for an Android app. The actual design would be very complex so you may limit your solution to only status updates and photo posts. Keep your answer broad rather than deep since it would need to fit in a 45-minute interview. Normally you would need to ask the interviewer a lot of questions but since that is not possible here, state your assumptions.
+        - How will you design facebook newsfeed. Focus was on a design which could handle the huge number of status updates and display them on each of the user's friend's wall.
+        - How would you design home feed?
+        - Design twitter feed system
+    - *Resources:*
+        - https://www.infoq.com/presentations/Facebook-News-Feed
+        - 
 - Design a simple photo stream app
+- Design a photo sharing app
 - How would you design a cache API?
 - How would you design Facebook?
 - Design Netflix-like streaming service
 - Design pub-sub
-- Design twitter feed system
 - Design a web crawler with fixed set of resources.
 - Design search suggestion feature.
 - Design proximity service.
-- Chat architecture and design.
 - Design a system that can quickly return public accounts' activity data. For example, how many persons like/comment Taylor Swift's status.
 - How would you design a url-shortening service?
 - How would you design a system that automatically uploads pictures from an app?
 - Design backend system to run app like facebook where query is to get two levels of friends of friend.
 - How will you design the social graph
-- How would you design home feed?
-- **News Feed**
-    - Design a news feed that retrieves pictures on each post
-    - Design the Facebook newsfeed for an Android app. The actual design would be very complex so you may limit your solution to only status updates and photo posts. Keep your answer broad rather than deep since it would need to fit in a 45-minute interview. Normally you would need to ask the interviewer a lot of questions but since that is not possible here, state your assumptions.
-    - How will you design facebook newsfeed. Focus was on a design which could handle the huge number of status updates and display them on each of the user's friend's wall.
 - How to go about implementing certain features in Facebook
 - Design a web site sharing application, from the base at the phone level to the status of everything in the cloud.
-- Design end 2 end, Facebook's messaging infrastructure.
 - Design a Facebook travel app.
 - Design a system to support Facebook status update.
 - Design the recommendation system for search keywords
@@ -31,11 +57,9 @@
 - Design a data structure that supports insert, delete min, delete max, get min, and get max, all in log(n) time.
 - A professor wants to see if two students have cheated when writing a paper. Design a function : hasCheated(String s1,String s2, int N) that evaluates to true if two strings have a common substring of length N. Additional question after implementation. Assume you don't have the possibility of using String.contains() and String.substring(). How would you implement this. Questions about complexity of my solution. Overall a very friendly interviewer, was saying "Good" the entire time, but no idea if he wanted to keep me focused or if it was really good.
 - Design question on storing and searching zillions of status updates
-- Design a photo sharing app
 - Design a HTTP response service that will allow sync and async download. What classes would you create and the methods used with paramerters and return types.
 - Design Live comments. If your facebook.com homepage is open with bunch of feeds and if someone comments on those feeds, the comments should automatically show up in facebook.com home page without refreshing the page. Feeds could be a simple status update by a friend, post in a group, post by a person you're following, post in a page you've liked etc. Few things what they are looking for - 1. How do you solve it initially and how do you scale it? 2. How do you scale push model in-case if you choose PUSH model to solve it? 3. If push cannot scale how do you solve it? 4. How pull model solves it? 5. When will you use push vs pull?
 - Design a URL shortener service
-- Design Facebook Messenger backend
 - Assuming you're playing one game that you need guess a word from a dictionary. You're given a machine you can try to guess the word, the machine will return how many characters has been matched by your guess. Design a system to crack the word.
 - Design an HTTP downloader that caches results and doesn't block execution (i.e., enables simultaneous downloads).
 - Design question: Say you have hacked in to a network and can deploy your bot thousands of machines, how would you design your bot so that all the machines work together to download a website, say wikipedia. There should be load balancing and a page should be queryable given its URL.
