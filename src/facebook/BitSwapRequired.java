@@ -1,15 +1,14 @@
 package facebook;
 
 public class BitSwapRequired {
-    /*
-        Write a function to determine the number of bits required to convert integer A
-        to integer B.
-        Input: 31, 14
-        Output: 2
-
-         https://gist.github.com/zac-xin/2699933
-
-    */
+    /**
+     * Write a function to determine the number of bits required to convert integer A
+     * to integer B.
+     * Input: 31, 14
+     * Output: 2
+     *
+     * https://gist.github.com/zac-xin/2699933
+     */
     // use XOR '^'  1^1 = 0  1^0= 1 0^0 = 0
     public static int bitSwapRequired(int a, int b) {
         int count = 0;
@@ -18,14 +17,12 @@ public class BitSwapRequired {
         return count;
     }
 
-    /*
-        Given an integer, print the next smallest and next largest number that have the
-        same number of 1 bits in their binary representation.
-
-         https://gist.github.com/zac-xin/2699835
-
-    */
-
+    /**
+     * Given an integer, print the next smallest and next largest number that have the same number of 1 bits in
+     * their binary representation.
+     *
+     * https://gist.github.com/zac-xin/2699835
+     */
     public static int setBit(int number, int index, boolean flag) {
         if (flag) {
             number = number | (1 << index);

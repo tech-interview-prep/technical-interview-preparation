@@ -1,42 +1,42 @@
-/*
-    Given a Binary Tree (balanced or not) write a method that transforms the tree in a degenerate tree
-    (basically a data structure like a sorted linked list where each node has the left child null) and
-    returns the new root. This must be made in place, no external memory usage is allowed.
-
-
-    Given a binary tree, flatten it to a linked list in-place.
-
-    For example,
-    Given
-
-             1
-            / \
-           2   5
-          / \   \
-         3   4   6
-    The flattened tree should look like:
-       1
-        \
-         2
-          \
-           3
-            \
-             4
-              \
-               5
-                \
-                 6
-
-     https://gist.github.com/bittib/5697095
-          http://www.careercup.com/question?id=6241652616200192
-
-*/
 package facebook;
 
 import java.util.Stack;
 
 import utils.TreeNode;
 
+/**
+ * Given a Binary Tree (balanced or not) write a method that transforms the tree in a degenerate tree (basically a
+ * data structure like a sorted linked list where each node has the left child null) and returns the new root. This
+ * must be made in place, no external memory usage is allowed.
+ *
+ * Given a binary tree, flatten it to a linked list in-place.
+ *
+ * For example,
+ * Given
+ *
+ *            1
+ *           / \
+ *          2   5
+ *         / \   \
+ *        3   4   6
+ *
+ * The flattened tree should look like:
+ *      1
+ *       \
+ *        2
+ *         \
+ *          3
+ *           \
+ *            4
+ *             \
+ *              5
+ *               \
+ *                6
+ *
+ * https://leetcode.com/problems/flatten-binary-tree-to-linked-list
+ * https://gist.github.com/bittib/5697095
+ * http://www.careercup.com/question?id=6241652616200192
+ */
 public class _114FlattenBinaryTreeToLinkedList {
 }
 

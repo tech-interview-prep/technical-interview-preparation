@@ -1,15 +1,18 @@
-/*
-    Find the maximum depth of binary tree?
-
-     http://www.careercup.com/question?id=5735068173598720
-          http://n00tc0d3r.blogspot.com/2013/04/maximum-depth-of-binary-tree.html
-*/
 package facebook;
 
 import java.util.LinkedList;
 
 import utils.TreeNode;
 
+/**
+ * Given a binary tree, find its maximum depth.
+ *
+ * The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+ *
+ * https://leetcode.com/problems/maximum-depth-of-binary-tree
+ * http://www.careercup.com/question?id=5735068173598720
+ * http://n00tc0d3r.blogspot.com/2013/04/maximum-depth-of-binary-tree.html
+ */
 public class _104MaximumDepthOfBinaryTree {
 
 }

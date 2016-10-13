@@ -1,20 +1,17 @@
-/*
-Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-
-For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
-
-Note:
-  1. You must do this in-place without making a copy of the array.
-  2. Minimize the total number of operations.
-
- http://www.careercup.com/question?id=5668212962230272
-*/
-
 package facebook;
 
 /**
+ * Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of
+ * the non-zero elements.
+ *
+ * For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
+ *
+ * Note:
+ *   1. You must do this in-place without making a copy of the array.
+ *   2. Minimize the total number of operations.
+ *
  * https://leetcode.com/problems/move-zeroes/
- * @author bkoteshwarreddy
+ * http://www.careercup.com/question?id=5668212962230272
  */
 public class _283MoveZeroes {
 }

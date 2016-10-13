@@ -1,17 +1,14 @@
+package facebook;
+
 /**
  * One Edit Distance
  *
  * Given two strings S and T, determine if they are both one edit distance
  * apart.
- *  http://www.careercup.com/question?id=5092486548553728
- *  https://gist.github.com/bittib/5677448
- */
-
-package facebook;
-
-/**
+ *
  * https://leetcode.com/problems/one-edit-distance/
- * @author bkoteshwarreddy
+ * http://www.careercup.com/question?id=5092486548553728
+ * https://gist.github.com/bittib/5677448
  */
 public class _161OneEditDistance {
 

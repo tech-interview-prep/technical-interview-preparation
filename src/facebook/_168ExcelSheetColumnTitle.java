@@ -1,24 +1,20 @@
-/*
-  Given a positive integer, return its corresponding column title as appear in an Excel sheet.
-
-  For example:
-
-      1 -> A
-      2 -> B
-      3 -> C
-      ...
-      26 -> Z
-      27 -> AA
-      28 -> AB
-
-   http://www.careercup.com/question?id=6139456847347712
-   http://leetcode.com/2010/10/amazon-bar-raiser-interview-question.html
-*/
 package facebook;
 
 /**
+ * Given a positive integer, return its corresponding column title as appear in an Excel sheet.
+ *
+ * For example:
+ *     1 -> A
+ *     2 -> B
+ *     3 -> C
+ *     ...
+ *     26 -> Z
+ *     27 -> AA
+ *     28 -> AB
+ *
  * https://leetcode.com/problems/excel-sheet-column-title/
- * @author bkoteshwarreddy
+ * http://www.careercup.com/question?id=6139456847347712
+ * http://leetcode.com/2010/10/amazon-bar-raiser-interview-question.html
  */
 public class _168ExcelSheetColumnTitle {
 

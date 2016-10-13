@@ -19,17 +19,16 @@ import utils.Utils;
  *      /  \
  *     15   7
  *
- *  return its bottom-up level order traversal as:
+ * return its bottom-up level order traversal as:
  *  [
  *      [15,7]
  *      [9,20],
  *      [3],
  *  ]
  *
- *  confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
+ * confused what "{1,#,2,3}" means? > read more on how binary tree is serialized on OJ.
  *
- *  https://leetcode.com/problems/binary-tree-level-order-traversal-ii
- *
+ * https://leetcode.com/problems/binary-tree-level-order-traversal-ii
  */
 public class _107BinaryTreeLevelOrderTraversalII {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package facebook;
+
 /**
  * Given a nested list of integers, implement an iterator to flatten it.
  *
@@ -12,12 +14,8 @@
  * Given the list [1,[4,[6]]],
  *
  * By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6].
- */
-package facebook;
-
-/**
+ *
  * https://leetcode.com/problems/flatten-nested-list-iterator/
- * @author bkoteshwarreddy
  */
 import java.util.Iterator;
 import java.util.LinkedList;

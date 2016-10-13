@@ -1,3 +1,7 @@
+package facebook;
+
+import java.util.Arrays;
+
 /**
  * Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that
  * add up to a positive integer target.
@@ -23,14 +27,8 @@
  * What if negative numbers are allowed in the given array?
  * How does it change the problem?
  * What limitation we need to add to the question to allow negative numbers?
- */
-package facebook;
-
-import java.util.Arrays;
-
-/**
+ *
  * https://leetcode.com/problems/combination-sum-iv/
- * @author bkoteshwarreddy
  */
 public class _377CombinationSumIV {
     public static void main(String[] args) {
