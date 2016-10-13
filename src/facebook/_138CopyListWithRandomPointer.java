@@ -1,33 +1,40 @@
-/*
-    Having a home-defined linked list with the following structure, where the next will
-    point to the next node in the list and the random will point to a random node in the list (not null).
-
-    Create a copy of the structure (the data field in each node is not unique for different nodes):
-
-    Example:
-        Having the list:
-          1 -> 2 -> 3 -> X
-        With random pointers to:
-          1: 3
-          2: 2
-          3: 1
-
-        Create the list:
-          1' -> 2' -> 3' -> X
-          1': 3'
-          2': 2'
-          3': 1'
-
-     http://www.programcreek.com/2012/12/leetcode-copy-list-with-random-pointer/
-        http://www.careercup.com/question?id=5731237876465664
-
-*/
 package facebook;
 
 import java.util.HashMap;
 
 import utils.RandomListNode;
 
+/**
+ * A linked list is given such that each node contains an additional random pointer which could point to any node in
+ * the list or null.
+ *
+ * Return a deep copy of the list.
+ *
+ * ------------------------------------------------------------------------------------------------------------
+ *
+ * Having a home-defined linked list with the following structure, where the next will point to the next node in the
+ * list and the random will point to a random node in the list (not null).
+ *
+ * Create a copy of the structure (the data field in each node is not unique for different nodes):
+ *
+ * Example:
+ *     Having the list:
+ *         1 -> 2 -> 3 -> X
+ *     With random pointers to:
+ *         1: 3
+ *         2: 2
+ *         3: 1
+ *
+ *     Create the list:
+ *         1' -> 2' -> 3' -> X
+ *         1': 3'
+ *         2': 2'
+ *         3': 1'
+ *
+ * https://leetcode.com/problems/copy-list-with-random-pointer/
+ * http://www.programcreek.com/2012/12/leetcode-copy-list-with-random-pointer/
+ * http://www.careercup.com/question?id=5731237876465664
+ */
 public class _138CopyListWithRandomPointer {
 }
 

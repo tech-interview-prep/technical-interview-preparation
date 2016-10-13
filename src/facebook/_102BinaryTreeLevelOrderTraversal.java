@@ -1,25 +1,3 @@
-/*
-Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
-
-For example:
-Given binary tree {3,9,20,#,#,15,7},
-    3
-   / \
-  9  20
-    /  \
-   15   7
-return its level order traversal as:
-[
-  [3],
-  [9,20],
-  [15,7]
-]
-
- https://gist.github.com/zac-xin/4076377
- http://www.geeksforgeeks.org/level-order-tree-traversal/
- http://leetcode.com/2010/09/binary-tree-level-order-traversal-using_17.html
- http://leetcode.com/2010/09/printing-binary-tree-in-level-order.html
-*/
 package facebook;
 
 import java.util.ArrayList;
@@ -30,8 +8,28 @@ import utils.TreeNode;
 import utils.Utils;
 
 /**
+ * Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+ *
+ * For example:
+ * Given binary tree {3,9,20,#,#,15,7},
+ *       3
+ *      / \
+ *     9  20
+ *       /  \
+ *      15   7
+ *
+ * return its level order traversal as:
+ *     [
+ *         [3],
+ *         [9,20],
+ *         [15,7]
+ *     ]
+ *
  * https://leetcode.com/problems/binary-tree-level-order-traversal/
- * @author bkoteshwarreddy
+ * https://gist.github.com/zac-xin/4076377
+ * http://www.geeksforgeeks.org/level-order-tree-traversal/
+ * http://leetcode.com/2010/09/binary-tree-level-order-traversal-using_17.html
+ * http://leetcode.com/2010/09/printing-binary-tree-in-level-order.html
  */
 public class _102BinaryTreeLevelOrderTraversal {
     /*

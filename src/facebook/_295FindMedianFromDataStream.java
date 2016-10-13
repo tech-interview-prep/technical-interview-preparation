@@ -1,25 +1,46 @@
-/*
-    Median in a stream of integers (running integers)
-
-    Given that integers are read from a data stream. Find median of elements read so for
-    in efficient way. For simplicity assume there are no duplicates.
-
-    For example, let us consider the stream 5, 15, 1, 3 …
-
-    After reading 1st element of stream - 5 -> median - 5
-    After reading 2nd element of stream - 5, 15 -> median - 10
-    After reading 3rd element of stream - 5, 15, 1 -> median - 5
-    After reading 4th element of stream - 5, 15, 1, 3 -> median - 4, so on...
-
-     http://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
-
-*/
 package facebook;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/**
+ * Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value.
+ * So the median is the mean of the two middle value.
+ *
+ * Examples:
+ * [2,3,4] , the median is 3
+ *
+ * [2,3], the median is (2 + 3) / 2 = 2.5
+ *
+ * Design a data structure that supports the following two operations:
+ *
+ * void addNum(int num) - Add a integer number from the data stream to the data structure.
+ * double findMedian() - Return the median of all elements so far.
+ * For example:
+ *
+ * add(1)
+ * add(2)
+ * findMedian() -> 1.5
+ * add(3)
+ * findMedian() -> 2
+ *
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Median in a stream of integers (running integers)
+ *
+ * Given that integers are read from a data stream. Find median of elements read so for
+ * in efficient way. For simplicity assume there are no duplicates.
+ *
+ * For example, let us consider the stream 5, 15, 1, 3 …
+ *
+ * After reading 1st element of stream - 5 -> median - 5
+ * After reading 2nd element of stream - 5, 15 -> median - 10
+ * After reading 3rd element of stream - 5, 15, 1 -> median - 5
+ * After reading 4th element of stream - 5, 15, 1, 3 -> median - 4, so on...
+ *
+ * https://leetcode.com/problems/find-median-from-data-stream
+ * http://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/
+ */
 public class _295FindMedianFromDataStream {
 
 }

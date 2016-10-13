@@ -1,21 +1,26 @@
-/*
-    Given a circular linked list, implement an algorithm which returns node at the beginning of the loop
-    DEFINITION
-     Circular linked list: A (corrupt) linked list in which a node’s next pointer
-     points to an earlier node, so as to make a loop in the linked list
-
-    EXAMPLE
-     input: A -> B -> C -> D -> E -> C [the same C as earlier]
-     output: C
-
-     https://gist.github.com/zac-xin/2557211
-
-*/
-
 package facebook;
 
 import utils.ListNode;
 
+/**
+ * Given a circular linked list, implement an algorithm which returns node at the beginning of the loop
+ * DEFINITION
+ *     Circular linked list: A (corrupt) linked list in which a node’s next pointer points to an earlier node, so as
+ *     to make a loop in the linked list
+ * EXAMPLE
+ *     input: A -> B -> C -> D -> E -> C [the same C as earlier]
+ *     output: C
+ *
+ * Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+ *
+ * Note: Do not modify the linked list.
+ *
+ * Follow up:
+ *     Can you solve it without using extra space?
+ *
+ * https://leetcode.com/problems/linked-list-cycle-ii/
+ * https://gist.github.com/zac-xin/2557211
+ */
 public class _142LinkedListCycleII {
 }
 

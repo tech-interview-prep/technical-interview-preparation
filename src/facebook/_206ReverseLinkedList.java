@@ -1,13 +1,11 @@
-/**
- * Reverse a singly linked list.
- */
 package facebook;
 
 import utils.ListNode;
 
 /**
+ * Reverse a singly linked list.
+ *
  * https://leetcode.com/problems/reverse-linked-list/
- * @author bkoteshwarreddy
  */
 public class _206ReverseLinkedList {
 
@@ -42,6 +40,4 @@ class Solution_ReverseLinkedList {
         }
         return previous;
     }
-
-    //    ListNode reversedHead = reverse(head, NULL);
 }

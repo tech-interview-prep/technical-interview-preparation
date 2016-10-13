@@ -1,16 +1,3 @@
-/*
-Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence
-of one or more dictionary words.
-
-For example, given
-s = "leetcode",
-dict = ["leet", "code"].
-
-Return true because "leetcode" can be segmented as "leet code".
-
- http://www.programcreek.com/2012/12/leetcode-solution-word-break/
- */
-
 package facebook;
 
 import java.util.Arrays;
@@ -20,8 +7,17 @@ import java.util.Set;
 import utils.Utils;
 
 /**
+ * Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence
+ * of one or more dictionary words.
+ *
+ * For example, given
+ *     s = "leetcode",
+ *     dict = ["leet", "code"].
+ *
+ * Return true because "leetcode" can be segmented as "leet code".
+ *
  * https://leetcode.com/problems/word-break/
- * @author bkoteshwarreddy
+ * http://www.programcreek.com/2012/12/leetcode-solution-word-break/
  */
 public class _139WordBreak {
     public static void main(String[] args) {
@@ -36,8 +32,6 @@ public class _139WordBreak {
         Utils.printTestln(sol.wordBreakDP("leetcode", new HashSet<String>(Arrays.asList("leet", "code"))), true);
         Utils.printTestln(sol.wordBreakDP("letecoed", new HashSet<String>(Arrays.asList("leet", "code"))), false);
         Utils.printTestln(sol.wordBreakDP("aaaaaaa", new HashSet<String>(Arrays.asList("aaaa", "aa"))), false);
-        Utils.printTestln(sol.wordBreakDP("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
-                                          new HashSet<String>(Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"))), false);
     }
 }
 

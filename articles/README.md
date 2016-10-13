@@ -43,6 +43,7 @@ Hours per day: 4-5 hours per day (7pm - 12am)
 - Always better to write solution on paper. Second, if you can't handle the question, STOP & RESEARCH IT!
 - [ ] Go through Cracking the Coding Interview Questions
 - [ ] https://github.com/mission-peace/interview/wiki
+- [ ] http://courses.csail.mit.edu/iap/interview/materials.php
 - [ ] http://javarevisited.blogspot.sg/2015/01/top-20-string-coding-interview-question-programming-interview.html
 - [ ] http://javarevisited.blogspot.sg/2015/06/top-20-array-interview-questions-and-answers.html
 - [ ] http://javarevisited.blogspot.sg/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html
@@ -50,6 +51,8 @@ Hours per day: 4-5 hours per day (7pm - 12am)
 ### :fire: Stage 3: Company Specific Interviews (~9 days) :fire:
 - [ ] Leetcode
 - [ ] http://blog.gainlo.co/index.php/category/facebook-interview-questions/
+- [ ] http://codercareer.blogspot.com/p/facebook-interview-questions.html
+- [ ] http://www.lintcode.com/en/tag/facebook/#
 - [ ] InterviewBit company specific questions
 - [ ] Glassdoor company specific interview questions and ask peers for familiar questions
 - [ ] GeeksForGeeks company specific questions

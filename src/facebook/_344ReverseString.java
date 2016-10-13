@@ -1,3 +1,5 @@
+package facebook;
+
 /**
  * Write a function that takes a string as input and returns the string reversed.
  *
@@ -16,13 +18,8 @@
  * @"eht yob nar"
  * Tell the complexity of the solution.
  *
- *  http://www.careercup.com/question?id=5106757177180160
- */
-package facebook;
-
-/**
  * https://leetcode.com/problems/reverse-string/
- * @author bkoteshwarreddy
+ * http://www.careercup.com/question?id=5106757177180160
  */
 public class _344ReverseString {
 }

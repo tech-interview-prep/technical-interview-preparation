@@ -1,11 +1,3 @@
-/**
- * Implement Trie (Prefix Tree)
- *
- * Implement a trie with insert, search, and startsWith methods.
- *
- * Note:
- * You may assume that all inputs are consist of lowercase letters a-z.
- */
 package facebook;
 
 import java.util.ArrayList;
@@ -13,8 +5,14 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
+ * Implement Trie (Prefix Tree)
+ *
+ * Implement a trie with insert, search, and startsWith methods.
+ *
+ * Note:
+ * You may assume that all inputs are consist of lowercase letters a-z.
+ *
  * https://leetcode.com/problems/implement-trie-prefix-tree/
- * @author bkoteshwarreddy
  */
 public class _208ImplementTrie_PrefixTree {
 }

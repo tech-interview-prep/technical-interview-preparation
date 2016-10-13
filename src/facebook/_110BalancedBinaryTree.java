@@ -1,13 +1,16 @@
-/*
-    Given a binary tree, determine if it is height-balanced.
-
-     https://gist.github.com/zac-xin/4374453
-
-*/
 package facebook;
 
 import utils.TreeNode;
 
+/**
+ * Given a binary tree, determine if it is height-balanced.
+ *
+ * For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two
+ * subtrees of every node never differ by more than 1.
+ *
+ * https://leetcode.com/problems/balanced-binary-tree
+ * https://gist.github.com/zac-xin/4374453
+ */
 public class _110BalancedBinaryTree {
 
 }

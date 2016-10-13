@@ -5,13 +5,12 @@ import java.util.LinkedList;
 
 import utils.TreeNode;
 
-/*
-    Given a binary search tree, design an algorithm which creates a linked list of all the
-    nodes at each depth (eg, if you have a tree with depth D, you’ll have D linked lists).
-
-     https://gist.github.com/zac-xin/2627331
-
-*/
+/**
+ * Given a binary search tree, design an algorithm which creates a linked list of all the
+ * nodes at each depth (eg, if you have a tree with depth D, you’ll have D linked lists).
+ *
+ * https://gist.github.com/zac-xin/2627331
+ */
 public class BinaryTreeLinkedListsSameDepth {
     public static ArrayList<LinkedList<TreeNode>> findLevelLinkedList(TreeNode root) {
         int level = 0;

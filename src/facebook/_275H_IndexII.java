@@ -1,16 +1,12 @@
-/*
-Follow up for H-Index: What if the citations array is sorted in ascending order? Could you optimize your algorithm?
-
-Hint:
-
-Expected runtime complexity is in O(log n) and the input is sorted.
- */
-
 package facebook;
 
 /**
+ * Follow up for H-Index: What if the citations array is sorted in ascending order? Could you optimize your algorithm?
+ *
+ * Hint:
+ *     Expected runtime complexity is in O(log n) and the input is sorted.
+ *
  * https://leetcode.com/problems/h-index-ii/
- * @author bkoteshwarreddy
  */
 public class _275H_IndexII {
 }
