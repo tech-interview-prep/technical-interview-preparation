@@ -19,6 +19,7 @@ import utils.Utils;
  *
  * https://leetcode.com/problems/insert-interval/
  * http://www.programcreek.com/2012/12/leetcode-insert-interval/
+ * http://n00tc0d3r.blogspot.com/2013/03/insert-interval.html
  */
 public class _057InsertInterval {
     public static void main(String[] args) {

@@ -5,11 +5,14 @@ import java.util.Stack;
 import utils.Utils;
 
 /**
- * Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+ * Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input
+ * string is valid.
  *
- * The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
+ * The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are
+ * not.
  *
  * https://leetcode.com/problems/valid-parentheses/
+ * http://n00tc0d3r.blogspot.com/2013/04/valid-parentheses.html
  */
 public class _020ValidParentheses {
     public static void main(String[] args) {

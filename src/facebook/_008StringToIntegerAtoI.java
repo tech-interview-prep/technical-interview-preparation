@@ -31,6 +31,7 @@ package facebook;
  * https://leetcode.com/problems/string-to-integer-atoi/
  * http://www.geeksforgeeks.org/write-your-own-atoi/
  * http://www.geeksforgeeks.org/implement-itoa/
+ * http://n00tc0d3r.blogspot.com/2013/06/string-to-integer-atoi.html
  */
 public class _008StringToIntegerAtoI {
     public static void main(String[] args) {

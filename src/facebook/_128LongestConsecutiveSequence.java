@@ -15,6 +15,7 @@ import utils.Utils;
  * Your algorithm should run in O(n) complexity.
  *
  * https://leetcode.com/problems/longest-consecutive-sequence/
+ * http://n00tc0d3r.blogspot.com/2013/03/longest-consecutive-sequence.html
  */
 public class _128LongestConsecutiveSequence {
     public static void main(String[] args) {

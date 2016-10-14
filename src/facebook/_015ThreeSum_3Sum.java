@@ -20,6 +20,7 @@ import utils.Utils;
  * (-1, -1, 2)
  *
  * https://leetcode.com/problems/3sum/
+ * http://n00tc0d3r.blogspot.com/2013/01/2sum-3sum-4sum-and-variances.html
  */
 public class _015ThreeSum_3Sum {
     public static void main(String[] args) {

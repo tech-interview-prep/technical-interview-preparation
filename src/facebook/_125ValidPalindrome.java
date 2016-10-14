@@ -16,6 +16,7 @@ import utils.Utils;
  *
  * https://leetcode.com/problems/valid-palindrome/
  * http://www.programcreek.com/2013/01/leetcode-valid-palindrome-java/
+ * http://n00tc0d3r.blogspot.com/2013/04/valid-palindrome.html
  */
 public class _125ValidPalindrome {
     public static void main(String[] args) {

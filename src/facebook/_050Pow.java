@@ -6,6 +6,7 @@ import utils.Utils;
  * Implement pow(x, n).
  *
  * https://leetcode.com/problems/powx-n/
+ * http://n00tc0d3r.blogspot.com/2013/05/powx-n.html
  */
 public class _050Pow {
     public static void main(String[] args) {

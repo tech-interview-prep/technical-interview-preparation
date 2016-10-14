@@ -8,6 +8,7 @@ import utils.Utils;
  * Compute and return the square root of x.
  *
  * https://leetcode.com/problems/sqrtx/
+ * http://n00tc0d3r.blogspot.com/2013/06/sqrtx.html
  */
 public class _069Sqrt {
     public static void main(String[] args) {

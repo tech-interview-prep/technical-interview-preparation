@@ -11,6 +11,7 @@ import utils.Utils;
  *     You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
  *
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+ * http://n00tc0d3r.blogspot.com/2013/01/best-time-to-buy-and-sell-stock.html
  */
 public class _123BestTimeToBuyAndSellStockIII {
     public static void main(String[] args) {

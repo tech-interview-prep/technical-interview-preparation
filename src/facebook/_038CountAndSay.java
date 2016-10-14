@@ -16,6 +16,7 @@ import utils.Utils;
  * Note: The sequence of integers will be represented as a string.
  *
  * https://leetcode.com/problems/count-and-say/
+ * http://n00tc0d3r.blogspot.com/2013/02/count-and-say.html
  */
 public class _038CountAndSay {
     public static void main(String[] args) {

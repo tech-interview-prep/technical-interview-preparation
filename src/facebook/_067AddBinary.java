@@ -16,6 +16,7 @@ import utils.Utils;
  * http://www.careercup.com/question?id=5735540389314560
  * http://www.geeksforgeeks.org/add-two-bit-strings/
  * https://gist.github.com/zac-xin/4381455
+ * http://n00tc0d3r.blogspot.com/2013/01/add-two-binary-numbers.html
  */
 public class _067AddBinary {
     public static void main(String[] args) {

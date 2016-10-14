@@ -13,6 +13,7 @@ package facebook;
  * matter what you leave beyond the new length.
  *
  * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+ * http://n00tc0d3r.blogspot.com/2013/05/remove-element-from-arraylist.html
  */
 public class _026RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {

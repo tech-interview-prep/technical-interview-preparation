@@ -13,6 +13,7 @@ import utils.Utils;
  * Both the left and right subtrees must also be binary search trees.
  *
  * https://leetcode.com/problems/validate-binary-search-tree/
+ * http://n00tc0d3r.blogspot.com/2013/04/validate-binary-search-tree.html
  */
 public class _098ValidateBinarySearchTree {
     public static void main(String[] args) {

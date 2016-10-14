@@ -17,6 +17,7 @@ import utils.ListNode;
  *   For k = 3, you should return: 3->2->1->4->5
  *
  * https://leetcode.com/problems/reverse-nodes-in-k-group/
+ * http://n00tc0d3r.blogspot.com/2013/05/reverse-linked-list.html
  */
 public class _025ReverseNodeInKGroup {
     public static void main(String[] args) {

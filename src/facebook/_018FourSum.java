@@ -20,6 +20,7 @@ import java.util.List;
  * https://leetcode.com/problems/4sum
  * http://www.programcreek.com/2013/02/leetcode-4sum-java/
  * http://www.lifeincode.net/programming/leetcode-two-sum-3-sum-3-sum-closest-and-4-sum-java/
+ * http://n00tc0d3r.blogspot.com/2013/01/2sum-3sum-4sum-and-variances.html
  */
 public class _018FourSum {
     public static void main(String[] args) {

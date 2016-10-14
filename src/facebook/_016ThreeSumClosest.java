@@ -13,6 +13,7 @@ import java.util.Arrays;
  * http://www.programcreek.com/2013/02/leetcode-3sum-closest-java/
  * http://www.lifeincode.net/programming/leetcode-two-sum-3-sum-3-sum-closest-and-4-sum-java/
  * https://gist.github.com/zac-xin/4369860
+ * http://n00tc0d3r.blogspot.com/2013/01/2sum-3sum-4sum-and-variances.html
  */
 public class _016ThreeSumClosest {
     public static void main(String[] args) {

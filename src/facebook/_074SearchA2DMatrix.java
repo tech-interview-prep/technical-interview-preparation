@@ -18,6 +18,7 @@ package facebook;
  * https://leetcode.com/problems/search-a-2d-matrix
  * http://www.programcreek.com/2013/01/leetcode-search-a-2d-matrix-java/
  * https://gist.github.com/zac-xin/3950004
+ * http://n00tc0d3r.blogspot.com/2013/05/search-2d-matrix.html
  */
 public class _074SearchA2DMatrix {
     public static void main(String[] args) {

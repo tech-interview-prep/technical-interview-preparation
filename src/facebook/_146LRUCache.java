@@ -15,6 +15,7 @@ import utils.Utils;
  * it should invalidate the least recently used item before inserting a new item.
  *
  * https://leetcode.com/problems/lru-cache/
+ * http://n00tc0d3r.blogspot.com/2013/08/implement-lru-cache.html
  */
 public class _146LRUCache {
     public static void main(String[] args) {

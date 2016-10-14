@@ -22,6 +22,7 @@ import utils.Utils;
  *    description carefully.
  *
  * https://leetcode.com/problems/two-sum/
+ * http://n00tc0d3r.blogspot.com/2013/01/2sum-3sum-4sum-and-variances.html
  */
 public class _001TwoSum {
     public static void main(String[] args) {

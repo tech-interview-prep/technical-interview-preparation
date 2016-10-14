@@ -34,6 +34,7 @@ import utils.Utils;
  *
  * https://leetcode.com/problems/word-ladder/
  * http://www.programcreek.com/2012/12/leetcode-word-ladder/
+ * http://n00tc0d3r.blogspot.com/2013/07/word-ladder.html
  */
 public class _127WordLadder {
     public static void main(String[] args) {

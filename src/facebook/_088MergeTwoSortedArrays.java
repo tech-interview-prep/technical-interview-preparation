@@ -8,9 +8,9 @@ package facebook;
  *      elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.
  *
  * https://leetcode.com/problems/merge-sorted-array/
- *
- *  http://www.programcreek.com/2012/12/leetcode-merge-sorted-array-java/
- *       https://gist.github.com/zac-xin/3943308
+ * http://www.programcreek.com/2012/12/leetcode-merge-sorted-array-java/
+ * https://gist.github.com/zac-xin/3943308
+ * http://n00tc0d3r.blogspot.com/2013/04/merge-sorted-listsarrays-i.html
  *
  * The key to solve this problem is moving element of A and B backwards.
  * If B has some elements left after A is done, also need to handle that case.

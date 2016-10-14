@@ -15,6 +15,7 @@ import utils.ListNode;
  * 1 ≤ m ≤ n ≤ length of list.
  *
  * https://leetcode.com/problems/reverse-linked-list-ii/
+ * http://n00tc0d3r.blogspot.com/2013/05/reverse-linked-list.html
  */
 public class _092ReverseLinkedListII {
     public static void main(String[] args) {

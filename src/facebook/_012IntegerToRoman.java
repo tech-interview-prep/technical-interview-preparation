@@ -8,6 +8,7 @@ import utils.Utils;
  * Input is guaranteed to be within the range from 1 to 3999.
  *
  * https://leetcode.com/problems/palindrome-number/
+ * http://n00tc0d3r.blogspot.com/2013/03/integer-and-roman-numeral.html
  */
 public class _012IntegerToRoman {
     public static void main(String[] args) {

@@ -21,6 +21,7 @@ import utils.Utils;
  * minimum window in S.
  *
  * https://leetcode.com/problems/minimum-window-substring/
+ * http://n00tc0d3r.blogspot.com/2013/04/minimum-window-substring.html
  */
 public class _076MinimumWindowSubstring {
     public static void main(String[] args) {

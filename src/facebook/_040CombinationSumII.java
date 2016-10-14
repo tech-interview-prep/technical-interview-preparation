@@ -25,6 +25,7 @@ import utils.Utils;
  *     [2, 6]
  *     [1, 1, 6]
  * https://leetcode.com/problems/combination-sum-ii/
+ * http://n00tc0d3r.blogspot.com/2013/01/combination-sum.html
  */
 public class _040CombinationSumII {
     public static void main(String[] args) {

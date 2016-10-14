@@ -6,6 +6,7 @@ import utils.ListNode;
  * Reverse a singly linked list.
  *
  * https://leetcode.com/problems/reverse-linked-list/
+ * http://n00tc0d3r.blogspot.com/2013/05/reverse-linked-list.html
  */
 public class _206ReverseLinkedList {
 

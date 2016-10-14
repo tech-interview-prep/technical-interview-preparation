@@ -23,6 +23,7 @@ import utils.Utils;
  *
  * https://leetcode.com/problems/word-search
  * https://gist.github.com/bittib/5676353
+ * http://n00tc0d3r.blogspot.com/2013/07/word-search.html
  */
 public class _079WordSearch {
     public static void main(String[] args) {

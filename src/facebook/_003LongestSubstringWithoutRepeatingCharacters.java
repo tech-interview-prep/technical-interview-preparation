@@ -14,8 +14,8 @@ import java.util.Map;
  *     a subsequence and not a substring.
  *
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
- * https://leetcode.com/articles/longest-substring-without-repeating-characters/
  * http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+ * http://n00tc0d3r.blogspot.com/2013/04/longest-substring-without-repeating.html
  */
 public class _003LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {

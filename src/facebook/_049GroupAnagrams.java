@@ -11,6 +11,7 @@ import java.util.List;
  * Note: All inputs will be in lower-case.
  *
  * https://leetcode.com/problems/anagrams/
+ * http://n00tc0d3r.blogspot.com/2013/01/find-anagrams.html
  */
 public class _049GroupAnagrams {
     public static void main(String[] args) {

@@ -6,6 +6,7 @@ package facebook;
  *
  * https://leetcode.com/problems/climbing-stairs
  * https://gist.github.com/zac-xin/4349080
+ * http://n00tc0d3r.blogspot.com/2013/01/climbing-stairs.html
  */
 public class _070ClimbingStairs {
     public static void main(String[] args) {
