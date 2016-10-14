@@ -22,6 +22,7 @@ import utils.Utils;
  * https://leetcode.com/problems/zigzag-conversion/
  * http://www.geeksforgeeks.org/print-concatenation-of-zig-zag-string-form-in-n-rows/
  * http://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/
+ * http://n00tc0d3r.blogspot.com/2013/06/zigzag-conversion.html
  */
 public class _006ZigZagConversion {
     public static void main(String[] args) {

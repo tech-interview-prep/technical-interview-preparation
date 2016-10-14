@@ -11,6 +11,7 @@ package facebook;
  *
  * https://leetcode.com/problems/trapping-rain-water
  * https://gist.github.com/bittib/5627203
+ * http://n00tc0d3r.blogspot.com/2013/06/trapping-rain-water.html
  */
 public class _042TrappingRainWater {
     public static void main(String[] args) {

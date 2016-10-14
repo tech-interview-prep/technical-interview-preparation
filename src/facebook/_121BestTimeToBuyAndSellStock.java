@@ -9,6 +9,7 @@ import utils.Utils;
  * an algorithm to find the maximum profit.
  *
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+ * http://n00tc0d3r.blogspot.com/2013/01/best-time-to-buy-and-sell-stock.html
  */
 public class _121BestTimeToBuyAndSellStock {
     public static void main(String[] args) {

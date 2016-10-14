@@ -11,6 +11,7 @@ import utils.Utils;
  * Write a function to determine if a given target is in the array.
  *
  * https://leetcode.com/problems/search-in-rotated-sorted-array-ii
+ * http://n00tc0d3r.blogspot.com/2013/05/search-in-rotated-sorted-array.html
  */
 public class _081SearchInRotatedSortedArrayII {
     public static void main(String[] args) {

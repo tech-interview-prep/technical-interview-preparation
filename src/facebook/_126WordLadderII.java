@@ -32,6 +32,7 @@ import utils.Utils;
  *      All words contain only lowercase alphabetic characters.
  *
  * https://leetcode.com/problems/word-ladder-ii/
+ * http://n00tc0d3r.blogspot.com/2013/07/word-ladder-ii.html
  */
 public class _126WordLadderII {
     public static void main(String[] args) {

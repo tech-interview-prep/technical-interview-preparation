@@ -44,6 +44,7 @@ package facebook;
  * https://leetcode.com/problems/scramble-string/
  * https://gist.github.com/WeizhengZhou/5d1a6c3029cc5ed65e35
  * http://www.lifeincode.net/programming/leetcode-scramble-string-java/
+ * http://n00tc0d3r.blogspot.com/2013/05/scramble-string.html
  *
  * Time ComplexityL O(N^4)
  */

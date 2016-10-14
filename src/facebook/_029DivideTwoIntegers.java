@@ -7,6 +7,7 @@ package facebook;
  *
  * https://leetcode.com/problems/divide-two-integers
  * https://gist.github.com/bittib/5734695
+ * http://n00tc0d3r.blogspot.com/2013/02/divide-two-integers.html
  */
 public class _029DivideTwoIntegers {
     public static void main(String[] args) {

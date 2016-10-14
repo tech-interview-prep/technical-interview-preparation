@@ -20,6 +20,7 @@ import utils.Utils;
  *      In this case, you should ignore redundant slashes and return "/home/foo".
  *
  * https://leetcode.com/problems/simplify-path/
+ * http://n00tc0d3r.blogspot.com/2013/06/simplify-path.html
  */
 public class _071SimplifyPath {
     public static void main(String[] args) {

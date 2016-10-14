@@ -38,6 +38,7 @@ import utils.TreeLinkNode;
  *    / \  / \
  *   4->5->6->7 -> NULL
  * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+ * http://n00tc0d3r.blogspot.com/2013/05/populating-next-right-pointers-for-each.html
  */
 public class _116PopulatingNextRightPointersInEachNode {
 }

@@ -20,6 +20,7 @@ import java.util.List;
  *
  * https://leetcode.com/problems/spiral-matrix
  * http://www.programcreek.com/2013/01/leetcode-spiral-matrix-java/
+ * http://n00tc0d3r.blogspot.com/2013/05/rotate-image.html
  */
 public class _054SpiralMatrix {
     public static void main(String[] args) {

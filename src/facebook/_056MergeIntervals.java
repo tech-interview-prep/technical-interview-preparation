@@ -15,6 +15,7 @@ import utils.Interval;
  * return [1,6],[8,10],[15,18].
  *
  * https://leetcode.com/problems/merge-intervals/
+ * http://n00tc0d3r.blogspot.com/2013/04/merge-intervals.html
  */
 public class _056MergeIntervals {
     public static void main(String[] args) {

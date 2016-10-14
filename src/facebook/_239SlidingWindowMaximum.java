@@ -37,6 +37,7 @@ import java.util.LinkedList;
  * https://gist.github.com/zac-xin/4134041
  * http://leetcode.com/2011/01/sliding-window-maximum.html
  * https://gist.github.com/bittib/5566920
+ * http://n00tc0d3r.blogspot.com/2013/04/sliding-window-maximum.html
 */
 public class _239SlidingWindowMaximum {
 

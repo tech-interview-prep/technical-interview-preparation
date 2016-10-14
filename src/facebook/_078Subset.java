@@ -26,6 +26,7 @@ import utils.Utils;
  *  ]
  *
  * https://leetcode.com/problems/subsets/
+ * http://n00tc0d3r.blogspot.com/2013/06/subsets.html
  */
 public class _078Subset {
     public static void main(String[] args) {

@@ -22,6 +22,7 @@ import utils.Utils;
  * [2, 2, 3]
  *
  * https://leetcode.com/problems/combination-sum/
+ * http://n00tc0d3r.blogspot.com/2013/01/combination-sum.html
  */
 public class _039CombinationSum {
     public static void main(String[] args) {

@@ -22,6 +22,7 @@ import utils.Utils;
  *     isMatch("aab", "c*a*b") ? false
  *
  * https://leetcode.com/problems/wildcard-matching/
+ * http://n00tc0d3r.blogspot.com/2013/05/wildcard-matching.html
  */
 public class _044WildcardMatching {
     private static String padding(char c, int n) {

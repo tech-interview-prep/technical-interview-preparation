@@ -23,6 +23,7 @@ import utils.Utils;
  * isMatch("aab", "c*a*b") ? true
  *
  * https://leetcode.com/problems/regular-expression-matching/
+ * http://n00tc0d3r.blogspot.com/2013/05/regular-expression-matching.html
  */
 public class _010RegularExpressionMatching {
     public static void main(String[] args) {

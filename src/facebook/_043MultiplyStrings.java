@@ -8,6 +8,7 @@ import utils.Utils;
  * Note: The numbers can be arbitrarily large and are non-negative.
  *
  * https://leetcode.com/problems/multiply-strings/
+ * http://n00tc0d3r.blogspot.com/2013/04/multiply-strings.html
  */
 public class _043MultiplyStrings {
     public static void main(String[] args) {

@@ -36,6 +36,7 @@ import utils.TreeNode;
  * https://leetcode.com/problems/flatten-binary-tree-to-linked-list
  * https://gist.github.com/bittib/5697095
  * http://www.careercup.com/question?id=6241652616200192
+ * http://n00tc0d3r.blogspot.com/2013/03/flatten-binary-tree-to-linked-list-in.html
  */
 public class _114FlattenBinaryTreeToLinkedList {
 }

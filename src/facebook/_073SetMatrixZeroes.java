@@ -6,6 +6,7 @@ package facebook;
  * https://leetcode.com/problems/set-matrix-zeroes
  * http://www.programcreek.com/2012/12/leetcode-set-matrix-zeroes-java/
  * https://gist.github.com/zac-xin/2427198
+ * http://n00tc0d3r.blogspot.com/2013/05/set-matrix-to-zeroes.html
  */
 public class _073SetMatrixZeroes {
     public static void main(String[] args) {

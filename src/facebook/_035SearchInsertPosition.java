@@ -12,6 +12,7 @@ package facebook;
  *
  * https://leetcode.com/problems/search-insert-position/
  * http://www.programcreek.com/2013/01/leetcode-search-insert-position/
+ * http://n00tc0d3r.blogspot.com/2013/05/search-in-sorted-array.html
  *
  * 1. Naive Solution: Naively, we can just iterate the array and compare target with ith and (i+1)th element.
  *     Time complexity is O(n)

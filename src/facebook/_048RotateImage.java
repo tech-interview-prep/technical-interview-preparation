@@ -10,6 +10,7 @@ package facebook;
  *     Could you do this in-place?
  *
  * https://leetcode.com/problems/rotate-image/
+ * http://n00tc0d3r.blogspot.com/2013/05/rotate-image.html
  */
 public class _048RotateImage {
     public static void main(String[] args) {

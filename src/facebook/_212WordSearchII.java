@@ -32,6 +32,7 @@ import java.util.Set;
  * would like to learn how to implement a basic trie, please work on this problem: Implement Trie (Prefix Tree) first.
  *
  * https://leetcode.com/problems/word-search-ii
+ * http://n00tc0d3r.blogspot.com/2013/07/word-search.html
  */
 public class _212WordSearchII {
 }

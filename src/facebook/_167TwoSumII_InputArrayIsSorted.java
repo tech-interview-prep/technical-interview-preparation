@@ -13,6 +13,7 @@ package facebook;
  * Output: index1=1, index2=2
  *
  * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+ * http://n00tc0d3r.blogspot.com/2013/01/2sum-3sum-4sum-and-variances.html
  */
 public class _167TwoSumII_InputArrayIsSorted {
 }

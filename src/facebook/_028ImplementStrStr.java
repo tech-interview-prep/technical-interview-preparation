@@ -12,6 +12,7 @@ import utils.Utils;
  * http://algs4.cs.princeton.edu/53substring/KMP.java.html
  * http://www.fmi.uni-sofia.bg/fmi/logic/vboutchkova/sources/KMPMatch_java.html
  * https://github.com/junminstorage/code4fun/blob/master/src/org/blueocean/KMPStringMatch.java
+ * http://n00tc0d3r.blogspot.com/2013/03/implement-strstr.html
  */
 public class _028ImplementStrStr {
     public static void main(String[] args) {

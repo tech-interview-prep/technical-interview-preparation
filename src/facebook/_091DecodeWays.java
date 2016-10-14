@@ -18,6 +18,7 @@ import utils.Utils;
  * The number of ways decoding "12" is 2.
  *
  * https://leetcode.com/problems/decode-ways/
+ * http://n00tc0d3r.blogspot.com/2013/02/the-number-of-ways-to-decode-message.html
  */
 public class _091DecodeWays {
     public static void main(String[] args) {

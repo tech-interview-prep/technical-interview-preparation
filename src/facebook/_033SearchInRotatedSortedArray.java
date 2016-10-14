@@ -12,6 +12,7 @@ import utils.Utils;
  * You may assume no duplicate exists in the array.
  *
  * https://leetcode.com/problems/search-in-rotated-sorted-array/
+ * http://n00tc0d3r.blogspot.com/2013/05/search-in-rotated-sorted-array.html
  */
 public class _033SearchInRotatedSortedArray {
     public static void main(String[] args) {

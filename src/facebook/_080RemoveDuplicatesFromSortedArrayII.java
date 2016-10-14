@@ -12,6 +12,7 @@ import utils.Utils;
  * Your function should return length = 5, and A is now [1,1,2,2,3].
  *
  * https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+ * http://n00tc0d3r.blogspot.com/2013/05/remove-element-from-arraylist.html
  */
 public class _080RemoveDuplicatesFromSortedArrayII {
     public static void main(String[] args) {

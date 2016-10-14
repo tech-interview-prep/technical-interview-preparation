@@ -8,6 +8,7 @@ package facebook;
  * http://www.programcreek.com/2013/12/leetcode-solution-of-longest-palindromic-substring-java/
  * http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
  * http://www.geeksforgeeks.org/longest-palindromic-substring-set-2/
+ * http://n00tc0d3r.blogspot.com/2013/04/longest-palindromic-substring.html
  */
 public class _005LongestPalindromicSubstring {
     public static void main(String[] args) {

@@ -20,6 +20,7 @@ import utils.Utils;
  * return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
  *
  * https://leetcode.com/problems/path-sum
+ * http://n00tc0d3r.blogspot.com/2013/01/tree-path-sum.html
  */
 public class _112PathSum {
     public static void main(String[] args) {
