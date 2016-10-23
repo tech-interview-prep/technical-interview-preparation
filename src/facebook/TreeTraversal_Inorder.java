@@ -1,5 +1,6 @@
 package facebook;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 import utils.TreeNode;
@@ -58,25 +59,25 @@ public class TreeTraversal_Inorder {
     }
 
     public void inorderMorris(TreeNode root, ArrayList<Integer> values) {
-        TreeNode cur = root;
+        TreeNode current = root;
 
-        while (cur != null) {
-            if (cur.left != null) {
-                TreeNode pre = cur.left;
-                while (pre.right != null && pre.right != cur) {
+        while (current != null) {
+            if (current.left != null) {
+                TreeNode pre = current.left;
+                while (pre.right != null && pre.right != current) {
                     pre = pre.right;
                 }
                 if (pre.right == null) { // set right to successor
-                    pre.right = cur;
-                    cur = cur.left;
+                    pre.right = current;
+                    current = current.left;
                 } else { // visit and revert the change
                     pre.right = null;
-                    values.add(cur.val);
-                    cur = cur.right;
+                    values.add(current.data);
+                    current = current.right;
                 }
             } else { // visit and move to successor
-                values.add(cur.val);
-                cur = cur.right;
+                values.add(current.data);
+                current = current.right;
             }
         }
     }

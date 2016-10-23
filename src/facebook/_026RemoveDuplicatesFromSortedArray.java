@@ -35,16 +35,16 @@ class Solution_RemoveDuplicatesFromSortedArray {
             return 0;
         }
 
-        int start, index, pre;
+        int newLength, index, previous;
 
-        for (start = 1, index = 1, pre = A[0]; index < A.length; index++) {
-            if (A[index] != pre) {
-                A[start] = A[index];
-                pre = A[start];
-                start++;
+        for (newLength = 1, index = 1, previous = A[0]; index < A.length; index++) {
+            if (A[index] != previous) {
+                A[newLength] = A[index];
+                previous = A[newLength];
+                newLength++;
             }
         }
 
-        return start;
+        return newLength;
     }
 }

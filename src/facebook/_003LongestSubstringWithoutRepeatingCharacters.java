@@ -1,7 +1,6 @@
 package facebook;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Arrays;
 
 /**
  * Given a string, find the length of the longest substring without repeating characters.
@@ -25,48 +24,23 @@ public class _003LongestSubstringWithoutRepeatingCharacters {
 }
 
 class Solution_LongestSubstringNoRepeatingChars {
+    //same as longestSubStrWithUniqueChars(String target)
     public int lengthOfLongestSubstring(String target) {
-        Map<Character, Integer> char2pos = new HashMap<Character, Integer>();
-
-        int start = 0;
-        int end = -1;
-        int max = 0;
-
-        for (int i = 0; i < target.length(); i++) {
-            end++;
-            if (char2pos.containsKey(target.charAt(i))) {
-                //only move start when the repeat is after start, discard any char before start
-                if (char2pos.get(target.charAt(i)) >= start) {
-                    start = char2pos.get(target.charAt(i)) + 1;
-                }
-            }
-            //update the new pos to i
-            char2pos.put(target.charAt(i), i);
-
-            if (end - start > max) {
-                max = end - start;
-            }
-        }
-
-        return max + 1;
-    }
-
-    public int longestSubStrWithUniqueChars(String s) {
-        if (s == null || s.isEmpty()) {
+        if (target == null || target.isEmpty()) {
             return 0;
         }
 
-        char[] chars = s.toCharArray();
+        char[] chars = target.toCharArray();
 
         int current = 0;//current pos in string
         int length = 0; //current longest substr length
         int pos = 0;    //current longest substr starting pos
 
-        for (current = 0 ; current < s.length(); current++) {
+        for (current = 0 ; current < target.length(); current++) {
             pos = current;
             boolean[] found = new boolean[256];
 
-            while (pos < s.length() && !found[chars[pos]]) {
+            while (pos < target.length() && !found[chars[pos]]) {
                 found[chars[pos]] = true;
                 pos++;
             }
@@ -75,5 +49,24 @@ class Solution_LongestSubstringNoRepeatingChars {
         }
 
         return length;
+    }
+
+    public int lengthOfLongestSubstring2(String s) {
+        if (s == null || s.length() < 1) {
+            return 0;
+        }
+        char[] cArr = s.toCharArray();
+        int dict[] = new int[256], sum = 0, prev = 0, i, len = cArr.length;
+        Arrays.fill( dict, -1 );
+
+        for (i = 0; i < len; i++ ) {
+            int c = cArr[i];
+            if (dict[c] >= prev) {
+                sum = Math.max(i - prev, sum);
+                prev = dict[c] + 1;
+            }
+            dict[c] = i;
+        }
+        return Math.max( i - prev, sum);
     }
 }

@@ -64,8 +64,8 @@ class Solution_IntegerToRoman {
 
     // ------------------------------------------------------------------------ //
 
-    public String intToRoman2(int r) {
-        if (r < 1 || r > 3999) {
+    public String intToRoman2(int num) {
+        if (num < 1 || num > 3999) {
             return "INVALID";
         }
 
@@ -78,15 +78,15 @@ class Solution_IntegerToRoman {
             50, 40, 10, 9, 5, 4, 1
         };
 
-        String t = "";
+        StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < 13; i++) {
-            while (r >= u[i]) {
-                t += s[i];
-                r -= u[i];
+            while (num >= u[i]) {
+                sb.append(s[i]);
+                num -= u[i];
             }
         }
 
-        return t;
+        return sb.toString();
     }
 }

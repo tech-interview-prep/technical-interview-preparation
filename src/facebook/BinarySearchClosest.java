@@ -5,7 +5,7 @@ package facebook;
  */
 public class BinarySearchClosest {
     public static void main(String[] args) {
-	Solution_BinarySearchClosest sol = new Solution_BinarySearchClosest();
+        Solution_BinarySearchClosest sol = new Solution_BinarySearchClosest();
 
         int[] array = {3, 6, 9, 12, 15, 18};
         for (int i = 0; i < 20; i++) {

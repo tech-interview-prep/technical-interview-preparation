@@ -20,39 +20,40 @@ package facebook;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class _341FlattenNestedListIterator {
 
 }
 
 class NestedIterator implements Iterator<Integer> {
-    LinkedList<NestedInteger> stack;
+    private Queue<Integer> queue;
+
     public NestedIterator(List<NestedInteger> nestedList) {
-        // flatten list here
-        stack = new LinkedList<NestedInteger>();
-        for (int i = nestedList.size() - 1; i >= 0; --i) {
-            stack.push(nestedList.get(i));
+        queue = new LinkedList<>();
+        for (int i = 0; i < nestedList.size(); i++) {
+            pushToQueue(nestedList.get(i));
         }
     }
 
     @Override
     public Integer next() {
-        NestedInteger top = stack.pop();
-        return top.getInteger();
+        return queue.poll();
     }
 
     @Override
     public boolean hasNext() {
-        if (stack.isEmpty()) {
-            return false;
-        }
-        while (!stack.isEmpty() && !stack.peek().isInteger()) {
-            List<NestedInteger> list = stack.pop().getList();
-            for (int i = list.size() - 1; i >= 0; --i) {
-                stack.push(list.get(i));
+        return !queue.isEmpty();
+    }
+
+    public void pushToQueue(NestedInteger nestedInteger) {
+        if (nestedInteger.isInteger()) {
+            queue.offer(nestedInteger.getInteger());
+        } else {
+            for (NestedInteger nestedInt : nestedInteger.getList()) {
+                pushToQueue(nestedInt);
             }
         }
-        return !stack.isEmpty();
     }
 }
 

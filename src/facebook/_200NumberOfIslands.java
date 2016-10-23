@@ -30,36 +30,55 @@ public class _200NumberOfIslands {
 
 class Solution_NumberOfIslands {
     public int numIslands(char[][] grid) {
-        return 0;
-    }
+        if (grid == null || grid.length == 0 ||  grid[0].length == 0) {
+            return 0;
+        }
 
-    public void noOfIslands(int[][] arr) {
-        boolean visited [][] = new boolean[arr.length][arr[0].length];
-        for (int i = 0; i < visited.length; i++)
-            Arrays.fill(visited[i], false);
         int count = 0;
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                if (arr[i][j] == 1 && !visited[i][j]) {
-                    dfs(arr, i, j, visited);
+        int m = grid.length, n = grid[0].length;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] != '0' && grid[i][j] != '2') {
                     count++;
+                    numIslands(grid, i, j);
                 }
             }
         }
-        System.out.println("Number of islands = " + count);
+        return count;
     }
 
-    public void dfs(int arr[][], int row, int col, boolean[][] visited) {
-        int rowNbr[] = { -1, -1, -1,  0, 0,  1, 1, 1};
-        int colNbr[] = { -1,  0,  1, -1, 1, -1, 0, 1};
-        visited[row][col] = true;
-        for (int i = 0; i < 8; i++) {
-            int newRow = row + rowNbr[i];
-            int newCol = col + colNbr[i];
-            if (newRow >= 0 && newRow < arr.length && newCol >= 0 && newCol < arr[0].length
-                    && arr[newRow][newCol] == 1 && !visited[newRow][newCol]) {
-                dfs(arr, newRow, newCol, visited);
+    public void numIslands(char[][] grid, int i, int j) {
+        int m = grid.length, n = grid[0].length;
+        if (i < 0 || i >= m || j < 0 || j >= n) return;
+        if (grid[i][j] == '0' || grid[i][j] == '2') return;
+
+        grid[i][j] = '2';
+
+        numIslands(grid, i - 1, j);
+        numIslands(grid, i + 1, j);
+        numIslands(grid, i, j - 1);
+        numIslands(grid, i, j + 1);
+    }
+
+    public int numIslands(char[][] grid) {
+        int count = 0;
+        for (int i = 0; i < grid.length; i++)
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == '1') {
+                    dfsFill(grid, i, j);
+                    count++;
+                }
             }
+        return count;
+    }
+
+    private void dfsFill(char[][] grid, int i, int j) {
+        if (i >= 0 && j >= 0 && i < grid.length && j < grid[0].length && grid[i][j] == '1') {
+            grid[i][j] = '0';
+            dfsFill(grid, i + 1, j);
+            dfsFill(grid, i - 1, j);
+            dfsFill(grid, i, j + 1);
+            dfsFill(grid, i, j - 1);
         }
     }
 }

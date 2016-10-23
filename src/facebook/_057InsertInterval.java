@@ -42,22 +42,6 @@ public class _057InsertInterval {
 
 class Solution_InsertInterval {
     public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
-        int i, l;
-        ArrayList<Interval> ret = new ArrayList<Interval>();
-        for (i = 0, l = intervals.size(); i < l && intervals.get(i).end < newInterval.start; ret.add(intervals.get(i)), i++);
-
-        if (i < l) {
-            newInterval.start = Math.min(intervals.get(i).start, newInterval.start);
-        }
-
-        for (; i < l && newInterval.end >= intervals.get(i).start; newInterval.end = Math.max(newInterval.end, intervals.get(i).end), i++);
-        ret.add(newInterval);
-        for (; i < l; ret.add(intervals.get(i++)));
-
-        return ret;
-    }
-
-    public ArrayList<Interval> insert2(ArrayList<Interval> intervals, Interval newInterval) {
 
         ArrayList<Interval> result = new ArrayList<Interval>();
 

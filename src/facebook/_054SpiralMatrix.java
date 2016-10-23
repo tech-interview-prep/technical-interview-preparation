@@ -32,57 +32,47 @@ class Solution_SpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<Integer>();
 
-        if (matrix == null || matrix.length == 0) return result;
-
-        int m = matrix.length;
-        int n = matrix[0].length;
-
-        int x = 0;
-        int y = 0;
-
-        while (m > 0 && n > 0) {
-
-            //if one row/column left, no circle can be formed
-            if (m == 1) {
-                for (int i = 0; i < n; i++) {
-                    result.add(matrix[x][y++]);
-                }
-                break;
-            } else if (n == 1) {
-                for (int i = 0; i < m; i++) {
-                    result.add(matrix[x++][y]);
-                }
-                break;
-            }
-
-            //below, process a circle
-
-            //top - move right
-            for (int i = 0; i < n - 1; i++) {
-                result.add(matrix[x][y++]);
-            }
-
-            //right - move down
-            for (int i = 0; i < m - 1; i++) {
-                result.add(matrix[x++][y]);
-            }
-
-            //bottom - move left
-            for (int i = 0; i < n - 1; i++) {
-                result.add(matrix[x][y--]);
-            }
-
-            //left - move up
-            for (int i = 0; i < m - 1; i++) {
-                result.add(matrix[x--][y]);
-            }
-
-            x++;
-            y++;
-            m = m - 2;
-            n = n - 2;
+        if (matrix == null || matrix.length == 0) {
+            return result;
         }
+        int i, topRow = 0, leftCol = 0, btmRow = matrix.length, rightCol = matrix[0].length;
 
+        /*  topRow - starting row index
+            btmRow - ending row index
+            leftCol - starting column index
+            rightCol - ending column index
+            i - iterator
+        */
+
+        while (topRow < btmRow && leftCol < rightCol) {
+            /* Print the first row from the remaining rows */
+            for (i = leftCol; i < rightCol; ++i) {
+                result.add(matrix[topRow][i]);
+            }
+            topRow++;
+
+            /* Print the last column from the remaining columns */
+            for (i = topRow; i < btmRow; ++i) {
+                result.add(matrix[i][rightCol - 1]);
+            }
+            rightCol--;
+
+            /* Print the last row from the remaining rows */
+            if ( topRow < btmRow) {
+                for (i = rightCol - 1; i >= leftCol; --i) {
+                    result.add(matrix[btmRow - 1][i]);
+                }
+                btmRow--;
+            }
+
+            /* Print the first column from the remaining columns */
+            if (leftCol < rightCol) {
+                for (i = btmRow - 1; i >= topRow; --i) {
+                    result.add(matrix[i][leftCol]);
+                }
+                leftCol++;
+            }
+        }
         return result;
     }
 }

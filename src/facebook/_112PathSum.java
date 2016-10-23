@@ -24,17 +24,18 @@ import utils.Utils;
  */
 public class _112PathSum {
     public static void main(String[] args) {
-        Utils.printTestln(hasPathSum(TreeNode.getSampleTree(), 6), true);
-        Utils.printTestln(hasPathSum(TreeNode.getSampleTree(), 8), false);
+    	Solution_PathSum sol = new Solution_PathSum();
+        Utils.printTestln(sol.hasPathSum(TreeNode.getSampleTree(), 6), true);
+        Utils.printTestln(sol.hasPathSum(TreeNode.getSampleTree(), 8), false);
     }
 }
 
 class Solution_PathSum {
-    public static boolean hasPathSum(TreeNode root, int sum) {
+    public boolean hasPathSum(TreeNode root, int sum) {
         return hasPathSum(root, sum, 0);
     }
 
-    private static boolean hasPathSum(TreeNode root, int target, int currentSum) {
+    private boolean hasPathSum(TreeNode root, int target, int currentSum) {
         if (root == null) {
             return false;
         }

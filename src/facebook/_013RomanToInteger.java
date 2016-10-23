@@ -1,5 +1,7 @@
 package facebook;
 
+import java.util.HashMap;
+
 import utils.Utils;
 
 /**
@@ -19,60 +21,34 @@ public class _013RomanToInteger {
     }
 }
 
+/**
+ * int: 1000, 900, 500, 400, 100, 90, 50,  40,  10,  9,  5,  4,  1
+ * roman: "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"
+ */
 class Solution_RomanToInteger {
-    private static final int[] vals;
-    static {
-        vals = new int[256];
-        vals['I'] = 1;
-        vals['V'] = 5;
-        vals['X'] = 10;
-        vals['L'] = 50;
-        vals['C'] = 100;
-        vals['D'] = 500;
-        vals['M'] = 1000;
-    }
-
     public int romanToInt(String s) {
-        char[] r = s.toCharArray();
-        int previousVal = Integer.MAX_VALUE;
-        int result = 0;
-        int carry = 0;
-
-        for (char c : r) {
-            int val = vals[c];
-            if (previousVal > val) {
-                result += carry;
-                carry = val;
-            } else if (previousVal == val) {
-                carry += val;
-            } else {
-                carry = -carry + val;
-            }
-            previousVal = val;
-        }
-
-        return result + carry;
-    }
-
-    // ------------------------------------------------------------------------ //
-
-    public int romanToInt2(String s) {
-        char symbols[] = {'M', 'D', 'C', 'L', 'X', 'V', 'I'};
-        int values[] = {1000, 500, 100, 50, 10, 5, 1};
-
-        if (s.length() == 0) {
+        if (s == null || s.length() == 0) {
             return 0;
         }
 
-        s = s.toUpperCase();
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        map.put('M', 1000);
+        map.put('D', 500);
+        map.put('C', 100);
+        map.put('L', 50);
+        map.put('X', 10);
+        map.put('V', 5);
+        map.put('I', 1);
 
-        for (int i = 0; i < symbols.length; i++) {
-            int index = s.indexOf(symbols[i]);
-            if (index != -1) {
-                return values[i] - romanToInt(s.substring(0, index)) + romanToInt(s.substring(index + 1));
+        int length = s.length();
+        int result = map.get(s.charAt(length - 1));
+        for (int i = length - 2; i >= 0; i--) {
+            if (map.get(s.charAt(i + 1)) <= map.get(s.charAt(i))) {
+                result += map.get(s.charAt(i));
+            } else {
+                result -= map.get(s.charAt(i));
             }
         }
-
-        return 0;
+        return result;
     }
 }
