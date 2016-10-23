@@ -42,25 +42,6 @@ public class _056MergeIntervals {
 }
 
 class Solution_MergeIntervals {
-    public ArrayList<Interval> merge(List<Interval> intervals) {
-        ArrayList<Interval> ret = new ArrayList<Interval>();
-        Collections.sort(intervals, new Comparator<Interval>() {
-            public int compare(Interval o1, Interval o2) {
-                return o1.start - o2.start;
-            }
-        });
-
-        for (int i = 0, s = intervals.size(); i < s; ) {
-            Interval interval = new Interval(intervals.get(i).start, intervals.get(i).end);
-            for (i++; i < s && intervals.get(i).start <= interval.end; i++) {
-                interval.end = Math.max(intervals.get(i).end, interval.end);
-            }
-            ret.add(interval);
-        }
-
-        return ret;
-    }
-
     public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
 
         if (intervals == null || intervals.size() <= 1)

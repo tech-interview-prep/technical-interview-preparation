@@ -27,29 +27,67 @@ public class _038CountAndSay {
 }
 
 class Solution_CountAndSay {
+    public String lookAndSay(int input) {
+        if (input < 0) {
+            return "";
+        }
+        String output = "1";
+        for (int i = 0; i < input; i++) {
+            output = lookAndSay(input, output);
+        }
+        return output;
+    }
+
+    private String lookAndSay(int input, String str) {
+        StringBuffer sb = new StringBuffer();
+        char last = str.charAt(0);
+        int count = 1;
+        for (int i = 1; i < str.length(); i++) {
+            if (last == str.charAt(i)) {
+                count++;
+            } else {
+                sb.append(count);
+                sb.append(last);
+                last = str.charAt(i);
+                count = 1;
+            }
+        }
+
+        sb.append(count);
+        sb.append(last);
+        return sb.toString();
+    }
+
     public String countAndSay(int n) {
         if (n == 0) {
             return null;
         }
 
-        StringBuffer current = new StringBuffer("1");
-        StringBuffer next = new StringBuffer();
+        String current = "1";
+
+        if (n == 1) {
+            return current;
+        }
+
         for (int i = 1; i < n; i++) {
-            int start = 0;
-            next.setLength(0);
-            for (int j = 1, l = current.length(); j <= l; j++) {
-                if (j == l || current.charAt(start) != current.charAt(j)) {
-                    next.append(j - start);
-                    next.append(current.charAt(start));
-                    start = j;
+            int count = 1;
+            char curChar = current.charAt(0);
+            StringBuffer temp = new StringBuffer();
+
+            for (int charIndex = 1; charIndex < current.length(); charIndex++) {
+                if (current.charAt(charIndex) == curChar) {
+                    count++;
+                } else {
+                    temp.append(count).append(curChar);
+                    count = 1;
+                    curChar = current.charAt(charIndex);
                 }
             }
 
-            StringBuffer tmp = current;
-            current = next;
-            next = tmp;
+            temp.append(count).append(curChar);
+            current = temp.toString();
         }
 
-        return current.toString();
+        return current;
     }
 }
