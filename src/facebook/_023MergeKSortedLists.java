@@ -20,11 +20,13 @@ public class _023MergeKSortedLists {
 
 class Solution_MergeKSortedLists {
     public ListNode mergeKLists(ArrayList<ListNode> lists) {
+        if (lists == null || lists.size() == 0) {
+            return new ListNode();
+        }
         int last = lists.size() - 1;
-        if (last < 0) return null;
-
+        int current;
         while (last > 0) {
-            int current = 0;
+            current = 0;
             while (current < last) {
                 lists.set(current, mergeTwoLists(lists.get(current++), lists.get(last--)));
             }

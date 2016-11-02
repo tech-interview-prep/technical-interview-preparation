@@ -19,27 +19,31 @@ public class _062UniquePaths {
 
 class Solution_UniquePaths {
     public int uniquePaths(int m, int n) {
-        int matrix[][] = new int[m + 1][n + 1];
+        if(m==0 || n==0) return 0;
+        if(m==1 || n==1) return 1;
+        // Create a 2D table to store results of subproblems
+        int[][] count = new int[m][n];
 
-        return backtrack(matrix, 0 , 0, m, n);
-    }
-
-    public int backtrack(int[][] matrix, int c, int r, int m, int n) {
-        if (c == m - 1 && r == n - 1) {
-            return 1;
-        }
-        if (c >= m || r >= n) {
-            return 0;
+        // Count of paths to reach any cell in first column is 1
+        for (int i = 0; i < m; i++) {
+            count[i][0] = 1;
         }
 
-        if (matrix[c + 1][r] == 0) {
-            matrix[c + 1][r] = backtrack(matrix, c + 1, r, m, n);
-        }
-        if (matrix[c][r + 1] == 0) {
-            matrix[c][r + 1] = backtrack(matrix, c, r + 1, m, n);
+        // Count of paths to reach any cell in first column is 1
+        for (int j = 0; j < n; j++) {
+            count[0][j] = 1;
         }
 
-        return matrix[c + 1][r] + matrix[c][r + 1];
+        // Calculate count of paths for other cells in bottom-up manner using
+        // the recursive solution
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                // By uncommenting the last part the code calculatest he total
+                // possible paths if the diagonal Movements are allowed
+                count[i][j] = count[i-1][j] + count[i][j-1]; //+ count[i-1][j-1];
+            }
 
+        }
+        return count[m-1][n-1];
     }
 }

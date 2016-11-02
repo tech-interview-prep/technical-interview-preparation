@@ -27,12 +27,12 @@ public class _067AddBinary {
 }
 
 class Solution_AddBinary {
-    public String addBinary(String a, String b) {
+    public String addBinary(String first, String second) {
         String ret = "";
         int carrier = 0, s1, s2;
 
-        for (s1 = a.length() - 1, s2 = b.length() - 1; s1 >= 0 && s2 >= 0; s1--, s2--) {
-            int sum = a.charAt(s1) + b.charAt(s2) - '0' - '0' + carrier;
+        for (s1 = first.length() - 1, s2 = second.length() - 1; s1 >= 0 && s2 >= 0; s1--, s2--) {
+            int sum = first.charAt(s1) + second.charAt(s2) - '0' - '0' + carrier;
             carrier = sum >> 1;
             sum &= 1;
             ret = sum + ret;
@@ -40,11 +40,11 @@ class Solution_AddBinary {
 
         if (s1 < 0) {
             s1 = s2;
-            a = b;
+            first = second;
         }
 
         for (; s1 >= 0; s1--) {
-            int sum = a.charAt(s1) - '0' + carrier;
+            int sum = first.charAt(s1) - '0' + carrier;
             carrier = sum >> 1;
             sum &= 1;
             ret = sum + ret;
@@ -53,43 +53,26 @@ class Solution_AddBinary {
         return carrier > 0 ? carrier + ret : ret;
     }
 
-    public String addBitStrings( String first, String second ) {
-        String result = "";  // To store the sum bits
-
-        int len1 = first.length();
-        int len2 = second.length();
-        // make the lengths same before adding
-
-        if (len1 < len2) {
-            for (int i = 0 ; i < len2 - len1 ; i++)
-                first = '0' + first;
-        } else if (len1 > len2) {
-            for (int i = 0 ; i < len1 - len2 ; i++)
-                second = '0' + second;
+    public String addBinary(String a, String b) {
+        StringBuilder result = new StringBuilder();
+        int carryin = 0;
+        for (int i = a.length() - 1, j = b.length() - 1; i >= 0 || j >= 0; i--, j--) {
+            if (i < 0) {
+                int bBit = b.charAt(j) - '0';
+                result.insert(0, bBit ^ carryin);
+                carryin = bBit & carryin;
+            } else if (j < 0) {
+                int aBit = a.charAt(i) - '0';
+                result.insert(0, aBit ^ carryin);
+                carryin = aBit & carryin;
+            } else {
+                int aBit = a.charAt(i) - '0', bBit = b.charAt(j) - '0';
+                int carryout = (aBit & bBit) | (aBit & carryin) | (bBit & carryin);
+                result.insert(0, aBit ^ bBit ^ carryin);
+                carryin = carryout;
+            }
         }
-
-        int length = first.length();
-
-        int carry = 0;  // Initialize carry
-
-        // Add all bits one by one
-        for (int i = length - 1 ; i >= 0 ; i--) {
-            int firstBit = first.charAt(i) - '0';
-            int secondBit = second.charAt(i) - '0';
-
-            // boolean expression for sum of 3 bits
-            int sum = (firstBit ^ secondBit ^ carry) + '0';
-
-            result = (char)sum + result;
-
-            // boolean expression for 3-bit addition
-            carry = (firstBit & secondBit) | (secondBit & carry) | (firstBit & carry);
-        }
-
-        // if overflow, then add a leading 1
-        if (carry > 0)
-            result = '1' + result;
-
-        return result;
+        if (carryin == 1) result.insert(0, carryin);
+        return result.toString();
     }
 }

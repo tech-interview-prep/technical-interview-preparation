@@ -145,7 +145,6 @@ class Solution_WordLadder {
         return 0;
     }
 
-
     /*
         Given two words (start and end), and a dictionary, write a method to transform from one word
         into another word such that:
