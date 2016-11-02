@@ -14,22 +14,20 @@ public class _083RemoveDuplicatesFromSortedList {
     Given 1->1->2, return 1->2.
     Given 1->1->2->3->3, return 1->2->3.
     */
-    public static ListNode deleteDuplicates(ListNode head) {
+    public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode nextNode = head.next, node = head;
-        while (nextNode != null) {
-            if (node.data == nextNode.data) {
-                nextNode = nextNode.next;
-            } else {
-                node.next = nextNode;
-                node = node.next;
-                nextNode = nextNode.next;
+        ListNode runner = head.next, current = head;
+        while (runner != null) {
+            if (current.data != runner.data) {
+                current.next = runner;
+                current = current.next;
             }
+            runner = runner.next;
         }
-        node.next = null;
+        current.next = null;
         return head;
     }
 

@@ -44,74 +44,45 @@ public class _079WordSearch {
 }
 
 class Solution_WordSearch {
-    static int[] dx = {1, -1, 0, 0};
-    static int[] dy = {0, 0, 1, -1};
-
     public boolean exist(char[][] board, String word) {
-        if ( word.length() == 0 || board.length == 0 || board[0].length == 0 ) return false;
-        int m = board.length, n = board[0].length;
-        if ( m * n < word.length() ) return false;
+        boolean[][] visited = new boolean[board.length][board[0].length];
 
-        boolean[][] visited = new boolean[m][n];
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if ( board[i][j] == word.charAt(0) ) {
-                    visited[i][j] = true;
-                    if ( dfs(board, i, j, visited, word, 1) )
-                        return true;
-                    visited[i][j] = false;
-                }
-            }
-        }
-        return false;
-    }
-
-    public boolean dfs(char[][] board, int x, int y, boolean[][] visited, String word, int idx) {
-        if (idx == word.length())
-            return true;
-        for (int i = 0; i < 4; i++) {
-            int xx = x + dx[i];
-            int yy = y + dy[i];
-            if ( xx >= 0 && xx < board.length &&
-                    yy >= 0 && yy < board[0].length &&
-                    !visited[xx][yy] && board[xx][yy] == word.charAt(idx)) {
-
-                visited[xx][yy] = true;
-                if ( dfs(board, xx, yy, visited, word, idx + 1))
-                    return true;
-                visited[xx][yy] = false;
-            }
-        }
-        return false;
-    }
-
-    public static boolean exist2(char[][] board, String word) {
-        int m = board.length, n = board[0].length;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (exist(board, word, new boolean[m][n], i, j, 0)) {
+        // find the starting char
+        for (int i=0; i<board.length; ++i) {
+            for (int j=0; j<board[0].length; ++j) {
+                if (searchWord(board, i, j, word, 0, visited)) {
                     return true;
                 }
             }
         }
-        return false;
+
+       return false;
     }
 
-    private static boolean exist(char[][] board, String word, boolean[][] hasVisited, int i, int j, int wStart) {
-        if (wStart == word.length()) {
-            return true;
-        }
-        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word.charAt(wStart) || hasVisited[i][j]) {
+    private boolean searchWord(char[][] board, int x, int y, String word, int cur, boolean[][] visited) {
+        // validate input
+        if (visited[x][y] || board[x][y] != word.charAt(cur)){
             return false;
         }
-        hasVisited[i][j] = true;
-        if (exist(board, word, hasVisited, i - 1, j, wStart + 1)
-                || exist(board, word, hasVisited, i, j + 1, wStart + 1)
-                || exist(board, word, hasVisited, i + 1, j, wStart + 1)
-                || exist(board, word, hasVisited, i, j - 1, wStart + 1)) {
+        if (cur == word.length() - 1) {
             return true;
         }
-        hasVisited[i][j] = false;
+
+        // mark the node as visited
+        visited[x][y] = true;
+
+        // BFS on its neighbers
+        if (
+            (x > 0 && searchWord(board, x-1, y, word, cur+1, visited)) ||
+            (x+1 < board.length && searchWord(board, x+1, y, word, cur+1, visited)) ||
+            (y > 0 && searchWord(board, x, y-1, word, cur+1, visited)) ||
+            (y+1 < board[0].length && searchWord(board, x, y+1, word, cur+1, visited))
+        ) {
+            return true;
+        }
+
+        // mark the node as unused
+        visited[x][y] = false;
         return false;
     }
 }

@@ -18,30 +18,39 @@ public class _038CountAndSay {
 
     Note: The sequence of integers will be represented as a string.
     */
-    public static String countAndSay(int n) {
-        if (n == 0) {
+    public String countAndSay(int n) {
+        if (n <= 0) {
             return null;
         }
 
-        StringBuffer current = new StringBuffer("1");
-        StringBuffer next = new StringBuffer();
-        for (int i = 1; i < n; i++) {
-            int start = 0;
-            next.setLength(0);
-            for (int j = 1, l = current.length(); j <= l; j++) {
-                if (j == l || current.charAt(start) != current.charAt(j)) {
-                    next.append(j - start);
-                    next.append(current.charAt(start));
-                    start = j;
+        String result = "1";
+        int i = 1;
+        char prev;
+        int count;
+        StringBuilder sb;
+
+        while (i < n) {
+            sb = new StringBuilder();
+            prev = result.charAt(0);
+            count = 1;
+            for (int j = 1; j < result.length(); j++) {
+                if (result.charAt(j) == prev) {
+                    count++;
+                } else {
+                    sb.append(count);
+                    sb.append(prev);
+                    prev = result.charAt(j);
+                    count = 1;
                 }
             }
 
-            StringBuffer tmp = current;
-            current = next;
-            next = tmp;
+            sb.append(count);
+            sb.append(prev);
+            result = sb.toString();
+            i++;
         }
 
-        return current.toString();
+        return result;
     }
 
     private static void test() {

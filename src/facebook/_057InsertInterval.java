@@ -41,9 +41,9 @@ public class _057InsertInterval {
 }
 
 class Solution_InsertInterval {
-    public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
+    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
 
-        ArrayList<Interval> result = new ArrayList<Interval>();
+        List<Interval> result = new ArrayList<Interval>();
 
         for (Interval interval : intervals) {
             if (interval.end < newInterval.start) {

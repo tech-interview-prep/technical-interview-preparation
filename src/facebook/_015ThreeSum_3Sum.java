@@ -33,68 +33,46 @@ public class _015ThreeSum_3Sum {
 }
 
 class Solution_3Sum {
-    public ArrayList<ArrayList<Integer>> threeSum(int[] num) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
-        Arrays.sort(num);
-
-        for (int i = 0; i < num.length;) {
-            for (int start = i + 1, end = num.length - 1; start < end;) {
-                if (start > i + 1 && num[start] == num[start - 1] || num[start] + num[end] + num[i] < 0) {
-                    start++;
-                } else if (end < num.length - 1 && num[end] == num[end + 1] || num[start] + num[end] + num[i] > 0) {
-                    end--;
-                } else if (num[start] + num[end] + num[i] == 0) {
-                    ArrayList<Integer> tmp = new ArrayList<Integer>();
-                    tmp.add(num[i]);
-                    tmp.add(num[start]);
-                    tmp.add(num[end]);
-                    ret.add(tmp);
-                    start++;
-                    end--;
-                }
-            }
-            for (i++; i < num.length && num[i] == num[i - 1]; i++);
-        }
-
-        return ret;
-    }
-
-    public List<List<Integer>> threeSum2(int[] nums) {
+    public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
 
-        int n = nums.length;
-        if (n < 3) return result;
+        if (nums.length < 3) {
+            return result;
+        }
 
         Arrays.sort(nums);
 
-        int i = 0;
+        for (int i = 0; i < nums.length - 2; i++) {
+            // //avoid duplicate solutions
+            if (i == 0 || nums[i] > nums[i - 1]) {
+                int start = i + 1;
+                int end = nums.length - 1;
 
-        while (i < n - 2) {
-            int start = i + 1, end = n - 1;
-            while (start < end) {
-                int sum = nums[i] + nums[start] + nums[end];
+                while (start < end) {
+                    if (nums[start] + nums[end] + nums[i] == 0) {
+                        ArrayList<Integer> temp = new ArrayList<Integer>();
+                        temp.add(nums[i]);
+                        temp.add(nums[start]);
+                        temp.add(nums[end]);
 
-                if (sum == 0) {
-                    result.add(Arrays.asList(nums[i], nums[start], nums[end]));
-                    do {
-                        end--;
-                    } while (end > start && nums[end] == nums[end + 1]);
-                    do {
+                        result.add(temp);
                         start++;
-                    } while (start < end && nums[start] == nums[start - 1]);
-                } else if (sum > 0) {
-                    do {
                         end--;
-                    } while (end > start && nums[end] == nums[end + 1]);
-                } else {
-                    do {
+                        //avoid duplicate solutions
+                        while (start < end && nums[end] == nums[end + 1]) {
+                            end--;
+                        }
+
+                        while (start < end && nums[start] == nums[start - 1]) {
+                            start++;
+                        }
+                    } else if (nums[start] + nums[end] + nums[i] < 0) {
                         start++;
-                    } while (start < end && nums[start] == nums[start - 1]);
+                    } else {
+                        end--;
+                    }
                 }
             }
-            do {
-                i++;
-            } while (i < n - 2 && nums[i] == nums[i - 1]);
         }
 
         return result;
@@ -110,50 +88,46 @@ class Solution_3Sum {
       Time complexity of this solution: O(n^2).
 
     */
-    public List<List<Integer>> threeSum(int[] num, int target) {
+    public List<List<Integer>> threeSum(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
 
-        if (num.length < 3)
+        if (nums.length < 3) {
             return result;
+        }
 
-        // sort array
-        Arrays.sort(num);
+        Arrays.sort(nums);
 
-        for (int i = 0; i < num.length - 2; i++) {
+        for (int i = 0; i < nums.length - 2; i++) {
             // //avoid duplicate solutions
-            if (i == 0 || num[i] > num[i - 1]) {
-
-                int diff = target - num[i];
-
+            if (i == 0 || nums[i] > nums[i - 1]) {
                 int start = i + 1;
-                int end = num.length - 1;
+                int end = nums.length - 1;
 
                 while (start < end) {
                     //case 1
-                    if (num[start] + num[end] == diff) {
+                    if (nums[start] + nums[end] + nums[i] == target) {
                         ArrayList<Integer> temp = new ArrayList<Integer>();
-                        temp.add(num[i]);
-                        temp.add(num[start]);
-                        temp.add(num[end]);
+                        temp.add(nums[i]);
+                        temp.add(nums[start]);
+                        temp.add(nums[end]);
 
                         result.add(temp);
                         start++;
                         end--;
                         //avoid duplicate solutions
-                        while (start < end && num[end] == num[end + 1])
+                        while (start < end && nums[end] == nums[end + 1]) {
                             end--;
+                        }
 
-                        while (start < end && num[start] == num[start - 1])
+                        while (start < end && nums[start] == nums[start - 1]) {
                             start++;
-                        //case 2
-                    } else if (num[start] + num[end] < diff) {
+                        }
+                    } else if (nums[start] + nums[end] + nums[i] < target) {
                         start++;
-                        //case 3
                     } else {
                         end--;
                     }
                 }
-
             }
         }
 

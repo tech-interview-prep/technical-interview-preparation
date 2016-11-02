@@ -58,8 +58,7 @@ class Solution_MergeIntervals {
 
             if (prev.end >= curr.start) {
                 // merged case
-                Interval merged = new Interval(prev.start, Math.max(prev.end, curr.end));
-                prev = merged;
+                prev = new Interval(prev.start, Math.max(prev.end, curr.end));
             } else {
                 result.add(prev);
                 prev = curr;
