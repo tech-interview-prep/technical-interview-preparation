@@ -11,6 +11,11 @@ This list is meant to be a both a quick guide and reference for further research
 - Based on [tuples](http://en.wikipedia.org/wiki/Tuple) from set theory.
 - They are one of the oldest, most commonly used data structures.
 
+```java
+    int[] numbers = new int[10];
+    String[] names = new String[10];
+```
+
 ####What you need to know:
 - Optimal for indexing; bad at searching, inserting, and deleting (except at the end).
 - **Linear arrays**, or one dimensional arrays, are the most basic.
@@ -50,7 +55,7 @@ This list is meant to be a both a quick guide and reference for further research
 - Insertion:        Linked Lists: O(1)
 
 
-###**Hash Table or Hash Map**
+###**Hashtable or HashMap or HashSet**
 ####Definition:
 - Stores data with key value pairs.
 - **Hash functions** accept a key and return an output unique only to that specific key.
@@ -63,12 +68,38 @@ This list is meant to be a both a quick guide and reference for further research
   - All hash functions have this problem.
   - This is often accommodated for by having the hash tables be very large.
 - Hashes are important for associative arrays and database indexing.
+- HashSet does not allow duplicate keys and is not synchronized, allows a null key.
+- HashMap is not synchronized but allows duplicate keys, it also allows one null key and as many null values as you like.
+- Hashtable is synchronized and allows duplicate keys, it also does not allow null keys or values.
 
 ####Big O efficiency:
 - Indexing:         Hash Tables: O(1)
 - Search:           Hash Tables: O(1)
 - Insertion:        Hash Tables: O(1)
 
+```java
+    Hashtable<String, Integer> numbers = new Hashtable<String, Integer>();
+    numbers.put("one", 1);
+    numbers.put("two", 2);
+    numbers.put("three", 3);
+
+    To retrieve a number, use the following code:
+
+   	Integer n = numbers.get("two");
+   	if (n != null) {
+   		System.out.println("two = " + n);
+   	}
+   	
+   	HashMap<Integer,String> map= new HashMap<Integer,String>();
+	map.put(1, "First");
+	map.put(2,"Second");
+	map.put(3, null);
+	
+	HashSet<String> set= new HashSet<String>();
+	set.add ("First");
+	set.add ("Second");
+	set.add ("Third");
+```
 
 ###**Binary Tree**
 ####Definition:

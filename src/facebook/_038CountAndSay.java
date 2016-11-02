@@ -27,67 +27,36 @@ public class _038CountAndSay {
 }
 
 class Solution_CountAndSay {
-    public String lookAndSay(int input) {
-        if (input < 0) {
-            return "";
-        }
-        String output = "1";
-        for (int i = 0; i < input; i++) {
-            output = lookAndSay(input, output);
-        }
-        return output;
-    }
-
-    private String lookAndSay(int input, String str) {
-        StringBuffer sb = new StringBuffer();
-        char last = str.charAt(0);
-        int count = 1;
-        for (int i = 1; i < str.length(); i++) {
-            if (last == str.charAt(i)) {
-                count++;
-            } else {
-                sb.append(count);
-                sb.append(last);
-                last = str.charAt(i);
-                count = 1;
-            }
-        }
-
-        sb.append(count);
-        sb.append(last);
-        return sb.toString();
-    }
-
     public String countAndSay(int n) {
-        if (n == 0) {
+        if (n <= 0) {
             return null;
         }
 
-        String current = "1";
+        String result = "1";
+        char prev;
+        int count;
+        StringBuilder sb;
 
-        if (n == 1) {
-            return current;
-        }
-
-        for (int i = 1; i < n; i++) {
-            int count = 1;
-            char curChar = current.charAt(0);
-            StringBuffer temp = new StringBuffer();
-
-            for (int charIndex = 1; charIndex < current.length(); charIndex++) {
-                if (current.charAt(charIndex) == curChar) {
+        for (int i = 0; i < n ; i++) {
+            sb = new StringBuilder();
+            prev = result.charAt(0);
+            count = 1;
+            for (int j = 1; j < result.length(); j++) {
+                if (result.charAt(j) == prev) {
                     count++;
                 } else {
-                    temp.append(count).append(curChar);
+                    sb.append(count);
+                    sb.append(prev);
+                    prev = result.charAt(j);
                     count = 1;
-                    curChar = current.charAt(charIndex);
                 }
             }
 
-            temp.append(count).append(curChar);
-            current = temp.toString();
+            sb.append(count);
+            sb.append(prev);
+            result = sb.toString();
         }
 
-        return current;
+        return result;
     }
 }

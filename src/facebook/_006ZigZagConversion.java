@@ -62,8 +62,9 @@ class Solution_ZigZagConversion {
     }
 
     public String convert2(String s, int n) { // faster than previous one
-        if (n == 1)
+        if (n == 1) {
             return s;
+        }
         char res[] = new char[s.length()];
         for (int row = 0, i = 0, groupCount = 2 * n - 2; row < n; row++)
             for (int index = row, secIndex = groupCount - row; index < s.length(); index += groupCount, secIndex += groupCount) {

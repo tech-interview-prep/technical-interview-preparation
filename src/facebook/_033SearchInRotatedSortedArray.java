@@ -31,25 +31,25 @@ public class _033SearchInRotatedSortedArray {
 class Solution_SearchInRotatedSortedArray {
     public int search(int[] nums, int target) {
         // binary search
-        int l = 0, r = nums.length - 1;
-        while (l <= r) {
-            int m = (l + r) / 2;
-            if (nums[m] == target) {
-                return m;
+        int left = 0, right = nums.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) {
+                return mid;
             }
 
             // find boundary
-            if (nums[m] >= nums[l]) {
-                if (target >= nums[l] && target <= nums[m]) {
-                    r = m - 1;
+            if (nums[mid] >= nums[left]) {
+                if (target >= nums[left] && target <= nums[mid]) {
+                    right = mid - 1;
                 } else {
-                    l = m + 1;
+                    left = mid + 1;
                 }
-            } else { // nums[m] < nums[l]
-                if (target >= nums[l] || target <= nums[m]) {
-                    r = m - 1;
+            } else { // nums[mid] < nums[left]
+                if (target >= nums[left] || target <= nums[mid]) {
+                    right = mid - 1;
                 } else {
-                    l = m + 1;
+                    left = mid + 1;
                 }
             }
         }

@@ -67,19 +67,21 @@ class Solution_TwoSum {
         return result;
     }
 
-    public void twoSum_anyPair_afterSorting(int[] numbers, int target) {
+    public int[] twoSum_anyPair_afterSorting(int[] numbers, int target) {
         if (numbers == null || numbers.length == 0) {
-            return;
+            return null;
         }
 
+        int[] result = new int[2];
         Arrays.sort(numbers);
         int start = 0;
         int end = numbers.length - 1;
-        boolean found = false;
 
-        while (!found && start < end) {
+        while (start < end) {
             if (numbers[start] + numbers[end] == target) {
-                found = true;
+                result[0] = numbers[start];
+                result[1] = numbers[end];
+                return result;
             } else if (numbers[start] + numbers[end] > target) {
                 end--;
             } else if (numbers[start] + numbers[end] < target) {
@@ -87,30 +89,28 @@ class Solution_TwoSum {
             }
         }
 
-        if (found) {
-            System.out.println("Sum " + target
-                               + " is found, values the making sum are " + numbers[start] + " , "
-                               + numbers[end]);
-        } else {
-            System.out.println("No pair exists whose sum is " + target);
-        }
+        return result;
     }
 
-    public void twoSum_allPairs_afterSorting(int[] numbers, int target) {
+    public List<List<Integer>> twoSum_allPairs_afterSorting(int[] numbers, int target) {
         if (numbers == null || numbers.length == 0) {
-            return;
+            return null;
         }
 
         Arrays.sort(numbers);
+        List<List<Integer>> result = new ArrayList<ArrayList<Integer>>();
 
         for (int i = 0; i < numbers.length - 1; i++) {
             int tofind = target - numbers[i];
             int returned = Arrays.binarySearch(numbers, i + 1, numbers.length, tofind);
             if (returned > 0) {
-                System.out.println("Sum " + target
-                                   + " is found, values the making sum are " + numbers[i]
-                                   + " , " + numbers[returned]);
+                List<Integer> temp = new ArrayList<Integer>();
+                temp.add(numbers[i]);
+                temp.add(numbers[returned]);
+                result.add(temp);
             }
         }
+
+        return result;
     }
 }

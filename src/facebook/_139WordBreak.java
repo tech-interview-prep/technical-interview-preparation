@@ -36,41 +36,19 @@ public class _139WordBreak {
 }
 
 class Solution_WordBreak {
-    public boolean wordBreakDP(String s, Set<String> dict) {
-        Set<Integer> indice = new HashSet<Integer>();
-        indice.add(s.length());
-
-        for (int i = s.length() - 1; i >= 0; i--) {
-            for (int j : indice) {
-                if (dict.contains(s.substring(i, j))) {
-                    indice.add(i);
-                    break;
+    public boolean wordBreak(String s, Set<String> wordDict) {
+        int len = s.length();
+        boolean[] f = new boolean[len+1];
+        f[0] = true;
+        for (int i=1; i<len+1; i++) {
+            for (int j=0; j<i; j++) {
+                if (f[j] && wordDict.contains(s.substring(j,i))) {
+                    f[i] = true;
+                    continue;
                 }
             }
         }
-
-        return indice.contains(0);
-    }
-
-    public boolean wordBreakDP2(String s, Set<String> wordDict) {
-        int[] pos = new int[s.length() + 1];
-
-        Arrays.fill(pos, -1);
-
-        pos[0] = 0;
-
-        for (int i = 0; i < s.length(); i++) {
-            if (pos[i] != -1) {
-                for (int j = i + 1; j <= s.length(); j++) {
-                    String sub = s.substring(i, j);
-                    if (wordDict.contains(sub)) {
-                        pos[j] = i;
-                    }
-                }
-            }
-        }
-
-        return pos[s.length()] != -1;
+        return f[len];
     }
 
     /*

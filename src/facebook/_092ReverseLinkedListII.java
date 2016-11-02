@@ -27,21 +27,32 @@ public class _092ReverseLinkedListII {
 
 class Solution_ReverseLinkedListII {
     public ListNode reverseBetween(ListNode head, int m, int n) {
-        if (head == null || head.next == null) {
+        if(head == null || head.next == null) {
             return head;
         }
+        ListNode dummyHead = new ListNode(0); // 0
+        dummyHead.next = head; // 0 -> 1
 
-        int index;
-        ListNode dummyHead = new ListNode(0), insertNode, node, nextNode;
-        dummyHead.next = head;
-        for (insertNode = dummyHead, index = 1; index < m; index++, insertNode = insertNode.next);
-
-        for (node = insertNode.next; index < n; index++) {
-            nextNode = node.next;
-            node.next = nextNode.next;
-            nextNode.next = insertNode.next;
-            insertNode.next = nextNode;
+        //move to the start point
+        ListNode pre = dummyHead; // 0
+        for(int i = 0; i < m - 1; i ++){
+            pre = pre.next; // 1
         }
+
+        //do the reverse
+        ListNode current = pre.next; // 2
+        ListNode subListHead = null;
+        ListNode next = null;
+        for(int i = 0; i <= n - m; i ++){
+            next = current.next; // 5
+            current.next = subListHead; // 4->3->2 -> null
+            subListHead = current; // 4
+            current = next; // 5
+        }
+
+        //reconnect
+        pre.next.next = current;
+        pre.next = subListHead;
 
         return dummyHead.next;
     }

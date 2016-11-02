@@ -14,7 +14,7 @@ public class FindTopKSmallestElements {
         int n = A.length;
         if (n == 0 || k == 0 || n < k) return null;
         int idx = selectK(A, 0, n - 1, k);
-//  int idx = selectKIterative(A, 0, n-1, k);
+        //  int idx = selectKIterative(A, 0, n-1, k);
         return Arrays.copyOf(A, k);
     }
 

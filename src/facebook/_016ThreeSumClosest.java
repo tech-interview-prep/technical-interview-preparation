@@ -31,26 +31,29 @@ class Solution_ThreeSumClosest {
      * 2. Use two pointers if array is sorted.
      * Time complexity of this solution: O(n^2).
     */
-    public int threeSumClosest(int[] num, int target) {
-        int min = Integer.MAX_VALUE;
+    public int threeSumClosest(int[] nums, int target) {
         int result = 0;
 
-        Arrays.sort(num);
+        if (nums.length < 3) {
+            return result;
+        }
+        int min = Integer.MAX_VALUE;
+        Arrays.sort(nums);
 
-        for (int i = 0; i < num.length; i++) {
-            int j = i + 1;
-            int k = num.length - 1;
-            while (j < k) {
-                int sum = num[i] + num[j] + num[k];
+        for (int i = 0; i < nums.length; i++) {
+            int start = i + 1;
+            int end = nums.length - 1;
+            while (start < end) {
+                int sum = nums[i] + nums[start] + nums[end];
                 int diff = Math.abs(sum - target);
                 if (diff < min) {
                     min = diff;
                     result = sum;
                 }
                 if (sum <= target) {
-                    j++;
+                    start++;
                 } else {
-                    k--;
+                    end--;
                 }
             }
         }
