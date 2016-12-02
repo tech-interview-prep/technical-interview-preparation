@@ -3,6 +3,10 @@
 This list is meant to be a both a quick guide and reference for further research into these topics.  It's basically a summary of that computer science course you never took or forgot about, so there's no way it can cover everything in depth.
 
 ## Data Structure Basics
+- Data structures can be neatly classified as either contiguous or linked, depending upon whether they are based on arrays or pointers
+  - Contiguously-allocated structures are composed of single slabs of memory, and include arrays, matrices, heaps, and hash tables.
+  - Linked data structures are composed of distinct chunks of memory bound together by pointers, and include lists, trees, and graph adjacency lists.
+
 
 ###**Array**
 ####Definition:
@@ -89,12 +93,12 @@ This list is meant to be a both a quick guide and reference for further research
    	if (n != null) {
    		System.out.println("two = " + n);
    	}
-   	
+
    	HashMap<Integer,String> map= new HashMap<Integer,String>();
 	map.put(1, "First");
 	map.put(2,"Second");
 	map.put(3, null);
-	
+
 	HashSet<String> set= new HashSet<String>();
 	set.add ("First");
 	set.add ("Second");

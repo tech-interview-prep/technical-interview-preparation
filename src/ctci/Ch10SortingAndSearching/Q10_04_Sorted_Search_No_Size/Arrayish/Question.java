@@ -1,5 +1,7 @@
 package ctci.Ch10SortingAndSearching.Q10_04_Sorted_Search_No_Size.Arrayish;
 
+import java.util.Arrays;
+
 public class Question {
     public static int binarySearch(Listy list, int value, int low, int high) {
         int mid;

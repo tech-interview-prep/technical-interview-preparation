@@ -106,6 +106,5 @@ public class Addnum {
         ListNode result = a.addTwoNumbers(l4,l1);
 
         int m = 4;
-
     }
 }

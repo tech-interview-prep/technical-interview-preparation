@@ -5,15 +5,15 @@
 			"path": "."
 		}
 	],
-    "settings":
+  "settings":
+  {
+    "AStyleFormatter":
     {
-        "AStyleFormatter":
-        {
-            "autoformat_on_save": true,
-            "options_default":
-            {
-                "style": "google"
-            }
-        }
+      "autoformat_on_save": true,
+      "options_default":
+      {
+        "style": "google"
+      }
     }
+  }
 }
