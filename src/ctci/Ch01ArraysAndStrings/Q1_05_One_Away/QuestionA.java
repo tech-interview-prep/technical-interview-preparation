@@ -1,8 +1,11 @@
 package ctci.Ch01ArraysAndStrings.Q1_05_One_Away;
 
+import utils.ListNode;
+
 public class QuestionA {
     public static boolean oneEditReplace(String s1, String s2) {
         boolean foundDifference = false;
+        
         for (int i = 0; i < s1.length(); i++) {
             if (s1.charAt(i) != s2.charAt(i)) {
                 if (foundDifference) {
@@ -43,12 +46,39 @@ public class QuestionA {
         }
         return false;
     }
+    
+    public static ListNode clone(ListNode head) {
+    	if(head == null) {
+    		return null;
+    	}
+    	
+    	ListNode dummy = new ListNode();
+    	ListNode temp, current = head;
+    	ListNode prev = dummy;
+    	while(current != null) {
+    		temp = new ListNode(current.data);
+    		prev.next = temp;
+    		prev = temp;
+    		current = current.next;
+    	}
+    	
+    	return dummy.next;
+    }
 
     public static void main(String[] args) {
         String a = "pse";
         String b = "pale";
         boolean isOneEdit = oneEditAway(a, b);
         System.out.println(a + ", " + b + ": " + isOneEdit);
+        
+        ListNode h = ListNode.getSampleList(10);
+        ListNode newHead = clone(h);
+        
+        ListNode.print(h);
+        ListNode.print(newHead);
+        
+        System.out.println("long: " + 922337203685477580L);
+        System.out.println("int: " + (int)922337203685477580L);
     }
 
 }

@@ -106,7 +106,7 @@ class Solution_TwoSum {
             int tofind = target - numbers[i];
             int returned = Arrays.binarySearch(numbers, i + 1, numbers.length, tofind);
             if (returned > 0) {
-            	ArrayList<Integer> temp = new ArrayList<Integer>();
+                ArrayList<Integer> temp = new ArrayList<Integer>();
                 temp.add(numbers[i]);
                 temp.add(numbers[returned]);
                 result.add(temp);

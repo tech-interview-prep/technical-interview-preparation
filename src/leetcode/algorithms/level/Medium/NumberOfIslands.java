@@ -28,6 +28,36 @@ public class NumberOfIslands {
 
 class Solution_NumberOfIslands {
     public int numIslands(char[][] grid) {
+        if(grid == null || grid.length == 0) {
+            return 0;
+        }
+        int m = grid.length;
+        int n = grid[0].length;
+        boolean[][] visited = new boolean[m][n];
+        int count = 0;
+        for(int i=0; i < m; i++) {
+            for(int j=0; j < n; j++) {
+                if(!visited[i][j] && grid[i][j] == '1') {
+                    dfs(grid, i, j, m, n, visited);
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    public void dfs(char[][] grid, int x, int y, int m, int n, boolean[][] visited) {
+        if((x < m) && (x >= 0) && (y < n) && (y >= 0) && !visited[x][y] && grid[x][y] != '0') {
+            visited[x][y] = true;
+            dfs(grid, x + 1, y, m, n, visited);
+            dfs(grid, x, y + 1, m, n, visited);
+            dfs(grid, x - 1, y, m, n, visited);
+            dfs(grid, x, y - 1, m, n, visited);
+        }
+    }
+
+    public int numIslands(char[][] grid) {
         if (grid == null || grid.length == 0) {
             return 0;
         }

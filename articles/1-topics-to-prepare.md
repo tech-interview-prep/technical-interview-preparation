@@ -4,6 +4,7 @@
 - [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w)
 - [3 Algorithm Strategies](https://www.youtube.com/watch?v=84UYVCluClQ)
 - [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)
+- [Bit MAnipulation](https://www.youtube.com/watch?v=NLKQEOgBAnw)
 - Powers of 2 Table
 
 Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
@@ -57,7 +58,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - Tree Balancing
 - Divide and conquer
 - [Dynamic programming / Memoization](https://www.youtube.com/watch?v=P8Xa2BitN3I)
-- [Recursion](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/)
+- Recursion [Video - CtCI](https://www.youtube.com/watch?v=KEEKn7Me-ms), [Programcreek notes](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/)
 - Rsync algorithm
 - [A* Search Algorithm](http://www.geeksforgeeks.org/a-search-algorithm/)
 
@@ -82,7 +83,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
   - semaphore
   - synchronized vs unsynchronized
 - Abstraction (understanding how OS, filesystem, and database works)
-- Real--world performance (relative performance RAM, disk, your network, SSD)
+- Real-world performance (relative performance RAM, disk, your network, SSD)
 - Availability and Reliability (durability, understanding how things can fail)
 - Data storage (RAM vs. durable storage, compression, byte sizes)
 - CAP Theorem

@@ -11,7 +11,7 @@ import java.util.Stack;
  *
  * Tags: Stack, String
  */
-class ValidParenthese {
+class ValidParentheses {
 
     public static void main(String[] args) {
         ValidParenthese v = new ValidParenthese();
@@ -30,29 +30,27 @@ class ValidParenthese {
      * Else don't match, return false
      */
     public boolean isValid(String s) {
-        if (s == null || s.length() == 0) return false;
-        Stack<Character> stk = new Stack<>();
-        for (Character c : s.toCharArray()) {
-            if (!isParenthese(c)) continue;
-            if ("({[".indexOf(c) != -1) { // push left paren
-                stk.push(c);
-            } else {
-                if (!stk.isEmpty() && isMatch(stk.peek(), c)) {
-                    stk.pop();
-                } else {
+        if(s == null || s.length() == 0) {
+            return true;
+        }
+
+        Stack<Character> stack = new Stack<Character>();
+        for(int i=0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if(c == '{' || c == '[' || c == '(') {
+                stack.push(c);
+            } else if(stack.size() > 0) {
+                char p = stack.pop();
+
+                if(((c == '}') && (p != '{')) || ((c == ']') && (p != '[')) || ((c == ')') && (p != '('))) {
                     return false;
                 }
+            } else {
+                return false;
             }
+
         }
-        return stk.isEmpty();
-    }
 
-    private boolean isParenthese(char c) {
-        String parens = "(){}[]";
-        return parens.indexOf(c) != -1;
-    }
-
-    private boolean isMatch(char c1, char c2) {
-        return (c1 == '(' && c2 == ')') || (c1 == '{' && c2 == '}') || (c1 == '[' && c2 == ']');
+        return stack.size() == 0;
     }
 }

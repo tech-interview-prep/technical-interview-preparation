@@ -3,10 +3,10 @@ package leetcode.algorithms.level.Easy;
 /**
  * Write a function that takes an unsigned integer and returns the number of
  * ’1' bits it has (also known as the Hamming weight).
- * 
+ *
  * For example, the 32-bit integer '11' has binary representation
  * 00000000000000000000000000001011, so the function should return 3.
- * 
+ *
  * Tags: Bit Manipulation
  */
 class NumberOfBits {
@@ -17,7 +17,7 @@ class NumberOfBits {
         System.out.println(nob.hammingWeightB(n));
         System.out.println(nob.hammingWeightC(n));
     }
-    
+
     /**
      * Pure bit manipulation
      * "n &= n - 1" is used to delete the right "1" of n
@@ -31,7 +31,7 @@ class NumberOfBits {
         }
         return res;
     }
-    
+
     /**
      * Most straight forward solution
      * Iterate 32 times to check each digit in n
@@ -42,7 +42,7 @@ class NumberOfBits {
             if ((n >>> i & 0x1) == 1) res++;
         return res;
     }
-    
+
     /**
      * Recursive
      * If n is 0 or 1, return n

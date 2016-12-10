@@ -2,7 +2,7 @@ package leetcode.algorithms.Other;
 
 /**
  * Quick sort an integer arrays
- * 
+ *
  * Tags: Sort
  */
 class QuickSort {
@@ -12,7 +12,7 @@ class QuickSort {
         q.sort(A, 0, A.length - 1);
         for (int n : A) System.out.print(n + ",");
     }
-    
+
     /**
      * Partition the array according to middle index
      * Sort left half, from left to index - 1
@@ -23,7 +23,7 @@ class QuickSort {
         if (left < index - 1) sort(A, left, index - 1);
         if (index < right) sort(A, index, right);
     }
-    
+
     /**
      * Choose pivot
      * Init 2 pointers from both ends to do partition

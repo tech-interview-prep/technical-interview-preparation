@@ -2,22 +2,88 @@
 
 This list is meant to be a both a quick guide and reference for further research into these topics.  It's basically a summary of that computer science course you never took or forgot about, so there's no way it can cover everything in depth.
 
+## StringBuffer / StringBuilder:
+- StringBuffer is synchronized, StringBuilder is not.
+- StringBuilder is faster than StringBuffer because it's not synchronized.
+```java
+    StringBuilder sb = new StringBuilder();
+
+    sb.append(String str);
+    sb.insert(int offset, String str);
+    sb. toString();
+```
+
 ## Data Structure Basics
 - Data structures can be neatly classified as either contiguous or linked, depending upon whether they are based on arrays or pointers
   - Contiguously-allocated structures are composed of single slabs of memory, and include arrays, matrices, heaps, and hash tables.
   - Linked data structures are composed of distinct chunks of memory bound together by pointers, and include lists, trees, and graph adjacency lists.
 
-
 ###**Array**
 ####Definition:
 - An array is a sequence of variables of the same type arranged contiguously in a block of memory.
 - Stores data elements based on an sequential, most commonly 0 based, index.
-- Based on [tuples](http://en.wikipedia.org/wiki/Tuple) from set theory.
-- They are one of the oldest, most commonly used data structures.
 
 ```java
     int[] numbers = new int[10];
     String[] names = new String[10];
+
+    Arrays:
+    public static boolean equals(int[] a, int[] a2) {
+        if (a==a2)
+            return true;
+        if (a==null || a2==null)
+            return false;
+
+        int length = a.length;
+        if (a2.length != length)
+            return false;
+
+        for (int i=0; i<length; i++)
+            if (a[i] != a2[i])
+                return false;
+
+        return true;
+    }
+
+    public static int hashCode(int a[]) {
+        if (a == null)
+            return 0;
+
+        int result = 1;
+        for (int element : a)
+            result = 31 * result + element;
+
+        return result;
+    }
+
+    public static String toString(int[] a) {
+        if (a == null)
+            return "null";
+        int iMax = a.length - 1;
+        if (iMax == -1)
+            return "[]";
+
+        StringBuilder b = new StringBuilder();
+        b.append('[');
+        for (int i = 0; ; i++) {
+            b.append(a[i]);
+            if (i == iMax)
+                return b.append(']').toString();
+            b.append(", ");
+        }
+    }
+
+    Arrays.sort(int[] a); // returns void
+    Arrays.sort(int[] a, int fromIndex, int toIndex); // returns void
+
+    Arrays.binarySearch(int[], int key); // returns int
+    Arrays.binarySearch(int[] a, int fromIndex, int toIndex, int key); // returns int
+
+    Arrays.fill(int[] a, int val); // returns void
+    Arrays.fill(int[] a, int fromIndex, int toIndex, int val) // returns void
+
+    Arrays.copyOf(int[] original, int newLength); // returns int[]
+    Arrays.copyOfRange(int[] original, int from, int to); // returns int[]
 ```
 
 ####What you need to know:
@@ -33,7 +99,6 @@ This list is meant to be a both a quick guide and reference for further research
 - Search:           Linear array: O(n),       Dynamic array: O(n)
 - Optimized Search: Linear array: O(log n),   Dynamic array: O(log n)
 - Insertion:        Linear array: n/a         Dynamic array: O(n)
-
 
 ###**Linked List**
 ####Definition:
@@ -199,7 +264,7 @@ This list is meant to be a both a quick guide and reference for further research
     int mid;
 
     while (low <= high) {
-      mid = (low + high) / 2;
+      mid = (low + high) >>> 1;
       if (a[mid] < x) {
         low = mid + 1;
       } else if (a[mid] > x) {

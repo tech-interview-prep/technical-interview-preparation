@@ -17,4 +17,17 @@ Read more at http://blogs.microsoft.com/jobs/story-library/3-reasons-why-i-love-
 Microsoft gives you the chance to share your ideas and chase your dreams with a team that is dedicated to your success. I’m consistently challenged and grow every day from my experiences. The people, the place, the passion, it makes every day enjoyable.
 Read more at http://blogs.microsoft.com/jobs/international/meet-microsoftie-keisha-ebbesen/#VD5zudBmqrKHiDKt.99
 
-
+  What types of projects (academic or otherwise) have inspired you in the past?
+  What are some self-directed missions that may have influenced your career direction?
+  Did you have a moment of epiphany when you KNEW what you wanted to be when you grew up?
+  How does Microsoft fit into your vision?
+  What are some things that excite and motivate you?
+  What are some examples of poorly/well-designed software? What makes the software this way and how would you change it?
+  What is your favorite Microsoft product? Why?
+  What is your least favorite Microsoft product? Why?
+  Tell me about a time when you made a decision and later found out that it was incorrect. What did you do to resolve the issue?
+  Suppose you are one week away from the product shipping date and discover a bug in your software. What do you do?
+Why do you want to work for Microsoft?
+  15) Why do you want to join Microsoft?
+How would you deal with changes being made a week or so before the ship date?
+  How would you deal with a bug that no one wants to fix? Both the SDE and his lead have said they won’t fix it.
