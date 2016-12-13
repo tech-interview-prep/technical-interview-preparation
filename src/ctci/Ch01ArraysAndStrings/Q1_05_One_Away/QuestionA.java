@@ -78,7 +78,7 @@ public class QuestionA {
         ListNode.print(newHead);
         
         System.out.println("long: " + 922337203685477580L);
-        System.out.println("int: " + (int)922337203685477580L);
+        System.out.println("int: " + (int)922337203685477580L);        
     }
 
 }

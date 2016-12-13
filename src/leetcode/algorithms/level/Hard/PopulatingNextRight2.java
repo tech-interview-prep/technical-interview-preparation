@@ -2,12 +2,12 @@ package leetcode.algorithms.level.Hard;
 
 /**
  * Follow up for problem "Populating Next Right Pointers in Each Node".
- * 
+ *
  * What if the given tree could be any binary tree? Would your previous
  * solution still work?
- * 
+ *
  * Note:
- * 
+ *
  * You may only use constant extra space.
  * For example,
  * Given the following binary tree,
@@ -22,22 +22,22 @@ package leetcode.algorithms.level.Hard;
  *       2 -> 3 -> NULL
  *      / \    \
  *     4-> 5 -> 7 -> NULL
- * 
+ *
  * Tags: Tree ,DFS
  */
 class PopulatingNextRight2 {
     public static void main(String[] args) {
-        
+
     }
-    
+
     /**
      * Store the head of next level
-     * Store previous node 
+     * Store previous node
      * Do level order traversal with a pointer
      */
     public void connect(TreeLinkNode root) {
         if(root == null) return;
-        
+
         TreeLinkNode cur = root;  // current node of current level
         TreeLinkNode prev; // previous node
         TreeLinkNode nextHead; // nextHead of the next level
@@ -62,7 +62,7 @@ class PopulatingNextRight2 {
             cur = nextHead;
         }
     }
-    
+
     public void connect2(TreeLinkNode root) {
         // 1
         TreeLinkNode tempChild = new TreeLinkNode(0);
@@ -102,7 +102,7 @@ class PopulatingNextRight2 {
             }
         }
     }
-    
+
     public class TreeLinkNode {
         int val;
         TreeLinkNode left, right, next;

@@ -34,7 +34,6 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - [Heaps/Priority queues](https://www.youtube.com/watch?v=t0Cq6tVNRBA)
 - [Trees](https://www.youtube.com/watch?v=oSWTXtMglKE) (Binary Tree, [Binary Search Tree](https://www.youtube.com/watch?v=i_Q0v_Ct5lY), kd Tree, 2-3 Tree, AVL)
 - [Tries](https://www.youtube.com/watch?v=zIjfhVPRZCg)
-- [Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) (MinHeap, MaxHeap)
 - Graph
 - Bloom Filter
 
@@ -66,7 +65,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
 - Memory limits
 - Distributed computing and Design
-- Networking (IPC, TCP/IP)
+- Networking (IPC, TCP/IP, OSI Model)
 - Concurrency
   - process
   - threads

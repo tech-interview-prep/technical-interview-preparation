@@ -1,3 +1,28 @@
+Data Structures
+Heap - Max Heaps and Min Heaps
+Conversions : Decimal ,Binary, Hex, Octal (All other possible combinations)
+Quick Sort + Applications
+Merge Sort + Applications
+
+Circle algorithm
+sorting a large list of numbers with limited memory
+
+Q: What is the difference between a thread and a process?
+A: A process is self-contained and gets its own virtual address space. A thread shares heap space with other threads in the same process, making communication easier and faster, and also conserving memory at the expense of isolation and stability.
+
+Q: How would you communicate between threads?
+A: One can communicate between threads using shared memory, or by using a mutex library such as pthreads that allows waiting and signaling on locks.
+
+Q: How would you communicate between processes?
+A: By opening a socket, using named pipes, or the filesystem.
+
+how to calculate the height of a binary tree,
+test whether it was full or not,
+find the depth of a given node.
+modify the node structure so that each node in a full binary tree would point to the node on its right.
+
+Trie, dictionary
+
 ##Easy:
   - ~~1. Two Sum~~
   - ~~8.   String to Integer (atoi)~~
