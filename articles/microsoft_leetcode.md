@@ -316,3 +316,11 @@ Microsoft Interview Questions: Program Manager (PM)
   How would you test a program that takes in two points and outputs the distance between the two points?
   Test the Windows scroll bar.
   Given a rectangular (cuboid for the puritans) cake with a rectangular piece removed (any size or orientation), how would you cut the remainder of the cake into two equal halves with one straight cut of a knife?
+
+
+-----------------------------------------------------------------------------------------------------------------------
+1 - Behavioral, Multiply Strings, optimize
+2 - Lunch, Coins problem, optimize, design twitter (Tweets show up design backend)
+3 - Javascript memory issues, String validation
+4 - Behavioral, Linkedlist random pointer, kth closest point (sorted, heap), deadlock, how to resolve deadlock
+5 - Behavioral

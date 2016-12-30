@@ -27,7 +27,7 @@ class FourSum {
     public static void main(String[] args) {
 
     }
-    
+
     /**
      * Four pointers, O(n^3) time
      * First pointer i starts from 1 to num.length - 4, 3 indices remain
@@ -49,7 +49,7 @@ class FourSum {
                 int r = num.length - 1;
                 while (l < r) {
                     if (l > j + 1 && num[l] == num[l - 1]) { // skip
-                        l++; 
+                        l++;
                         continue;
                     }
                     if (r < num.length - 1 && num[r] == num[r + 1]) { // skip

@@ -31,7 +31,7 @@ class PathSum2 {
     }
 
     /**
-     * 
+     *
      */
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
         List<List<Integer>> res = new ArrayList<List<Integer>>();
@@ -42,11 +42,11 @@ class PathSum2 {
 
     /**
      * DFS or backtracking
-     * Note that we can't pass path directly 
+     * Note that we can't pass path directly
      * Dereference before recursing
      */
     public void pathSum(TreeNode root, int sum, List<Integer> path, List<List<Integer>> res) {
-        if (root == null) return; // return if current node is null 
+        if (root == null) return; // return if current node is null
         sum -= root.val; // update sum
         if (root.left == null && root.right == null && sum == 0) {
             path.add(root.val);

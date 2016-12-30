@@ -13,8 +13,8 @@ public class ExclusiveCustomers {
 	interface CustomerPurchase {
 		String getCustomerId();
 		String getProductCategory();
-	}	
-	
+	}
+
 	static int countExclusiveCustomers(List<CustomerPurchase> customerPurchases) {
 //		Map<String, Long> customerProductCombinations = customerPurchases
 //				.stream()
@@ -22,7 +22,7 @@ public class ExclusiveCustomers {
 //						Collectors.groupingBy(
 //								p->(p.getCustomerId() + p.getProductCategory()), Collectors.counting()));
 //		System.out.println("customerProductCombinations:" + customerProductCombinations);
-		
+
 //		Map<String, Long> productCounters = customerPurchases
 //				.stream()
 //				.collect(
@@ -47,16 +47,16 @@ public class ExclusiveCustomers {
 //						Map.Entry.comparingByValue(Long::compareTo))
 //				.get();
 //		System.out.println(maxCustomer);
-		
+
 		Map<String, Set<String>> customerCategories = customerPurchases
 				.stream()
 				.collect(
 						Collectors.groupingBy(
-								CustomerPurchase::getCustomerId, 
+								CustomerPurchase::getCustomerId,
 								Collectors.mapping(CustomerPurchase::getProductCategory,
 										Collectors.toSet())));
 		System.out.println("customerCategories:" + customerCategories);
-		
+
 		List<String> exclusiveCustomers = customerCategories.entrySet()
 		.stream()
 		.filter(
@@ -64,7 +64,7 @@ public class ExclusiveCustomers {
 		.map(s -> s.getKey())
 		.collect(Collectors.toList());
 		System.out.println("exclusiveCustomers:" + exclusiveCustomers);
-		
+
 //		return exclusiveCustomers.size();
 		if (customerPurchases == null || customerPurchases.size() == 0) {
             return 0;
@@ -89,10 +89,10 @@ public class ExclusiveCustomers {
             }
         }
         System.out.println("exclusiveCustomers:" + exclus);
-        
+
         return exclus;
 	}
-	
+
 	public static void main(String[] args) throws IOException{
 //        Scanner in = new Scanner(System.in);
 //        final String fileName = System.getenv("OUTPUT_PATH");
@@ -101,12 +101,12 @@ public class ExclusiveCustomers {
 //        final List<CustomerPurchase> _customerPurchases = new ArrayList<>();
 //        while (in.hasNext()) {
 //            _customerPurchases.add(_createCustomerPurchase(in.nextLine()));
-//        }        
-//        
+//        }
+//
 //        res = countExclusiveCustomers(_customerPurchases);
 //        bw.write(String.valueOf(res));
 //        bw.newLine();
-//        
+//
 //        bw.close();
 //		List<String> input = Arrays.asList(
 //				"Bob Pets",
@@ -129,12 +129,12 @@ public class ExclusiveCustomers {
 		final List<CustomerPurchase> _customerPurchases = new ArrayList<>();
 		for (String s : input) {
 			_customerPurchases.add(_createCustomerPurchase(s));
-		}        
+		}
 
 		int res = countExclusiveCustomers(_customerPurchases);
 		System.out.println("Number of exclusive customers:" + res);
     }
- 
+
     private static CustomerPurchase _createCustomerPurchase(String line) {
         final String[] split = line.split(" ");
         if (split.length != 2) {
@@ -145,7 +145,7 @@ public class ExclusiveCustomers {
             public String getCustomerId() {
                 return split[0];
             }
-            
+
             @Override
             public String getProductCategory() {
                 return split[1];
