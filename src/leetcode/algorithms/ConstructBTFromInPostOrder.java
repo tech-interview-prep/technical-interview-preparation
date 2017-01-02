@@ -2,16 +2,16 @@ package leetcode.algorithms.level.Medium;
 
 /**
  * Given inorder and postorder traversal of a tree, construct the binary tree.
- * 
+ *
  * Note:
  * You may assume that duplicates do not exist in the tree.
- * 
+ *
  * Tags: Tree, Array, DFS
  */
 class ConstructBTFromInPostOrder {
 
     public static void main(String[] args) {
-        
+
     }
 
     /**
@@ -24,7 +24,7 @@ class ConstructBTFromInPostOrder {
         if (inorder == null || postorder == null) return null;
         return buildTree(inorder, postorder, 0, inorder.length - 1, 0, postorder.length - 1);
     }
-    
+
     public TreeNode buildTree(int[] inorder, int[] postorder, int is, int ie, int ps, int pe) {
         if (ps > pe) return null;
         TreeNode root = new TreeNode(postorder[pe]);
@@ -37,7 +37,7 @@ class ConstructBTFromInPostOrder {
         root.right = buildTree(inorder, postorder, pos + 1, ie, pe - ie + pos, pe - 1);
         return root;
     }
-    
+
     public class TreeNode {
         int val;
         TreeNode left;

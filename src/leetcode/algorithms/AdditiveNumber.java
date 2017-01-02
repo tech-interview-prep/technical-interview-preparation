@@ -38,7 +38,7 @@ public class AdditiveNumber {
             }
             BigInteger num1 = new BigInteger(num.substring(0, i));
             for (int j = 1; Math.max(i, j) <= n - i - j;
-                 j++) { // The remaining length should not be shorter than i or j
+                    j++) { // The remaining length should not be shorter than i or j
                 if (num.charAt(i) == '0' && j > 1) { // Cannot start with zero if length is larger than 2, skip
                     break;
                 }

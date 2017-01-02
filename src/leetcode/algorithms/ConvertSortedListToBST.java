@@ -6,22 +6,22 @@ import utils.TreeNode;
 /**
  * Given a singly linked list where elements are sorted in ascending order,
  * convert it to a height balanced BST.
- * 
+ *
  * Tags: DFS, Linked list
  */
 class ConvertSortedListToBST {
     public static void main(String[] args) {
-        
+
     }
-    
+
     private ListNode cur;
-    
+
     public TreeNode sortedListToBST(ListNode head) {
         if (head == null) return null;
         cur = head;
         return buildTree(lengthOfList(head));
     }
-    
+
     public int lengthOfList(ListNode node) {
         int length = 0;
         while (node != null) {
@@ -30,15 +30,15 @@ class ConvertSortedListToBST {
         }
         return length;
     }
-    
+
     /**
-     * Bottom up approach, O(n) (Instead of top-down, O(nlogn)) 
-     * 
+     * Bottom up approach, O(n) (Instead of top-down, O(nlogn))
+     *
      * STEP 1: Take left n/2 nodes and recursively construct the left sub tree.
-     * 
+     *
      * STEP 2: After left sub tree is constructed, we allocate memory for root
      * and link the left sub tree with root.
-     * 
+     *
      * STEP 3: Finally, we recursively construct the right sub tree and link it
      * with root.
      */
