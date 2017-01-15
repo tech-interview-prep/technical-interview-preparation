@@ -2,30 +2,6 @@ Projects
 
 ---------------------------------------------------------
 
-class, object (and the difference between the two)
-instantiation
-method (as opposed to, say, a C function)
-virtual method, pure virtual method
-class/static method
-static/class initializer
-constructor
-destructor/finalizer
-superclass or base class
-subclass or derived class
-inheritance
-encapsulation
-multiple inheritance (and give an example)
-delegation/forwarding
-composition/aggregation
-abstract class
-interface/protocol (and different from abstract class)
-method overriding
-method overloading (and difference from overriding)
-polymorphism (without resorting to examples)
-is-a versus has-a relationships (with examples)
-method signatures (what's included in one)
-method visibility (e.g. public/private/other)
-
 Design a deck of cards that can be used for different card game applications.
     Likely classes: a Deck, a Card, a Hand, a Board, and possibly Rank and Suit. Drill down on who's responsible for creating new Decks, where they get shuffled, how you deal cards, etc. Do you need a different instance for every card in a casino in Vegas?
 

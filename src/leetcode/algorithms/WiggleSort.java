@@ -33,7 +33,7 @@ class WiggleSort {
             swap(A, i, i + 1);
         }
     }
-    
+
     public void swap(int[] A, int i, int j) {
     }
 }

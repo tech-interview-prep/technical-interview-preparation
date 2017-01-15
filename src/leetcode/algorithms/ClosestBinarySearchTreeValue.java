@@ -1,4 +1,6 @@
-package leetcode.algorithms.level.Easy;
+package leetcode.algorithms;
+
+import utils.TreeNode;
 
 /**
  * Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
@@ -8,7 +10,7 @@ package leetcode.algorithms.level.Easy;
  *     You are guaranteed to have only one unique value in the BST that is closest to the target.
  */
 
-public class Solution {
+public class ClosestBinarySearchTreeValue {
     int goal;
     double min = Double.MAX_VALUE;
 
@@ -33,7 +35,7 @@ public class Solution {
         }
     }
 
-    public int closestValue(TreeNode root, double target) {
+    public int closestValue2(TreeNode root, double target) {
         double min=Double.MAX_VALUE;
         int result = root.val;
 

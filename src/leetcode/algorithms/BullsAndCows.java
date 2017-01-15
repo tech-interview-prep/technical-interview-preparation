@@ -1,4 +1,4 @@
-package leetcode.algorithms.level.Easy;
+package leetcode.algorithms;
 
 /**
  * You are playing the following Bulls and Cows game with your friend: You write down a number and ask your friend to

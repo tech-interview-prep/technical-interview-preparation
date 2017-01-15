@@ -19,6 +19,19 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 32 | 4,294,967,296 | | 4 GB
 40 | 1,099,511,627,776 | 1 trillion | 1 TB
 
+#####**Programming Languages:**
+- **Java Basics and topics from Resume:**
+  - [ ] Maven
+  - [ ] Jersey
+  - [ ] RestEasy
+  - [ ] JSON
+  - [ ] Dependency Injection
+- [ ] Ruby on Rails
+- **Javascript:**
+  - [ ] Closures
+  - [ ] Memory management
+  - [ ] D3 library
+
 #####**[Data Structures](https://www.coursera.org/learn/data-structures/home):**
 - [ ] [Arrays](https://www.youtube.com/watch?v=NLAzwv4D5iI)
 - [ ] Vectors
@@ -69,8 +82,22 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
   - [ ] Multiply, substract, square root, power, addition
 - [ ] [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
 - [ ] Memory limits
-- [ ] Distributed computing and Design
-- [ ] Networking (IPC, TCP/IP, OSI Model)
+- [ ] 32 bit vs 64 bit
+- **Distributed computing and Design:**
+  - [ ] Service oriented architectures
+  - [ ] Distributed caching
+  - [ ] Load balancing
+- **Networking:**
+  - [ ] How the internet works
+  - [ ] How internet browsers do and what they do
+  - [ ] IP4 vs IP6
+  - [ ] DNS lookups
+  - [ ] HTTP
+  - [ ] Sockets
+  - [ ] IPC
+  - [ ] TCP/IP
+  - [ ] UDO
+  OSI Model
 - **Concurrency:**
   - [ ] process
   - [ ] threads
@@ -97,21 +124,45 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - [ ] Basic Database concepts, Basic SQL
 - [ ] Testing
 - [ ] Basic linux commands
+- [ ] Cryptography and Security
+  - [ ] SSL
+  - [ ] Types of Attacks and how to avoid
+- **Hadoop Ecosystem:**
+  - [ ] Hadoop
+  - [ ] Map Reduce
+  - [ ] HBase
+  - [ ] ETL/Pipelines
+  - [ ] Apache Crunch
+  - [ ] Solr
+  - [ ] Avro
 
 #####**Programming Concepts:**
 - [ ] Memory management
-- [ ] Interface
-- [ ] Abstract class
+  - [ ] Stack vs Heap
 - [ ] try, catch, finally
 - [ ] throw, throws
 - [ ] this, super
 - [ ] final
 - [ ] break, continue, return
 - [ ] static
-- [ ] virtual functions
 - [ ] malloc, calloc, realloc
 - [ ] free, new, delete
 - **Object Oriented Programming:**
+  - [ ] Abstraction
+  - [ ] inheritance
+  - [ ] is-a versus, has-a relationships (with examples)
+  - [ ] composition/aggregation
+  - [ ] encapsulation
+  - [ ] polymorphism (without resorting to examples)
+  - [ ] superclass or base class
+  - [ ] subclass or derived class
+  - [ ] multiple inheritance (and give an example)
+  - [ ] method signatures (what's included in one)
+  - [ ] method visibility (e.g. public/private/other)
+  - [ ] method overriding
+  - [ ] method overloading (and difference from overriding)
+  - [ ] abstract class
+  - [ ] interface/protocol (and different from abstract class)
   - [ ] inner classes
   - [ ] class, object (and the difference between the two)
   - [ ] instantiation
@@ -121,21 +172,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
   - [ ] static/class initializer
   - [ ] constructor
   - [ ] destructor/finalizer
-  - [ ] superclass or base class
-  - [ ] subclass or derived class
-  - [ ] inheritance
-  - [ ] encapsulation
-  - [ ] multiple inheritance (and give an example)
   - [ ] delegation/forwarding
-  - [ ] composition/aggregation
-  - [ ] abstract class
-  - [ ] interface/protocol (and different from abstract class)
-  - [ ] method overriding
-  - [ ] method overloading (and difference from overriding)
-  - [ ] polymorphism (without resorting to examples)
-  - [ ] is-a versus has-a relationships (with examples)
-  - [ ] method signatures (what's included in one)
-  - [ ] method visibility (e.g. public/private/other)
 - [ ] variables
 - [ ] generics
 - [ ] collections
@@ -164,11 +201,4 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - [ ] Google Docs
 - [ ] Branch and Bound
 - [ ] Randomized
-- [ ] Hadoop, Map Reduce, HBase, Pipelines, Apache Crunch, Solr, Avro
-- [ ] Maven
-- [ ] Jersey, RestEasy, JSON
 - [ ] Chef
-- **Javascript:**
-  - [ ] Closures
-  - [ ] Memory management
-- [ ] D3 library

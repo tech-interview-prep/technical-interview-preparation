@@ -1,0 +1,5 @@
+- Tell me about a time when you disagreed with the work direction you were given, and how you resolved it
+- Tell me about yourself. Why do you want to work at Amazon?
+- Explain a technical challenge that you faced in your career
+- He asked me what was the hardest project I have done so far and what was the hardest problem, which I solved in that project.
+- While discussing the project he asked me, what will be the one change you will do in this project to improve it.
