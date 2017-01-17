@@ -41,6 +41,7 @@ class Codec {
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
         serialize(root, sb);
+
         return sb.toString();
     }
 
@@ -56,20 +57,30 @@ class Codec {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if (data == null || data.length() == 0) return null;
+        if (data == null || data.length() == 0) {
+            return null;
+        }
+
         StringTokenizer st = new StringTokenizer(data, " ");
+
         return deserialize(st);
     }
 
     private TreeNode deserialize(StringTokenizer st) {
-        if (!st.hasMoreTokens())
+        if (!st.hasMoreTokens()) {
             return null;
+        }
+
         String val = st.nextToken();
-        if (val.equals("#"))
+
+        if (val.equals("#")) {
             return null;
+        }
+
         TreeNode root = new TreeNode(Integer.parseInt(val));
         root.left = deserialize(st);
         root.right = deserialize(st);
+
         return root;
     }
 }
