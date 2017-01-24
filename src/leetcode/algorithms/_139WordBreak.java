@@ -7,70 +7,79 @@ import java.util.Set;
 import utils.Utils;
 
 /**
+ * Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence
+ * of one or more dictionary words.
+ *
+ * For example, given
+ *     s = "leetcode",
+ *     dict = ["leet", "code"].
+ *
+ * Return true because "leetcode" can be segmented as "leet code".
+ *
  * https://leetcode.com/problems/word-break/
+ * http://www.programcreek.com/2012/12/leetcode-solution-word-break/
  * @author bkoteshwarreddy
  */
 public class _139WordBreak {
-    /*
-    Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence
-    of one or more dictionary words.
+    public static void main(String[] args) {
+        Solution_WordBreak sol = new Solution_WordBreak();
 
-    For example, given
-    s = "leetcode",
-    dict = ["leet", "code"].
+        Utils.printTestln(sol.wordBreak("leetcode", new HashSet<String>(Arrays.asList("leet", "code"))), true);
+        Utils.printTestln(sol.wordBreak("letecoed", new HashSet<String>(Arrays.asList("leet", "code"))), false);
+        Utils.printTestln(sol.wordBreak("aaaaaaa", new HashSet<String>(Arrays.asList("aaaa", "aa"))), false);
 
-    Return true because "leetcode" can be segmented as "leet code".
-     */
-    public static boolean wordBreak(String s, Set<String> dict) {
-        return wordBreak(s, 0, dict);
+        System.out.println("------------------");
+
+        Utils.printTestln(sol.wordBreakDP("leetcode", new HashSet<String>(Arrays.asList("leet", "code"))), true);
+        Utils.printTestln(sol.wordBreakDP("letecoed", new HashSet<String>(Arrays.asList("leet", "code"))), false);
+        Utils.printTestln(sol.wordBreakDP("aaaaaaa", new HashSet<String>(Arrays.asList("aaaa", "aa"))), false);
     }
+}
 
-    private static boolean wordBreak(String s, int start, Set<String> dict) {
-        if (start == s.length()) {
-            return true;
-        }
+class Solution_WordBreak {
+    public boolean wordBreak(String s, Set<String> wordDict) {
+        int len = s.length();
+        boolean[] f = new boolean[len+1];
+        f[0] = true;
 
-        for (int i = start + 1; i <= s.length(); i++) {
-            if (dict.contains(s.substring(start, i)) && wordBreak(s, i, dict)) {
-                return true;
+        for (int i=1; i<len+1; i++) {
+            for (int j=0; j<i; j++) {
+                if (f[j] && wordDict.contains(s.substring(j,i))) {
+                    f[i] = true;
+                    continue;
+                }
             }
         }
-
-        return false;
+        return f[len];
     }
 
-    public static boolean wordBreakDP(String s, Set<String> dict) {
-        Set<Integer> indice = new HashSet<Integer>();
-        indice.add(s.length());
+    /*
+    Time Complexity: O(string length * dict size)
+     */
+    public boolean wordBreak(String s, Set<String> dict) {
+        boolean[] t = new boolean[s.length() + 1];
+        t[0] = true; //set first to be true, why?
+        //Because we need initial state
 
-        for (int i = s.length() - 1; i >= 0; i--) {
-            for (int j : indice) {
-                if (dict.contains(s.substring(i, j))) {
-                    indice.add(i);
-                    break;
+        for (int i = 0; i < s.length(); i++) {
+            //should continue from match position
+            if (!t[i])
+                continue;
+
+            for (String a : dict) {
+                int len = a.length();
+                int end = i + len;
+                if (end > s.length())
+                    continue;
+
+                if (t[end]) continue;
+
+                if (s.substring(i, end).equals(a)) {
+                    t[end] = true;
                 }
             }
         }
 
-        return indice.contains(0);
+        return t[s.length()];
     }
-
-    public static void test() {
-        Utils.printTestln(wordBreak("leetcode", new HashSet<String>(Arrays.asList("leet", "code"))), true);
-        Utils.printTestln(wordBreak("letecoed", new HashSet<String>(Arrays.asList("leet", "code"))), false);
-        Utils.printTestln(wordBreak("aaaaaaa", new HashSet<String>(Arrays.asList("aaaa", "aa"))), false);
-
-        System.out.println("------------------");
-
-        Utils.printTestln(wordBreakDP("leetcode", new HashSet<String>(Arrays.asList("leet", "code"))), true);
-        Utils.printTestln(wordBreakDP("letecoed", new HashSet<String>(Arrays.asList("leet", "code"))), false);
-        Utils.printTestln(wordBreakDP("aaaaaaa", new HashSet<String>(Arrays.asList("aaaa", "aa"))), false);
-        Utils.printTestln(wordBreakDP("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
-                                      new HashSet<String>(Arrays.asList("a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"))), false);
-    }
-
-    public static void main(String[] args) {
-        test();
-    }
-
 }

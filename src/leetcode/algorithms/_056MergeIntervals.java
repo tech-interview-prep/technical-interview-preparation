@@ -8,58 +8,71 @@ import java.util.List;
 import utils.Interval;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a collection of intervals, merge all overlapping intervals.
+ *
+ * For example,
+ * Given [1,3],[2,6],[8,10],[15,18],
+ * return [1,6],[8,10],[15,18].
+ *
+ * https://leetcode.com/problems/merge-intervals/
+ * http://n00tc0d3r.blogspot.com/2013/04/merge-intervals.html
  */
 public class _056MergeIntervals {
-    /*
-    Given a collection of intervals, merge all overlapping intervals.
+    public static void main(String[] args) {
+        Solution_MergeIntervals sol = new Solution_MergeIntervals();
 
-    For example,
-    Given [1,3],[2,6],[8,10],[15,18],
-    return [1,6],[8,10],[15,18].
-     */
-    public static ArrayList<Interval> merge(List<Interval> intervals) {
-        ArrayList<Interval> ret = new ArrayList<Interval>();
-        Collections.sort(intervals, new Comparator<Interval>() {
-            public int compare(Interval o1, Interval o2) {
-                return o1.start - o2.start;
-            }
-        });
-
-        for (int i = 0, s = intervals.size(); i < s; ) {
-            Interval interval = new Interval(intervals.get(i).start, intervals.get(i).end);
-            for (i++; i < s && intervals.get(i).start <= interval.end; i++) {
-                interval.end = Math.max(intervals.get(i).end, interval.end);
-            }
-            ret.add(interval);
-        }
-
-        return ret;
-    }
-
-
-    private static void test() {
         //[1, 3], [2, 6], [5, 9], [8, 10], [15, 18] --> [1, 10], [15, 18]
-        for (Interval interval : merge(Interval.getSampleIntervals())) {
+        for (Interval interval : sol.merge(Interval.getSampleIntervals())) {
             System.out.print(interval + "\t");
         }
         System.out.println();
 
         //[1, 4], [4, 5] --> [1, 5]
-        for (Interval interval : merge(Interval.getSampleIntervals2())) {
+        for (Interval interval : sol.merge(Interval.getSampleIntervals2())) {
             System.out.print(interval + "\t");
         }
         System.out.println();
 
         //[1, 4], [2, 3] --> [1, 4]
-        for (Interval interval : merge(Interval.getSampleIntervals3())) {
+        for (Interval interval : sol.merge(Interval.getSampleIntervals3())) {
             System.out.print(interval + "\t");
         }
         System.out.println();
     }
+}
 
-    public static void main(String[] args) {
-        test();
+class Solution_MergeIntervals {
+    public List<Interval> merge(List<Interval> list) {
+
+        if (list == null || list.size() <= 1)
+            return list;
+
+        // sort intervals by using self-defined Comparator
+        Collections.sort(list, new IntervalComparator());
+
+        ArrayList<Interval> result = new ArrayList<Interval>();
+
+        Interval prev = list.get(0);
+        for (int i = 1; i < list.size(); i++) {
+            Interval curr = list.get(i);
+
+            if (prev.end >= curr.start) {
+                // merged case
+                prev = new Interval(prev.start, Math.max(prev.end, curr.end));
+            } else {
+                result.add(prev);
+                prev = curr;
+            }
+        }
+
+        result.add(prev);
+
+        return result;
+    }
+
+    class IntervalComparator implements Comparator<Interval> {
+        public int compare(Interval i1, Interval i2) {
+            return i1.start - i2.start;
+        }
     }
 }

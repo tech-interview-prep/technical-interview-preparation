@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
 public class _130SurroundedRegions {

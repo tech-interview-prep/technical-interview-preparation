@@ -5,16 +5,28 @@ import java.util.Stack;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input
+ * string is valid.
+ *
+ * The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are
+ * not.
+ *
+ * https://leetcode.com/problems/valid-parentheses/
+ * http://n00tc0d3r.blogspot.com/2013/04/valid-parentheses.html
  */
 public class _020ValidParentheses {
-    /*
-    Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+    public static void main(String[] args) {
+        Solution_ValidParentheses sol = new Solution_ValidParentheses();
 
-    The brackets must close in the correct order, "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
-    */
-    public static boolean isValid(String s) {
+        Utils.printTestln(sol.isValid("()[]{}"), true);
+        Utils.printTestln(sol.isValid("([)]"), false);
+        Utils.printTestln(sol.isValid("("), false);
+        Utils.printTestln(sol.isValid("]"), false);
+    }
+}
+
+class Solution_ValidParentheses {
+    public boolean isValid(String s) {
         Stack<Character> stack = new Stack<Character>();
 
         for (int i = 0, l = s.length(); i < l; i++) {
@@ -36,16 +48,5 @@ public class _020ValidParentheses {
         case '{': return right == '}';
         default: return false;
         }
-    }
-
-    private static void test() {
-        Utils.printTestln(isValid("()[]{}"), true);
-        Utils.printTestln(isValid("([)]"), false);
-        Utils.printTestln(isValid("("), false);
-        Utils.printTestln(isValid("]"), false);
-    }
-
-    public static void main(String[] args) {
-        test();
     }
 }

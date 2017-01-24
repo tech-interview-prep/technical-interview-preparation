@@ -5,14 +5,33 @@ import java.util.Stack;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
+ *
+ * For example, given the following matrix:
+ *
+ * 1 0 1 0 0
+ * 1 0 1 1 1
+ * 1 1 1 1 1
+ * 1 0 0 1 0
+ *
+ * Return 6.
+ *
+ * https://leetcode.com/problems/maximal-rectangle/
+ * http://www.careercup.com/question?id=6299074475065344
+ * http://n00tc0d3r.blogspot.com/2013/04/maximum-rectangle.html
  */
 public class _085MaximalRectangle {
-    /*
-    Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle containing all ones and return its area.
-     */
-    public static int maximalRectangle(char[][] matrix) {
+    public static void main(String[] args) {
+        Solution_MaximalRectangle sol = new Solution_MaximalRectangle();
+        Utils.printTestln(sol.maximalRectangle(new char[][] {"010".toCharArray(),
+                                               "011".toCharArray(),
+                                               "011".toCharArray()
+                                                            }), 4);
+    }
+}
+
+class Solution_MaximalRectangle {
+    public int maximalRectangle(char[][] matrix) {
         if (matrix.length == 0) {
             return 0;
         }
@@ -34,7 +53,7 @@ public class _085MaximalRectangle {
         return maxArea;
     }
 
-    private static int largestRectangleInHistogram(int[] histogram) {
+    private int largestRectangleInHistogram(int[] histogram) {
         Stack<Integer> stack = new Stack<Integer>();
         int index, preIdx, maxArea = 0;
         for (int i = 0; i < histogram.length; i++) {
@@ -55,15 +74,72 @@ public class _085MaximalRectangle {
         return maxArea;
     }
 
-    private static void test() {
-        Utils.printTestln(maximalRectangle(new char[][] {"010".toCharArray(),
-                                           "011".toCharArray(),
-                                           "011".toCharArray()
-                                                        }), 4);
+    public int maximalRectangle2(char[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return 0;
+        }
 
+        int[] row = new int[matrix[0].length];
+        int maxRect = 0;
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < row.length; j++) {
+                row[j] = (matrix[i][j] != '0') ? row[j] + 1 : 0;
+            }
+
+            maxRect = Math.max(maxRect, maxRectangle(row));
+        }
+
+        return maxRect;
     }
 
-    public static void main(String[] args) {
-        test();
+    private int maxRectangle(int[] input) {
+        Stack<Integer> ss = new Stack<Integer>();
+        int maxArea = 0, i = 0;
+        while (i < input.length) {
+            if (ss.isEmpty() || input[i] >= input[ss.peek()]) {
+                ss.push(i++);
+            } else {
+                maxArea = Math.max(maxArea,
+                                   input[ss.pop()] * (ss.isEmpty() ? i : (i - ss.peek() - 1)));
+            }
+        }
+        while (!ss.isEmpty()) {
+            maxArea = Math.max(maxArea,
+                               input[ss.pop()] * (ss.isEmpty() ? i : (i - ss.peek() - 1)));
+        }
+        return maxArea;
+    }
+
+    /*
+        Largest Rectangle in Histogram Given n non-negative integers representing the histogram's bar height
+        where the width of each bar is 1, find the area of largest rectangle in the histogram.
+
+        For example, Given height = [2,1,5,6,2,3], return 10.
+
+         https://gist.github.com/bittib/5653293
+              http://www.geeksforgeeks.org/largest-rectangle-under-histogram/
+     */
+
+    public int largestRectangleArea(int[] height) {
+        int maxArea = 0;
+        Stack<Bar> stack = new Stack<Bar>();
+        stack.push(new Bar(-1, 0));
+        for (int i = 0; i <= height.length; i++) {
+            int h = i < height.length ? height[i] : 0;
+            int startIdx = i;
+            while (!stack.isEmpty() && stack.peek().height >= h) {
+                Bar bar = stack.pop();
+                startIdx = bar.startIdx;
+                maxArea = Math.max(maxArea, (i - startIdx) * bar.height);
+            }
+            stack.push(new Bar(h, startIdx));
+        }
+        return maxArea;
+    }
+
+    class Bar {
+        int height, startIdx;
+        Bar(int h, int i) { this.height = h; this.startIdx = i; }
     }
 }

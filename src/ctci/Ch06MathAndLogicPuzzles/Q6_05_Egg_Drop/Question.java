@@ -28,7 +28,7 @@ public class Question {
             egg2 += 1;
         }
 
-        /* If it didn’t break, return -1. */
+        /* If it didn't break, return -1. */
         return egg2 > floors ? -1 : egg2;
     }
 

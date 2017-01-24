@@ -16,7 +16,6 @@ You may assume all elements in the array are non-negative integers and fit in th
  https://oj.leetcode.com/discuss/18499/bucket-sort-java-solution-with-explanation-o-time-and-space
 */
 /**
- * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
 public class _164MaximumGap {

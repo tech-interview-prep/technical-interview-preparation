@@ -21,13 +21,13 @@ import utils.ListNode;
 public class Addnum {
     public ListNode addTwoNumbers(ListNode a, ListNode b) {
 
-        if(a == null && b ==null){
+        if (a == null && b == null) {
             return null;
         }
 
-        if(a == null){
+        if (a == null) {
             return b;
-        }else if(b == null){
+        } else if (b == null) {
             return a;
         }
 
@@ -38,9 +38,9 @@ public class Addnum {
 
         ArrayList<Integer> vals = new ArrayList<Integer>();
 
-        while(aCopy != null && bCopy != null){
+        while (aCopy != null && bCopy != null) {
             vals.add((aCopy.data + bCopy.data + carry) % 10);
-            carry = (aCopy.data + bCopy.data + carry)/10;
+            carry = (aCopy.data + bCopy.data + carry) / 10;
             aCopy = aCopy.next;
             bCopy = bCopy.next;
 
@@ -48,27 +48,27 @@ public class Addnum {
 
         //Handle cases when the length of 1 linked list is longer than the other
 
-        while(aCopy !=null){
+        while (aCopy != null) {
             vals.add((aCopy.data + carry) % 10);
-            carry = (aCopy.data + carry)/10;
+            carry = (aCopy.data + carry) / 10;
             aCopy = aCopy.next;
         }
 
-        while(bCopy !=null){
+        while (bCopy != null) {
             vals.add((bCopy.data + carry) % 10);
-            carry = (bCopy.data + carry)/10;
+            carry = (bCopy.data + carry) / 10;
             bCopy = bCopy.next;
         }
 
         //Check if carry from last addition is a non-zero number
-        if(carry != 0){
+        if (carry != 0) {
             vals.add(carry);
         }
 
         //Remove trailing zeros
         int sizeCount = vals.size();
-        for(int j=vals.size()-1;j>=0;j--){
-            if(vals.get(j) != 0){
+        for (int j = vals.size() - 1; j >= 0; j--) {
+            if (vals.get(j) != 0) {
                 sizeCount = j;
                 break;
             }
@@ -81,7 +81,7 @@ public class Addnum {
 
         result = resultHead;
 
-        for(int i=1;i<=sizeCount;i++){
+        for (int i = 1; i <= sizeCount; i++) {
             ListNode temp = new ListNode(vals.get(i));
             result.next = temp;
             result = result.next;
@@ -92,7 +92,7 @@ public class Addnum {
 
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         ListNode l1 = new ListNode(9);
         ListNode l2 = new ListNode(9);
         ListNode l3 = new ListNode(9);
@@ -103,9 +103,8 @@ public class Addnum {
 
         Addnum a = new Addnum();
 
-        ListNode result = a.addTwoNumbers(l4,l1);
+        ListNode result = a.addTwoNumbers(l4, l1);
 
         int m = 4;
-
     }
 }

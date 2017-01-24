@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Question {
     /* Build the graph, adding the edge (a, b) if b is dependent on a.
-     * Assumes a pair is listed in “build order”. The pair (a, b) in
+     * Assumes a pair is listed in "build order". The pair (a, b) in
      * dependencies indicates that b depends on a and a must be built
      * before b. */
     public static Graph buildGraph(String[] projects, String[][] dependencies) {
@@ -37,7 +37,7 @@ public class Question {
     public static Project[] orderProjects(ArrayList<Project> projects) {
         Project[] order = new Project[projects.size()];
 
-        /* Add “roots” to the build order first.*/
+        /* Add "roots" to the build order first.*/
         int endOfList = addNonDependent(order, projects, 0);
 
         int toBeProcessed = 0;

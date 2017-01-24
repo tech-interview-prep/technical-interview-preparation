@@ -3,14 +3,22 @@ package leetcode.algorithms;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Implement pow(x, n).
+ *
+ * https://leetcode.com/problems/powx-n/
+ * http://n00tc0d3r.blogspot.com/2013/05/powx-n.html
  */
 public class _050Pow {
-    /*
-    Implement pow(x, n).
-    */
-    public static double pow(double x, int n) {
+    public static void main(String[] args) {
+        Solution_Pow sol = new Solution_Pow();
+        Utils.printTestln(sol.pow(2, 10), 1024.0);
+        Utils.printTestln(sol.pow(3, 5), 243.0);
+        Utils.printTestln(sol.pow(3, -5), 1 / 243.0);
+    }
+}
+
+class Solution_Pow {
+    public double pow(double x, int n) {
         double ret = 1;
 
         long nl = n < 0 ? -(long)n : n;
@@ -22,15 +30,5 @@ public class _050Pow {
             x *= x;
         }
         return n < 0 ? 1 / ret : ret;
-    }
-
-    private static void test() {
-        Utils.printTestln(pow(2, 10), 1024.0);
-        Utils.printTestln(pow(3, 5), 243.0);
-        Utils.printTestln(pow(3, -5), 1 / 243.0);
-    }
-
-    public static void main(String[] args) {
-        test();
     }
 }

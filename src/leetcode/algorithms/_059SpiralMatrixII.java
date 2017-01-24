@@ -1,25 +1,28 @@
 package leetcode.algorithms;
 
-import utils.Utils;
-
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
+ *
+ * For example,
+ * Given n = 3,
+ *
+ * You should return the following matrix:
+ *     [
+ *         [ 1, 2, 3 ],
+ *         [ 8, 9, 4 ],
+ *         [ 7, 6, 5 ]
+ *     ]
+ *
+ 
+ * http://n00tc0d3r.blogspot.com/2013/05/rotate-image.html
  */
 public class _059SpiralMatrixII {
-    /*
-    Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
+    public static void main(String[] args) {
 
-    For example,
-    Given n = 3,
+    }
+}
 
-    You should return the following matrix:
-    [
-     [ 1, 2, 3 ],
-     [ 8, 9, 4 ],
-     [ 7, 6, 5 ]
-    ]
-    */
+class Solution_SpiralMatrixII {
     public static int[][] generateMatrix(int n) {
         int[][] matrix = new int[n][n];
 
@@ -69,15 +72,5 @@ public class _059SpiralMatrixII {
 //        }
 
         generateMatrix(matrix, n, level + 1, start + (n - (level << 1) + 1) * 3);
-    }
-
-    private static void test() {
-        for (int[] row : generateMatrix(5)) {
-            Utils.printArrayln(row);
-        }
-    }
-
-    public static void main(String[] args) {
-        test();
     }
 }

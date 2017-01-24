@@ -4,7 +4,7 @@ As Eric Schmidt says, “Repetition doesn’t spoil the prayer.”
 
 Hours per day: 4-5 hours per day (7pm - 12am)
 
-### :fire: Stage 1: Basic Knowledge Review(~4 days) :fire:
+### :fire: Stage 1: Basic Knowledge Review(~7 days) :fire:
 - http://blog.gainlo.co/index.php/category/mock-interview-thoughts/
 - http://blog.gainlo.co/index.php/2015/12/22/how-to-crack-the-coding-interview-with-practicing-only-30-questions/
 - [ ] Review concepts of each data structure
@@ -30,6 +30,7 @@ Hours per day: 4-5 hours per day (7pm - 12am)
 - [ ] Pros and cons of each algo and when to use them.
 - [ ] Be extremely proficient in time/space complexity analysis.
     - [ ] Know Big O for each data structure
+- [ ] Programming Interviews Exposed
 - [ ] Cracking the coding interview
 - [ ] Recommended Resources to Read:
     - DonBeave Interview Repo,
@@ -39,16 +40,18 @@ Hours per day: 4-5 hours per day (7pm - 12am)
     - https://en.wikipedia.org/wiki/Book:Data_structures,
     - http://opendatastructures.org/ods-java/,
 
-### :fire: Stage 2: General Interview Questions (~7 days) :fire:
+### :fire: Stage 2: General Interview Questions (~18 days) :fire:
 - Always better to write solution on paper. Second, if you can't handle the question, STOP & RESEARCH IT!
+- [ ] Go through Programming Interviews Exposed Questions
 - [ ] Go through Cracking the Coding Interview Questions
+- [ ] Go through Elements of Programming Interviews in Java Questions
 - [ ] https://github.com/mission-peace/interview/wiki
 - [ ] http://courses.csail.mit.edu/iap/interview/materials.php
 - [ ] http://javarevisited.blogspot.sg/2015/01/top-20-string-coding-interview-question-programming-interview.html
 - [ ] http://javarevisited.blogspot.sg/2015/06/top-20-array-interview-questions-and-answers.html
 - [ ] http://javarevisited.blogspot.sg/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html
 
-### :fire: Stage 3: Company Specific Interviews (~9 days) :fire:
+### :fire: Stage 3: Company Specific Interviews (~5 days) :fire:
 - [ ] Leetcode
 - [ ] http://blog.gainlo.co/index.php/category/facebook-interview-questions/
 - [ ] http://codercareer.blogspot.com/p/facebook-interview-questions.html

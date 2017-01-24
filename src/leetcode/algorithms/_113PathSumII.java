@@ -1,74 +1,80 @@
 package leetcode.algorithms;
 
-import java.util.ArrayList;
-
 import utils.TreeNode;
-import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * You are given a binary tree in which each node contains a value. Design an algorithm to print all paths which sum
+ * up to that value. Note that it can be any path in the tree it does not have to start at the root.
+ *
+ * Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+ *
+ * For example:
+ * Given the below binary tree and sum = 22,
+ *             5
+ *            / \
+ *           4   8
+ *          /   / \
+ *         11  13  4
+ *        /  \    / \
+ *       7    2  5   1
+ *
+ * return
+ *     [
+ *         [5,4,11,2],
+ *         [5,8,4,5]
+ *     ]
+ *
+ * https://leetcode.com/problems/path-sum-ii/
+ * https://gist.github.com/zac-xin/2650564
+ * http://n00tc0d3r.blogspot.com/2013/01/tree-path-sum.html
  */
 public class _113PathSumII {
-    /*
-    Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+}
 
-    For example:
-    Given the below binary tree and sum = 22,
-                  5
-                 / \
-                4   8
-               /   / \
-              11  13  4
-             /  \    / \
-            7    2  5   1
-    return
-    [
-       [5,4,11,2],
-       [5,8,4,5]
-    ]
-     */
-    public static ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
-        pathSum(root, new ArrayList<Integer>(), ret, 0, sum);
-        return ret;
-    }
-
-    public static void pathSum(TreeNode node, ArrayList<Integer> path, ArrayList<ArrayList<Integer>> ret, int currentSum, int sum) {
+class Solution_PathSumII {
+    public void findSum(TreeNode node, int sum, int[] path, int level) {
         if (node == null) {
             return;
         }
 
-        path.add(node.data);
-        currentSum += node.data;
+        /* Insert current node into path */
+        path[level] = node.data;
 
-        if (node.left == null && node.right == null && currentSum == sum) {
-            ret.add(new ArrayList<Integer>(path));
+        int t = 0;
+        for (int i = level; i >= 0; i--) {
+            t += path[i];
+            if (t == sum) {
+                print(path, i, level);
+            }
         }
 
-        pathSum(node.left, path, ret, currentSum, sum);
+        findSum(node.left, sum, path, level + 1);
+        findSum(node.right, sum, path, level + 1);
 
-        pathSum(node.right, path, ret, currentSum, sum);
-
-        path.remove(path.size() - 1);
+        /* Remove current node from path. Not strictly necessary, since we would
+         * ignore this value, but it's good practice.
+         */
+        path[level] = Integer.MIN_VALUE;
     }
 
-
-
-    /*
-         1
-        / \
-       2   5
-      / \   \
-     3   4   6
-     */
-    private static void test() {
-        Utils.printListListln(pathSum(TreeNode.getSampleTree(), 6));
-        Utils.printListListln(pathSum(TreeNode.getSampleTree(), 7));
-        Utils.printListListln(pathSum(TreeNode.getSampleTree(), 12));
+    public int depth(TreeNode node) {
+        if (node == null) {
+            return 0;
+        } else {
+            return 1 + Math.max(depth(node.left), depth(node.right));
+        }
     }
 
-    public static void main(String[] args) {
-        test();
+    public void findSum(TreeNode node, int sum) {
+        int depth = depth(node);
+        int[] path = new int[depth];
+        findSum(node, sum, path, 0);
+    }
+
+    private void print(int[] path, int start, int end) {
+        for (int i = start; i <= end; i++) {
+            System.out.print(path[i] + " ");
+        }
+        System.out.println();
     }
 }

@@ -1,47 +1,58 @@
 package leetcode.algorithms;
 
 import utils.ListNode;
-import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a circular linked list, implement an algorithm which returns node at the beginning of the loop
+ * DEFINITION
+ *     Circular linked list: A (corrupt) linked list in which a node's next pointer points to an earlier node, so as
+ *     to make a loop in the linked list
+ * EXAMPLE
+ *     input: A -> B -> C -> D -> E -> C [the same C as earlier]
+ *     output: C
+ *
+ * Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+ *
+ * Note: Do not modify the linked list.
+ *
+ * Follow up:
+ *     Can you solve it without using extra space?
+ *
+ * https://leetcode.com/problems/linked-list-cycle-ii/
+ * https://gist.github.com/zac-xin/2557211
  */
 public class _142LinkedListCycleII {
-    /*
-    Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+}
 
-    Follow up:
-    Can you solve it without using extra space?
-    */
-    public static ListNode detectCycle(ListNode head) {
-        if (head == null || head.next == null) {
+class Solution_LinkedListCycleII {
+    public static ListNode FindBeginning(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+
+        // Find meeting point
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                break;
+            }
+        }
+
+        // Error check - there is no meeting point, and therefore no loop
+        if (fast == null || fast.next == null) {
             return null;
         }
 
-        ListNode node = head.next, fastNode = head.next.next;
-        while (fastNode != null && fastNode.next != null) {
-            if (node == fastNode) {
-                node = head;
-                while (node != fastNode) {
-                    node = node.next;
-                    fastNode = fastNode.next;
-                }
-                return fastNode;
-            }
-            fastNode = fastNode.next.next;
-            node = node.next;
+        /* Move slow to Head. Keep fast at Meeting Point. Each are k steps
+        /* from the Loop Start. If they move at the same pace, they must
+         * meet at Loop Start. */
+        slow = head;
+        while (slow != fast) {
+            slow = slow.next;
+            fast = fast.next;
         }
 
-        return null;
-    }
-
-    private static void test() {
-        Utils.printTestln(detectCycle(ListNode.getSampleList(1)), null);
-        Utils.printTestln(detectCycle(ListNode.getSampleList(2)), null);
-    }
-
-    public static void main(String[] args) {
-        test();
+        // Both now point to the start of the loop.
+        return fast;
     }
 }

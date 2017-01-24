@@ -1,9 +1,9 @@
 Five Steps to a Technical Question
 A technical interview question can be solved utilizing a five step approach:
-1. Askyour interviewer questions to resolveambiguity.
+1. Ask your interviewer questions to resolve ambiguity.
 2. Design an Algorithm.
 3. Write pseudocode first, but make sure to tell your interviewer that you'll eventually write "real"code.
-4. Writeyourcodeatamoderatepace.
+4. Write your code at a moderate pace.
 5. Test your code and carefully fix any mistakes.
 We will go through each of these steps in more detail below.
 Step 1: AskQuestions

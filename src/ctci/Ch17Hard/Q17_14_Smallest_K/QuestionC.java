@@ -51,7 +51,7 @@ public class QuestionC {
                 swap(array, left, right);
                 right--;
             } else if (array[right] <= pivot) {
-                /* Right is smaller than the pivot. Swap it to the 
+                /* Right is smaller than the pivot. Swap it to the
                  * left side, where we know it should be. */
                 swap(array, left, right);
                 left++;

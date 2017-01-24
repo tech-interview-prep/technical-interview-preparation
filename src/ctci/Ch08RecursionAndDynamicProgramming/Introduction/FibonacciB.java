@@ -9,9 +9,11 @@ public class FibonacciB {
         if (i == 0) return 0;
         else if (i == 1) return 1;
 
-        if (memo[i] == 0) {
-            memo[i] = fibonacci(i - 1, memo) + fibonacci(i - 2, memo);
+        if (memo[i] > 0) {
+        	return memo[i];
         }
+        memo[i] = fibonacci(i - 1, memo) + fibonacci(i - 2, memo);
+        
         return memo[i];
     }
 

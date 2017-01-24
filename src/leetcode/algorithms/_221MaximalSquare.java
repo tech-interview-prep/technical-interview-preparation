@@ -1,31 +1,47 @@
 package leetcode.algorithms;
 
-/**
- * https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
- * @author bkoteshwarreddy
- */
+import java.util.Stack;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a 2D binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+ *
+ * For example, given the following matrix:
+ *     1 0 1 0 0
+ *     1 0 1 1 1
+ *     1 1 1 1 1
+ *     1 0 0 1 0
+ * Return 4.
+ *
+ * https://leetcode.com/problems/maximal-square/
  */
 public class _221MaximalSquare {
-    // [-3,3,4,90], 0
-    public int[] twoSum(int[] numbers, int target) {
-        int l = 0, r = numbers.length - 1, sum;
-        int[] idx = new int[2];
-        while (l < r) {
-            sum = numbers[l] + numbers[r];
-            if (sum == target) {
-                idx[0] = l + 1;
-                idx[1] = r + 1;
-                break;
-            } else if (sum < target) {
-                l++;
-            } else {
-                r--;
+}
+
+class Solution_MaximalSquare {
+    public int maximalSquare(char[][] matrix) {
+        if (matrix.length == 0 || matrix[0].length == 0)
+            return 0;
+        int xLen = matrix.length;
+        int yLen = matrix[0].length;
+        int[] height = new int[yLen];
+        int result = 0;
+        for (int i = 0; i < xLen; i++) {
+            for (int j = 0; j < yLen; j++) {
+                height[j] = matrix[i][j] == '0' ? 0 : height[j] + 1;
+            }
+            int k = 0;
+            Stack<Integer> stack = new Stack<Integer>();
+            while (k < yLen || !stack.isEmpty()) {
+                if (k < yLen && (stack.isEmpty() ||
+                                 height[k] >= height[stack.peek()])) {
+                    stack.push(k++);
+                } else {
+                    int a = Math.min(height[stack.pop()],
+                                     stack.isEmpty() ? k : k - stack.peek() - 1);
+                    result = Math.max(result, a * a);
+                }
             }
         }
-        return idx;
+        return result;
     }
 }

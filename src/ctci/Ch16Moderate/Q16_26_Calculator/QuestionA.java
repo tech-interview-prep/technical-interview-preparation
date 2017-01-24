@@ -40,11 +40,11 @@ public class QuestionA {
             Term current = terms.get(i);
             Term next = i + 1 < terms.size() ? terms.get(i + 1) : null;
 
-            /* Apply the current term to “processing”. */
+            /* Apply the current term to "processing". */
             processing = collapseTerm(processing, current);
 
             /* If next term is + or -, then this cluster is done
-             * and we should apply “processing” to “result”. */
+             * and we should apply "processing" to "result". */
             if (next == null || next.getOperator() == Operator.ADD || next.getOperator() == Operator.SUBTRACT) {
                 result = applyOp(result, processing.getOperator(), processing.getNumber());
                 processing = null;

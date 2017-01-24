@@ -20,6 +20,8 @@ public class QuestionA {
             bitfield [n / 8] |= 1 << (n % 8);
         }
 
+        in.close();
+
         for (int i = 0; i < bitfield.length; i++) {
             for (int j = 0; j < 8; j++) {
                 /* Retrieves the individual bits of each byte. When 0 bit

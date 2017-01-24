@@ -6,29 +6,37 @@ import java.util.Arrays;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a collection of integers that might contain duplicates, S, return all possible subsets.
+ *
+ * Note:
+ * Elements in a subset must be in non-descending order.
+ * The solution set must not contain duplicate subsets.
+ *
+ * For example,
+ * If S = [1,2,2], a solution is:
+ * [
+ *   [2],
+ *   [1],
+ *   [1,2,2],
+ *   [2,2],
+ *   [1,2],
+ *   []
+ * ]
+ *
+ * https://leetcode.com/problems/subsets-ii/
+ * http://n00tc0d3r.blogspot.com/2013/06/subsets.html
  */
 public class _090SubsetII {
-    /*
-    Given a collection of integers that might contain duplicates, S, return all possible subsets.
+    public static void main(String[] args) {
+        Solution_SubsetII sol = new Solution_SubsetII();
+        for (ArrayList<Integer> il : sol.subsetsWithDup(new int[] {1, 2, 2})) {
+            Utils.printIntListln(il);
+        }
+    }
+}
 
-    Note:
-    Elements in a subset must be in non-descending order.
-    The solution set must not contain duplicate subsets.
-    For example,
-    If S = [1,2,2], a solution is:
-
-    [
-      [2],
-      [1],
-      [1,2,2],
-      [2,2],
-      [1,2],
-      []
-    ]
-     */
-    public static ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {
+class Solution_SubsetII {
+    public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
         ret.add(new ArrayList<Integer>());
         Arrays.sort(num);
@@ -46,15 +54,5 @@ public class _090SubsetII {
         }
 
         return ret;
-    }
-
-    private static void test() {
-        for (ArrayList<Integer> il : subsetsWithDup(new int[] {1, 2, 2})) {
-            Utils.printIntListln(il);
-        }
-    }
-
-    public static void main(String[] args) {
-        test();
     }
 }

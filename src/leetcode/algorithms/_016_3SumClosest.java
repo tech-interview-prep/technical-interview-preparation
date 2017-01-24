@@ -5,7 +5,6 @@ import java.util.Arrays;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
 public class _016_3SumClosest {

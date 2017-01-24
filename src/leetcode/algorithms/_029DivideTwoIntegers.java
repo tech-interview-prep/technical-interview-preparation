@@ -1,38 +1,52 @@
 package leetcode.algorithms;
 
-import utils.Utils;
-
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Divide two integers without using multiplication, division and mod operator.
+ *
+ * If it is overflow, return MAX_INT.
+ *
+ * https://leetcode.com/problems/divide-two-integers
+ * https://gist.github.com/bittib/5734695
+ * http://n00tc0d3r.blogspot.com/2013/02/divide-two-integers.html
  */
 public class _029DivideTwoIntegers {
-    /*
-    Divide two integers without using multiplication, division and mod operator.
-     */
-    public static int divide(int dividend, int divisor) {
-        boolean negative = (dividend ^ divisor) < 0;
-        long div = dividend < 0 ? -(long)dividend : dividend;
-        long dis = divisor < 0 ? -(long)divisor : divisor;
-
-        int quotient = 0, shift;
-        while (dis <= div) {
-            for (shift = 1; (dis << shift) > 0 && (dis << shift) <= div; shift++);
-            quotient += 1 << (shift - 1);
-            div -= (dis << (shift - 1));
-        }
-        return negative ? -quotient : quotient;
-    }
-
-    private static void test() {
-        Utils.printTestln(divide(10, 3), 3);
-        Utils.printTestln(divide(10, -3), -3);
-        Utils.printTestln(divide(Integer.MAX_VALUE, 2), Integer.MAX_VALUE >> 1);
-        Utils.printTestln(divide(Integer.MAX_VALUE, Integer.MIN_VALUE), 0);
-        Utils.printTestln(divide(Integer.MIN_VALUE, Integer.MIN_VALUE), 1);
-    }
-
     public static void main(String[] args) {
-        test();
+
+    }
+}
+
+class DivideTwoIntegers {
+    public int divide(int dividend, int divisor) {
+        if (divisor == 0) throw new IllegalArgumentException("divisor cannot be 0");
+        if (dividend == 0) return 0;
+
+        boolean neg = (dividend > 0 != divisor > 0);
+        long dend = Math.abs(dividend);
+        long dsor = Math.abs(divisor);
+
+        if (dsor == 1) {
+            return neg ? new Long(-dend).intValue() : new Long(dend).intValue();
+        }
+
+        if (dend == dsor) {
+            return neg ? -1 : 1;
+        }
+
+        int quotient = 0;
+
+        while (dend >= dsor) {
+            long tmp = dsor;
+            int result = 1;
+
+            while (dend >= (tmp + tmp)) {
+                tmp <<= 1;
+                result <<= 1;
+            }
+
+            quotient += result;
+            dend -= tmp;
+        }
+
+        return neg ? -quotient : quotient;
     }
 }

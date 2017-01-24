@@ -1,48 +1,44 @@
 package leetcode.algorithms;
 
 import utils.TreeNode;
-import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a binary tree, determine if it is height-balanced.
+ *
+ * For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two
+ * subtrees of every node never differ by more than 1.
+ *
+ * https://leetcode.com/problems/balanced-binary-tree
+ * https://gist.github.com/zac-xin/4374453
+ * http://n00tc0d3r.blogspot.com/2013/01/determine-height-balanced-binary-tree.html
  */
 public class _110BalancedBinaryTree {
-    /*
-    Given a binary tree, determine if it is height-balanced.
 
-    For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees
-    of every node never differ by more than 1.
-     */
-    public static boolean isBalanced(TreeNode root) {
-        if (root == null) {
-            return true;
-        }
+}
 
-        return isBalanced(root.left) && isBalanced(root.right) && Math.abs(depth(root.left) - depth(root.right)) <= 1;
+class Solution_BalancedBinaryTree {
+    public boolean isBalanced(TreeNode root) {
+        return !(checkHeight(root) == -1);
     }
 
-    private static int depth(TreeNode node) {
-        if (node == null) {
+    public int checkHeight(TreeNode root) {
+        if (root == null) {
             return 0;
         }
+        int leftHeight = checkHeight(root.left);
+        if (leftHeight == -1) {
+            return -1;
+        }
+        int rightHeight = checkHeight(root.right);
+        if (rightHeight == -1) {
+            return -1;
+        }
 
-        return Math.max(depth(node.left), depth(node.right)) + 1;
-    }
-
-
-    /*
-         1
-        / \
-       2   5
-      / \   \
-     3   4   6
-    */
-    private static void test() {
-        Utils.printTestln(isBalanced(TreeNode.getSampleTree()), true);
-    }
-
-    public static void main(String[] args) {
-        test();
+        int heightDiff = leftHeight - rightHeight;
+        if (Math.abs(heightDiff) > 1) {
+            return -1;
+        } else {
+            return Math.max(leftHeight, rightHeight) + 1;
+        }
     }
 }

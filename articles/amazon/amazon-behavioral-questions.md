@@ -1,0 +1,66 @@
+- [ ] Tell me about a time when you disagreed with the work direction you were given, and how you resolved it
+- [ ] Tell me about yourself. Why do you want to work at Amazon?
+- [ ] Explain a technical challenge that you faced in your career
+- [ ] He asked me what was the hardest project I have done so far and what was the hardest problem, which I solved in that project.
+- [ ] While discussing the project he asked me, what will be the one change you will do in this project to improve it.
+- [ ] when I disagreed with my manager
+- [ ] Who was your most difficult customer?
+- [ ] How would you introduce AWS in an elevator pitch?
+- [ ] What is the worst mistake you ever made?
+- [ ] If your direct manager was instructing you to do something you disagreed with, how would you handle it?
+- [ ] When is the last time you try something new?
+- [ ] Describe what Human Resource means to you.
+- [ ] What is the angle between the hour hand and minute hand in an analog clock?
+- [ ] How do you detect whether or not a word is a palindrome?
+- [ ] Do you know our CEO? How do you pronounce his name?
+- [ ] Here’s a string with numbers from 1-250 in random order, but it’s missing one number. How will you find the missed number?
+- [ ] Are you willing to work on your feet for ten hours, four days a week?
+- [ ] Do you think you’ll reach a point where you storm off the floor and never return?
+- [ ] Would you tell on an employee for stealing?
+- [ ] How would you solve problems if you were from Mars?
+- [ ] How do you persuade people?
+- [ ] Describe what happens in your browser as soon as you hit enter after writing a URL in the address bar.
+- [ ] Tell the story of the last time you had to apologize to someone.
+- [ ] Walk me through how Amazon Kindle books would be priced.
+- [ ] What would you do if you saw someone being unsafe at work?
+- [ ] What would you do if somehow you misdirected 10,000 units of something?
+- [ ] How would you improve Amazon’s website?
+- [ ] You have 30 people working under you with 2 working indirect. Each employee can do 150 units/hour. Each work day has two 15 min breaks and one 30 min lunch. In a 5 day work week, how many total units can you complete?
+- [ ] What is the most difficult situation you have ever faced in your life? How did you handle it?
+- [ ] How would you tell a customer what Wi-Fi is?
+- [ ] You are Amazon and Samsung offers you 10,000 Samsung Galaxy S3s at a 34% discount. Is that a good deal?
+- [ ] Design an online payment system.
+- [ ] Give me an example of a time when you were 75% of the way through a project, and you had to pivot strategy–how were you able to make that into a success story?
+- [ ] Should we sell private label cleaning products?
+- [ ] What would you do if you found out that your closest friend at work was stealing?
+- [ ] Which Amazon leadership principle do you resonate most with?
+- [ ] Tell me a time when you took a risk?
+- [ ] Tell me a time when you inspired your team?
+- [ ] Who was you best hire and why?
+- [ ] How do you handle a low performing employee?
+- [ ] What is your hiring strategy?
+- [ ] Describe a recent technical project and hurdles you faced there?
+- [ ] Hardest bug you faced
+- [ ] You are responsible for maintaining a web service that sits behind a load balancer. If the web service starts failing, how will you go about fixing it?
+- [ ] If you are behind the schedule on a project, what will you do?
+- [ ] Describe a time you encountered an issue and how you fixed it.
+- [ ] Why Amazon?
+- [ ] How would you know whether web server is freezing or not(a lot of queries then it may get stuck)?
+- [ ] What is a time you failed or caused a problem that impacted coworkers or customers?
+- [ ] What is a bad online buying experience?
+- [ ] What if you are stranded with non performing team mates ?
+- [ ] Select a topic of your choice and talk about it for 5 minutes. If you want I will time your talk.
+- [ ] If there's a glitch in the system and for some reason, for a very brief moment, the website is inaccessible from your browser. You got back to it a few minutes later and the glitch is gone. Would you report this problem?
+- [ ] What's the latest book you've read?
+- [ ] If you are already working why are you still looking?
+- [ ] why computer science
+- [ ] what kind of job do you prefer
+- [ ] what you don't like in a job
+- [ ] What are you looking for in a job?
+- [ ] Why do you want to work here?
+- [ ] Favorite feature on Amazon personalization site
+- [ ] How did you hear about Amazon?
+- [ ] tell me a situation when u had to face problems and the requirements were not clear. how did u handle the situation? which is the best error you have caught?
+- [ ] which is the worst error u've ever caught?
+- [ ] asked about a project on my resume
+- [ ] Talk about your favorite project? What part of a Software Project do you enjoy most?

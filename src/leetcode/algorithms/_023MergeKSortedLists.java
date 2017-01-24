@@ -5,49 +5,54 @@ import java.util.ArrayList;
 import utils.ListNode;
 
 /**
+ * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+ *
  * https://leetcode.com/problems/merge-k-sorted-lists/
+ * http://n00tc0d3r.blogspot.com/2013/04/merge-k-sorted-lists.html
+ * http://n00tc0d3r.blogspot.com/2013/04/merge-sorted-listsarrays-i.html
+ * https://github.com/yadongwen/leetcode/blob/master/Merge%20k%20Sorted%20Lists.java
  * @author bkoteshwarreddy
  */
 public class _023MergeKSortedLists {
-    /**
-     *
-     * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
-     */
-    public ListNode mergeKLists(ArrayList<ListNode> lists) {
-        if (lists.isEmpty()) {
-            return null;
-        }
+    public static void main(String[] args) {
 
-        while (lists.size() > 1) {
-            for (int i = 0, l = lists.size(); i < (l >> 1); i++) {
-                lists.set(i, mergeLists(lists.get(i), lists.get(l - i - 1)));
-                lists.remove(l - i - 1);
+    }
+}
+
+class Solution_MergeKSortedLists {
+    public ListNode mergeKLists(ArrayList<ListNode> lists) {
+        if (lists == null || lists.size() == 0) {
+            return new ListNode();
+        }
+        int last = lists.size() - 1;
+        int current;
+        while (last > 0) {
+            current = 0;
+            while (current < last) {
+                lists.set(current, mergeTwoLists(lists.get(current++), lists.get(last--)));
             }
         }
 
         return lists.get(0);
     }
 
-    private static ListNode mergeLists(ListNode l1, ListNode l2) {
-        ListNode dummyNode = new ListNode(0), insertNode = dummyNode;
+    // Since this is an in-place merging, it takes O(m+n) time and O(1) space.
 
-        while (l1 != null && l2 != null) {
-            if (l1.data < l2.data) {
-                insertNode.next = l1;
-                l1 = l1.next;
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode head = new ListNode(0);
+        ListNode current = head;
+
+        while (list1 != null || list2 != null) {
+            if (list2 == null || (list1 != null && list1.data <= list2.data)) {
+                current.next = list1;
+                list1 = list1.next;
             } else {
-                insertNode.next = l2;
-                l2 = l2.next;
+                current.next = list2;
+                list2 = list2.next;
             }
-            insertNode = insertNode.next;
+            current = current.next;
         }
 
-        if (l1 != null) {
-            insertNode.next = l1;
-        } else {
-            insertNode.next = l2;
-        }
-
-        return dummyNode.next;
+        return head.next;
     }
 }

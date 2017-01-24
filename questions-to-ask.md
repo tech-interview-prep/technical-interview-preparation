@@ -1,0 +1,7 @@
+- What's your background? How did you get to where you are now?
+- Do you like your job? How's the work/life balance?
+- Are there social gatherings, or do you hang out with your coworkers outside of work?
+- What's the best thing that's happened to you here?
+- What about the worst thing? Or, if you don't want to tell me that, what's the most challenging moment you've had here?
+- Was (the industry of the company) always in your sights?
+- https://www.reddit.com/r/cscareerquestions/comments/4ce2s3/resource_interview_questions_my_massive/

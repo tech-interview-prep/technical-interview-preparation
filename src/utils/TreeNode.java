@@ -2,12 +2,14 @@ package utils;
 
 public class TreeNode {
     public int data;
+    public int val;
     public boolean isFinished;
     public TreeNode left;
     public TreeNode right;
 
     public TreeNode(int x) {
         data = x;
+        val = x;
     }
 
     public static void inOrder(TreeNode root) {

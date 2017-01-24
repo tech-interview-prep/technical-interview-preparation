@@ -5,7 +5,6 @@ import java.util.Stack;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
 public class _084LargestRectangelInHistogram {

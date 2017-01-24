@@ -6,24 +6,35 @@ import java.util.Map;
 import utils.Utils;
 
 /**
+ * Given a string S and a string T, find the minimum window in S which will contain all the characters in T
+ * in complexity O(n).
+ *
+ * For example,
+ * S = "ADOBECODEBANC"
+ * T = "ABC"
+ * Minimum window is "BANC".
+ *
+ * Note:
+ * If there is no such window in S that covers all characters in T, return the emtpy string "".
+ *
+ * If there are multiple such windows, you are guaranteed that there will always be only one unique
+ * minimum window in S.
+ *
  * https://leetcode.com/problems/minimum-window-substring/
+ * http://n00tc0d3r.blogspot.com/2013/04/minimum-window-substring.html
  * @author bkoteshwarreddy
  */
 public class _076MinimumWindowSubstring {
-    /*
-    Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
+    public static void main(String[] args) {
+        Solution_MinimumWindowSubstring sol = new Solution_MinimumWindowSubstring();
 
-    For example,
-    S = "ADOBECODEBANC"
-    T = "ABC"
-    Minimum window is "BANC".
+        Utils.printTestln(sol.minWindow("adobecodebanc", "abc"), "banc");
+        Utils.printTestln(sol.minWindow("a", "aa"), "");
+    }
+}
 
-    Note:
-    If there is no such window in S that covers all characters in T, return the emtpy string "".
-
-    If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
-     */
-    public static String minWindow(String S, String T) {
+class Solution_MinimumWindowSubstring {
+    public String minWindow(String S, String T) {
         Map<Character, Integer> charCount = new HashMap<Character, Integer>();
         int totalCount = T.length();
         for (int i = 0; i < totalCount; i++) {
@@ -65,14 +76,5 @@ public class _076MinimumWindowSubstring {
         }
 
         return totalCount > 0 ? "" : S.substring(minStart, minEnd + 1);
-    }
-
-    private static void test() {
-        Utils.printTestln(minWindow("adobecodebanc", "abc"), "banc");
-        Utils.printTestln(minWindow("a", "aa"), "");
-    }
-
-    public static void main(String[] args) {
-        test();
     }
 }

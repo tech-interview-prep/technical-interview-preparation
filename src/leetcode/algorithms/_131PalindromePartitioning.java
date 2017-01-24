@@ -3,7 +3,6 @@ package leetcode.algorithms;
 import java.util.ArrayList;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
 public class _131PalindromePartitioning {

@@ -1,24 +1,31 @@
 package leetcode.algorithms;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * The API: int read4(char *buf) reads 4 characters at a time from a file.
+ *
+ * The return value is the actual number of characters read. For example, it
+ * returns 3 if there is only 3 characters left in the file.
+ *
+ * By using the read4 API, implement the function int read(char *buf, int n)
+ * that reads n characters from the file.
+ *
+ * Note: The read function may be called multiple times.
+ *
+ * https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
  */
 public class _158ReadNCharactersGivenRead4II_CallMultipleTimes {
+    public static void main(String[] args) {
+        Solution_ReadNCharactersGivenRead4II_CallMultipleTimes solution = new Solution_ReadNCharactersGivenRead4II_CallMultipleTimes();
+        char[] buf = new char[100];
+        int n = 5;
+        System.out.println(solution.read(buf, n)); //5
+        System.out.println(solution.read(buf, n)); //5
+        System.out.println(solution.read(buf, n)); //5
+        System.out.println(solution.read(buf, n)); //2
+    }
+}
 
-    /*
-     * Leetcode 158: https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/
-     * The API: int read4(char *buf) reads 4 characters at a time from a file.
-     *
-     * The return value is the actual number of characters read. For example, it
-     * returns 3 if there is only 3 characters left in the file.
-     *
-     * By using the read4 API, implement the function int read(char *buf, int n)
-     * that reads n characters from the file.
-     *
-     * Note: The read function may be called multiple times.
-    */
-
+class Solution_ReadNCharactersGivenRead4II_CallMultipleTimes {
     // Forward declaration of the read4 API.
     private String doc = "abdcfdfadfawefefe";
     private int i;
@@ -60,15 +67,4 @@ public class _158ReadNCharactersGivenRead4II_CallMultipleTimes {
             }
         }
     }
-
-    public static void main(String[] args) {
-        _158ReadNCharactersGivenRead4II_CallMultipleTimes solution = new _158ReadNCharactersGivenRead4II_CallMultipleTimes();
-        char[] buf = new char[100];
-        int n = 5;
-        System.out.println(solution.read(buf, n)); //5
-        System.out.println(solution.read(buf, n)); //5
-        System.out.println(solution.read(buf, n)); //5
-        System.out.println(solution.read(buf, n)); //2
-    }
-
 }

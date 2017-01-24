@@ -1,35 +1,37 @@
 package leetcode.algorithms;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Climb stairs. You are climbing a stair case. It takes n steps to reach to the top.
+ * Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+ *
+ * https://leetcode.com/problems/climbing-stairs
+ * https://gist.github.com/zac-xin/4349080
+ * http://n00tc0d3r.blogspot.com/2013/01/climbing-stairs.html
  */
 public class _070ClimbingStairs {
-    /*
-    You are climbing a stair case. It takes n steps to reach to the top.
+    public static void main(String[] args) {
 
-    Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-    */
-    public static int climbStairs(int n) {
-        if (n <= 2) {
-            return n;
-        }
-
-        return climbStairs(n - 1) + climbStairs(n - 2);
     }
+}
 
-    public static int climbStairsDP(int n) {
-        if (n <= 2) {
+class ClimbStairs {
+    public int climbStairs(int n) {
+        if ( n == 0 || n == 1 || n == 2)
             return n;
+
+        int array[] = new int[n + 1];
+
+        array[0] = 0;
+        array[1] = 1;
+        array[2] = 2;
+
+        if ( n == 0 || n == 1 || n == 2)
+            return array[n];
+
+        for (int i = 3; i < n + 1; i++) {
+            array[i] = array[i - 1] + array[i - 2];
         }
 
-        int f0 = 1, f1 = 2, f = 0;
-        for (int i = 3; i <= n; i++) {
-            f = f0 + f1;
-            f0 = f1;
-            f1 = f;
-        }
-
-        return f;
+        return array[n];
     }
 }

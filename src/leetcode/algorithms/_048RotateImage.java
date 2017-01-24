@@ -1,50 +1,58 @@
 package leetcode.algorithms;
 
-import utils.Utils;
-
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method
+ * to rotate the image by 90 degrees. Can you do this in place?
+ *
+ * You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise).
+ *
+ * Follow up:
+ *     Could you do this in-place?
+ *
+ * https://leetcode.com/problems/rotate-image/
+ * http://n00tc0d3r.blogspot.com/2013/05/rotate-image.html
  */
 public class _048RotateImage {
-    /*
-    You are given an n x n 2D matrix representing an image.
+    public static void main(String[] args) {
 
-    Rotate the image by 90 degrees (clockwise).
+    }
+}
 
-    Follow up:
-    Could you do this in-place?
-     */
-    public static void rotate(int[][] matrix) {
-        int n = matrix.length;
-        for (int i = 0; i < (n >> 1); i++) {
-            for (int j = i; j < n - i - 1; j++) {
-                swap(matrix, i, j, j, n - 1 - i);
-                swap(matrix, i, j, n - 1 - i, n - 1 - j);
-                swap(matrix, i, j, n - 1 - j, i);
+class Solution_RotateMatrix {
+    public void rotate(int[][] input, int n) {
+        for (int layer = 0; layer < n / 2; layer++) {
+            int first = layer;
+            int last = n - 1 - layer;
+            for (int i = 0; i < last - layer ; i++) {
+                int offset = i - first;
+
+                // Save top
+                int top = input[first][i];
+                // left -> top
+                input[first][i] = input[last - offset][first];
+
+                // bottom -> left
+                input[last - offset][first] = input[last][last - offset];
+
+                // right -> bottom
+                input[last][last - offset] = input[i][last];
+
+                // top -> right
+                input[i][last] = top;
             }
         }
     }
 
-    private static void swap(int[][] matrix, int i1, int j1, int i2, int j2) {
-        int tmp = matrix[i1][j1];
-        matrix[i1][j1] = matrix[i2][j2];
-        matrix[i2][j2] = tmp;
-    }
-
-    private static void test() {
-        int[][] matrix = new int[][] {
-            {1, 2, 3, 4},
-            {5, 6, 7, 8},
-            {9, 10, 11, 12},
-            {13, 14, 15, 16}
-        };
-
-        rotate(matrix);
-        Utils.print2DArrayln(matrix);
-    }
-
-    public static void main(String[] args) {
-        test();
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+        for (int i = 0; i < n / 2; i++) {
+            for (int j = 0; j < Math.ceil(((double) n) / 2.); j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[n - 1 - j][i];
+                matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j];
+                matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i];
+                matrix[j][n - 1 - i] = temp;
+            }
+        }
     }
 }

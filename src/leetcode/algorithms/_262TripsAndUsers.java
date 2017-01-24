@@ -8,7 +8,7 @@ public class _262TripsAndUsers {
     /*
       The Trips table holds all taxi trips. Each trip has a unique Id, while Client_Id and Driver_Id are both foreign
       keys to the Users_Id at the Users table. Status is an ENUM type of
-      (‘completed’, ‘cancelled_by_driver’, ‘cancelled_by_client’).
+      (‘completed', ‘cancelled_by_driver', ‘cancelled_by_client').
 
       +----+-----------+-----------+---------+--------------------+----------+
       | Id | Client_Id | Driver_Id | City_Id |        Status      |Request_at|
@@ -25,7 +25,7 @@ public class _262TripsAndUsers {
       | 10 |     4     |    13     |    12   | cancelled_by_driver|2013-10-03|
       +----+-----------+-----------+---------+--------------------+----------+
       The Users table holds all users. Each user has an unique Users_Id, and Role is an ENUM type of
-      (‘client’, ‘driver’, ‘partner’).
+      (‘client', ‘driver', ‘partner').
 
       +----------+--------+--------+
       | Users_Id | Banned |  Role  |

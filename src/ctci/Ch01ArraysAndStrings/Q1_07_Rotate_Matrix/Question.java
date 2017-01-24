@@ -4,7 +4,7 @@ import ctci.CtCILibrary.AssortedMethods;
 
 public class Question {
     public static boolean rotate(int[][] matrix) {
-        if (matrix.length == 0 || matrix.length != matrix[0].length) return false; // Not a square
+        if (matrix == null || matrix.length == 0 || matrix.length != matrix[0].length) return false; // Not a square
         int n = matrix.length;
 
         for (int layer = 0; layer < n / 2; layer++) {

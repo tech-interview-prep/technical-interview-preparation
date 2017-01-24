@@ -1,31 +1,75 @@
 package leetcode.algorithms;
 
-/**
- * https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
- * @author bkoteshwarreddy
- */
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
- */
+import utils.TreeNode;
+
 public class _257BinaryTreePaths {
-    // [-3,3,4,90], 0
-    public int[] twoSum(int[] numbers, int target) {
-        int l = 0, r = numbers.length - 1, sum;
-        int[] idx = new int[2];
-        while (l < r) {
-            sum = numbers[l] + numbers[r];
-            if (sum == target) {
-                idx[0] = l + 1;
-                idx[1] = r + 1;
-                break;
-            } else if (sum < target) {
-                l++;
+
+}
+
+class Solution_BinaryTreePaths {
+    /**
+     * Given a binary tree, return all root-to-leaf paths.
+     *
+     * For example, given the following binary tree:
+     *
+     *         1
+     *       /   \
+     *      2     3
+     *       \
+     *        5
+     *
+     * All root-to-leaf paths are: ["1->2->5", "1->3"]
+     *
+     * https://leetcode.com/problems/binary-tree-paths/
+     */
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> result = new ArrayList<String>();
+        dfs(root, result, "");
+        return result;
+    }
+
+    public void dfs(TreeNode root, List<String> result, String path) {
+        if (root == null)
+            return;
+        path += "->" + root.data;
+        if (root.left == null && root.right == null)
+            result.add(path.substring(2));
+        dfs(root.left, result, path);
+        dfs(root.right, result, path);
+    }
+
+    /**
+     * Print all paths of a binary tree from root to leaf.
+     *
+     * Later, extend the solution to work with graphs, careful attention to cycles which you should print
+     * as paths as well (without printing visited nodes twice).
+     *
+     *  http://www.careercup.com/question?id=5742219382226944
+     */
+    public void printRootToLeaf(TreeNode node) {
+        List<String> path = new ArrayList<String>();
+        printRootToLeaf(node, path);
+    }
+
+    private void printRootToLeaf(TreeNode node, List<String> path) {
+        if (node != null) {
+            path.add(String.valueOf(node.data));
+
+            if (node.left == null && node.right == null) {
+                printPath(path);
             } else {
-                r--;
+                printRootToLeaf(node.left, path);
+                printRootToLeaf(node.right, path);
             }
         }
-        return idx;
+    }
+
+    private void printPath(List<String> path) {
+        for (String s : path) {
+            System.out.println(s);
+        }
     }
 }

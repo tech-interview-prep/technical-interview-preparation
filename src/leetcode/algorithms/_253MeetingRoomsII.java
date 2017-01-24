@@ -1,31 +1,49 @@
 package leetcode.algorithms;
 
-/**
- * https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
- * @author bkoteshwarreddy
- */
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+import utils.Interval;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the
+ * minimum number of conference rooms required.
+ *
+ * For example,
+ * Given [[0, 30],[5, 10],[15, 20]], return 2.
+ *
+ * https://leetcode.com/problems/meeting-rooms-ii/
  */
 public class _253MeetingRoomsII {
-    // [-3,3,4,90], 0
-    public int[] twoSum(int[] numbers, int target) {
-        int l = 0, r = numbers.length - 1, sum;
-        int[] idx = new int[2];
-        while (l < r) {
-            sum = numbers[l] + numbers[r];
-            if (sum == target) {
-                idx[0] = l + 1;
-                idx[1] = r + 1;
-                break;
-            } else if (sum < target) {
-                l++;
-            } else {
-                r--;
+}
+
+class Solution_MeetingRoomsII {
+    public int minMeetingRooms(Interval[] intervals) {
+        if (intervals == null || intervals.length == 0)
+            return 0;
+
+        Arrays.sort(intervals, new Comparator<Interval>() {
+            public int compare(Interval i1, Interval i2) {
+                return i1.start - i2.start;
             }
+        });
+
+        PriorityQueue<Integer> queue = new PriorityQueue<Integer>();
+        int count = 1;
+        queue.offer(intervals[0].end);
+
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[i].start < queue.peek()) {
+                count++;
+
+            } else {
+                queue.poll();
+            }
+
+            queue.offer(intervals[i].end);
         }
-        return idx;
+
+        return count;
     }
 }

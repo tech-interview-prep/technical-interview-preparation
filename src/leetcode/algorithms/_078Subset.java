@@ -6,51 +6,65 @@ import java.util.Arrays;
 import utils.Utils;
 
 /**
+ * Given a set of distinct integers, S, return all possible subsets.
+ *
+ * Note:
+ * Elements in a subset must be in non-descending order.
+ * The solution set must not contain duplicate subsets.
+ * For example,
+ * If S = [1,2,3], a solution is:
+ *
+ *  [
+ *      [3],
+ *      [1],
+ *      [2],
+ *      [1,2,3],
+ *      [1,3],
+ *      [2,3],
+ *      [1,2],
+ *      []
+ *  ]
+ *
  * https://leetcode.com/problems/subsets/
+ * http://n00tc0d3r.blogspot.com/2013/06/subsets.html
  * @author bkoteshwarreddy
  */
 public class _078Subset {
-    /*
-    Given a set of distinct integers, S, return all possible subsets.
-
-    Note:
-    Elements in a subset must be in non-descending order.
-    The solution set must not contain duplicate subsets.
-    For example,
-    If S = [1,2,3], a solution is:
-
-    [
-      [3],
-      [1],
-      [2],
-      [1,2,3],
-      [1,3],
-      [2,3],
-      [1,2],
-      []
-    ]
-    */
-    public static ArrayList<ArrayList<Integer>> subsets(int[] S) {
-        ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
-        ret.add(new ArrayList<Integer>());
-
-        Arrays.sort(S);
-        for (int i = 0; i < S.length; i++) {
-            for (int j = 0, l = ret.size(); j < l; j++) {
-                ArrayList<Integer> subset = new ArrayList<Integer>(ret.get(j));
-                subset.add(S[i]);
-                ret.add(subset);
-            }
-        }
-
-        return ret;
-    }
-
-    private static void test() {
-        Utils.printListListln(subsets(new int[] {1, 2, 3}));
-    }
-
     public static void main(String[] args) {
-        test();
+        Solution_Subset sol = new Solution_Subset();
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(2);
+        list.add(6);
+        list.add(10);
+        list.add(5);
+        list.add(11);
+        list.add(15);
+        
+        Utils.printListListln(sol.getSubsets(new ArrayList<Integer>()));
+    }
+}
+
+class Solution_Subset {
+    public ArrayList<ArrayList<Integer>> getSubsets(ArrayList<Integer> set) {
+        return getSubsets(set, 0);
+    }
+    public ArrayList<ArrayList<Integer>> getSubsets(ArrayList<Integer> set, int index) {
+        ArrayList<ArrayList<Integer>> allsubsets;
+        if (set.size() == index) { // Base case - add empty set
+            allsubsets = new ArrayList<ArrayList<Integer>>();
+            allsubsets.add(new ArrayList<Integer>());
+        } else {
+            allsubsets = getSubsets(set, index + 1);
+            int item = set.get(index);
+            ArrayList<ArrayList<Integer>> moresubsets = new ArrayList<ArrayList<Integer>>();
+            for (ArrayList<Integer> subset : allsubsets) {
+                ArrayList<Integer> newsubset = new ArrayList<Integer>();
+                newsubset.addAll(subset); //
+                newsubset.add(item);
+                moresubsets.add(newsubset);
+            }
+            allsubsets.addAll(moresubsets);
+        }
+        return allsubsets;
     }
 }

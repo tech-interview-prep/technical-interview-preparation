@@ -3,35 +3,31 @@ package leetcode.algorithms;
 import utils.TreeNode;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
+ *
+ * https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+ * https://gist.github.com/zac-xin/4245928
+ * http://n00tc0d3r.blogspot.com/2013/02/covert-sorted-arraylist-to-bst.html
  */
 public class _108ConvertSortedArrayToBinarySearchTree {
-    /*
-    Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
-    */
-    public static TreeNode sortedArrayToBST(int[] num) {
-        return sortedArrayToBST(num, 0, num.length);
+
+}
+
+class Solution_ConvertSortedArrayToBinarySearchTree {
+    public TreeNode sortedArrayToBST(int[] num) {
+        return convert(num, 0, num.length - 1);
     }
 
-    private static TreeNode sortedArrayToBST(int[] num, int start, int end) {
-        if (end <= start) {
-            return null;
+    public TreeNode convert(int a[], int low, int high) {
+        if (low <= high) {
+            int mid = low + (high - low) / 2;
+            TreeNode root = new TreeNode(a[mid]);
+            TreeNode left = convert(a, low, mid - 1);
+            TreeNode right = convert(a, mid + 1, high);
+            root.left = left;
+            root.right = right;
+            return root;
         }
-
-        int mid = (start + end) >>> 1;
-        TreeNode node = new TreeNode(num[mid]);
-        node.left = sortedArrayToBST(num, start, mid);
-        node.right = sortedArrayToBST(num, mid + 1, end);
-
-        return node;
-    }
-
-    private static void test() {
-        TreeNode.inOrder(sortedArrayToBST(new int[] {1, 3, 5, 7, 9, 10, 11, 12}));
-    }
-
-    public static void main(String[] args) {
-        test();
+        return null;
     }
 }

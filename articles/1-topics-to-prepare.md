@@ -1,10 +1,12 @@
-###List of topics
-- [How Companies Evaluate Technical Interviews](https://www.youtube.com/watch?v=jxAWQN5t6wg)
-- [How to Approach Behavioral Questions](https://www.youtube.com/watch?v=tZxNNKqxXnw)
-- [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w)
-- [3 Algorithm Strategies](https://www.youtube.com/watch?v=84UYVCluClQ)
-- [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)
-- Powers of 2 Table
+### List of topics
+- [ ] [How Companies Evaluate Technical Interviews](https://www.youtube.com/watch?v=jxAWQN5t6wg)
+- [ ] [How to Approach Behavioral Questions](https://www.youtube.com/watch?v=tZxNNKqxXnw)
+- [ ] [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w)
+- [ ] [3 Algorithm Strategies](https://www.youtube.com/watch?v=84UYVCluClQ)
+- [ ] [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)
+- [ ] [Bit Manipulation](https://www.youtube.com/watch?v=NLKQEOgBAnw)
+  - [ ] big and little endian
+- [ ] Powers of 2 Table
 
 Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 ------------| ------------------| --------------| ------------------------
@@ -17,122 +19,191 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 32 | 4,294,967,296 | | 4 GB
 40 | 1,099,511,627,776 | 1 trillion | 1 TB
 
-#####**[Data Structures](https://www.coursera.org/learn/data-structures/home):**
-- [Arrays](https://www.youtube.com/watch?v=NLAzwv4D5iI)
-- Vectors
-- [ArrayLists](https://www.youtube.com/watch?v=NLAzwv4D5iI)
-- [Strings](https://www.youtube.com/watch?v=gbxodBVkElQ)
-- [StringBuffer](https://www.youtube.com/watch?v=gbxodBVkElQ)
-- [StringBuilder](https://www.youtube.com/watch?v=gbxodBVkElQ)
-- [LinkedLists](https://www.youtube.com/watch?v=njTh_OwMljA)
-- Hashset
-- Hashmap
-- [Hashtables](https://www.youtube.com/watch?v=shs0KM3wKv8)
-- Dictionary
-- [Stacks and Queues](https://www.youtube.com/watch?v=wjI1WNcIntg)
-- [Heaps/Priority queues](https://www.youtube.com/watch?v=t0Cq6tVNRBA)
-- [Trees](https://www.youtube.com/watch?v=oSWTXtMglKE) (Binary Tree, [Binary Search Tree](https://www.youtube.com/watch?v=i_Q0v_Ct5lY), kd Tree, 2-3 Tree, AVL)
-- [Tries](https://www.youtube.com/watch?v=zIjfhVPRZCg)
-- [Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) (MinHeap, MaxHeap)
-- Graph
-- Bloom Filter
+##### Programming Languages:
+- *Java Basics and topics from Resume:*
+  - [ ] Maven
+  - [ ] Jersey
+  - [ ] RestEasy
+  - [ ] JSON
+  - [ ] Dependency Injection
+- [ ] Ruby on Rails
+- *Javascript:*
+  - [ ] Closures
+  - [ ] Memory management
+  - [ ] D3 library
 
-#####**Sorting:**
-- [Merge sort](https://www.youtube.com/watch?v=KF2j-9iSf4Q)/Poly phase merge sort
-- [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)/ 3-Way Quick sort/Dual Pivot Quick sort
-- Insertion sort
-- [Bubble sort](https://www.youtube.com/watch?v=6Gv8vg0kcHc)
-- Bucket sort
+##### [Data Structures](https://www.coursera.org/learn/data-structures/home):
+- [ ] [Arrays](https://www.youtube.com/watch?v=NLAzwv4D5iI)
+- [ ] Vectors
+- [ ] [ArrayLists](https://www.youtube.com/watch?v=NLAzwv4D5iI)
+- [ ] [Strings](https://www.youtube.com/watch?v=gbxodBVkElQ)
+- [ ] [StringBuffer](https://www.youtube.com/watch?v=gbxodBVkElQ)
+- [ ] [StringBuilder](https://www.youtube.com/watch?v=gbxodBVkElQ)
+- [ ] [LinkedLists](https://www.youtube.com/watch?v=njTh_OwMljA)
+- [ ] Hashset
+- [ ] Hashmap
+- [ ] [Hashtables](https://www.youtube.com/watch?v=shs0KM3wKv8)
+- [ ] Dictionary
+- [ ] [Stacks and Queues](https://www.youtube.com/watch?v=wjI1WNcIntg)
+- [ ] [Heaps/Priority queues](https://www.youtube.com/watch?v=t0Cq6tVNRBA)
+  - [ ] Min Heap
+  - [ ] Max Heap
+- [ ] [Trees](https://www.youtube.com/watch?v=oSWTXtMglKE) (Binary Tree, [Binary Search Tree](https://www.youtube.com/watch?v=i_Q0v_Ct5lY), kd Tree, 2-3 Tree, AVL)
+- [ ] [Tries](https://www.youtube.com/watch?v=zIjfhVPRZCg)
+- [ ] Graph
+- [ ] Bloom Filter
 
-#####**Searching:**
-- [BFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
-- [DFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
-- [Binary Search](https://www.youtube.com/watch?v=P3YID7liBug)
-- Tree insert / find
-- Heap Search
+##### Algorithms:
+- *Sorting:*
+  - [ ] [Merge sort](https://www.youtube.com/watch?v=KF2j-9iSf4Q)/Poly phase merge sort
+  - [ ] [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)/ 3-Way Quick sort/Dual Pivot Quick sort
+  - [ ] Insertion sort
+  - [ ] [Bubble sort](https://www.youtube.com/watch?v=6Gv8vg0kcHc)
+  - [ ] Bucket sort
 
-#####**Algorithms:**
-- Quick select
-- 3 Way Partitioning
-- Tree Balancing
-- Divide and conquer
-- [Dynamic programming / Memoization](https://www.youtube.com/watch?v=P8Xa2BitN3I)
-- [Recursion](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/)
-- Rsync algorithm
-- [A* Search Algorithm](http://www.geeksforgeeks.org/a-search-algorithm/)
+- *Searching:*
+  - [ ] [BFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
+  - [ ] [DFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
+  - [ ] [Binary Search](https://www.youtube.com/watch?v=P3YID7liBug)
+  - [ ] Tree insert / find
+  - [ ] Heap Search
+- [ ] Quick select
+- [ ] 3 Way Partitioning
+- [ ] Tree Balancing
+- [ ] Divide and conquer
+- [ ] [Dynamic programming / Memoization](https://www.youtube.com/watch?v=P8Xa2BitN3I)
+- [ ] Recursion [Video - CtCI](https://www.youtube.com/watch?v=KEEKn7Me-ms), [Programcreek notes](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/)
+- [ ] Rsync algorithm
+- [ ] [A* Search Algorithm](http://www.geeksforgeeks.org/a-search-algorithm/)
 
-#####**Concepts:**
-- [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
-- Memory limits
-- Distributed computing and Design
-- Networking (IPC, TCP/IP)
-- Concurrency
-  - process
-  - threads
-  - locks
-  - mutexes
-  - deadlock
-  - livelock
-  - scheduling
-  - monitors
-  - starvation
-  - consistency
-  - coherence
-  - mutual exclusion
-  - semaphore
-  - synchronized vs unsynchronized
-- Abstraction (understanding how OS, filesystem, and database works)
-- Real--world performance (relative performance RAM, disk, your network, SSD)
-- Availability and Reliability (durability, understanding how things can fail)
-- Data storage (RAM vs. durable storage, compression, byte sizes)
-- CAP Theorem
-- Byte math
+##### Concepts:
+- *Basic Math:*
+  - [ ] Median, Mean, Average
+  - [ ] Multiply, substract, square root, power, addition
+- [ ] [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
+- [ ] Memory limits
+- [ ] 32 bit vs 64 bit
+- *Distributed computing and Design:*
+  - [ ] Service oriented architectures
+  - [ ] Distributed caching
+  - [ ] Load balancing
+- *Networking:*
+  - [ ] How the internet works
+  - [ ] How internet browsers do and what they do
+  - [ ] IP4 vs IP6
+  - [ ] DNS lookups
+  - [ ] HTTP
+  - [ ] Sockets
+  - [ ] IPC
+  - [ ] TCP/IP
+  - [ ] UDO
+  OSI Model
+- *Concurrency:*
+  - [ ] process
+  - [ ] threads
+  - [ ] locks
+  - [ ] mutexes
+  - [ ] deadlock
+  - [ ] livelock
+  - [ ] scheduling
+  - [ ] monitors
+  - [ ] starvation
+  - [ ] consistency
+  - [ ] coherence
+  - [ ] mutual exclusion
+  - [ ] semaphore
+  - [ ] synchronized vs unsynchronized
+  - [ ] context switching
+- [ ] Abstraction (understanding how OS, filesystem, and database works)
+- [ ] Real-world performance (relative performance RAM, disk, your network, SSD)
+- [ ] Availability and Reliability (durability, understanding how things can fail)
+- [ ] Data storage (RAM vs. durable storage, compression, byte sizes)
+- [ ] CAP Theorem
+- [ ] Byte math
+- [ ] How Internet works
+- [ ] Basic Database concepts, Basic SQL
+- [ ] Testing
+- [ ] Basic linux commands
+- [ ] Cryptography and Security
+  - [ ] SSL
+  - [ ] Types of Attacks and how to avoid
+- *Hadoop Ecosystem:*
+  - [ ] Hadoop
+  - [ ] Map Reduce
+  - [ ] HBase
+  - [ ] ETL/Pipelines
+  - [ ] Apache Crunch
+  - [ ] Solr
+  - [ ] Avro
 
-#####**Programming Concepts:**
-- Interface
-- Abstract class
-- try, catch, finally
-- throw, throws
-- this, super
-- final
-- break, continue, return
-- static
-- virtual functions
-- malloc, calloc, realloc
-- free, new, delete
-- classes, inner classes, objects
-- variables
-- polymorphism
-- override
-- overload
-- generics
-- collections
-- Autoboxing
-- Wrapper class
-- equals()
-- hashcode()
-- toString()
-- finalize()
-- notify()
-- notifyAll()
-- wait()
+##### Programming Concepts:
+- [ ] Memory management
+  - [ ] Stack vs Heap
+- [ ] try, catch, finally
+- [ ] throw, throws
+- [ ] this, super
+- [ ] final
+- [ ] break, continue, return
+- [ ] static
+- [ ] malloc, calloc, realloc
+- [ ] free, new, delete
+- *Object Oriented Programming:*
+  - [x] *Abstraction:*
+    - is hiding the information or providing only necessary details to the client.
+    - e.g Car Brakes- You just know that pressing the pedals will stop the vehicle but you don't need to know how it works internally.
+    - Advantage: Tomorrow if brake implementation changes from drum brake to disk brake, as a client, you don't need to change(i.e your code will not change)
+  - [x] Inheritance
+  - [x] is-a versus, has-a relationships (with examples)
+  - [x] composition/aggregation
+  - [x] *Encapsulation:*
+    - Encapsulation is binding the data and behaviors together in a single unit. Also it is a language mechanism for restricting access to some components(this can be achieved by access modifiers like private, protected etc.)
+    - For e.g. Class has attributes(i.e data) and behaviors (i.e methods that operate on that data)
+  - [x] polymorphism (without resorting to examples)
+  - [x] superclass or base class
+  - [x] subclass or derived class
+  - [x] multiple inheritance (and give an example)
+  - [x] method signatures (what's included in one)
+  - [x] method visibility (e.g. public/private/other)
+  - [x] method overriding
+  - [x] method overloading (and difference from overriding)
+  - [ ] abstract class
+  - [ ] interface/protocol (and different from abstract class)
+  - [ ] inner classes
+  - [ ] class, object (and the difference between the two)
+  - [ ] instantiation
+  - [ ] method (as opposed to, say, a C function)
+  - [ ] virtual method, pure virtual method
+  - [ ] class/static method
+  - [ ] static/class initializer
+  - [ ] constructor
+  - [ ] destructor/finalizer
+  - [ ] delegation/forwarding
+- [ ] variables
+- [ ] generics
+- [ ] collections
+- [ ] Autoboxing
+- [ ] Wrapper class
+- [ ] equals()
+- [ ] hashcode()
+- [ ] toString()
+- [ ] finalize()
+- [ ] notify()
+- [ ] notifyAll()
+- [ ] wait()
 
-#####**Project management Concepts:**
-- Six sigma
-- Lean
-- Agile
-- Scrum
+##### Project management Concepts:
+- [ ] Six sigma
+- [ ] Lean
+- [ ] Agile
+- [ ] Scrum
+- [ ] Kanban
 
-#####**From resume:**
-- OSPF
-- BGP
-- EIGRP
-- AWS
-- Google Docs
-- Branch and Bound
-- Randomized
-- Hadoop, Map Reduce, HBase, Pipelines, Apache Crunch, Solr, Avro
-- Maven
-- Jersey, RestEasy, JSON
-- Chef
-- Javascript, D3 library
+##### From resume:
+- [ ] OSPF
+- [ ] BGP
+- [ ] EIGRP
+- [ ] AWS
+- [ ] Google Docs
+- [ ] Branch and Bound
+- [ ] Randomized
+- [ ] Chef

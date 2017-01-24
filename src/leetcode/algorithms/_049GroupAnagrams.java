@@ -4,41 +4,51 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
+ * Given an array of strings, return all groups of strings that are anagrams.
+ *
+ * Note: All inputs will be in lower-case.
+ *
  * https://leetcode.com/problems/anagrams/
+ * http://n00tc0d3r.blogspot.com/2013/01/find-anagrams.html
  * @author bkoteshwarreddy
  */
 public class _049GroupAnagrams {
-    /*
-    Given an array of strings, return all groups of strings that are anagrams.
+    public static void main(String[] args) {
+        Solution_GroupAnagrams sol = new Solution_GroupAnagrams();
 
-    Note: All inputs will be in lower-case.
-    */
-    public ArrayList<String> anagrams(String[] strs) {
-        ArrayList<String> ret = new ArrayList<String>();
-        Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
+    }
+}
 
-        for (int i = 0; i < strs.length; i++) {
-            char[] chars = strs[i].toCharArray();
-            Arrays.sort(chars);
-            String rep = new String(chars);
-            if (!map.containsKey(rep)) {
-                map.put(rep, new ArrayList<Integer>());
-            }
-            map.get(rep).add(i);
+class Solution_GroupAnagrams {
+    public List<List<String>> groupAnagrams(String[] input) {
+        if (input == null || input.length <= 0) {
+            return new ArrayList<List<String>>();
         }
 
-        for (String s : map.keySet()) {
-            List<Integer> anagrams = map.get(s);
-            if (anagrams.size() > 1) {
-                for (int i : anagrams) {
-                    ret.add(strs[i]);
-                }
+        HashMap<String, List<String>> set = new HashMap<String, List<String>>();
+
+        for (String s : input) {
+            String sortedString = sort(s);
+            if (set.containsKey(sortedString)) {
+                set.get(sortedString).add(s);
+            } else {
+                List<String> list = new ArrayList<String>();
+                list.add(s);
+                set.put(sortedString, list);
             }
         }
+        return new ArrayList<List<String>>(set.values());
+    }
 
-        return ret;
+    public String sort(String s) {
+        if (s == null) {
+            return "";
+        }
+
+        char[] charArray = s.toCharArray();
+        Arrays.sort(charArray);
+        return new String(charArray);
     }
 }

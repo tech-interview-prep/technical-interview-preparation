@@ -1,55 +1,72 @@
 package leetcode.algorithms;
 
-import utils.Utils;
+import java.util.Arrays;
 
 /**
+ * Given a string, find the length of the longest substring without repeating characters.
+ *
+ * Examples:
+ *
+ * Given "abcabcbb", the answer is "abc", which the length is 3.
+ * Given "bbbbb", the answer is "b", with the length of 1.
+ * Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a substring, "pwke" is
+ *     a subsequence and not a substring.
+ *
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
- * @author bkoteshwarreddy
- */
-
-/**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
+ * http://n00tc0d3r.blogspot.com/2013/04/longest-substring-without-repeating.html
  */
 public class _003LongestSubstringWithoutRepeatingCharacters {
-    /*
-     * Given a string, find the length of the longest substring without repeating characters.
-     *
-     * Examples:
-     *      Given "abcabcbb", the answer is "abc", which the length is 3.
-     *
-     *      Given "bbbbb", the answer is "b", with the length of 1.
-     *
-     *      Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must
-     *      be a substring, "pwke" is a subsequence and not a substring.
-     *
-     */
+    public static void main(String[] args) {
+        Solution_LongestSubstringNoRepeatingChars sol = new Solution_LongestSubstringNoRepeatingChars();
+        System.out.println(sol.lengthOfLongestSubstring("eceba"));
+    }
+}
 
-    public static int lengthOfLongestSubstring(String s) {
-        int l = s.length(), maxLength = 0, start = 0;
-        boolean[] exist = new boolean[256];
-
-        for (int i = 0; i < l; i++) {
-            if (exist[s.charAt(i)]) {
-                maxLength = Math.max(i - start, maxLength);
-                for (; start < i && s.charAt(start) != s.charAt(i); start++) {
-                    exist[s.charAt(start)] = false;
-                }
-                start++;
-            } else {
-                exist[s.charAt(i)] = true;
-            }
+class Solution_LongestSubstringNoRepeatingChars {
+    //same as longestSubStrWithUniqueChars(String target)
+    public int lengthOfLongestSubstring(String target) {
+        if (target == null || target.isEmpty()) {
+            return 0;
         }
 
-        return Math.max(maxLength, l - start);
+        char[] chars = target.toCharArray();
+
+        int current = 0;//current pos in string
+        int length = 0; //current longest substr length
+        int pos = 0;    //current longest substr starting pos
+
+        for (current = 0 ; current < target.length(); current++) {
+            pos = current;
+            boolean[] found = new boolean[256];
+
+            while (pos < target.length() && !found[chars[pos]]) {
+                found[chars[pos]] = true;
+                pos++;
+            }
+
+            length = Math.max(length, pos - current);
+        }
+
+        return length;
     }
 
-    private static void test() {
-        Utils.printTestln(lengthOfLongestSubstring("abcabcbb"), 3);
-        Utils.printTestln(lengthOfLongestSubstring("bbbbb"), 1);
-    }
+    public int lengthOfLongestSubstring2(String s) {
+        if (s == null || s.length() < 1) {
+            return 0;
+        }
+        char[] cArr = s.toCharArray();
+        int dict[] = new int[256], sum = 0, prev = 0, i, len = cArr.length;
+        Arrays.fill( dict, -1 );
 
-    public static void main(String[] args) {
-        test();
+        for (i = 0; i < len; i++ ) {
+            int c = cArr[i];
+            if (dict[c] >= prev) {
+                sum = Math.max(i - prev, sum);
+                prev = dict[c] + 1;
+            }
+            dict[c] = i;
+        }
+        return Math.max( i - prev, sum);
     }
 }

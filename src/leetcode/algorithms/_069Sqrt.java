@@ -3,16 +3,36 @@ package leetcode.algorithms;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Implement int sqrt(int x).
+ *
+ * Compute and return the square root of x.
+ *
+ * https://leetcode.com/problems/sqrtx/
+ * http://n00tc0d3r.blogspot.com/2013/06/sqrtx.html
  */
 public class _069Sqrt {
-    /*
-    Implement int sqrt(int x).
+    public static void main(String[] args) {
+        Solution_Sqrt sol = new Solution_Sqrt();
 
-    Compute and return the square root of x.
-     */
-    public static int sqrt(int x) {
+        Utils.printTestln(sol.sqrt(0), 0);
+        Utils.printTestln(sol.sqrt(4), 2);
+        Utils.printTestln(sol.sqrt(9), 3);
+        Utils.printTestln(sol.sqrt(2147483647), 46341);
+        Utils.printTestln(sol.sqrt(2), 1);
+
+        System.out.println("\n>>>Below is the Newton Iteration version:");
+
+        Utils.printTestln(sol.sqrt2(0), 0);
+        Utils.printTestln(sol.sqrt2(3), 2);
+        Utils.printTestln(sol.sqrt2(4), 2);
+        Utils.printTestln(sol.sqrt2(9), 3);
+        Utils.printTestln(sol.sqrt2(2147483647), 46341);
+        Utils.printTestln(sol.sqrt2(2), 1);
+    }
+}
+
+class Solution_Sqrt {
+    public int sqrt(int x) {
         int start = 0, end = x, mid = start, minDiff = Integer.MAX_VALUE;
 
         while ( start <= end ) {
@@ -35,8 +55,26 @@ public class _069Sqrt {
         return end;
     }
 
+    /*
+        Babylonian method for square root
+
+        Algorithm:
+        This method can be derived from (but predates) Newton–Raphson method.
+
+
+        1 Start with an arbitrary positive start value x (the closer to the
+           root, the better).
+        2 Initialize y = 1.
+        3. Do following until desired approximation is achieved.
+          a) Get the next approximation for root using average of x and y
+          b) Set y = n/x
+
+         http://www.geeksforgeeks.org/square-root-of-a-perfect-square/
+
+    */
+
     // s_(n + 1) = (s_n + x / s_n) / 2;
-    public static int sqrt2(int x) {
+    public int sqrt2(int x) {
         if (x <= 1) {
             return x;
         }
@@ -49,24 +87,36 @@ public class _069Sqrt {
         return (int)Math.round(s1);
     }
 
-    private static void test() {
-        Utils.printTestln(sqrt(0), 0);
-        Utils.printTestln(sqrt(4), 2);
-        Utils.printTestln(sqrt(9), 3);
-        Utils.printTestln(sqrt(2147483647), 46341);
-        Utils.printTestln(sqrt(2), 1);
+    double squareRoot(double n) {
+        /*We are using n itself as initial approximation
+         This can definitely be improved */
+        double x = n;
+        double y = 1;
+        double e = 0.000001; /* e decides the accuracy level*/
+        while (x - y > e) {
+            x = (x + y) / 2;
+            y = n / x;
+        }
 
-        System.out.println("\n>>>Below is the Newton Iteration version:");
-
-        Utils.printTestln(sqrt2(0), 0);
-        Utils.printTestln(sqrt2(3), 2);
-        Utils.printTestln(sqrt2(4), 2);
-        Utils.printTestln(sqrt2(9), 3);
-        Utils.printTestln(sqrt2(2147483647), 46341);
-        Utils.printTestln(sqrt2(2), 1);
+        return x;
     }
 
-    public static void main(String[] args) {
-        test();
+    // https://gist.github.com/zac-xin/4353800
+    public int sqrt3(int x) {
+        long low = 0;
+        long high = x;
+        while (low <= high) {
+            long mid = low + (high - low) / 2;
+            long result = mid * mid;
+            if (result == x) {
+                return (int)mid;
+            } else if (result > x) {
+                high = mid - 1;
+            } else {
+
+                low = mid + 1;
+            }
+        }
+        return (int)high;
     }
 }

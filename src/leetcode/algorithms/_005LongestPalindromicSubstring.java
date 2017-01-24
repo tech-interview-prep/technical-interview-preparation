@@ -1,51 +1,61 @@
 package leetcode.algorithms;
 
-import utils.Utils;
-
 /**
- * https://leetcode.com/problems/longest-palindromic-substring/
- * @author bkoteshwarreddy
- */
-
-/**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000,
+ * and there exists one unique longest palindromic substring.
+ *
+ * https://leetcode.com/problems/longest-palindromic-substring
+ * http://www.programcreek.com/2013/12/leetcode-solution-of-longest-palindromic-substring-java/
+ * http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+ * http://www.geeksforgeeks.org/longest-palindromic-substring-set-2/
+ * http://n00tc0d3r.blogspot.com/2013/04/longest-palindromic-substring.html
  */
 public class _005LongestPalindromicSubstring {
-    /*
-     * Given a string S, find the longest palindromic substring in S. You may assume that
-     * the maximum length of S is 1000, and there exists one unique longest palindromic substring
-     */
+    public static void main(String[] args) {
 
-    public static String longestPalindrome(String s) {
-        boolean[][] isPalindrome = new boolean[s.length()][s.length()];
-        int maxLength = 1, start = 0, l = s.length();
+    }
+}
 
-        isPalindrome[l - 1][l - 1] = true;
-        for (int i = 0; i < l - 1 ; i++) {
-            isPalindrome[i][i] = true;
-            isPalindrome[i + 1][i] = true;
+class Solution_LongestPalindromicSubstring {
+    // 1. With center
+    public String longestPalindrome(String s) {
+        if (s.isEmpty()) {
+            return null;
         }
 
-        for (int i = 1; i < l; i++) {
-            for (int j = 0; j < l - i ; j++) {
-                if ((isPalindrome[j][j + i] = isPalindrome[j + 1][j + i - 1] && s.charAt(j) == s.charAt(j + i)) && i + 1 > maxLength) {
-                    maxLength = i + 1;
-                    start = j;
-                }
+        if (s.length() == 1) {
+            return s;
+        }
+
+        String longest = s.substring(0, 1);
+        for (int i = 0; i < s.length(); i++) {
+            // get longest palindrome with center of i
+            String tmp = helper(s, i, i);
+            if (tmp.length() > longest.length()) {
+                longest = tmp;
+            }
+
+            // get longest palindrome with center of i, i+1
+            tmp = helper(s, i, i + 1);
+            if (tmp.length() > longest.length()) {
+                longest = tmp;
             }
         }
 
-        return s.substring(start, start + maxLength);
+        return longest;
     }
 
-    private static void test() {
-        Utils.printTestln(longestPalindrome("abb"), "bb");
-        Utils.printTestln(longestPalindrome("ccd"), "cc");
-        Utils.printTestln(longestPalindrome("bananas"), "anana");
+    // Given a center, either one letter or two letter,
+    // Find longest palindrome
+    public String helper(String s, int begin, int end) {
+        while (begin >= 0 && end <= s.length() - 1 && s.charAt(begin) == s.charAt(end)) {
+            begin--;
+            end++;
+        }
+        return s.substring(begin + 1, end);
     }
 
-    public static void main(String[] args) {
-        test();
-    }
+
+    // 2. Manacher's Algorithm
+
 }

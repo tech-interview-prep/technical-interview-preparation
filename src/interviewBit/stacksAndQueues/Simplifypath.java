@@ -12,7 +12,7 @@ import java.util.Stack;
 
  path = "/home/", => "/home"
  path = "/a/./b/../../c/", => "/c"
- Note that absolute path always begin with ‘/’ ( root directory )
+ Note that absolute path always begin with ‘/' ( root directory )
  Path will not have whitespace characters.
  */
 public class Simplifypath {

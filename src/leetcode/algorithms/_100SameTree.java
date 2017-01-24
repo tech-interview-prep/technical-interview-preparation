@@ -3,7 +3,6 @@ package leetcode.algorithms;
 import utils.TreeNode;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
 public class _100SameTree {

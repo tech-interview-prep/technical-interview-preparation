@@ -4,7 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
  * @author bkoteshwarreddy
  */
 public class _159LongestSubstringWithAtMostTwoDistinctCharacters {
@@ -12,8 +11,8 @@ public class _159LongestSubstringWithAtMostTwoDistinctCharacters {
     Longest Substring with At Most Two Distinct Characters
 
         Given a string, find the length of the longest substring T that contains at most 2 distinct characters.
-        For example, Given s = “eceba”,
-        T is “ece” which its length is 3.
+        For example, Given s = "eceba",
+        T is "ece" which its length is 3.
      */
     public static String longestSubStrWithTwoChars(String s) {
         if (s == null || s.isEmpty())

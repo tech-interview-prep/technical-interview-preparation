@@ -18,7 +18,7 @@ public class Question {
         }
 
         /* Recurse with head of first added to the prefix. Removing the
-         * head will damage first, so we’ll need to put it back where we
+         * head will damage first, so we'll need to put it back where we
          * found it afterwards. */
         int headFirst = first.removeFirst();
         prefix.addLast(headFirst);

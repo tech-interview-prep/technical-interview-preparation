@@ -1,31 +1,46 @@
 package leetcode.algorithms;
 
 /**
- * https://oj.leetcode.com/problems/two-sum-ii-input-array-is-sorted/
- * @author bkoteshwarreddy
- */
-
-/**
- * https://leetcode.com/problems/palindrome-number/
- * @author bkoteshwarreddy
+ * Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not
+ * the kth distinct element.
+ *
+ * For example,
+ * Given [3,2,1,5,6,4] and k = 2, return 5.
+ *
+ * Note:
+ * You may assume k is always valid, 1 <= k <= array's length.
+ *
+ * https://leetcode.com/problems/kth-largest-element-in-an-array/
  */
 public class _215KthLargestElementinanArray {
-    // [-3,3,4,90], 0
-    public int[] twoSum(int[] numbers, int target) {
-        int l = 0, r = numbers.length - 1, sum;
-        int[] idx = new int[2];
-        while (l < r) {
-            sum = numbers[l] + numbers[r];
-            if (sum == target) {
-                idx[0] = l + 1;
-                idx[1] = r + 1;
-                break;
-            } else if (sum < target) {
-                l++;
-            } else {
-                r--;
-            }
+}
+
+class Solution_KthLargestElementinanArray {
+    // optimized quicksort
+    public int findKthLargest(int[] nums, int k) {
+        return findKthLargest(nums, nums.length - k + 1, 0, nums.length - 1);
+    }
+    // k: order from smallest to largest
+    public int findKthLargest(int[] nums, int k, int start, int end) {
+        int pivot = nums[end];
+        int left = start;
+        int right = end;
+
+        while (left < right) {
+            while (nums[left] < pivot && left < right) left++;
+            while (nums[right] >= pivot && right > left) right--;
+            if (left < right) swap(nums, left, right);
         }
-        return idx;
+        swap(nums, left, end);
+        // recursive
+        if (left + 1 == k) return pivot;
+        else if (left + 1 < k) return findKthLargest(nums, k, left + 1, end);
+        else return findKthLargest(nums, k, start, left - 1);
+    }
+    // swap
+    public void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
 }

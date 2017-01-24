@@ -7,7 +7,7 @@ import java.util.Random;
 public class RandomListNode {
     public int data;
     public RandomListNode next;
-	public RandomListNode random;
+    public RandomListNode random;
     public RandomListNode(int x) {
         this.data = x;
     }

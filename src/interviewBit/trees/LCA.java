@@ -30,9 +30,9 @@ import utils.TreeNode;
  Please note that LCA for nodes 5 and 4 is 5.
 
  You are given 2 values. Find the lowest common ancestor of the two nodes represented by val1 and val2
- No guarantee that val1 and val2 exist in the tree. If one value doesn’t exist in the tree then return -1.
+ No guarantee that val1 and val2 exist in the tree. If one value doesn't exist in the tree then return -1.
  There are no duplicate values.
- You can use extra memory, helper functions, and can modify the node struct but, you can’t add a parent pointer.
+ You can use extra memory, helper functions, and can modify the node struct but, you can't add a parent pointer.
  */
 public class LCA {
     public int lca(TreeNode a, int val1, int val2) {
