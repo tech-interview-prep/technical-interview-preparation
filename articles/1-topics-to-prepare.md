@@ -1,4 +1,4 @@
-###List of topics
+### List of topics
 - [How Companies Evaluate Technical Interviews](https://www.youtube.com/watch?v=jxAWQN5t6wg)
 - [How to Approach Behavioral Questions](https://www.youtube.com/watch?v=tZxNNKqxXnw)
 - [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w)
@@ -17,7 +17,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 32 | 4,294,967,296 | | 4 GB
 40 | 1,099,511,627,776 | 1 trillion | 1 TB
 
-#####**[Data Structures](https://www.coursera.org/learn/data-structures/home):**
+##### [Data Structures](https://www.coursera.org/learn/data-structures/home):
 - [Arrays](https://www.youtube.com/watch?v=NLAzwv4D5iI)
 - Vectors
 - [ArrayLists](https://www.youtube.com/watch?v=NLAzwv4D5iI)
@@ -37,21 +37,21 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - Graph
 - Bloom Filter
 
-#####**Sorting:**
+##### Sorting:
 - [Merge sort](https://www.youtube.com/watch?v=KF2j-9iSf4Q)/Poly phase merge sort
 - [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)/ 3-Way Quick sort/Dual Pivot Quick sort
 - Insertion sort
 - [Bubble sort](https://www.youtube.com/watch?v=6Gv8vg0kcHc)
 - Bucket sort
 
-#####**Searching:**
+##### Searching:
 - [BFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
 - [DFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
 - [Binary Search](https://www.youtube.com/watch?v=P3YID7liBug)
 - Tree insert / find
 - Heap Search
 
-#####**Algorithms:**
+##### Algorithms:
 - Quick select
 - 3 Way Partitioning
 - Tree Balancing
@@ -61,7 +61,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - Rsync algorithm
 - [A* Search Algorithm](http://www.geeksforgeeks.org/a-search-algorithm/)
 
-#####**Concepts:**
+##### Concepts:
 - [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
 - Memory limits
 - Distributed computing and Design
@@ -88,7 +88,7 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - CAP Theorem
 - Byte math
 
-#####**Programming Concepts:**
+##### Programming Concepts:
 - Interface
 - Abstract class
 - try, catch, finally
@@ -117,13 +117,15 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - notifyAll()
 - wait()
 
-#####**Project management Concepts:**
+##### Project management Concepts:
 - Six sigma
 - Lean
 - Agile
 - Scrum
+- Kanban
 
-#####**From resume:**
+##### From resume:
+- S3 concepts
 - OSPF
 - BGP
 - EIGRP
