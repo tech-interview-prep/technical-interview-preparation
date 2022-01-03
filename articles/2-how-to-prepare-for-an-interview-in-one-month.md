@@ -6,7 +6,7 @@ People always asked us what I should do to prepare for an interview within sever
 
 After interviewing a lot of Gainlo interviewers, it’s quite clear that certain preparation patterns/hacks do exist and they can definitely be compressed into weeks. In fact, many of them got their job offers only within 3 weeks preparation. Let’s see how those guys including me are using this model and how you can do the same.
 
-###Day 0: Make concrete timeline and stick to it
+### Day 0: Make concrete timeline and stick to it
 
 Given a month preparation time, it’s very important to make full use of every single day. A common pattern of failure is that people either don’t know what to do or have no time in the end. They don’t have a detailed plan and they’ve no idea of the workload for each task.
 
@@ -16,7 +16,7 @@ I know it’s gonna be hard. For student, you may have lots of course work to do
 
 You might have no idea how to make the plan yet. No worries. We will provide a recommended one and you can always tweak based on your case and generally we recommend people spend at least **2-3 hour a day**.
 
-###Stage 1: Basic knowledge review (7-10 days)
+### Stage 1: Basic knowledge review (7-10 days)
 
 We assume you already have a computer science background (like CS 3rd year students, new grads or current employees). At this stage, we wanna make sure that you have a very solid technical background, which is the most important thing when preparing an interview.
 
@@ -33,11 +33,11 @@ Things you may omit (I’m not saying they are useless, it just can be more effi
 - Proof time complexity in maths. But you should be able to explain clearly.
 - Don’t go too deep for specific data structure and algorithms. I’ll provide a list of common/important items below.
 
-####Recommended resources:
+#### Recommended resources:
 - [The Technical Interview Cheat Sheet](the-technical-interview-cheat-sheet.md) – Contains a list of very important data structures/algorithms, and things you should be very familiar with.
 - [Big-O cheat sheet](characteristics-of-data-structures.md) – Very straightforward big-o list of common algorithms
 
-###Stage 2: General technical interview questions (~7 days)
+### Stage 2: General technical interview questions (~7 days)
 
 There are a lot of “classic” interview questions that are very inspiring and you definitely need to go over them before your job interview. These questions are very basic and common, many real interview questions are designed on top of them. That’s why once you prepare well with them, you’ll feel like every interview question is quite familiar to you although it’s your first time to solve it.
 
@@ -50,7 +50,7 @@ Recommended resources:
 Cracking the Coding Interview – In this stage you don’t really need to read much of its text. Instead you can mainly focus on its questions.
 Leetcode – Please do not code each question and let it judge for you! Why? It just takes a huge amount of time. What we suggest is to write down answers on whiteboard or paper, and compare with the solution (you can easily find via Google). Also it’s unlikely and unnecessary to finish all of them, practicing with those most popular ones is good enough.
 
-###Step 3: Company-targeted preparation (~7 days)
+### Step 3: Company-targeted preparation (~7 days)
 
 We all know different company has different styles and focuses. Assume you will have your interview 2 weeks later for company X, and here are things you can do to make your preparation process much easier.
 
@@ -62,7 +62,7 @@ Recommended resources:
 
 Glassdoor – Most likely you won’t even be able to finish all questions on it.
 
-###Step 4: Practice and practice (4-7 days)
+### Step 4: Practice and practice (4-7 days)
 
 Here are few tips and hacks that are recommended:
 
@@ -74,5 +74,5 @@ Recommended resources:
 Gainlo
 Whiteboard/paper/timer
 
-###Conclusion:
+### Conclusion:
 Good approaches can save you tons of time and at the same time make you more likely to be hired. You don’t really need to prepare with competitive programming like TopCoder or delve into a lot maths to prove Big-O. Preparation can be simple.
