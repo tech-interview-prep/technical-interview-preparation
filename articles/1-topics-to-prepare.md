@@ -1,9 +1,9 @@
 ### List of topics
-- [How Companies Evaluate Technical Interviews](https://www.youtube.com/watch?v=jxAWQN5t6wg)
-- [How to Approach Behavioral Questions](https://www.youtube.com/watch?v=tZxNNKqxXnw)
-- [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=GKgAVjJxh9w)
-- [3 Algorithm Strategies](https://www.youtube.com/watch?v=84UYVCluClQ)
-- [Big O](https://www.youtube.com/watch?v=v4cd1O4zkGw)
+- [How Companies Evaluate Technical Interviews](https://www.youtube.com/watch?v=dBc1xrTPpvk)
+- [How to Approach Behavioral Questions](https://www.youtube.com/watch?v=Joex3hkSldY)
+- [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=rwpDV7wEzPU)
+- [3 Algorithm Strategies](https://www.youtube.com/watch?v=nSsa14FnUew)
+- [Big O](https://www.youtube.com/watch?v=ZeR0OBavudE)
 - Powers of 2 Table
 
 Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
@@ -18,36 +18,36 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 40 | 1,099,511,627,776 | 1 trillion | 1 TB
 
 ##### [Data Structures](https://www.coursera.org/learn/data-structures/home):
-- [Arrays](https://www.youtube.com/watch?v=NLAzwv4D5iI)
+- [Arrays](https://www.youtube.com/watch?v=TqwQM-cu2KA)
 - Vectors
-- [ArrayLists](https://www.youtube.com/watch?v=NLAzwv4D5iI)
-- [Strings](https://www.youtube.com/watch?v=gbxodBVkElQ)
-- [StringBuffer](https://www.youtube.com/watch?v=gbxodBVkElQ)
-- [StringBuilder](https://www.youtube.com/watch?v=gbxodBVkElQ)
-- [LinkedLists](https://www.youtube.com/watch?v=njTh_OwMljA)
+- [ArrayLists](https://www.youtube.com/watch?v=TqwQM-cu2KA)
+- [Strings](https://www.youtube.com/watch?v=wtvMTnagxwg)
+- [StringBuffer](https://www.youtube.com/watch?v=wtvMTnagxwg)
+- [StringBuilder](https://www.youtube.com/watch?v=wtvMTnagxwg)
+- [LinkedLists](https://www.youtube.com/watch?v=5BtWNITGeV0)
 - Hashset
 - Hashmap
-- [Hashtables](https://www.youtube.com/watch?v=shs0KM3wKv8)
+- [Hashtables](https://www.youtube.com/watch?v=XTd-tlszWjQ)
 - Dictionary
-- [Stacks and Queues](https://www.youtube.com/watch?v=wjI1WNcIntg)
-- [Heaps/Priority queues](https://www.youtube.com/watch?v=t0Cq6tVNRBA)
-- [Trees](https://www.youtube.com/watch?v=oSWTXtMglKE) (Binary Tree, [Binary Search Tree](https://www.youtube.com/watch?v=i_Q0v_Ct5lY), kd Tree, 2-3 Tree, AVL)
-- [Tries](https://www.youtube.com/watch?v=zIjfhVPRZCg)
-- [Heaps](https://www.youtube.com/watch?v=t0Cq6tVNRBA) (MinHeap, MaxHeap)
+- [Stacks and Queues](https://www.youtube.com/watch?v=H5AMF5sKH7E)
+- [Heaps/Priority queues](https://www.youtube.com/watch?v=Nts8XaNjwlU)
+- [Trees](https://www.youtube.com/watch?v=Bk_SGyOekyw) (Binary Tree, [Binary Search Tree](https://www.youtube.com/watch?v=4g_R2IqC_yM), kd Tree, 2-3 Tree, AVL)
+- [Tries](https://www.youtube.com/watch?v=zu4dfieRCoo)
+- [Heaps](https://www.youtube.com/watch?v=Nts8XaNjwlU) (MinHeap, MaxHeap)
 - Graph
 - Bloom Filter
 
 ##### Sorting:
-- [Merge sort](https://www.youtube.com/watch?v=KF2j-9iSf4Q)/Poly phase merge sort
-- [Quick sort](https://www.youtube.com/watch?v=SLauY6PpjW4)/ 3-Way Quick sort/Dual Pivot Quick sort
+- [Merge sort](https://www.youtube.com/watch?v=iX7m_e4nAII)/Poly phase merge sort
+- [Quick sort](https://www.youtube.com/watch?v=7OTwX5dnve4)/ 3-Way Quick sort/Dual Pivot Quick sort
 - Insertion sort
-- [Bubble sort](https://www.youtube.com/watch?v=6Gv8vg0kcHc)
+- [Bubble sort](https://www.youtube.com/watch?v=nNLbcY-oYcQ)
 - Bucket sort
 
 ##### Searching:
-- [BFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
-- [DFS](https://www.youtube.com/watch?v=zaBhtODEL0w)
-- [Binary Search](https://www.youtube.com/watch?v=P3YID7liBug)
+- [BFS](https://www.youtube.com/watch?v=l7642XeIk1c)
+- [DFS](https://www.youtube.com/watch?v=l7642XeIk1c)
+- [Binary Search](https://www.youtube.com/watch?v=9VozIAbl3DQ)
 - Tree insert / find
 - Heap Search
 
@@ -56,8 +56,8 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - 3 Way Partitioning
 - Tree Balancing
 - Divide and conquer
-- [Dynamic programming / Memoization](https://www.youtube.com/watch?v=P8Xa2BitN3I)
-- [Recursion](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/)
+- [Dynamic programming / Memoization](https://www.youtube.com/watch?v=rKZlaLcfHd8)
+- [Recursion](http://www.programcreek.com/2012/10/iteration-vs-recursion-in-java/) ([Video](https://www.youtube.com/watch?v=aBuKwbfpB-s))
 - Rsync algorithm
 - [A* Search Algorithm](http://www.geeksforgeeks.org/a-search-algorithm/)
 
