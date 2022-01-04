@@ -1,0 +1,165 @@
+# A 45 day action plan for preparing for technical interviews.
+
+As Eric Schmidt says, “Repetition doesn’t spoil the prayer.”
+
+Hours per day: 4-5 hours per day (6am - 8am , 6pm - 12am)
+
+### :fire: Stage 1: Basic Knowledge Review(~15 days) :fire:
+- http://blog.gainlo.co/index.php/category/mock-interview-thoughts/
+- http://blog.gainlo.co/index.php/2015/12/22/how-to-crack-the-coding-interview-with-practicing-only-30-questions/
+- [ ] List of topics
+  - [ ] [How Companies Evaluate Technical Interviews](https://www.youtube.com/watch?v=dBc1xrTPpvk)
+  - [ ] [How to Approach Behavioral Questions](https://www.youtube.com/watch?v=Joex3hkSldY)
+  - [ ] [7 Steps to Solve Algorithm Problems](https://www.youtube.com/watch?v=rwpDV7wEzPU)
+  - [ ] [3 Algorithm Strategies](https://www.youtube.com/watch?v=nSsa14FnUew)
+  - [ ] [Big O](https://www.youtube.com/watch?v=ZeR0OBavudE)
+  - [ ] Powers of 2 Table
+  Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
+  ------------| ------------------| --------------| ------------------------
+  7  | 128 | |
+  8  | 256 | |
+  10 | 1024 | 1 thousand | 1 KB
+  16 | 65,536 | | 64 KB
+  20 | 1,048,576 | 1 million | 1 MB
+  30 | 1,073,741,824 | 1 billion | 1 GB
+  32 | 4,294,967,296 | | 4 GB
+  40 | 1,099,511,627,776 | 1 trillion | 1 TB
+  
+- [ ] Review concepts of each data structure
+    - [ ] Arrays, Vectors and ArrayLists
+    - [ ] Strings, StringBuffer and StringBuilder
+    - [ ] Linked List (Single vs Doubly),
+    - [ ] Set, HashSet
+    - [ ] Hash Tables, Hash Map (handling collisions, hashed linked map), Dictionary
+    - [ ] Stacks,
+    - [ ] Queues, Heap, Priority Queues
+    - [ ] Trees (Binary Trees, BST,Tries),
+    - [ ] Graph
+    - [ ] Bloom filter
+    - [ ] Implementation of Data Structures.
+- [ ] String operations
+- [ ] Pros and cons of each data structure and when to use each of them.
+- [ ] Understand basic algos
+    - [ ] BFS,
+    - [ ] DFS,
+    - [ ] Binary Search
+    - [ ] Dijkstra,
+    - [ ] Insertion Sort
+    - [ ] Bubble Sort
+    - [ ] Bucket Sort
+    - [ ] Mergesort algorithm, Quicksort algorithm,
+    - [ ] Quick Select,
+    - [ ] Tree traversals.
+    - [ ] Tree Balancing
+    - [ ] Tree find/insert
+    - [ ] Heap Search
+    - [ ] 3 Way Partitioning
+    - [ ] Divide and conquer
+    - [ ] Dynamic programming / Memoization
+    - [ ] Recursion
+    - [ ] Rsync algorithm
+    - [ ] A* Search Algorithm
+- [ ] Concepts
+  - [ ] Scalability
+  - [ ] Memory limits
+  - [ ] Distributed computing and Design
+  - [ ] Networking (IPC, TCP/IP)
+  - [ ] Concurrency
+  - [ ] process
+  - [ ] threads
+  - [ ] locks
+  - [ ] mutexes
+  - [ ] deadlock
+  - [ ] livelock
+  - [ ] scheduling
+  - [ ] monitors
+  - [ ] starvation
+  - [ ] consistency
+  - [ ] coherence
+  - [ ] mutual exclusion
+  - [ ] semaphore
+  - [ ] synchronized vs unsynchronized
+  - [ ] Abstraction (understanding how OS, filesystem, and database works)
+  - [ ] Real--world performance (relative performance RAM, disk, your network, SSD)
+  - [ ] Availability and Reliability (durability, understanding how things can fail)
+  - [ ] Data storage (RAM vs. durable storage, compression, byte sizes)
+  - [ ] CAP Theorem
+  - [ ] Byte math
+- [ ] Programming Concepts
+  - [ ] Interface
+  - [ ] Abstract class
+  - [ ] try, catch, finally
+  - [ ] throw, throws
+  - [ ] this, super
+  - [ ] final
+  - [ ] break, continue, return
+  - [ ] static
+  - [ ] virtual functions
+  - [ ] malloc, calloc, realloc
+  - [ ] free, new, delete
+  - [ ] classes, inner classes, objects
+  - [ ] variables
+  - [ ] polymorphism
+  - [ ] override
+  - [ ] overload
+  - [ ] generics
+  - [ ] collections
+  - [ ] Autoboxing
+  - [ ] Wrapper class
+  - [ ] equals()
+  - [ ] hashcode()
+  - [ ] toString()
+  - [ ] finalize()
+  - [ ] notify()
+  - [ ] notifyAll()
+  - [ ] wait()
+- [ ] Project management Concepts:
+  - [ ] Six sigma
+  - [ ] Lean
+  - [ ] Agile
+  - [ ] Scrum
+  - [ ] Kanban
+- [ ] From resume:
+  - [ ] S3 concepts
+  - [ ] OSPF
+  - [ ] BGP
+  - [ ] EIGRP
+  - [ ] AWS
+  - [ ] Google Docs
+  - [ ] Branch and Bound
+  - [ ] Randomized
+  - [ ] Hadoop, Map Reduce, HBase, Pipelines, Apache Crunch, Solr, Avro
+  - [ ] Maven
+  - [ ] Jersey, RestEasy, JSON
+  - [ ] Chef
+  - [ ] Javascript, D3 library 
+- [ ] Pros and cons of each algo and when to use them.
+- [ ] Be extremely proficient in time/space complexity analysis.
+    - [ ] Know Big O for each data structure
+- [ ] Cracking the coding interview
+- [ ] Recommended Resources to Read:
+    - DonBeave Interview Repo,
+    - The Technical Interview Cheat Sheet,
+    - Big O Cheat Sheet,
+    - http://discrete.gr/complexity/,
+    - https://en.wikipedia.org/wiki/Book:Data_structures,
+    - http://opendatastructures.org/ods-java/,
+
+### :fire: Stage 2: General Interview Questions (~15 days) :fire:
+- Always better to write solution on paper. Second, if you can't handle the question, STOP & RESEARCH IT!
+- [ ] Go through Cracking the Coding Interview Questions
+- [ ] https://github.com/mission-peace/interview/wiki
+- [ ] http://courses.csail.mit.edu/iap/interview/materials.php
+- [ ] http://javarevisited.blogspot.sg/2015/01/top-20-string-coding-interview-question-programming-interview.html
+- [ ] http://javarevisited.blogspot.sg/2015/06/top-20-array-interview-questions-and-answers.html
+- [ ] http://javarevisited.blogspot.sg/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html
+
+### :fire: Stage 3: Company Specific Interviews (~10 days) :fire:
+- [ ] Leetcode
+- [ ] http://blog.gainlo.co/index.php/category/facebook-interview-questions/
+- [ ] http://codercareer.blogspot.com/p/facebook-interview-questions.html
+- [ ] http://www.lintcode.com/en/tag/facebook/#
+- [ ] InterviewBit company specific questions
+- [ ] Glassdoor company specific interview questions and ask peers for familiar questions
+- [ ] GeeksForGeeks company specific questions
+- [ ] Programming Interviews Exposed behavioural questions
