@@ -14,11 +14,11 @@ Hash table       | Very fast access if key known. Fast insertion | Slow deletion
 Heap             | Fast insertion, deletion, access to largest item | Slow access to other items
 Graph            | Models real-world situations | Some algorithms are slow and complex
 
-###**Big-O Complexity Chart**
+### Big-O Complexity Chart
 ![Big-O Complexity Chart](../images/big-o-complexity-chart.png)
 
-###**Common Data Structure Operations**
+### Common Data Structure Operations
 ![Common Data Structure Operations](../images/common-data-structure-operations.png)
 
-###**Array Sorting Algorithms**
+### Array Sorting Algorithms
 ![Array Sorting Algorithms](../images/array-sorting-algorithms.png)
