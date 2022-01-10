@@ -1,7 +1,5 @@
 <h1 align="center"> Monday to Friday </h1>
 
-  
-
 <div align="center">Wake up 5.30 AM</div>
 <div align="center">Brush and Restroom 5.30 AM - 6AM</div>
 <div align="center">Exercise and Reading 6AM - 8AM</div>
