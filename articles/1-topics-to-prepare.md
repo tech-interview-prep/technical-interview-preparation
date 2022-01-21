@@ -22,11 +22,12 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - Vectors
 - [ArrayLists](https://www.youtube.com/watch?v=TqwQM-cu2KA)
 - [Strings](https://www.youtube.com/watch?v=wtvMTnagxwg)
+  - String operations
 - [StringBuffer](https://www.youtube.com/watch?v=wtvMTnagxwg)
 - [StringBuilder](https://www.youtube.com/watch?v=wtvMTnagxwg)
-- [LinkedLists](https://www.youtube.com/watch?v=5BtWNITGeV0)
+- [LinkedLists](https://www.youtube.com/watch?v=5BtWNITGeV0) (Single vs Doubly)
 - Hashset
-- Hashmap
+- Hashmap (handling collisions, hashed linked map)
 - [Hashtables](https://www.youtube.com/watch?v=XTd-tlszWjQ)
 - Dictionary
 - [Stacks and Queues](https://www.youtube.com/watch?v=H5AMF5sKH7E)
@@ -36,6 +37,9 @@ Power of 2  | Exact Value (X)   | Approx. Value | X Bytes into MB, GB,e.t.c
 - [Heaps](https://www.youtube.com/watch?v=Nts8XaNjwlU) (MinHeap, MaxHeap)
 - Graph
 - Bloom Filter
+- Implementation of DataStructures
+- Pros and cons of each data structure and when to use each of them.
+
 
 ##### Sorting:
 - [Merge sort](https://www.youtube.com/watch?v=iX7m_e4nAII)/Poly phase merge sort
