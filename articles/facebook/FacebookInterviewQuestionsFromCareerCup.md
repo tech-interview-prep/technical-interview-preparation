@@ -12,7 +12,7 @@ Convert a number to English representation. Ex: Input : 100 Output : One Hundred
 
 July 30, 2016
 ---------------
-How do I find the longest possible route in a matrix? There are some hurdles in the path. ![Details](hurdles.jpg)
+How do I find the longest possible route in a matrix? There are some hurdles in the path. ![Details](../hurdles.jpg)
 
 July 14, 2016
 ---------------

@@ -1,5 +1,6 @@
 **/bin
 **/out
 .idea
+.settings
 *.iml
 *.class
