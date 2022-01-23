@@ -1,4 +1,4 @@
-#Tech Interview Preparation:
+# Tech Interview Preparation:
 
 This repository contains resources I use to prepare for the technical interviews (specific to SDE/SWE) at various companies.
 
