@@ -22,22 +22,42 @@ public class _001TwoSum {
      *      Because nums[0] + nums[1] = 2 + 7 = 9,
      *      return [0, 1].
      *
-     * UPDATE (2016/2/13):
-     *      The return format had been changed to zero-based indices. Please read the above updated
-     *      description carefully.
      */
 
-    public static int[] twoSum(int[] numbers, int target) {
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-        for (int i = 0; i < numbers.length; i++) {
-            if (map.containsKey(target - numbers[i])) {
-                return new int[] {map.get(target - numbers[i]) + 1, i + 1};
+    public static int[] twoSum(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                return new int[] {map.get(target - nums[i]), i};
             }
-            if (!map.containsKey(numbers[i])) {
-                map.put(numbers[i], i);
+            if (!map.containsKey(nums[i])) {
+                map.put(nums[i], i);
             }
         }
 
+        return null;
+    }
+
+    public static int[] twoSumTwoPass(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return null;
+        }
+
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement) && map.get(complement) != i) {
+                return new int[] { i, map.get(complement) };
+            }
+        }
+        // In case there is no solution, we'll just return null
         return null;
     }
 
