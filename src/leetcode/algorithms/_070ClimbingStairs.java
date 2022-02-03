@@ -1,7 +1,8 @@
 package leetcode.algorithms;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
+ * https://leetcode.com/problems/climbing-stairs/
+ *
  * @author bkoteshwarreddy
  */
 public class _070ClimbingStairs {

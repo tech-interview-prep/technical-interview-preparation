@@ -3,22 +3,23 @@ package leetcode.algorithms;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
+ * https://leetcode.com/problems/unique-paths/
+ *
  * @author bkoteshwarreddy
  */
 public class _062UniquePaths {
-    /*
-    A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
-
-    The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right
-    corner of the grid (marked 'Finish' in the diagram below).
-
-    How many possible unique paths are there?
-
-
-    Above is a 3 x 7 grid. How many possible unique paths are there?
-
-    Note: m and n will be at most 100.
+    /**
+     * There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0]).
+     * The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either
+     * down or right at any point in time.
+     *
+     * Given the two integers m and n, return the number of possible unique paths that the robot can take to reach
+     * the bottom-right corner.
+     *
+     * The test cases are generated so that the answer will be less than or equal to 2 * 109.
+     *
+     * Constraints:
+     * 1 <= m, n <= 100
      */
     public static int uniquePaths(int m, int n) {
         if (m == 1 || n == 1) {

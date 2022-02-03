@@ -8,21 +8,21 @@ import java.io.InputStreamReader;
 import utils.Utils;
 
 /**
- * https://leetcode.com/problems/palindrome-number/
+ * https://leetcode.com/problems/jump-game/
+ *
  * @author bkoteshwarreddy
  */
 public class _055JumpGame {
-    /*
-     Given an array of non-negative integers, you are initially positioned at the first index of the array.
-
-    Each element in the array represents your maximum jump length at that position.
-
-    Determine if you are able to reach the last index.
-
-    For example:
-    A = [2,3,1,1,4], return true.
-
-    A = [3,2,1,0,4], return false.
+    /**
+     * You are given an integer array nums. You are initially positioned at the array's first index, and
+     * each element in the array represents your maximum jump length at that position.
+     *
+     * Return true if you can reach the last index, or false otherwise.
+     *
+     * Constraints:
+     *
+     * 1 <= nums.length <= 104
+     * 0 <= nums[i] <= 105
      */
     public static boolean canJump(int[] A) {
         return canJump(A, 0);
