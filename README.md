@@ -11,11 +11,11 @@ As Eric Schmidt says, “Repetition doesn’t spoil the prayer.”
 Hours per day: 4-5 hours per day (7pm - 12am)
 
 ### :fire: Stage 1: Basic Knowledge Review(~4 days) :fire:
-- [How To Prepare For an Interview In One Month
-  ](http://blog.gainlo.co/index.php/2015/10/22/how-to-ace-your-code-interview-in-one-month/)
-- [How to Crack The Coding Interview With Practicing Only 30 Questions
-  ](http://blog.gainlo.co/index.php/2015/12/22/how-to-crack-the-coding-interview-with-practicing-only-30-questions/)
-- [ ] Review concepts of each data structure
+- [ ] [How To Prepare For an Interview In One Month](http://blog.gainlo.co/index.php/2015/10/22/how-to-ace-your-code-interview-in-one-month/)
+- [ ] [How to Crack The Coding Interview With Practicing Only 30 Questions](http://blog.gainlo.co/index.php/2015/12/22/how-to-crack-the-coding-interview-with-practicing-only-30-questions/)
+- Be extremely proficient in time/space complexity analysis.
+  - [ ] Know Big O for each data structure
+- Review concepts of each data structure
     - [ ] Array,
     - [ ] Stacks,
     - [ ] Queues (Priority Queues),
@@ -28,7 +28,7 @@ Hours per day: 4-5 hours per day (7pm - 12am)
     - [ ] Implementation of Data Structures.
 - [ ] String operations
 - [ ] Pros and cons of each data structure and when to use each of them.
-- [ ] Understand basic algos
+- Understand basic algos
     - [ ] BFS,
     - [ ] DFS,
     - [ ] Dijkstra,
@@ -36,19 +36,18 @@ Hours per day: 4-5 hours per day (7pm - 12am)
     - [ ] Quick Select,
     - [ ] Tree traversals.
 - [ ] Pros and cons of each algo and when to use them.
-- [ ] Be extremely proficient in time/space complexity analysis.
-    - [ ] Know Big O for each data structure
+- [ ] Bit Manipulation
 - [ ] Cracking the coding interview
-- [ ] Recommended Resources to Read:
-    - DonBeave Interview Repo,
-    - The Technical Interview Cheat Sheet,
-    - Big O Cheat Sheet,
-    - http://discrete.gr/complexity/,
-    - https://en.wikipedia.org/wiki/Book:Data_structures,
-    - http://opendatastructures.org/ods-java/,
+- Recommended Resources to Read:
+    - [ ] DonBeave Interview Repo,
+    - [ ] The Technical Interview Cheat Sheet,
+    - [ ] Big O Cheat Sheet,
+    - [ ] http://discrete.gr/complexity/,
+    - [ ] https://en.wikipedia.org/wiki/Book:Data_structures,
+    - [ ] http://opendatastructures.org/ods-java/,
 
 ### :fire: Stage 2: General Interview Questions (~7 days) :fire:
-- Always better to write solution on paper. Second, if you can't handle the question, STOP & RESEARCH IT!
+- [ ] Always better to write solution on paper. Second, if you can't handle the question, STOP & RESEARCH IT!
 - [ ] Go through Cracking the Coding Interview Questions
 - [ ] https://github.com/mission-peace/interview/wiki
 - [ ] http://courses.csail.mit.edu/iap/interview/materials.php
@@ -57,7 +56,14 @@ Hours per day: 4-5 hours per day (7pm - 12am)
 - [ ] http://javarevisited.blogspot.sg/2013/03/top-15-data-structures-algorithm-interview-questions-answers-java-programming.html
 
 ### :fire: Stage 3: Company Specific Interviews (~9 days) :fire:
+- [ ] [Google - Data Structures & Algorithms](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/)
+- [ ] [Google Interview Prep](https://techdevguide.withgoogle.com/paths/interview/)
+- [ ] [Facebook Interview Prep](https://www.facebookrecruiting.com/portal/interview_prep_hub)
+- [ ] [Top Google Question](https://leetcode.com/problem-list/top-google-questions/)
+- [ ] [Top Facebook Questions](https://leetcode.com/problem-list/top-facebook-questions/)
 - [ ] Leetcode
+- [ ] https://leetcode.com/explore/interview/card/google/
+- [ ] https://leetcode.com/explore/interview/card/facebook/
 - [ ] http://blog.gainlo.co/index.php/category/facebook-interview-questions/
 - [ ] http://codercareer.blogspot.com/p/facebook-interview-questions.html
 - [ ] http://www.lintcode.com/en/tag/facebook/#

@@ -1,6 +1,6 @@
 # Tech Interview Cheat Sheet
 
-This list is meant to be both a quick guide and reference for further research into these topics. It's basically a summary of that comp sci course you never took or forgot about, so there's no way it can cover everything in depth.
+This list is meant to be both a quick guide and reference for further research into these topics. It's basically a summary of that computer science course you never took or forgot about, so there's no way it can cover everything in depth.
 
 # Table of Content
 - [Asymptotic Notation](#asymptotic-notation)
@@ -29,20 +29,20 @@ Asymptotic Notation is the hardware independent notation used to tell the time a
 
 #### Complexities
 The following are the Asymptotic rates of growth from best to worst:
-- constant growth - ``O(1)`` Runtime is constant and does not grow with `n`
-- logarithmic growth – ``O(log n)`` Runtime grows logarithmically in proportion to `n`
-- linear growth – ``O(n)`` Runtime grows directly in proportion to `n`
-- superlinear growth – ``O(n log n)`` Runtime grows in proportion _and_ logarithmically to `n`
-- polynomial growth – `O(n^c)` Runtime grows quicker than previous all based on `n`
-- exponential growth – `O(c^n)` Runtime grows even faster than polynomial growth based on `n`
-- factorial growth – `O(n!)` Runtime grows the fastest and becomes quickly unusable for even
+- Constant growth - ``O(1)`` Runtime is constant and does not grow with `n`
+- Logarithmic growth – ``O(log n)`` Runtime grows logarithmically in proportion to `n`
+- Linear growth – ``O(n)`` Runtime grows directly in proportion to `n`
+- Super-Linear growth – ``O(n log n)`` Runtime grows in proportion _and_ logarithmically to `n`
+- Polynomial growth – `O(n^c)` Runtime grows quicker than previous all based on `n`
+- Exponential growth – `O(c^n)` Runtime grows even faster than polynomial growth based on `n`
+- Factorial growth – `O(n!)` Runtime grows the fastest and becomes quickly unusable for even
   small values of `n`
 
 [(source: Soumyadeep Debnath, _Analysis of Algorithms | Big-O analysis_)](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
 
 Visualized below; the x-axis representing input size and the y-axis representing complexity:
 
-![#](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Comparison_computational_complexity.svg/400px-Comparison_computational_complexity.svg.png)
+![#](../images/Comparison_computational_complexity.svg.png)
 
 [(source: Wikipedia, _Computational Complexity of Mathematical Operations_)](https://en.wikipedia.org/wiki/Computational_complexity_of_mathematical_operations)
 
